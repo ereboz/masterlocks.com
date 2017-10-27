@@ -28,6 +28,7 @@
 @gray-light: #e0e0e0;
 @gray-medium: #929292;
 @green-light: #bde6c6;
+@green-dark: #197b30;
 @orange: #fa0;
 @white: #fff;
 
@@ -146,16 +147,25 @@
     .page-header {
         span {
             display: block;
+            margin: 20px auto;
         }
+        
         .title {
             font-size: 24px;
             font-family: @font-title;
         }
+        
+        .sub-title {
+            font-size: 16px;
+            font-family: @font-title;
+        }
     }
+    
 }
 
 // bootstrap would handle mobile first, but someone butchered the framework, so need to
 // handle this monkey work.
+
 .item-wrapper {
     float: left;
     padding: 0 10px;
@@ -173,7 +183,7 @@
     }
     
     @media @desktop-min {
-        width: 20%;
+        width: 25%;
     }
 }
 
@@ -513,12 +523,27 @@
 .product-slider-head {
     margin-bottom: 10px;
     
+    .product-slider-title {
+        float: left;
+        
+        span {
+            font-size: 20px;
+        }
+    }
+    
     .product-slider-chevrons {
+        float: left;
+        
         .controls {
-            margin: 30px 13px 0 0;
+            .fa.btn {
+                padding: 12px;
+                color: @white !important;
+                background-color: @green-dark !important;
+            }
         }
     }
 }
+
 
 
 // Product Slider - product (slides)
@@ -549,6 +574,10 @@
 
 /* Best Seller Section
 ========================================================================== */
+
+.product-slider-head {
+    width: 100%;
+}
 
 .product-slider-title {
     //.make-sm-column(9);     // 768px (min)

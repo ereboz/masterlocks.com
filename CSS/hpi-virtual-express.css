@@ -46,9 +46,14 @@
 }
 .virtualpage-express-wrapper .page-header span {
   display: block;
+  margin: 20px auto;
 }
 .virtualpage-express-wrapper .page-header .title {
   font-size: 24px;
+  font-family: 'montserratregular', sans-serif;
+}
+.virtualpage-express-wrapper .page-header .sub-title {
+  font-size: 16px;
   font-family: 'montserratregular', sans-serif;
 }
 .item-wrapper {
@@ -69,7 +74,7 @@
 }
 @media (min-width: 992px) {
   .item-wrapper {
-    width: 20%;
+    width: 25%;
   }
 }
 .item-2 {
@@ -347,8 +352,19 @@
 .product-slider-head {
   margin-bottom: 10px;
 }
-.product-slider-head .product-slider-chevrons .controls {
-  margin: 30px 13px 0 0;
+.product-slider-head .product-slider-title {
+  float: left;
+}
+.product-slider-head .product-slider-title span {
+  font-size: 20px;
+}
+.product-slider-head .product-slider-chevrons {
+  float: left;
+}
+.product-slider-head .product-slider-chevrons .controls .fa.btn {
+  padding: 12px;
+  color: #fff !important;
+  background-color: #197b30 !important;
 }
 .product-wrapper {
   border: 1px solid #e0e0e0;
@@ -381,6 +397,9 @@
 }
 /* Best Seller Section
 ========================================================================== */
+.product-slider-head {
+  width: 100%;
+}
 .product-slider-title {
   width: 70%;
 }
