@@ -1,0 +1,341 @@
+/*This is the temporary CSS file for development purpose.
+    At the end of RWD developement we will remove this file.
+    We are not adding this file reference into Combres. We will add its reference into Master page directly when needed
+    Developer should put downloaded widget's CSS to this file only. Do not modify any of existing CSS files directly without communicating to Designer
+    Designer should move required CSS to respective CSS file like Core, Home and so on 
+    */
+
+/*
+	RateIt CSS
+    http://www.radioactivethinking.com/rateit/example/example.htm
+*/
+.rateit {
+    display: -moz-inline-box;
+    display: inline-block;
+    position: relative;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    padding-top:3px;
+}
+
+.rateit .rateit-range
+{
+    position: relative;
+    display: -moz-inline-box;
+    display: inline-block;
+    background: url(../images/star.gif);
+    height: 14px;
+    outline: none;
+}
+
+.rateit .rateit-range * {
+    display:block;
+}
+
+/* for IE 6 */
+* html .rateit, * html .rateit .rateit-range
+{
+    display: inline;
+}
+
+/* for IE 7 */
+* + html .rateit, * + html .rateit .rateit-range
+{
+    display: inline;
+}
+
+.rateit .rateit-hover, .rateit .rateit-selected
+{
+    position: absolute;
+    left: 0px;
+}
+
+.rateit .rateit-hover-rtl, .rateit .rateit-selected-rtl
+{
+    left: auto;
+    right: 0px;
+}
+
+.rateit .rateit-hover
+{
+    background: url(../images/star.gif) left -16px;
+}
+
+.rateit .rateit-hover-rtl
+{
+    background-position: right -14px;
+}
+
+.rateit .rateit-selected
+{
+    background: url(../images/star.gif) left -16px;
+}
+
+.rateit .rateit-selected-rtl
+{
+    background-position: right -14px;
+}
+
+.rateit .rateit-preset
+{
+    background: url(../images/star.gif) left -14px;
+}
+
+.rateit .rateit-preset-rtl
+{
+    background: url(../images/star.gif) left -14px;
+}
+
+.rateit button.rateit-reset
+{
+    background:url(../images/icons.png) no-repeat scroll 0 -52px transparent;display:block;height:20px;width:20px; float:left; margin-right:5px; border:0 solid #fff;
+}
+
+.rateit button.rateit-reset:hover, .rateit button.rateit-reset:focus
+{
+    background-position: 0 -52px;
+}
+
+
+
+
+/*
+Responsive tabs related CSS
+http://jellekralt.github.io/Responsive-Tabs/
+*/
+.r-tabs .r-tabs-nav {
+    margin: 0;
+    padding: 0;
+}
+
+.r-tabs .r-tabs-tab {
+    display: inline-block;
+    margin: 0;
+    list-style: none;
+}
+
+.r-tabs .r-tabs-panel {
+    padding: 15px;
+    display: none;
+    min-height:283px;
+}
+.r-tabs .r-tabs-panel h1, .r-tabs .r-tabs-panel h2, .r-tabs .r-tabs-panel h3, .r-tabs .r-tabs-panel4, .r-tabs .r-tabs-panel h5, .r-tabs .r-tabs-panel h6{font-weight:bold;}
+.r-tabs .r-tabs-accordion-title {
+    display: none;
+}
+
+.r-tabs .r-tabs-panel.r-tabs-state-active {
+    display: block;
+}
+.r-tabs #tab-learn.r-tabs-panel.r-tabs-state-active ul li{list-style-type:disc; list-style-position:inside; padding-left:15px;}
+.r-tabs #tab-learn.r-tabs-panel.r-tabs-state-active ol li{list-style-type:decimal; list-style-position:inside; padding-left:15px;}
+
+/* Accordion responsive breakpoint */
+@media only screen and (max-width: 768px) {
+    .r-tabs .r-tabs-nav {
+        display: none;
+    }
+
+    .r-tabs .r-tabs-accordion-title {
+        display: block;
+    }
+    .r-tabs .r-tabs-panel {
+        min-height:50px;
+    }
+}
+
+/* Accordion responsive breakpoint for checkout and order complete*/
+@media only screen and (min-width: 320px) {
+    #ordercomplete .r-tabs .r-tabs-nav, #checkout .r-tabs .r-tabs-nav {
+        display: none;
+    }
+    #ordercomplete .r-tabs .r-tabs-nav, #checkout .r-tabs .r-tabs-accordion-title {
+        display: block;
+    }
+    #ordercomplete .r-tabs .r-tabs-nav, #checkout .r-tabs .r-tabs-panel {
+        min-height:50px;
+    }
+}
+
+.r-tabs {
+	position: relative;
+}
+
+.r-tabs .r-tabs-nav {
+	border-bottom: 1px solid #ccc;
+}
+
+.r-tabs .r-tabs-nav .r-tabs-tab {
+	position: relative;
+	top: 1px;
+}
+
+.r-tabs .r-tabs-nav .r-tabs-anchor {
+	background: #1D6F9E;
+	margin-bottom: 3px;
+	padding: 10px 0;
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+    text-align:center;
+    width:135px;
+}
+.r-tabs .r-tabs-nav .r-tabs-anchor:last-child{width:135px;}
+.r-tabs .r-tabs-nav .r-tabs-anchor:hover{background:#555;}
+.r-tabs .r-tabs-nav .r-tabs-state-active {
+	background-color: #fff;
+	margin-bottom: -1px;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+}
+
+.r-tabs .r-tabs-nav .r-tabs-state-disabled {
+	opacity: 0.5;
+}
+
+.r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor {
+	color: #555;
+	background-color: #fff;
+}
+
+.r-tabs .r-tabs-panel {
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	margin-bottom: 3px;
+}
+
+.r-tabs .r-tabs-accordion-title .r-tabs-anchor {
+	display: block;
+	padding: 10px;
+	background-color: #eee;
+	color: #343434;
+	font-weight: bold;
+	text-decoration: none;
+	margin-bottom: 3px;
+    background-image:url(../images/icon-btn-fwd.png); background-position:98% center; background-repeat:no-repeat;
+
+}
+.r-tabs .r-tabs-accordion-title .r-tabs-anchor:hover{background-color:#197b30;background-image:url(../images/icon-btn-down.png); background-position:98% center; background-repeat:no-repeat; color:#fff}
+.r-tabs .r-tabs-accordion-title.r-tabs-state-disabled {
+	opacity: 0.5;
+}
+.r-tabs .r-tabs-accordion-title.r-tabs-state-active .r-tabs-anchor{background-image:url(../images/icon-btn-down.png); background-position:98% center; background-repeat:no-repeat;}
+.r-tabs .r-tabs-accordion-title.r-tabs-state-active .r-tabs-anchor {
+	background-color: #197b30;
+	color: #fff;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	margin-bottom: 0;
+}
+
+@media only screen and (max-width: 1024px){
+    .r-tabs .r-tabs-nav .r-tabs-anchor:last-child{width:129px;}
+}
+
+/*!
+ * Slider for Bootstrap
+ *
+ * Copyright 2012 Stefan Petre
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ */
+.slider {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+.slider.slider-horizontal {
+  width: 100%!important;
+  height: 20px;
+}
+.slider.slider-horizontal .slider-track {
+  height: 4px;
+  width: 100%;
+  margin-top: -5px;
+  top: 50%;
+  left:0;
+}
+.slider.slider-horizontal .slider-selection {
+  height: 100%;
+  top: 0;
+  bottom: 0;
+}
+.slider.slider-horizontal .slider-handle {
+  margin-left: -4px;
+  margin-top: -10px;
+}
+.slider.slider-horizontal .right-handle {
+    margin-left:-22px;
+}
+
+.slider.slider-horizontal .slider-handle.triangle {
+  border-width: 0 10px 10px 10px;
+  width: 0;
+  height: 0;
+  border-bottom-color: #0480be;
+  margin-top: 0;
+}
+.slider.slider-vertical {
+  height: 210px;
+  width: 20px;
+}
+.slider.slider-vertical .slider-track {
+  width: 10px;
+  height: 100%;
+  margin-left: -5px;
+  left: 50%;
+  top: 0;
+}
+.slider.slider-vertical .slider-selection {
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+.slider.slider-vertical .slider-handle {
+  margin-left: -5px;
+  margin-top: -10px;
+}
+.slider.slider-vertical .slider-handle.triangle {
+  border-width: 10px 0 10px 10px;
+  width: 1px;
+  height: 1px;
+  border-left-color: #0480be;
+  margin-left: 0;
+}
+.slider input {
+  display: none;
+}
+.slider .tooltip-inner {
+  white-space: nowrap;
+}
+.slider-track {
+  position: absolute;
+  cursor: pointer;
+  background-color: #eeeeee;
+}
+.slider-selection {
+  position: absolute;
+  background-color: #197b30;
+}
+.slider-handle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  
+}
+.slider-handle.round {
+  background:url(../images/slider-handle.png) no-repeat  0px 0px;display:block;height:26px;width:26px; 
+}
+.slider-handle.triangle {
+  background: transparent none;
+}

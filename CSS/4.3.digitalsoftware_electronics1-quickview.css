@@ -1,0 +1,74 @@
+﻿/* CSS Not in Use */ 
+div#minicatalog_content{width:765px;min-height:300px;margin:auto;padding:0}
+div#minicatalog_content div#productnavcontrol div.prevprodimg, div#minicatalog_content div#productnavcontrol div.nextprodimg{ top:119px; margin-bottom:10px;}
+div#minicatalog_content div#productnavcontrol{ clear:left; display:block; float:none; height:0px; padding:0;}
+div#minicatalog_content div#productnavcontrol a#nextproduct{ background:url(../images/icons_24bit.png) no-repeat -63px -294px; width:43px; height:64px; position:absolute; right:-3px; top:170px; text-indent:-9999px; border:none; padding:0px; z-index:15; opacity:0.3;}
+div#minicatalog_content div#productnavcontrol a#previousproduct{background:url(../images/icons_24bit.png) no-repeat 0 -294px;width:43px; height:64px; position:absolute; left:-10px; top:170px; text-indent:-9999px; border:none; padding:0px; z-index:15; opacity:0.3;}
+div#minicatalog_content div#productnavcontrol a#nextproduct:hover{opacity:1;}
+div#minicatalog_content div#productnavcontrol a#previousproduct:hover{opacity:1;}
+div#productnavcontrol a span.previousprodname,div#productnavcontrol span.previousprodname,div#productnavcontrol a span.nextprodname,
+div#productnavcontrol span.nextprodname
+{ font-size:11px; color:#882333; font-weight:700; width:250px;}
+div#minicatalog_content div#productnavcontrol div.prevprodimg span.previousprodname, div#minicatalog_content div#productnavcontrol div.nextprodimg span.nextprodname
+{ font-size:11px; color:#882333; font-weight:700; display:block; width:180px;}
+div#minicatalog_content div#productnavcontrol div.prevprodimg, div#minicatalog_content div#productnavcontrol div.nextprodimg{ top:119px; margin-bottom:10px;}
+div#minicatalog_content div#productnavcontrol{ clear:left; display:block; float:none; height:0px; padding:0;}
+div#minicatalog_content div#productnavcontrol a#nextproduct{ background:url(../images/icons_24bit.png) no-repeat -63px -294px; width:43px; height:64px; position:absolute; right:-3px; top:170px; text-indent:-9999px; border:none; padding:0px; z-index:15; opacity:0.3;}
+div#minicatalog_content div#productnavcontrol a#previousproduct{background:url(../images/icons_24bit.png) no-repeat 0 -294px;width:43px; height:64px; position:absolute; left:-10px; top:170px; text-indent:-9999px; border:none; padding:0px; z-index:15; opacity:0.3;}
+div#minicatalog_content div#productnavcontrol a#nextproduct:hover{opacity:1;}
+div#minicatalog_content div#productnavcontrol a#previousproduct:hover{opacity:1;}
+div#minicatalog_content div#productnavcontrol div.prevprodimg span.previousprodname, div#minicatalog_content div#productnavcontrol div.nextprodimg span.nextprodname
+{ font-size:11px; color:#882333; font-weight:700; display:block; width:180px;}
+body#quickview{background:#fff; }
+#minicatalog_content div#consumer-electronics1-quickview div#prodimages{ width: 275px !important;min-height:310px!important;}
+#minicatalog_content div#consumer-electronics1-quickview a.videoplayer { width: 270px !important;height:206px !important;display:block;}
+#minicatalog_content div#consumer-electronics1-quickview div#ProductVideos div.videocarousel { width:210px !important;}
+#minicatalog_content div#consumer-electronics1-quickview div.prodmainimage {min-height: 220px;border:none!important}
+#minicatalog_content div#consumer-electronics1-quickview ul.actionlinks input.addtocart_qty {	border: 2px solid #000000;float: left;font-size: 14px;font-weight: bold;height: 25px;line-height:25px;left: 20px;margin: 0px 10px 0 0;padding:0 5px;width: 35px;}
+#minicatalog_content div#consumer-electronics1-quickview ul.actionlinks ul.actionlinks a.addtocart { cursor: pointer;float: left;  margin-top: 3px; overflow: hidden;}
+#minicatalog_content div#consumer-electronics1-quickview ul.actionlinks li a.addtocart { cursor: pointer;float: left;  overflow: hidden;}
+#minicatalog_content div#consumer-electronics1-quickview ul.actionlinks a.addtofavorites {background: url(../images/icons.png) -88px 0 no-repeat;	border: medium none;cursor: pointer;display: inline-block;height: 18px;overflow: hidden;padding: 3px 0 0 22px;}
+#minicatalog_content div#consumer-electronics1-quickview ul.actionlinks a.sendtofriend {background: url(../images/icons.png) -88px -23px no-repeat;border: medium none;cursor: pointer;display: inline-block;height: 18px;overflow: hidden;padding: 3px 0 0 22px;}
+#minicatalog_content div#consumer-electronics1-quickview ul.actionlinks a.shareskuinfo {background: url(../images/icons.png) -88px -46px no-repeat;border: medium none;cursor: pointer;display: inline-block;height: 18px;overflow: hidden;padding: 3px 0 0 22px;}
+#minicatalog_content div#consumer-electronics1-quickview div#productdescriptions_placeholder, #minicatalog_content div#apparel1 dl#productdescriptions {width: 456px;float: right;margin:8px 0 0px;}
+#minicatalog_content div#consumer-electronics1-quickview ul.actionlinks {float: right !important; margin: 5px 0 0 7px; width: 452px;}
+#minicatalog_content div#consumer-electronics1-quickview ol.productlist ul.actionlinks {float: right !important; margin: 5px 0 0 7px; width: auto!important;}
+#minicatalog_content div#consumer-electronics1-quickview ul.actionlinks>li { float: left; margin: 0px 5px 5px 0;position:relative }
+#minicatalog_content div#consumer-electronics1-quickview dl#personalizeproduct {top:20px;width:400px;}
+#minicatalog_content div#consumer-electronics1-quickview div.column1 {width:453px;float:right;}
+#minicatalog_content div#maincontent  {width:748px!important; min-height: 410px; border-right:none;margin:0 10px;}
+#minicatalog_content div#maincontent h1  {float:left;line-height:26px}
+#minicatalog_content div#alternateimages_carousel { margin: 0px !important; width:220px;}
+#minicatalog_content div#consumer-electronics1-quickview div#alternateimages_carousel ol li {width: 75px !important;float: left !important;}
+#minicatalog_content div#consumer-electronics1-quickview div#color_swatch, #minicatalog_content div#apparel1 div#options {width: 90% !important;margin-top:0px;}
+#minicatalog_content div#consumer-electronics1-quickview div#proddetails {width: 390px !important;}   
+#minicatalog_content div#consumer-electronics1-quickview  ul.actionlinks a.addtocart_disabled { cursor: pointer; float: left; overflow: hidden;}
+#minicatalog_content div#consumer-electronics1-quickview span.wishlistmsg {width:100%; float:left; }
+#minicatalog_content div#consumer-electronics1-quickview .movetowishlist {margin-top:3px;background: url(../images/icons.png) no-repeat scroll 0 -1725px transparent;border: medium none;cursor: pointer;display: inline-block;float: none;height: 18px !important;overflow: hidden;padding: 0 0 0 22px !important;position: relative;text-indent: -9999; width:100px!important ;} 
+#minicatalog_content div#consumer-electronics1-quickview #addtocart {min-width:170px; float:left;}
+#minicatalog_content div#consumer-electronics1-quickview #messages {float:right; width: 206px; height:45px;}
+#minicatalog_content div#consumer-electronics1-quickview .MagicZoomBigImageCont {left:250px !important;}
+#minicatalog_content div#consumer-electronics1-quickview span.addtocart_successmsg {text-align:left !important;}
+#minicatalog_content div#consumer-electronics1-quickview span.rating {float: left;margin: 4px 0 0 10px;}
+#minicatalog_content div#consumer-electronics1-quickview div#color_swatch {min-height:105px;}
+#minicatalog_content .generalsporttingdescriptionquickview {height: 240px;overflow-x: hidden;overflow-y: auto;}
+.minitemplatecontainer .close {background: url(../images/icons.png) no-repeat scroll -2px -523px transparent; cursor: pointer;height: 30px; position: absolute;right: -10px;top: -10px;width: 30px;}
+#minicatalog_content div#consumer-electronics1-quickview dl#productdescriptions dd.panes {height: 262px;margin-right:2px;overflow-y:auto; width:434px;}
+#minicatalog_content div#consumer-electronics1-quickview div#alternateimages_carousel { padding:10px 0px 0 10px; }
+#minicatalog_content div#consumer-electronics1-quickview div#alternateimages_carousel ol img  {border:1px solid #1D6F9E}
+#minicatalog_content div#consumer-electronics1-quickview #productdescriptions{display:block}
+div#quickviewdiv{background:#f3f3f3; border:1px solid #B8CCD2}
+#minicatalog_content div#consumer-electronics1-quickview div#socialbookmarking div.bookmarkinglinks {top:370px;margin-left:-8px; left:428px;   } 
+#minicatalog_content div#consumer-electronics1-quickview div#alternateimages_carousel ol li img {border: 1px solid #7FBA78;cursor: pointer;height: auto;width: 45px;}
+#minicatalog_content div#productnavcontrol a#previousproduct span.prevarrow,#minicatalog_content div#productnavcontrol a#nextproduct span.nextarrow{display:none }
+.viewlinks ul.viewlinkslist .quickviewlink a {background: url(../images/icons.png) no-repeat scroll -90px -151px transparent;display:block;overflow: hidden;text-indent: -99999px;  width: 16px;}
+div#consumer-electronics1-quickview ol.qualifiers {clear: left; float: left; width: 328px;}
+div#consumer-electronics1-quickview ol.qualifiers li.heading {background: none!important;font-size: 12px; font-weight: 700; list-style-type: none; padding-left: 0;}
+div#consumer-electronics1-quickview ol.qualifiers li {background: url(../images/icons.png) no-repeat scroll 0 -2986px transparent;padding: 3px 0 0 12px;}
+#minicatalog_content div#consumer-electronics1-quickview ul.actionlinks li.cartline ol li.producthumb{float:left}
+#minicatalog_content div#consumer-electronics1-quickview ul.actionlinks li.cartline ol li.productdescription{float:right; width:260px; padding-right:90px}
+#minicatalog_content div#consumer-electronics1-quickview ul.actionlinks li.cartline ol li.accessoryprice{float:right;text-align:right}
+#minicatalog_content div#consumer-electronics1-quickview ul.actionlinks li .accessoryprice a.addtocart{display:none}
+div#consumer-electronics1-quickview ol.productlist li ol.skulist li.cartline ol li.productdescription a.accessorysku {color: #1D6F9E; font-size: 14px;}
+div#consumer-electronics1-quickview ol.productlist li ol.skulist li.cartline ol li.productdescription #skucode{padding-top:5px; display:block}
+div#consumer-electronics1-quickview table.quantitypricing{position:absolute; right:90px}

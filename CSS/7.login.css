@@ -1,0 +1,205 @@
+#accountcontainer .registration .emailnote{color:#aaa;float: left;font-size: 11px;font-weight: 100;margin: -5px 0 0 146px;}
+.errormsg, .infomsg, .requestapproval{margin: 5px 0;font-weight: 100 !important;text-align:left;}
+.requestapproval{clear: left;}
+a.loginFacebook {background:url(../../../templates/shared/images/socialsiteloginbutton_icons.png) no-repeat 0 -1px;display: inline-block;float:left;height:35px;margin-top:5px;margin-right:2px;text-indent: -9999px;width:40px;}
+a.loginGoogle{background:url(../../../templates/shared/images/socialsiteloginbutton_icons.png) no-repeat 0 -39px;display: inline-block;float:left;height:35px;margin-top:5px;margin-right:2px;text-indent: -9999px;width:40px;}
+a.loginTwitter {background:url(../../../templates/shared/images/socialsiteloginbutton_icons.png) no-repeat 0 -77px;display: inline-block;float:left;height:35px;margin-top:5px;margin-right:2px;text-indent: -9999px;width:40px;}
+#accountcontainer .socialmedia {clear: right;float: right;margin-right:15px;margin-top:5px;width:126px;}
+#checkoutlogin .socialmedia {float:left;margin-bottom:15px;}
+#checkoutlogin span.title,#accountcontainer span.title{clear: left;color:#0094BC;display: inline-block;float: left;font-weight: 700;width: 100%;}
+#accountcontainer span.title { text-align:right}
+#accountcontainer .registration li#requestapproval, #accountcontainer .registration li#forgotpassword, #accountcontainer .registration .errormsg, #accountcontainer .registration .successmsg{display: inline-block;font-weight: 100;margin: 5px 0;}
+#accountcontainer .registration li label em, .logprofile ul.logpasswrd li label em{background: url("../images/icons_24bit.png") no-repeat scroll 0 -490px transparent;color: #fff;display: inline-block;font-style: normal;font-weight: 700;padding-top: 4px;height: 24px;width: 25px;margin-right: 5px;text-align: center;}
+.logprofile ul.logpasswrd li select, #accountcontainer .registration li select{border: 1px solid #bbb;padding: 4px 2px;width: 252px;}
+#accountcontainer #FirstName{clear: both;width: 212px;float: left;}
+#accountcontainer #LastName{width: 212px;float: right;margin-left: 6px;}
+.registrationmesg{margin-bottom: 5px;}
+.registrationmesg span{clear: left;float: left;}
+.registrationmesg span#forgotpassword a, .registrationmesg span#requestapproval a{color: #1D6F9E;font-weight: 700;}
+#customerregistration li.pwd2{float:right;}
+
+/**************Forgot Password********/
+div#forgotpasswordcontainer{background: url("../images/groupimg.png") repeat scroll 0 0 #fff; border: 5px solid #dedede; display: none; min-height: 225px; width:500px; z-index: 14;padding: 15px;left:30%;}
+div#forgotpasswordcontainer .homesubtitles{margin-top:0;}
+div#forgotpasswordcontainer .close.cornorbtn{background: #197b30;
+    border-radius: 100px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 19px;
+    font-size: 10px;
+    cursor: pointer;
+    color: #fff;
+    float: right;
+    position: absolute;
+    right: 4px;
+    top: 4px;}
+div#forgotpasswordcontainer .close.cornorbtn:before {
+    content: "\f00d";
+    font-family: 'FontAwesome';
+}
+div#forgotpasswordcontainer .btn_close{display: inline-block;  font-size:24px;   padding:10px 20px; }
+div#forgotpasswordcontainer .btn.send{float: right;  font-size:24px;  padding:10px 20px;}
+div#forgotpasswordcontainer .fp_note{font-size:14px;}
+div#forgotpasswordcontainer ul.forgotpass{margin:10px 0 0 0;}
+div#forgotpasswordcontainer ul.forgotpass li{ margin:0; padding:0; }
+div#forgotpasswordcontainer ul.forgotpass li label{color: #000;font-size:13px; float:left; line-height:35px; text-transform:capitalize; width:30%;}
+div#forgotpasswordcontainer ul.forgotpass li .input_box{width:70%; float:right;position:relative;}
+div#forgotpasswordcontainer ul.forgotpass li.usrname {margin:10px 0 0; min-height:60px;}
+div#forgotpasswordcontainer ul.successmailsent{padding: 35px 0 0;}
+div#forgotpasswordcontainer ul.successmailsent li label{display: block;font-size: 20px;padding: 20px 0;width: 93%;color: green;font-weight: 100!important; text-align:center;}
+div#forgotpasswordcontainer ul.successmailsent li label#forgotpasswordsuccessmsg{width:100%;}
+div#forgotpasswordcontainer ul.successmailsent li a.btn.close{margin-top: 31px;}
+div#checkout div#checkoutlogin div#forgotpasswordcontainer ul.forgotpass li input, div#forgotpasswordcontainer ul.forgotpass li input{font-size:20px; width:100%;}
+div#forgotpasswordcontainer {position:fixed!important; top:25%!important}
+#onepagecheckout div#forgotpasswordcontainer {
+    position: absolute!important;
+    top: 10px!important;
+}
+div#forgotpasswordcontainer .field-validation-error{position:inherit;}
+div#forgotpasswordcontainer .field-validation-error span{border:0 none;  padding:0;}
+
+ 
+#checkout #checkoutlogin h4.rewarddisplay{color: #38610B;  font-size: 14px;font-weight: 100;padding: 10px 0 5px;} 
+/*-- Social network login  --*/
+#checkoutlogin .facebook,#accountcontainer .facebook, #checkoutlogin .google,#accountcontainer .google, #checkoutlogin .twitter,#accountcontainer .twitter {background:url(../../../templates/shared/images/socialsiteloginbutton_icons.png) no-repeat 0 0;display: inline-block;height:35px;margin-top:5px;margin-right:1px; padding:0;text-indent: -9999px;width:40px;}
+#checkoutlogin .facebook,#accountcontainer .facebook {background-position: 0 -1px;}
+#checkoutlogin .google, #accountcontainer .google {background-position: 0 -39px;} 
+#checkoutlogin .twitter,#accountcontainer .twitter {background-position: 0 -77px;}
+#accountcontainer .socialmedia {width:132px!important;text-align:right;}
+#checkoutlogin .socialmedia {float:left;margin-left:7px;width:132px;text-align:left;}
+#checkoutlogin span.title, #accountcontainer span.title{ float:left;clear:left; width:100%;}
+#checkoutlogin span.or, #accountcontainer span.or{ color:#0094BC; display: inline-block;  font-weight: 700; float:left; font-size:20px; width:30px; text-transform:uppercase; margin-left:20px;}
+#checkoutlogin span.or{margin-left:0;}
+#checkoutlogin span.loginwith, #accountcontainer span.loginwith{ color:#0094BC; display: inline-block; float:left; font-weight:normal; font-size:14px; width:60px; clear:right; line-height:26px; margin-left:5px;}
+#changeprovidermessage{background:#d9edf7; padding:10px; color:#31708f;}
+
+/*-- Login Page --*/
+#accountcontainer #acccontent{margin:0 0 20px;}
+#accountcontainer #customerlogin{min-height: 330px;}
+.login_box{background:#f9f9f9; border:1px solid #e1e1e1; padding:10px;}
+#accountcontainer .logpasswrd{width:100%;}
+#accountcontainer .logpasswrd li, #accountcontainer .registration li{min-height:70px;}
+#accountcontainer .logpasswrd li.email, #accountcontainer .registration li.email{clear:left;}
+#accountcontainer .logpasswrd li.errormsg, #accountcontainer .logpasswrd li.requestapproval{width:100%; margin-top:0; min-height:10px;}
+#acccontent label{color:#000;display:block; font-size:14px; margin-bottom:5px;}
+.registration input, .logpasswrd input{width:100%!important;}
+.logprofile ul.logpasswrd li label span, #accountcontainer .registration li label span{text-transform:capitalize; font-weight:bold;}
+#accountcontainer .logprofile a.login, #checkout #checkoutlogin a.login{ float:right; font-size:25px; font-weight:100; padding:5px 40px; padding:4px 40px 10px\9}
+#accountcontainer .logprofile a.forgotpassword { font-size:14px; line-height:33px;}
+#accountcontainer .logprofile a.forgotpassword:hover{color:#ee592b;} 
+.logpasswrd .field-validation-error{margin-left:0!important;}
+
+
+/*-- Error message --*/
+.field-validation-error{color:#FF0000;}
+
+/*-- Registration Page --*/
+
+#accountcontainer .registration li.name{clear:left;}
+.registration li.pwd1, .registration li.pwd2{width:49%;float: left;}
+input#register{ float:right; font-size:25px; padding:5px 40px;}
+ #checkout #checkoutlogin a.login{float:none;}
+
+/*-- Checkout Page  Login box --*/
+ #checkout #checkoutlogin .homesubtitles{display:none;}
+#checkout #checkoutlogin div#forgotpasswordcontainer .homesubtitles{display:block;}
+#checkout #checkoutlogin .login_box{background:none; border:0 none; padding:0;}
+ #checkoutlogin #customerlogin .login_box ul li{min-height:70px;}
+#checkoutlogin #customerlogin .logprofile ul li {min-height:80px;} 
+#checkoutlogin #customerlogin .logprofile ul li.errormsg{min-height:10px;}
+#checkout #checkoutlogin a.forgotpassword{display:block; font-size:14px; margin:10px 0 0;}
+.field-validation-error, .field-validation-error span{position:inherit; border:0 none; display:block; padding:0;}
+
+
+
+/*-- Checkoput page guest login box --*/
+#guest {border-left:1px solid #ccc; padding-bottom:20px;}
+div#checkout div#accordion h3.loginhead{color:#555; font-size:16px; padding:5px 0;}
+#guest .dyn_content ul li{list-style-type: disc;color: #555;margin-bottom: 6px;}
+#guest .dyn_content ul li.row5, #guest .dyn_content ul li.row6, #guest .dyn_content ul li.row7{display:none;}
+#guest p{color:#000;font-size: 13px; margin-bottom:10px;}
+#checkoutlogin a.purchaseguest{padding:10px 5px; font-size:24px;  color:#fff; margin-top:8px;width:300px;float: left;text-align: center;}
+#guest .dyn_content h4{display:none;}
+#guest .dyn_content ul{display:block;margin:0 0 10px 15px;}
+
+.homesubtitles {margin-top:18px;margin-bottom:16px;width:100%;text-align:left;}
+.homesubtitles p {background:#fff;font-family: montserratregular;
+    font-size: 28px;
+    color: #222;
+}
+.homesubtitles span {display:block;border-bottom:4px solid #555;height:47px;}
+.homesubtitles span span{display:inline; border:none; height:auto}
+
+
+@media (max-width:1024px){
+    div#forgotpasswordcontainer{left:25%!important;}
+}
+
+
+@media screen and (min-width:768px) {
+    #accountcontainer #customerregistration .rewardsregistration{background:#555;border-radius: 2px;color:#eee;font-size: 12px;padding:3px 3px 5px;position: absolute;right: 7px;text-align: center;top: 32px;width: 44%;}
+    .loginheader #header{ padding-top:52px;}
+   
+}
+@media (max-width:850px) {
+    div#forgotpasswordcontainer{left:18%!important;}
+    #accountcontainer #customerregistration .rewardsregistration{top:13px; width:25%}
+    #checkoutlogin a.purchaseguest{font-size: 20px;width: 100%;}
+}
+@media (max-width: 767px){
+    div#forgotpasswordcontainer {position:absolute!important;left: 5% !important;width:90%;}
+    #onepagecheckout div#forgotpasswordcontainer {width:190%;}
+    
+    .rewardsregistration{margin:-5px 0 10px}
+    .logo{text-align:center}
+    #logincontainer {
+        width: 90%;
+        left: 5%!important;
+    }
+    #checkoutlogin a.purchaseguest {
+        font-size: 17px;
+    }
+}
+@media screen and (max-width:615px) {
+    #accountcontainer #customerregistration .rewardsregistration{color: #f47302;margin-top:-12px; width:100%}
+    div#forgotpasswordcontainer{ top:20px!important}
+    
+}
+@media screen and (max-width:567px){
+    #guest {
+        border-width:1px 0 0;
+        border-color:#ccc;
+        border-style:solid;
+        margin: 10px 0 0;
+        padding: 20px 0 0;
+    }
+    #checkoutlogin a.purchaseguest {
+        font-size: 20px;
+        width: 300px;
+    }
+        div#forgotpasswordcontainer .btn_close{font-size:20px; padding:8px 15px;text-align: center; }
+    div#forgotpasswordcontainer .btn.send{font-size:20px; text-shadow:none; padding:8px 15px;}
+    #guest {border-top:1px solid #ccc; border-left:0 none; padding-top:20px; margin-top:20px;}
+    div#forgotpasswordcontainer {left: 5% !important; width: 90%!important;}
+    div#forgotpasswordcontainer ul.forgotpass li.usrname{min-height:100px;}
+    div#forgotpasswordcontainer ul.forgotpass li label, div#forgotpasswordcontainer ul.forgotpass li .input_box{width:100%; float:none;}
+}
+
+@media (max-width:479px) {
+    #checkoutlogin a.purchaseguest {
+        font-size: 18px;
+        width: 100%;
+    }
+    #onepagecheckout div#forgotpasswordcontainer {position:fixed!important;
+    }
+    div#forgotpasswordcontainer .btn.send,div#forgotpasswordcontainer .btn_close {font-size: 16px;}
+    .homesubtitles p {
+        font-size: 25px;
+    }
+    #accountcontainer .logprofile a.forgotpassword {font-size:13px}
+}
+@media (max-width:360px){
+        div#forgotpasswordcontainer { position:fixed!important; }
+}
+ 

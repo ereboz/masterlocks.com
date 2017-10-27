@@ -1,0 +1,568 @@
+﻿a#addline{display:block;float:left;margin-top:5px;}
+#accordion #acccontent a#fastcontchkout{float:right;font-size:0; margin:5px 0px;}
+#accordion #acccontent a#continuewithpaypal{margin:10px 10px 10px 5px}
+#accordion #acccontent div#transferordermsg{float:left}
+#accordion #acccontent div#transferordermsg span{display:block;margin:2px}
+a.searchskulink{/*background:#197b30 url("../images/searchIcons.png") no-repeat 0 0;    display: block; float: right; height: 25px;text-indent: -100000px; width: 25px; margin-top:2px;*/
+background: #197b30;
+margin-top:2px;
+margin-right:2px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 18px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #fff!important;
+    float: right;
+    text-decoration: none!important;
+    padding: 3px 0 0;
+}
+a.searchskulink:before {
+    content: "\f002";
+    font-family: 'FontAwesome';
+}
+#accordion #acccontent a.errorinfo{text-indent: -1000px; width: 20px; margin:5px -41px 5px 0; float:right;}
+#accordion span#ordernumber{color:#555;display:inline;font-size:16px;line-height:23px}
+div#checkout span#orderplacedby{color: #555;
+    display: inline;
+    float: right;
+    font-family: Arial,sans-serif !important;
+    font-size: 11px;
+    line-height: 23px;
+    right: 16px;
+    text-align: right;
+    text-transform: none;    
+    width: 57%;}
+a.fastcontchkout {cursor: pointer; display: inline-block; font-size: 25px; padding: 6px 25px; text-transform: uppercase;}
+/*expressorder header*/
+
+
+ul.express-order-header select, 
+ul.express-order-header input {width:auto; padding:1px;}
+ul.express-order-header select{margin:1px;}
+ul.express-order-header{background:#F3F3F3;display:inline-block; padding-top:2px;padding-bottom:2px;margin:1px 0;width:100%;}
+ul.express-order-header li:nth-child(2n+1){ width:30%}
+ul.express-order-header li:nth-child(2n+2){ width:50%}
+ul.express-order-header li:nth-child(2n+3){ width:20%}
+div#checkout #accordion ul.express-order-header li select{width:25%}
+div#checkout #accordion ul.express-order-header li input{width:17%}
+div#checkout #accordion ul.express-order-header li input[type=text]{width:10%}
+ul.express-order-header li label.numberofrows,
+ul.express-order-header li span:first-child{font-weight:700; margin-right:5px;}
+ul.express-order-header li input{background:#636160;display:inline-block;float:left; font-size:11px;border:1px solid #FFF;margin:1px 2px;padding:3px 8px}
+ul.express-order-header li input.enabled{color:#FFF;cursor:pointer}
+ul.express-order-header li input.disabled{cursor:inherit; background-color:#e1e1e1;}
+ul.express-order-header li input.currentpagetext{background:#fff;border:1px solid #000; width:24px; height:19px; margin-top:2px; padding:3px 0; text-align:center;}
+ul.express-order-header li span{float:left;display:block;font-size:13px;margin:2px;padding:2px 1px}
+ul.express-order-header li span#currentrange,
+ul.express-order-header li span#totalrows{padding:2px}
+div.table_head_holder{overflow:hidden; clear:left; float:left;position: relative;width:100%;}
+div.express-order-table{clear:left;border:#fff solid;border-width:0 0 0 1px;width:100%}
+div.express-order-table ul, div.table_head_holder ul{background:none!important;text-align:center;color:#000;border-bottom: 1px solid #ccc;}
+div.express-order-table ul li{text-align:center;border-right:1px solid #ccc;margin:0;}
+div.express-order-table ul li.LineImageUrl{height:50px;vertical-align:middle}
+div.express-order-table ul li.LineImageUrl div.LineImageUrl{vertical-align:middle}
+div.express-order-table ul li.SkuCode div.SkuCode input{width:73%!important;border:1px solid #E5E5E5;background:#fff;font-size:11px;  line-height:11px; text-align:left;}
+div.express-order-table ul li.SkuCode div.SkuCode input.disabled{border:0 none!important; /*font-size:11px!important;*/ width:100%!important;color:#000}
+div.express-order-table ul li.Quantity div.Quantity input{width:82%;border:1px solid #E5E5E5;font-size:11px;text-align:center;height:22px;margin:2px;}
+div.express-order-table ul li.UnitPrice{text-align:right;padding-right:2px; }
+div.express-order-table ul li.SkuName div.SkuName{text-align:left; padding-left:2px;}
+div.express-order-table .UnitPrice span {/*width:50%;*/ padding-right:5px; margin-top:0px;}
+div.express-order-table #expressorder_table_head-th-UnitPrice.UnitPrice span{padding:0}
+div.express-order-table .UnitPrice span.listprice {font-size:12px}
+div.express-order-table .UnitPrice span.listpricecontainer {text-decoration: line-through;}
+div.express-order-table a.attached{color: #039 !important; text-decoration:underline !important;}
+
+/*Order entry error msg */
+div#addlinediv{clear:left; float:left;position: relative;width:100%}
+div#addlinediv p{float: right; font-weight: 700;padding: 7px;}
+/*Order entry error msg */
+/* CSS for search SKU popup development*/
+.row-highlight{color:#555;background:#bbb;}
+.even_row{background:#F3F3F3;}
+.odd_row{background:#fff;}
+/*Skulookpu popup*/
+.ok{float:right;}
+div#checkout select#SearchType,
+div#checkout span.optional{ float:left;}
+div#checkout span.optional{ padding: 10px 6px 0 3px;}
+div#skulookupdiv{background-color:#fff; border:1px solid #CFCFCF; border-radius:10px; box-shadow:0 7px 13px 0; display:none; font-size:12px; padding:15px; left:10%!important; top:10%!important; width:80%; z-index:9999; position:absolute!important}
+div#skulookupdiv ul.header{font-size:18px; font-weight:700; overflow:hidden;}
+div#skulookupdiv ul.header li{width:30%; float:left; margin:0;}
+div#skulookupdiv ul.header li.skuscountmessage {float:left; display:block;color:#5A8205; font-size: 18px;font-weight: 700; text-align:right;width:70%;}
+div#skulookupdiv div#searchskutextboxcontainer {position: relative; margin: 8px 0 0 0; width:100%;}
+div#skulookupdiv div#textfieldcontainer,div#skulookupdiv div#buttoncontainer {float: left;}
+div#skulookupdiv div#textfieldcontainer{width:30%;}
+div#skulookupdiv div#textfieldcontainer input#searchkeyword{height:29px; margin-top:0; padding:4px 4px; width:99%;}
+div#skulookupdiv div#searchskutextboxcontainer input, 
+div#skulookupdiv div#searchskutextboxcontainer select {border: 1px solid #ccc;  font-size: 14px; margin: 2px 0;}
+div#skulookupdiv div#searchskutextboxcontainer select#SearchType,
+div#skulookupdiv div#searchskutextboxcontainer span.optional {float:left; padding:8px 8px 9px;}
+div#skulookupdiv div#searchresultcontainer {position: relative;  width:100%; margin: 8px 0 0;}
+div#skulookupdiv div#searchresultcontainer ul.actionlinks {float: left;width: 20%;}
+div#skulookupdiv div#buttoncontainer {font-weight:700;padding-left:7px;}
+div#skulookupdiv div#buttoncontainer a{border: 0 none; cursor: pointer;float:left;height:29px;padding: 7px 5px 4px;}
+div#skulookupdiv ul.search-sku-pagination-header{ background:#F3F3F3;border-color: #ccc #999; border-style: solid dotted; border-width: 1px; display:inline-block;margin: 8px 0;padding: 2px 0;width: 98%;}
+div#skulookupdiv #skucodecontainer ul li{display:block;}
+div#skulookupdiv ul li label.numberofrows{font-weight: 700;margin-right: 5px;}
+
+a.addtoquickorder {font-weight: 700; text-decoration: underline; width: 150px;}
+a.addtoquickorder:hover{ color:#000;text-decoration: none;}
+/*Skulookpu popup*/
+/*Express Order Entry Lookup*/
+#skucodecontainer .ui-widget-content{border:1px solid #bcbcbc;background:#fff;color:#333}
+#skucodecontainer .ui-autocomplete{cursor:default;left:0px!important;margin-left:-58px;min-width:457px;position:absolute;top:23px!important;z-index:8!important}
+#skucodecontainer .ui-autocomplete > li{float:none;color:#111; margin:0;}
+#skucodecontainer .ui-menu-item > a{border:none;color:#484848;padding-left:28px}
+#skucodecontainer .ui-menu{list-style:none;display:block;line-height:20px;margin:0}
+#skucodecontainer .ui-state-hover{color:#111;display:block;font-size:12px!important;background-color:#d1d1d1;text-decoration:none;}
+#skucodecontainer .searchtermhighlight{font-weight:700;color:#903}
+* html .ui-autocomplete{min-width:1px;}
+/*End Express Order Entry Lookup*/
+div#checkout span#quoteplacedby{display: inline;font-size: 14px; float:right; text-align: right;text-transform: capitalize;  color:#000;}
+div#checkout div#shippingcontainer div.customercomments{width:100%!important;clear:both!important; padding:2px 0 11px; margin:10px 7px;}
+#checkout textarea.ordercomments{height:80px; width:100%;margin:0;padding:10px; border:1px solid #e1e1e1; resize:none;}
+div#cartsummary ul.summaryofcharges li span.order_subtotal span{padding-left:10px;width: 50%!important;}
+div#cartsummary div#expressorderlist ul#listitemcontent li{display:block;float:left!important;font-size:12px;margin:3px 0 0}
+div#cartsummary div#expressorderlist ul#listitemcontent li ul.listitems a.transfertoorder{background:url(../images/transfericon.png) no-repeat 0 0 ;display:block;float:left;height:30px;margin-right:5px;text-indent:-99999px;width:30px}
+div#cartsummary div#expressorderlist ul#listitemcontent li a.editlist{float:left;padding-top:7px;width:210px}
+div#cartsummary div#expressorderlist ul#listitemcontent li ul.listitems{width:99%;}
+div#cartsummary div#expressorderlist ul#listitemcontent li ul.listitems li:last-child{float:right!important;}
+div#cartsummary div#expressorderlist div#creatlistcontainer{clear:both;margin-bottom:5px; padding-top:5px}
+div#cartsummary div#expressorderlist div#creatlistcontainer span{background:#f3f3f3;border:1px solid #ccc;clear:both;color:#777;display:block;font-size:11px;margin-top:5px;padding:5px}
+div#cartsummary div#expressorderlist div#creatlistcontainer a#createnewlist{float:right; margin-bottom:10px;font-size: 10px;
+    height: 24px;
+    line-height: 12px;
+    text-align: center;
+    padding: 6px 10px;}
+div#cartsummary div#expressorderlist div#createeditlistpopup label.error{color: #ff0000;
+    padding-left: 70px;
+    width: 100%;
+    padding-top: 2px;}
+div#cartsummary div#expressorderlist div.infopopup{background:none repeat scroll 0 0 #F3F3F3;border:1px solid #197b30;color:#000;left:20%!important;top:55px!important; margin:auto;min-height:130px;padding:20px 10px 10px;width:390px}
+div#cartsummary div#expressorderlist div.infopopup label{float:left;padding-right:5px;width:70px}
+div#cartsummary div#expressorderlist div.infopopup input{padding:2px; width:79%;border:1px solid #ccc}
+div#cartsummary div#expressorderlist div.infopopup textarea{min-height:150px;padding:2px; width:79%;border:1px solid #ccc}
+div#cartsummary div#expressorderlist div.infopopup a#saveSkuDetails{float:right;margin-right:5px;margin-top:5px;}
+div#cartsummary div#expressorderlist div.infopopup a#skudetailscancel,
+div#cartsummary div#expressorderlist div.infopopup a.cancel{float:right;margin:5px 11px 8px 0;}
+div#cartsummary div#expressorderlist div.infopopup div#savelistnote{border:1px solid #197b30;clear:right;color:#777;display:block;font-size:11px;margin:10px 10px 0 3px;padding:8px}
+div#cartsummary div#expressorderlist div.infopopup div#savelistnote span{background:url(../images/icons.png) no-repeat scroll 0 -1059px transparent;height:14px;padding-right:15px;text-indent:-99999px;width:12px}
+div#cartsummary div#expressorderlist a.close,div#checkout div#listcontainer div#failitemspopup a.close{margin:-2px -2px 0 0}
+div#cartsummary a.btn{  color: #fff !important; text-decoration: none !important;}
+
+/* quote */
+.orderlines{border:0 solid #115fab; border-top:0 none; }
+.orderlines #orderlines.orderlines{border:0 none;}
+div#orderlines div.itemdetails { border-left:1px solid #bcbcbc; border-right:1px solid #bcbcbc;}
+div#orderlines div.shoppingcart ul.head li{border-left: 1px solid #bcbcbc;  font-size: 13px;  font-weight: bold;  padding-bottom: 10px;  padding-top: 10px;  text-align: center; height:53px; display:table;}
+div#orderlines div.shoppingcart ul.head li span{ display:table-cell; vertical-align:middle;}
+div#orderlines div.shoppingcart ul.head li:first-child{ border:0px;}
+div#orderlines div.shoppingcart ul li.shoppingcol1{ text-align:center; cursor:pointer;}
+div#orderlines div.shoppingcart ul li.shoppingcol3, div#orderlines div.shoppingcart ul li.shoppingcol4, div#orderlines div.shoppingcart ul li.shoppingcol5{ text-align:right;}
+div#orderlines ul.singleproduct {background:#fafafa;}
+div#orderlines ul { border-bottom: 1px dotted #e5e5e5;}
+div#orderlines ul li{padding-bottom: 10px; padding-top: 10px;}
+div#orderlines div.shoppingcart .groupproductqoute .mainlines {float:left; padding:0; width:100%}
+div#orderlines div.shoppingcart .groupproductqoute .mainlines .divimage,
+div#orderlines div.shoppingcart .groupproductqoute .mainlines .showthisimage {float:left; width:66px;margin-right:5px; text-align:center;}
+div#orderlines div.shoppingcart .groupproductqoute .mainlines li {padding:2px}
+
+/* quote */
+#btnReApplyCoupon{float:left; height:28px; margin-left:5px; width:91px; text-indent:-9999px}
+#btnRemoveCoupon{clear:left;float:left; height:28px; margin:10px 0 0 5px!important; width:180px; text-indent:-9999px}
+#txtReApplyCouponcode{float:left; padding:2px; width:220px; margin-left:5px!important;}
+dl#lblOrderChangeMsg{margin:8px 0}
+dl#lblOrderChangeMsg dt{background:#1D6F9E;font-size:16px; font-weight:700; color:#FFF;padding:2px 4px;}
+dl#lblOrderChangeMsg dd{padding:6px 5px;}
+div#errormessageoverlay span#lblReApplyErrorMessage{float:left;padding-left:5px;}
+div#couponcode span#lblErrorMessage{clear:left;float:left;}
+/* End CSS for search SKU popup development*/
+
+div#checkout div.expressorderactionlinks a.placeorder{
+width: 163px;
+height: 43px;
+border: none;
+overflow: hidden;
+cursor: pointer;
+text-indent: -9999px;
+display: block;
+float: right;
+}
+
+a.lnkbtnRemoveCartItem,div.delete_row a.remove_item,div#skulookupdiv .close{background: #197b30;
+    border-radius: 100px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 10px;
+    cursor: pointer;
+    color: #fff!important;
+    text-decoration: none!important;
+    padding: 3px 0 0;
+    display: inline-block;
+}
+a.lnkbtnRemoveCartItem {padding-top:4px
+}
+div.delete_row a.remove_item {
+    width: 18px;
+    height: 18px;
+}
+div#skulookupdiv .close {position: absolute;
+    right: 3px;
+    top: 3px;
+    padding-top: 4px;
+}
+a.lnkbtnRemoveCartItem:before,div.delete_row a.remove_item:before,div#skulookupdiv .close:before {
+    content: "\f00d";
+    font-family: 'FontAwesome';
+}
+.loadingimg{background:url(../images/loading.gif) no-repeat scroll transparent}
+.checkoutbtn{color:transparent!important;float:left;margin-left:10px;padding:15px 0;text-indent:-9999px;text-transform:capitalize;width:161px}
+div#converttoorder div#shippingaddresslist h2{background:#61a8d5; color: #fff; font-weight:normal; font-size:17px; text-transform: uppercase;margin: 10px 0 0;padding:4px 10px;overflow:hidden;}
+div#converttoorder div#shippingaddresslist ul{ margin-left:6px;}
+div#converttoorder div#shippingaddresslist ul.shippingaddress li{ padding:2px 0}
+div#converttoorder div#shippingaddresslist input{background: none repeat scroll 0 0 transparent;border: 0 none;font-size: 12px;}
+div#converttoorder div.actionlinks{clear: right;float: right;margin: 8px 14px;}
+div#converttoorder div#accordion span#spanshowalllines{float:right; display:none;}
+div#converttoorder div#accordion a#showalllines, 
+div#converttoorder div.billingaddress p.sameasshipping{display:none;}
+div#converttoorder div#acccontent div#expressorder div.table_body_holder input{width:82%;border:0px;font-size:11px;text-align:center;height:22px;padding:2px;background-color:#F3F3F3;}
+div#converttoorder div#divpaymentcontainer .errmsg{display:block; padding:5px 0}
+div#billingaddress .dyn_content{float:left; margin-bottom:8px}
+div#checkout span#quotenumber{color:#F8E690;display:inline;font-size:16px;font-weight:700;line-height:23px}
+ul.securedlogo{padding-top:40px;margin-top:10px; border-top: 1px dashed #CFCFCF;}
+ul.securedlogo li{float:left; padding-right:30px;}
+p.securetext{clear:both;color:#000099;font-size:11px}
+div#converttoorder div.actionlinks a.payconverttoorder {font-size:18px;  padding: 10px 20px; float:right; text-align: center; margin:0 10px 15px 0;}
+div#converttoorder div.actionlinks a.processingorderblock{border: 0 none;cursor: pointer;display: block;height: 42px;overflow: hidden;text-indent: -9999px; width:138px;}
+div#converttoorder div.actionlinks a.payconverttoorder_disabled{background-color:#ccc; color:#999; font-size:18px;  padding: 10px 20px; text-align: center; cursor:inherit;} 
+
+
+/*Order Comments for Edit Quote starts*/
+div#checkout #editquote div.quoteactionlinks a.saveandclose {font-size:18px;  padding: 10px 20px; float:right; margin-top:10px; text-align: center;}
+div#checkout #editquote div.quoteactionlinks a.saveandclose_disabled{background-color:#ccc; color:#999; font-size:18px;  padding: 10px 20px; text-align: center; cursor:inherit;}
+div#checkout #editquote .ordercomments{ float:none; width:98%!important;}
+div#checkout #editquote div.quoteactionlinks a.cancel{background:#61a8d5; color:#fff; font-size: 18px;padding: 10px 20px; text-align: center;  display:inline-block; float:right; margin: 0 5px 0 0;}
+div#checkout #editquote div.quoteactionlinks a.cancel:hover{background:#449ad1;}
+div#checkout h2.ui-editquote-header {background:#f3f3f3;  border: 1px solid #bed2d7;  font-size: 16px;  font-weight: bold;  margin-top: 1px; padding: 4px 11px;  position: relative;  text-transform: uppercase; width: 100%;}
+div#checkout div.editlistcontainer, div#checkout div.editshippingcontainer, div#checkout div#converttoorder div#paymentcontainer { background: url("../images/groupimg.png") repeat scroll 0 0 transparent;   display:inline-block;    margin-bottom: 2px; width:100%; border-bottom: 1px solid #ccc; border-left: 1px solid #ccc; border-right: 1px solid #ccc; margin-bottom: 3px;}
+#editorder #listcontainer,#editorder div#paymentcontainer,#editorder div#paymentcontainerwithlinks{background:none}
+#editorder #acccontent{border:0;width:100%}
+#editorder ul.express-order-header{background:#F3F3F3;float:left;width:100%;padding-top:2px;padding-bottom:2px;margin:1px 0}
+#editorder ul.express-order-header li{float:left;margin:0 0 0 14px}
+#editorder ul.express-order-header li input{background:#636160;float:left;display:block;font-size:11px;border:1px solid #FFF;margin:1px 2px;padding:3px 8px}
+#editorder ul.express-order-header li input.enabled{color:#FFF;cursor:pointer}
+#editorder ul.express-order-header li input.disabled{cursor:inherit; background-color:#e1e1e1;}
+#editorder ul.express-order-header li input.currentpagetext{background:#fff;border:1px solid #000;font-size:13px;width:8px;height:13px;margin-top:2px}
+#editorder ul.express-order-header li span{float:left;display:block;font-size:13px;margin:2px;padding:2px 1px}
+#editorder ul.express-order-header li span.currentrange,
+#editorder ul.express-order-header li span#currentrange,
+#editorder ul.express-order-header li span#totalrows{padding:2px}
+#editorder div#messagediv{display:none;}
+#editorder div#messagediv span{background: none repeat scroll 0 0 #F3F3F3;color: #FD0404;float: left;margin: 5px 0 -3px;padding: 2px 10px;width: 97%;}
+#editorder div.table_head_holder{overflow:hidden; clear:left; float:left;position: relative;width:100%;}
+#editorder div.table_body_holder{clear:left; float:left;position: relative;width:100%;}
+#editorder div.table_body_holder input{width:82%;border:1px solid #E5E5E5;font-size:11px;text-align:center;height:22px;padding:2px}
+#editorder div.express-order-table ul li{text-align:center;border:#fff solid;border-width:0 1px 1px 0;margin:0;}
+#editorder div.express-order-table ul li.LineImageUrl{height:50px;vertical-align:middle}
+#editorder div.express-order-table ul li.LineImageUrl div.LineImageUrl{vertical-align:middle}
+#editorder div.express-order-table ul li.SkuCode div.SkuCode input{*float:left;width:73%!important;border:1px solid #E5E5E5;background:#fff;font-size:11px;height:22px;text-align:left;}
+#editorder div.express-order-table ul li.SkuCode div.SkuCode input.disabled{border:none}
+#editorder div.express-order-table ul li.Quantity div.Quantity input{width:82%;border:1px solid #E5E5E5;font-size:11px;text-align:center;height:22px;margin:2px;}
+#editorder div.express-order-table ul li.SkuName div.SkuName{text-align:left;}
+#editorder div.express-order-table tr{background:#F3F3F3;text-align:center;color:#000}
+div#checkout div#listcontainer div#acccontent div#expressorder div.express-order-table{clear:left;border:0;width:100%}
+/*.lineimage {width:45px}*/
+
+#expressorder ul{float: left;width:100%;}
+#expressorder ul li{float: left; display:table}
+#expressorder ul li div{display:table-cell; vertical-align:middle}
+div#messagediv{display:none;}
+div#messagediv span{background: none repeat scroll 0 0 #F3F3F3;color: #FD0404;float: left;margin: 5px 0 -3px;padding: 2px 10px;width: 97%;}
+
+#expressorder_table_head-th-1-dt-label, #expressorder_table_head-th-4-dt-label,
+#expressorder_table_head-th-5-dt-label, #tablecontainer_table_head-th-4-dt-label{cursor:pointer;text-decoration:underline}
+span.ascending, span.descending {text-decoration:none;cursor:pointer;}
+
+#expressorder_table_head-th-delete_row{height:30px}
+div#checkout #accordion div.expressorderfooter{border-top:1px solid #CCC;clear:left;float:left;width:100%}
+
+div#skulookupdiv ul li#liaddtoorder { margin:0px; }
+#expressorder_pagination_header{float:left; width:100%; margin:5px 0 4px 0;}
+div#skulookupdiv .infomsg{color:#f00;}
+#tablecontainer_table_body,.overview {width:100%}
+
+
+
+#expressorder #expressorder_pagination_rpp{float:left; width:30%}
+#expressorder #expressorder_pagination_rpp label { padding:0px 2px 0 4px;}
+#expressorder #expressorder_pagination_rpp select{width:56px!important;padding:3px 1px!important; margin:0 0 0 2px;}
+#expressorder #expressorder_pagination_prev_next{float:left; width:52%}
+#expressorder #expressorder_pagination_prev_next input[type=button]{ padding:2px 0; width:18.2%; margin-right:1px; border:1px solid #fff;}
+#expressorder #expressorder_pagination_prev_next input.disabled{background:#e1e1e1;color: #555;}
+#expressorder #expressorder_pagination_prev_next input.disabled:hover{background:#e1e1e1; color:#555;}
+#expressorder #expressorder_pagination_prev_next input.enabled:focus,#expressorder #expressorder_pagination_prev_next input.enabled:hover{background:#636160;}
+#expressorder #expressorder_pagination_prev_next input.enabled{color:#fff; cursor:pointer; background:#197b30;}
+div#checkout #accordion input.currentpagetext{width:25px; padding:4px; margin-left:4px;}
+#expressorder #expressorder_pagination_view{float:left; width:18%}
+#expressorder #expressorder_pagination_view span,#expressorder #expressorder_pagination_prev_next span,#expressorder #expressorder_pagination_prev_next input{float:left; height:28px; margin-right:1px;}
+#searchresultcontainer #tablecontainer_pagination_prev_next .currentpagetext{height:25px; margin-top:1px;}
+#expressorder_pagination_header span{margin:0 5px; line-height:27px}
+#expressorder_pagination_header span#totalpagecount_expressorder{width:20px;}
+#tablecontainer .mobile_heading {display:none}
+#tablecontainer ul{float: left;width:100%;}
+#tablecontainer ul li{float: left; display:table}
+#tablecontainer ul li div{display:table-cell; vertical-align:middle}
+div#messagediv{display:none;}
+div#messagediv span{background: none repeat scroll 0 0 #F3F3F3;color: #FD0404;float: left;margin: 5px 0 -3px;padding: 2px 10px;width: 97%;}
+ul#expressorder_table_head_thead_row{background:#636160!important}
+ul#expressorder_table_head_thead_row li{border-right:1px solid #FFF;text-align:center;color:#FFF}
+#tablecontainer_table_head_holder ul li,#tablecontainer_table_body_holder ul li{width:15%}
+
+#tablecontainer_table_head-th-delete_row{height:30px}
+
+#tablecontainer_table_head ul li,#tablecontainer_table_body ul li{padding:5px;}
+#tablecontainer_table_head ul li.Code, #tablecontainer_table_body ul li.Code {width:17%; word-break:break-all;}
+#tablecontainer_table_head ul li.qty, #tablecontainer_table_body ul li.qty {width:10%}
+#tablecontainer_table_head ul li.Name, #tablecontainer_table_body ul li.Name {width:27%}
+#tablecontainer_table_head ul li.RetailPrice, #tablecontainer_table_body ul li.RetailPrice {width:12%}
+#tablecontainer_table_head ul li.UOM, #tablecontainer_table_body ul li.UOM {width:15%}
+#tablecontainer_table_head ul li.InventoryMessage, #tablecontainer_table_body ul li.InventoryMessage {width:19%}
+#tablecontainer_pagination_header{float:left; width:100%; margin:5px 0 4px 0;}
+#searchresultcontainer #tablecontainer_pagination_rpp{float:left; width:30%}
+#searchresultcontainer #tablecontainer_pagination_header span{margin:0 5px; line-height:27px}
+#searchresultcontainer #tablecontainer_pagination_rpp select{width:60px!important;padding:2px 4px!important; margin:0 0 0 2px;}
+
+#searchresultcontainer #tablecontainer_pagination_prev_next{float:left; width:50%}
+#searchresultcontainer #tablecontainer_pagination_prev_next input[type=button]{ padding:4px 0; width:17.2%; margin-right:1px; border:1px solid #fff;}
+#searchresultcontainer #tablecontainer_pagination_prev_next input.disabled{background:#e1e1e1;color: #555;}
+#searchresultcontainer #tablecontainer_pagination_prev_next input.disabled:hover{background:#e1e1e1; color:#555;}
+#searchresultcontainer #tablecontainer_pagination_prev_next input.enabled:focus,#searchresultcontainer #tablecontainer_pagination_prev_next input.enabled:hover{background:#636160;}
+#searchresultcontainer #tablecontainer_pagination_prev_next input.enabled{color:#fff; cursor:pointer; background:#197b30;}
+
+#searchresultcontainer #accordion input.currentpagetext{width:25px; padding:0px;}
+#searchresultcontainer #tablecontainer_pagination_view{float:left; width:20%}
+#searchresultcontainer #tablecontainer_pagination_view span,#searchresultcontainer #tablecontainer_pagination_prev_next span,#searchresultcontainer #tablecontainer_pagination_prev_next input{float:left;margin-right:1px;}
+#tablecontainer_table_body li{padding:0 2px; text-align:center; border:solid #eee; border-width:0 0 0 1px}
+#tablecontainer_table_body li.Code{border-left:none;}
+#tablecontainer_table_body .RetailPrice{text-align:right}
+#tablecontainer_table_body .Name{text-align:left}
+#tablecontainer_table_body .Code{text-align:left}
+#tablecontainer_pagination_header .currentpagetext{margin-left: 5px;padding:3px;text-align: center;width: 30px;}
+#tablecontainer_pagination_header #totalpagecount_tablecontainer{margin-right:5px!important;}
+div#checkout div.ui-accordion #expressorderlines div.ui-accordion-content {border:none;}
+.table_row_blank a.remove_item{display:none!important}
+#checkout .column2{position:static}
+#tablecontainer ul li div input.cartlineaddtrigger{text-align:center; width:34px;}
+div#skulookupdiv div#searchskutextboxcontainer select#SearchType {padding:3px;}
+div#cartsummary div#expressorderlist div.infopopup ul li{margin-bottom:5px;width: 100%;}
+.container{ position:relative;}
+div#orderlines div.shoppingcart ul li .mobile_title{ display:none;}
+#checkout_content{margin-top:15px;}
+ 
+.scrollbar.disable{display:none;}
+div#tablecontainer_table_body_holder .viewport {clear:left;  height:400px; overflow: hidden; position: relative; }
+div#tablecontainer_table_body_holder .overview { list-style: none; position: absolute; left: 0; top: 0; padding: 0; margin: 0; }
+div#tablecontainer_table_body_holder .scrollbar{ background-color:#e1e1e1; position: absolute; top:75px; right:-10px; background-position: 0 0;  width:10px; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; padding:0; z-index:1 }
+div#tablecontainer_table_body_holder .track { height: 330px; width:10px; position: relative; }
+div#tablecontainer_table_body_holder .thumb { background-color:#666; height:20px; width:10px; cursor: pointer; overflow: hidden; position: absolute; top: 0; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;}
+div#tablecontainer_table_body_holder .thumb .end { display:none; overflow: hidden; height: 5px; width: 25px; }
+#expressorder_table_head_holder li.UnitPrice {text-align:right}
+
+@media screen and (min-width: 1024px){
+    div#orderlines div.shoppingcart ul li.shoppingcol1{ width:11.6667%;}
+div#orderlines div.shoppingcart ul li.shoppingcol2{ width:38.3333%; text-align:left;}
+
+}
+@media screen and (max-width: 1024px){
+div.express-order-table ul li.SkuCode div.SkuCode input, #editorder div.express-order-table ul li.SkuCode div.SkuCode input{height:25px; width:62%!important;}
+
+#expressorder_pagination_header {margin-top:22px}   
+}
+@media screen and (min-width: 768px){
+ul#expressorder_table_head_thead_row li, ul#tablecontainer_table_head_thead_row li{background:#636160;border-right:1px solid #FFF;text-align:center;color:#FFF}
+ul#tablecontainer_table_head_thead_row li{border-left:1px solid #ccc; border-right:0}
+#expressorder_table_head_holder ul li,#expressorder_table_body ul li{width:17%}
+#expressorder_table_head_holder ul li:first-child,#expressorder_table_body ul li:nth-child(2){width:10%}
+#expressorder_table_head_holder ul li:last-child,#expressorder_table_body ul li:last-child{width:5%;border-right:0}
+#expressorder_table_head_holder ul li:nth-child(3),#expressorder_table_body ul li:nth-child(6),#expressorder_table_head_holder ul li:nth-child(6),#expressorder_table_body ul li:nth-child(12){width:8%}
+#expressorder_table_head_holder ul li:nth-child(4),#expressorder_table_body ul li:nth-child(8){width:34.9%}
+#expressorder_table_body ul li:nth-child(6) input{width:80%!important; text-align:center;}
+div#cartsummary div#expressorderlist ul#listitemcontent > li{width:100%; float:none}
+#expressorder_table_body ul li#table_row_9-col-SkuCode .SkuCode input[type="text"], #expressorder_table_body ul li#table_row_9-col-Qty input[type="text"]{height:25px;}
+}
+@media screen and (min-width: 768px) and (max-width:1190) {
+    div#checkout span#orderplacedby {
+        position: absolute;
+        top: 32px;
+    }
+}
+@media screen and (min-width: 720px) and (max-width: 952px) {
+#expressorder #expressorder_pagination_prev_next{width:56%}
+#expressorder #expressorder_pagination_view{width:19%}
+#expressorder_table_head_holder ul li:last-child,#expressorder_table_body ul li:last-child{width:6.5%}
+#expressorder_table_head_holder ul li:nth-child(3),#expressorder_table_body ul li:nth-child(6),#expressorder_table_head_holder ul li:nth-child(6),#expressorder_table_body ul li:nth-child(12){width:8%}
+#expressorder_table_head_holder ul li:nth-child(4),#expressorder_table_body ul li:nth-child(8){width:33.5%}
+}
+@media screen and (max-width: 800px){
+    #expressorder #expressorder_pagination_view{display:none;}
+    #expressorder #expressorder_pagination_rpp{width:35%}
+    #expressorder #expressorder_pagination_prev_next{width:65%}
+    div#checkout span#orderplacedby{float:right; text-align:right; width:50%;}
+    div#skulookupdiv{width:90%; left:5%!important}
+    
+    div#cartsummary div#expressorderlist ul#listitemcontent li a.editlist{width:170px}
+    #searchresultcontainer #tablecontainer_pagination_rpp select{height:27px; padding-bottom:3px;}
+    #expressorder #expressorder_pagination_rpp label{font-size:85%}
+}
+
+@media screen and (min-width: 768px) {
+    #expressorder .mobile_heading{display:none}
+    .even_row equalheightcontainer{width:50%}
+    div.express-order-table ul li {min-height:46px;
+    }
+}
+@media screen and (max-width: 768px) {
+    div.express-order-table ul li.SkuCode div.SkuCode input, #editorder div.express-order-table ul li.SkuCode div.SkuCode input{ width:65%!important;}
+}
+
+@media screen and (max-width:767px) {
+   #expressorder_table_head_holder,#tablecontainer_table_head_holder, #searchresultcontainer #tablecontainer_pagination_view{display:none}
+   #expressorder_table_body ul, #tablecontainer_table_body ul{background:#f3f3f3;border: 1px solid #dddddd;margin-bottom: 5px;padding: 5px;position: relative;}
+   #expressorder_table_body ul li,#tablecontainer_table_body ul li {width:70%!important; border:none; height:auto!important; margin-bottom:5px; text-align:left}
+   #expressorder_table_body ul li.mobile_heading,#tablecontainer_table_body ul li.mobile_heading{display:block; text-align:left; width:30%!important;clear:both}
+   #expressorder_table_body ul li.delete_row{position:absolute; top:5px; right:5px; width:30px;}
+   div.delete_row a.remove_item{ float:right;}
+   #expressorderlines #listcontainer{ border:0px; background:none;}
+   #expressorder_table_body ul li.ProductImageURL.mobile_heading,#expressorder_table_body ul li.ProductImageURL{display:none}
+   #expressorder_table_body ul li.Qty input,#tablecontainer_table_body ul li.Qty{width:40px!important; text-align:center; padding:0;}
+   .table_row_blank .UnitPrice, .table_row_blank .UOM, .table_row_blank .delete_row {display:none!important;}
+   div#checkout #accordion .SkuCode input[type="text"]{width:92%!important; padding-left:0px;}
+   div.express-order-table .UnitPrice span{float:left; width:auto}
+   div#checkout #accordion .SkuCode input.disabled{background:none; color:#000; font-size:13px;margin-top:-2px; color:#ccc\9; margin-top:-5px\9; vertical-align:top}
+   div#checkout h2.ui-state-active{overflow:hidden; text-align:left}
+   div#checkout span#orderplacedby{width:100%; text-align:left; float:none; display: block;}
+   div.express-order-table ul li.SkuName div.SkuName{padding-left:0px;}
+   #expressorder_table_body ul li.Qty input, #tablecontainer_table_body ul li.Qty{margin-left:1px;}
+   #tablecontainer_table_body ul li{padding:5px;}
+   #tablecontainer_table_body ul li.Code,#tablecontainer_table_body ul li.qty,#tablecontainer_table_body ul li.Name,#tablecontainer_table_body ul li.RetailPrice,#tablecontainer_table_body ul li.UOM,#tablecontainer_table_body ul li.InventoryMessage {width:70%}
+   #tablecontainer_table_body ul li.Code.mobile_heading,#tablecontainer_table_body ul li.qty.mobile_heading,#tablecontainer_table_body ul li.Name.mobile_heading,#tablecontainer_table_body ul li.RetailPrice.mobile_heading,#tablecontainer_table_body ul li.UOM.mobile_heading,#tablecontainer_table_body ul li.InventoryMessage.mobile_heading {width:30%}
+   #tablecontainer_table_body .RetailPrice{text-align:left}
+   div#skulookupdiv ul.header li{width:100%}
+   #expressorder_table_body ul li, #tablecontainer_table_body ul li{padding:0;}
+   div#skulookupdiv div#textfieldcontainer{width:100%;}
+   div#skulookupdiv div#searchresultcontainer ul.actionlinks{width:100%}
+   div#skulookupdiv div#buttoncontainer{padding-left: 0;
+    margin-top: 7px;
+    clear: both;}
+   #searchresultcontainer #tablecontainer_pagination_prev_next{width:60%}
+   #searchresultcontainer #tablecontainer_pagination_rpp{width:38%}
+   .add_row_button .add_row_button_link{display:block;}
+   div#cartsummary div#expressorderlist ul#listitemcontent > li{width:100%; float:none}
+   #searchresultcontainer #tablecontainer_pagination_header span{line-height:24px;}
+   #tablecontainer_pagination_header .currentpagetext{padding:4px;}
+   div#skulookupdiv div#searchskutextboxcontainer select#SearchType{padding:3px 0;}
+   #searchresultcontainer #tablecontainer_pagination_rpp select{font-size:92%}
+   #searchresultcontainer #tablecontainer_pagination_rpp select{padding:2px 4px;}
+   .listpricecontainer{color:#555}
+   #cartsummary{margin-top:5px;}
+   #expressorder #expressorder_pagination_rpp,#expressorder #expressorder_pagination_prev_next{width:100%; margin-top:5px;}
+   #checkout a.multishipfastcontchkout, #checkout a.backbtn{ font-size: 14px; padding:13px 10px 14px;}
+   #checkout a.fastcontchkout, div#checkout div.actionlinks a.placeorder{ font-size:21px; padding:9px 15px;}
+   #accordion #acccontent a#continuewithpaypal{ margin-top:0px;}
+   div#orderlines div.shoppingcart ul.head li{ padding:0px 3px; font-size:12px;}
+   div#checkout span#quoteplacedby{  display:block; text-align:left; float:none;}
+   div#skulookupdiv ul.header li.skuscountmessage{width:100%; text-align:left}
+   #tablecontainer_table_head-th-qty.qty.mobile_heading label{line-height:25px;}
+   #expressorder_table_head-th-Qty.Qty.mobile_heading label{line-height:30px;}
+    #expressorder #expressorder_pagination_rpp select {width:65px!important}
+}
+
+@media screen and (max-width:667px) {
+    div#tablecontainer_table_body_holder .viewport{width:98%;}
+    div#tablecontainer_table_body_holder .scrollbar{top:51px;}
+}
+
+@media screen and (max-width:600px) {
+    div#skulookupdiv{padding:10px;}
+
+    #searchresultcontainer #tablecontainer_pagination_prev_next input[type=button]{font-size:90%}
+    div#skulookupdiv{width:86%; left:6%!important}
+    div#skulookupdiv div#textfieldcontainer input#searchkeyword{font-size:11px; width:100%}
+    #searchresultcontainer #tablecontainer_pagination_rpp select{padding:3px 4px!important}
+    div#checkout div.errormessageoverlay{position:fixed!important}
+    div#tablecontainer_table_body_holder .scrollbar{top:11.2%}
+}
+
+@media screen and (max-width:568px){
+    div#skulookupdiv div#buttoncontainer a{margin-left:3px; padding-left:7px; padding-right:7px;}
+   
+}
+
+
+@media screen and (max-width:480px) {
+    div#skulookupdiv div#textfieldcontainer input#searchkeyword{font-size:12px;}
+    div#tablecontainer_table_body_holder .viewport{height:auto\9;}
+    div#tablecontainer_table_body_holder .overview{position:inherit\9;}
+    div#tablecontainer_table_body_holder .scrollbar{display:none\9;}
+    #exposeMask{height:auto\9!important; height:100%\9!important; position:fixed\9!important;}
+    #expressorder #expressorder_pagination_view{display:none}
+    #expressorder #expressorder_pagination_prev_next input[type="button"]{padding:4px 0; width:17.4%}
+    div#checkout #accordion input.currentpagetext{margin-left: 5px;padding: 4px;width: 30px;}
+    #expressorder_pagination_header span{line-height: 26px;margin: 0 5px !important;}
+    div#skulookupdiv{width:90%; left:23px!important; top:30px!important}
+    div#skulookupdiv div#buttoncontainer{margin-top:0px; padding-left:0;}
+    div#skulookupdiv div#buttoncontainer a{margin-top:5px; width:44.8%;}
+    div#skulookupdiv div#buttoncontainer{width:100%;}
+    div#skulookupdiv div#searchskutextboxcontainer span.optional{margin-top:5px;}
+    #searchresultcontainer #tablecontainer_pagination_prev_next, #searchresultcontainer #tablecontainer_pagination_rpp{width:100%; margin-top:10px}
+    div#skulookupdiv div#searchresultcontainer ul.actionlinks{width:auto}
+    #searchresultcontainer #tablecontainer_pagination_prev_next input[type="button"]{font-size:100%}
+    #tablecontainer_pagination_header .currentpagetext{padding:5px;}
+    #searchresultcontainer #tablecontainer_pagination_header span{line-height:26px;}
+    div#skulookupdiv div#searchskutextboxcontainer select{margin-left:1px; padding:2px 0;}
+    
+    div#cartsummary div#expressorderlist div.infopopup{width:90%; left:5%!important}
+    div#cartsummary div#expressorderlist div.infopopup input,div#cartsummary div#expressorderlist div.infopopup textarea{width:70%}
+    div#tablecontainer_table_body_holder .scrollbar{top:20%}
+    div#orderlines div.shoppingcart ul.head, div#orderlines div.shoppingcart ul li.shoppingcol1{ display:none;}
+    div#orderlines div.shoppingcart ul li .mobile_title {float: left; font-weight: bold;  width: 30%; display:block;}
+    div#orderlines div.shoppingcart ul li.shoppingcol2 > a{ float:left; width:70%;}
+    div#orderlines div.shoppingcart ul li{ text-align:left!important;}
+    #checkout h2.ui-state-active{ font-size:11px;}
+    div#skulookupdiv .infomsg{display:block; text-align:center;}
+    div#checkout #accordion .SkuCode input[type="text"]{width:89.9%!important;}
+}
+
+@media screen and (max-width:479px) {
+    div#skulookupdiv div#buttoncontainer a{    width: 100%;
+    text-align: center;margin-left:0}
+    div#skulookupdiv div#buttoncontainer a#historysearch{margin-top:0;}
+    div#skulookupdiv div#searchskutextboxcontainer span.optional{    display: block;
+    float: none;
+    margin: 0px auto;
+    text-align: center;
+    clear: both;}
+    div#skulookupdiv div#searchresultcontainer ul.actionlinks{width:auto;float:none; text-align:center}
+    #tablecontainer_pagination_header .currentpagetext{padding:3px;}
+    div#skulookupdiv div#searchskutextboxcontainer select{margin-left:1px}
+    #expressorder_pagination_header span#totalpagecount_expressorder{width:18px}
+    div#skulookupdiv div#searchskutextboxcontainer select#SearchType{padding:2px}
+    div#checkout #accordion .SkuCode input[type="text"] {
+    width: 82.9%!important;
+    }
+   
+}
+@media screen and (max-width:375px){
+    div#checkout #accordion .SkuCode input[type="text"]{width:80%!important;}
+}
+
+@media screen and (max-width:360px){
+    
+    #expressorder_table_body ul li.mobile_heading, #tablecontainer_table_body ul li.mobile_heading{width:40%!important;}
+    #expressorder_table_body ul li, #tablecontainer_table_body ul li{width:60%!important;}
+}
+
+ 

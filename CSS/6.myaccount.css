@@ -1,0 +1,1045 @@
+﻿div#breadcrumbnav{float: none; margin:10px 0; max-width: 100%; width: 100%;}
+table{border-collapse: collapse; width:100%; font-size:12px;}
+#account_content {margin-bottom:30px;}
+#accleftnav{float: left; height: auto; padding-top: 22px; width: 220px;}
+#accleftnav dl{ float: left; margin: 0; padding: 0; width: 100%;}
+#acctitle{background: #1D6F9E; color: #fff; float: left; font-size: 13px; font-weight: 700; margin: 0 0 2px; padding: 7px 10px 4px; width: 200px;}
+#accleftnav dt.listname, #accleftnav li.listname{color: #000; cursor: pointer; float: left; font-size: 13px; font-weight: 700; height: 18px; margin: 0; padding: 2px 0; text-decoration: underline; text-indent: 10px; width: 100%;}
+#accleftnav dd.listdefined, #accleftnav dd.listdefined ul, #accleftnav{    float: left;    margin: 0;    padding: 2px 0 3px;}
+#accleftnav li{float: left; height: auto; margin: 1px; padding: 2px 4%; width: 190px;}
+#acccontent {min-height:510px; padding-bottom:10px}
+#acccontent .changelogin #acchelp p{margin:inherit; padding:inherit;}
+#accdashboard input{border: 1px solid #bcbcbc;}
+#accp strong{color: #555; font-size: 12px; font-weight: 700; margin-top: 5px;}
+/*Search box */
+#accsearchbg{font-size:18px; margin-bottom:10px;}
+#accsearchbg h4, #accsearchbg .go,#accsearchbg .searchval,#accsearchbg .error {float: left;}
+#accsearchbg .go{height:25px; line-height:15px; padding-left:10px; padding-right:10px; font-size:12px;margin-right:5px}
+input.btn.go {padding-top:4px;padding-bottom:4px;height:25px}
+#accsearchbg h4{color:#555;font-weight:normal;margin-right:5px;}
+#accsearchbg .error {color:#ff0000;display:block;font-size:12px;}
+.acc-subhead {color: #555; font-size:12px; font-weight:bold; padding:6px 0; width: 100%;}
+.titleleft {float:left; margin:0 20px 0 0; width:auto}
+.odr-his-content {border-collapse:collapse; width:100%}
+.odr-his-footer {text-align:right;font-weight:bold;}
+.odr-his-content tr.odr-his-footer td{text-align:right;}
+.prefnote {position:static!important}
+table.preferencelist td {border:0 solid #bcbcbc; padding:5px;}
+table.preferencelist td span {display:block!Important}
+table.preferencelist td input[type=checkbox] {float:left; margin:2px 5px 0 0;}
+table.preferencelist td label {float:left; width:93%}
+table.prefmethod td {padding:2px 0}
+table.prefmethod td input[type=checkbox] {float:left; margin:4px 5px 0 0;}
+table.prefmethod td label {float:left; width:93%}
+.acchelptopic{margin-top: 15px;}
+#acchelp h4{border-bottom: 4px solid #eee; font-size: 14px; margin-bottom: 10px;  text-transform: uppercase; font-family: montserratregular,Arial,sans-serif;}
+#acchelp h4 span{background: #fff; bottom: -8px; padding-right: 8px; position: relative; color:#444;}
+#acchelp #accp{ margin-bottom:8px;}
+
+
+.NewsLetterSubscrption ul{border:1px solid #e1e1e1; border-bottom:0; padding:4px;}
+.NewsLetterSubscrption ul:last-child{border-bottom:1px solid #e1e1e1}
+.NewsLetterSubscrption ul li .btn{float:right;padding: 5px 12px !important;}
+.NewsLetterSubscrption ul li{line-height:29px;}
+.NewsLetterSubscrption ul li input[type="text"]{width:100%;}
+
+.orderheader{background-color:#3b4348; color: #FFF!important; font-size:13px; margin-top:10px; padding: 5px 10px; vertical-align: middle; text-align:left;}
+.orderheader .ordernumber, .orderheader .ParaBoldText{color:#0fc439; padding-left:3px;}
+.orderheader .manufactureby, .orderheader .mycreditcardlist_box ul.heading li#th_MyCard_Name, .mycreditcardlist_box ul.listing li.td_MyCard_Name.quoteby{float:right;}
+.orderheader span.quoteby{float:right;}
+.myordercontainer{margin-bottom:0px;}
+#ordhddisp{font-size: 13px; margin-top: 0px;}
+#ordhddisp table, table#ordhddisp{float: left;}
+#ordhddisp td{padding-top: 5px;vertical-align:top;}
+#ordhddisp .order-status{padding-top:5px; padding-bottom:5px;}
+#ordhddisp .copy2cart{float:right;}
+#ordhddisp .qoutebtncontent div span:first-child{text-align:left!important;}
+.accheader{height: 135px!important;}
+.accheader div#header_container{height: 104px!important;}
+.accordionHeaderSelected, .accordionHeader{background-color: #3b4348 ; color: #FFF!important; cursor: pointer; margin-bottom: 5px; margin-top: 5px; padding: 5px 1px 5px 10px; font:16px TradeGothicLTPro-BdCn20,TradeGothicLTCom,Helvetica,Arial,sans-serif; clear:both; overflow:hidden;}
+.accordionHeader .Showimage::before {
+    content: "\f0d7";
+    cursor: pointer;
+    float: right;
+    font: 18px/1 FontAwesome;
+    height: 16px;
+    margin: 0 8px 0 0;
+    overflow: hidden;
+    width: 20px;
+}
+.accordionHeaderSelected .Showimage::before {
+    border: 0 none;
+    content: "\f0d8";
+    cursor: pointer;
+    float: right;
+    font: 18px/1 FontAwesome;
+    height: 16px;
+    margin: 0 8px 0 0;
+    overflow: hidden;
+    width: 20px;
+}.accordionContent{border: 1px solid #e1e1e1; border-color:#e1e1e1; margin-bottom: 5px; padding: 10px 5px 5px;}
+.lookupsearch input{border: 1px solid #68B5ED;color: #333;font-size: 11px;font-weight: 400;text-decoration: none;}
+.lookupsearch #searchAutoComplete{float: right; margin-left: 5px; margin-top: 0;}
+#lookupsearch{height: 20px;margin: 10px 0 0;padding: 0;width: 515px;}
+.lookupsearch .srchgobtn{background: url(../images/icons.png) no-repeat scroll -53px -667px transparent;border: medium none;cursor: pointer;float: right;height: 18px;margin: -3px 5px 0;width: 18px;}
+.AddToCartMsg{color: #26FF45; float: left; width: 200px;}
+.tblInvExprt{margin-top: 5px;}
+.popupbody{background: none;}
+.dhtmlwindow{background-color: #1D6F9E;border: 2px solid #000;position: absolute;visibility: hidden;}
+.drag-handle{color: #FFF;cursor: move;font: bold 14px Arial;overflow: hidden;padding: 1px;text-indent: 3px; width: auto;}
+.drag-handle .drag-controls{cursor: pointer;position: absolute;right: 1px;top: 2px;}
+.drag-contentarea{background: #FFF;color: #000;height: 140px;margin-top: 5px;overflow: auto;padding: 2px;}
+.iframecontent{border: 1px solid #FFF;}
+.drag-statusarea{background-color: #F8F8F8;border-top: 1px solid gray;height: 13px;}
+.drag-resizearea{cursor: nw-resize;float: right;height: 13px;text-indent: -9999px;width: 13px;}
+#dforgetp{position: absolute;}
+#acccontent #hd{color: #0060a6;font-size: 16px;font-weight: 700;height: 10px;padding: 0 15px 15px 0;}
+#passwrd input, #usrname input{border: 1px solid #555;width: 180px;}
+#dsubmit{margin-top: 28px;}
+#NewCustomerContent ul li{list-style: disc; margin-left: 15px; padding: 1px 0 3px 10px;}
+#NewCustomerContent p{margin-bottom: 5px;margin-top: 5px;}
+#NewCustomerContent .dyn_content{margin-bottom: 15px;}
+#checkoutcontainer .dyn_content{clear: both;width: 100%;}
+.countystatelabletd{width: 355px;}
+.astrixcountrystate{padding-left: 45px;padding-right: 5px;}
+.dotteledlinehrzt{border-left: 1px dashed #000;}
+.ar{text-align: right;}
+.acctable select{padding:4px 2px;}
+.tblInvExprt th{text-align: center;}
+#accprofile td{line-height: 20px;}
+.add_edit_ads_content li{min-height:40px;}
+.add_edit_ads_content input[type=text],.add_edit_ads_content select {width:74.2%;border: 1px solid #ccc;border-radius:2px;}
+.add_edit_ads_content li.phone input[type=text]{width:100%;} 
+.add_edit_ads_content li .extno{padding:0 9px; line-height:25px}
+.add_edit_ads_content li span.error{display:block;}
+.add2cart{border: none;cursor: pointer;display: inline-block!important;float: left;height: 22px;overflow: hidden;text-indent: -9999px;width: 103px;}
+.acc-view-address{clear: right; float: right; margin-bottom:10px;}
+#acccontent .add2cartbtn{clear: left;overflow: hidden;margin-top: 1px;padding-top: 3px;}
+a#skudetailsglobalcancel{float: right;margin: 7px 7px 0;}
+.Continue{border: none;cursor: pointer;display: block;height: 28px;overflow: hidden;text-indent: -9999px;width: 84px;}
+.PayplExpreimg{border: none; cursor: pointer; display: block; height: 26px; overflow: hidden; text-indent: -9999px; width: 169px;}
+.accinfo a{color: #197b30; float: right; font-size: 12px; font-weight:bold;  padding: 1px 5px;}
+.accinfo a:hover {color:#000;}
+.acceditbtn{margin-right: 0;}
+.addallbtn,.buyallbtn{float:right;padding: 4px 12px 5px;}
+.addallbtn{height: 25px;
+    padding: 4px 7px;}
+.acctable .remove{float:right; margin-left:5px; vertical-align:top }
+.buyall .addallbtn, .buyall .buyallbtn{margin: 1px 4px 0 0;}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .buyall .addallbtn, .buyall .buyallbtn{line-height:16px;}
+}
+.addnewcard{display: block; float: right;}
+.update{border: none; cursor: pointer; display: block; height: 26px; margin-right: 5px; overflow: hidden; text-indent: -9999px; width: 72px;}
+.return{border: none; cursor: pointer; overflow: hidden;   }
+.returncontent .return{margin-top:10px;}
+.copy2cart{cursor: pointer; margin-bottom:10px;}
+#ordercomplete .copy2cart{float:right; margin:1px 10px 0 0; }
+#catcontentoffpromo .hd{font-size: 16px; font-weight: 700; margin-bottom: 5px; margin-left: 13px;}
+#catcontentoffpromo h4{font-size: 13px;}
+#catcontentoffpromo ul li{list-style: disc; margin-left: 15px; padding: 0 0 2px 10px;}
+table#ordercomplete td.orderheader #OrderDate {margin-left:4px}
+.invoiceorderlist th {
+    background: #f5f5f5 none repeat scroll 0 0!important;
+    color: #444!important;
+}
+.pagingprevarrow::before {
+    content: "\f100";
+    cursor: pointer;
+    display: inline-block;
+    font: 13px/1 FontAwesome;
+    height: 15px;
+    padding-left: 4px;
+    width: 15px;
+}
+.pagingnextarrow::before {
+    content: "\f101";
+    cursor: pointer;
+    display: inline-block;
+    font: 13px/1 FontAwesome;
+    height: 15px;
+    padding-left: 6px;
+    width: 15px;
+}
+.accaddrborder{border:1px solid #eee; display:block; max-height: 150px; overflow-y: auto; padding:10px; width: 100%;}
+#retorddtls{height: auto;margin-bottom: 8px;margin-top: 8px;width: 999px;}
+table.alternate_rows td{border-bottom: 1px solid #BCBCBC;border-left: 1px solid #BCBCBC;border-right: 1px solid #BCBCBC;padding: 2px;}
+.returnhead{color: #F8BC10;font-size: 16px;font-weight: 700;margin: 0 0 5px;padding: 0 0 10px;}
+.layadd2cartext{width:40px;}
+div#accountcontainer table.itemdetails th{background-color: #041420;border-color: #103f60;border-style: solid;border-width: 2px 0;font-size: 12px;font-weight: 400;padding: 10px 4px;}
+div#accountcontainer table.itemdetails td{border-bottom: 1px dashed #F9C22F;padding: 10px 4px;}
+div#acccontent .rating span.halfstar{background: url(../images/icons_24bit.png) no-repeat scroll -56px -17px transparent!important;display: block;height: 17px;width: 15px;float: left;margin-top: 1px;}
+div#acccontent .rating span.fullstar{background: url(../images/icons_24bit.png) no-repeat scroll 0 -16px transparent!important;display: block;height: 17px;width: 15px;float: left;}
+div#acccontent .rating .blankstar{background: url(../images/icons_24bit.png) no-repeat scroll -83px -16px transparent;display: block;height: 17px;width: 15px;float: left;}
+div#acccontent .rating a.reviewscount{color: #1D6F9E;}
+#acccontent .rewarddisplay, #checkoutcontainer .rewarddisplay, #shippingcontainer .rewarddisplay, #multistep_content .rewarddisplay{background:#999; color: #FFF;margin: 10px 15px 0 0;   padding: 5px; text-align: left;width: 646px;}
+#checkoutcontainer .rewarddisplay{margin: 0 15px 0 0;}
+#checkoutcontainer .rewarddisplay, #acccontent .rewarddisplay{width: 1002px!important;}
+div#catcontentoffpromo #breadcrumb{margin-left: 12px;}
+#rewardhistory th.altrrows{border-bottom: 1px solid #BCBCBC!important;}
+.invoicesearchdiv{color: #FFF; font-size:16px; float:left}
+.lookupaddbtn{border: none;cursor: pointer;display: block;height: 20px;overflow: hidden;text-indent: -9999px;width: 33px;}
+.newuser input{width: 150px;}
+#catcontentoffpromo{margin-left: 10px;width: 900px;}
+.layimage{width: 60px;}
+div.acctable a.printorder{display: block;float: right;height: 24px;overflow: hidden;text-indent: -9999px;width: 91px;}
+tr#greybg div a.go{float: right!important;}
+.acctable .sendwishlist{float:right;margin-top:11px;}
+/*tr#greybg td.subuserpassword{width: 42%;}
+tr#greybg a.edit, a.delete{float: right;margin-right: 0;}*/
+.acctable .text{padding-top: 10px;}
+div#acctable table#tblSample tr td a{background: url(../images/icons.png) 0 -443px no-repeat;text-decoration: none;font-size: 1px;padding: 18px;}
+div#acctable table#tblSample tr td{border: 1px solid #BCBCBC;padding: 10px;}
+div#acctable table#tblSample th{height: 30px;padding-left: 2px;vertical-align: middle;text-align: center;}
+div#acctable table#tblSample td input{border: 1px solid #333;padding: 2px 4px;}
+div#acctable table#tblSample td input[type=checkbox]{border: none;padding: 2px 4px;}
+div#acctable div.buttons .addsubuser{height: 26px;width: 129px;margin-top: 10px;display: block;}
+#acctable div table tr td#acchtmltable div table tr th{border-top: none!important;}
+.altrrows th table tbody tr td span{color: #555;}
+#acctable #acchtmltable div table td, #acctable #acchtmltable div table th{text-align: center;padding: 5px 10px;}
+#acctable td#acchtmltable div table tbody tr td.rewardtextright{text-align: right;}
+#acctable #acchtmltable div table tbody table tbody tr td span{color: #555;float: left;padding: 5px 0;}
+#acctable #acchtmltable div table tbody table tbody tr td a{color: #555;float: left;text-decoration: underline;padding: 5px 0;}
+#acctable #acchtmltable div table tbody tr td table{width: 40px!important;}
+#acctable #acchtmltable div table tbody tr td table tr td{padding: 1px;}
+table.invdetails td a.or_print_invoice{display: block;height: 22px;overflow: hidden;text-indent: -9999px;width: 86px;}
+#acctable div.seemmorelines{margin: 5px 0;text-align: right;}
+#acctable div.seemmorelines a{color: #0195BD;text-decoration: underline;}
+.acctable td div.myaccountsubmit, .fltleft, .dsubmit, .dreset, .myaccountsubmit, .myaccountreset{float: left;margin-right:5px;margin-top:5px;}
+div#acccontent .rating{display:block;}
+#accaddrlist{border-bottom:1px solid #eeeeee; margin-bottom:10px;}
+.accaddrborder #accaddrlist, div#accountcontainer table.itemdetails{width: 100%;}
+.acchistory, .newuserheader{height: 10px;}
+div#acccontent #acctable #productimage #quickeye, .highslide-html-content{display: none;}
+.cmnpanel input[type=text], .acchtmltable input[type=text], .popupbody input[type=text]{border: 1px solid #BCBCBC;}
+.srchinvoice td, .newuser td, .laycctbl td{padding: 2px 0 2px 2px;}
+.srchinvoice #invpdtop, #srchlabel, #returnorderdtl input.back{float: right;}
+.tblInvExprt td, .rightalign{text-align: right;}
+div#account_content div#addresslist, div#checkout_content div#multishipaddresslist, div#acccontent div#addresslist, div#checkout_content div#addresslist{display: none; z-index: 9999;}
+div#account_content div#overlaycontent{width: 500px; background:#F3F3F3; border: 1px solid #B8CCD2; font-size: 13px; float: left; padding: 15px; max-height: 440px; overflow-y: auto; overflow-x: hidden;}
+div#account_content div#overlaycontent .address_validation h2, div#checkout_content div#paymentoverlaycontent .address_validation h2, div#multishipaddresslist .address_validation h2, div#checkout_content div#overlaycontent .address_validation h2, div#checkout_content div#multishipoverlaycontent .address_validation h2{font-size: 22px;line-height: 30px;font-weight: 700;background: none!important;border: none!important;margin: 0!important;padding: 0!important;}div#account_content div#overlaycontent .address_validation p, div#checkout_content div#paymentoverlaycontent .address_validation p, div#checkout_content div#overlaycontent .address_validation p, div#checkout_content div#multishipoverlaycontent .address_validation p{font-size: 12px;line-height: 16px;font-weight: 100;margin: 0;padding: 20px 0;}
+div#account_content div#overlaycontent .address_validation p a, div#checkout_content div#paymentoverlaycontent .address_validation p a, div#checkout_content div#overlaycontent .address_validation p a, div#checkout_content div#multishipoverlaycontent .address_validation p a{color: #0da7f1;text-decoration: underline;}div#account_content div#overlaycontent .address_validation p a:hover, div#checkout_content div#paymentoverlaycontent .address_validation p a:hover, div#checkout_content div#overlaycontent .address_validation p a:hover, div#checkout_content div#multishipoverlaycontent .address_validation p a:hover{color: #54768e;text-decoration: none;}
+div#account_content div#overlaycontent .address_validation table, div#checkout_content div#paymentoverlaycontent .address_validation table, div#checkout_content div#overlaycontent .address_validation table, div#checkout_content div#multishipoverlaycontent .address_validation table{border: solid #7490a3;border-width: 1px 1px 0 0;}div#account_content div#overlaycontent .address_validation table td, div#checkout_content div#paymentoverlaycontent .address_validation table td, div#checkout_content div#overlaycontent .address_validation table td, div#checkout_content div#multishipoverlaycontent .address_validation table td{border: solid #7490a3;font-size: 11px;text-align: left;border-width: 0 0 1px 1px;padding: 4px 5px;}
+div#account_content div#overlaycontent .address_validation input.btn, div#checkout_content div#paymentoverlaycontent .address_validation input.btn, div#checkout_content div#overlaycontent .address_validation input.btn{background: #0da7f1;font-size: 12px;font-weight: 700;border: none;color: #555;-moz-box-shadow: 0 0 10px 2px #333;-webkit-box-shadow: 0 0 10px #333;-moz-border-radius: 5px;-webkit-border-radius: 5px;padding: 5px 10px;}
+table#rewardhistory .altrrows{float: none !important;}
+/*Email Marketing */
+div#accountcontainer table.newuser tr td.subscribeoffers{ /*border:1px solid #CECEF6;*/padding: 0px;}
+div#accountcontainer table.newuser tr td.subscribeoffers table{border-collapse: collapse;}
+div#accountcontainer table.newuser tr td.subscribeoffers table.wrapper{font-size: 14px;width: 100%;}
+div#accountcontainer table.newuser tr td.subscribeoffers table tr td table{margin-top: 2px;}
+div#accountcontainer table.newuser tr td.subscribeoffers table tr td table.CheckboxList input, div#bodycontainer div.acctable div.body table tr td table.CheckboxList input{float: left;clear: both;margin: 3px 4px 0 10px;}
+div#bodycontainer div.acctable div.body table.altrrowsemaillists tr td table.CheckboxList input{margin: 4px 5px 0 0;}
+div#bodycontainer div.acctable div.body table.altrrowsemaillists tr td table.CheckboxList label{margin: 0 7px 0 0;}
+div#bodycontainer div.acctable div.body table.altrrowsemaillists tr td.tdemaillists{border-bottom: 1px solid #BCBCBC;padding: 5px 1px 8px 5px;}
+div#accountcontainer table.newuser tr td.subscribeoffers table tr td table.CheckboxList label, div#accountcontainer table.newuser tr td.subscribeoffers table tr td table.CheckboxList input:first-child{margin-left: 4px;}
+div#accountcontainer table.newuser tr td.subscribeoffers table.wrapper tbody{display: block;padding: 0 10px 10px;}
+div#accountcontainer table.newuser tr td.subscribeoffers table tr td span.welcomemsg{display: block;color: #F8BC10; font-size: 25px;}
+.altrrowsemaillists{border-collapse: collapse;border: 1px solid #BCBCBC;border-spacing: 0;width: 100%;}
+/* End Email Marketing */
+.forceresetpwd{position: absolute;top: -3px;right: 0;background: #1D6F9E;padding: 10px 12px;font-size: 17px;color: #fff;}
+span.amount, span.totalamount, span.taxamount{color: #cf3341;display: inline;font-size:14px;}
+div.orddtltbl table.acchtmltable td:last-child{color: #1D6F9E;}
+.cartlinescontainer .addtocart_successmsg{font-weight: normal!important;float: left;text-align: right;}
+.cartlinescontainer .mesglbl .addtocart_successmsg{float:right;}
+#addallerrormsg, .addallerrormsg{color: #ff0000;float: right;white-space: nowrap;}
+div#nonregisteruser{float: left;margin-top: 15px;width: 100%;}
+div#nonregisteruser div#acctable{background:none; border: 0 none; margin-top: 0; }
+div#nonregisteruser #invordqutshipadd, div#nonregisteruser #retordshipaddr{border: 1px solid #BCBCBC; float: left; height: auto; padding: 5px; width: 455px!important;}
+div#nonregisteruser #invordqutbilladd, div#nonregisteruser #retordbilladdr{border: 1px solid #BCBCBC; float: right; height: auto; padding: 5px; width: 455px!important;}
+.tblInvExprt td table tr td, .acchtmltable td table tr td, .altrrows td table tr td{border: none;}
+/* Convert to Order*/
+a.editquote,a.converttoorder,a.printquotes{float: right; margin-left:5px; margin-bottom:10px; }
+.addtocart_errormsg.errorMessage{float: left;}
+div#chktablepromooff div#accountcontainer div#acccontent{width: 957px;}
+div#chktablepromooff div#accountcontainer div#acccontent table.my_profile input[type="text"]{padding: 4px; width: 300px;}
+.cmnpanel div#refundbreakupmsg{background:#FAFAFA; border: 1px dotted #EFEFEF; display: block;  font-size: 14px; line-height: 20px; padding: 10px; width: 99%;}
+.cmnpanel td#paymentmethods table tr{width: 500px; margin-bottom: 2px;display: inline-block;}
+.cmnpanel td#paymentmethods table tr td:first-child{width: 120px; padding-right: 10px;}
+.cmnpanel td#paymentmethods table tr td select{width: 154px;}
+.cmnpanel td#paymentmethods table tr td input{width: 152px;}
+.cmnpanel td#paymentmethods table tr td select#ctl00_MainContent_returnsmgmt_ddlExpiryMonth, .cmnpanel td#paymentmethods table tr td select#ctl00_MainContent_returnsmgmt_ddlExpiryYear{width: 76px;}
+div#account_content .acccontentforguest{border-left: none !important;float: none !important;margin: auto !important;}
+table.trackingorders{width: 600px; margin: 0 auto; font-size: 12px;}
+.orderinvoice{background: #F1F1F1;border: 1px solid #ddd;color: #000; padding: 5px;}
+table.trackingorders{border: solid #ccc;border-width: 1px 1px 0 0;}
+table.trackingorders tr td table.acchtmltable{border: solid #ccc;border-width: 0 0 1px 0;}
+table.trackingorders tr td table.acchtmltable td{padding: 5px;border: solid #ccc;border-width: 1px 1px 0 0;}
+table.invoicecreatedetails td{padding-bottom:4px;}
+.mar0{margin:0px;}
+.sucess_message{color:#5A8205;}
+.CartMessage.addtocart_successmsg, .CartMessage.addtocart_errormsg, .addtocart_errormsg.errorMessage{clear:left; float:left; text-align:left; width:100%;}
+.addtocart_errormsg.errorMessage {width:100%}
+.attachedlist{overflow:hidden;}
+.attachedlistheading,.attachedlistheading + span{color:#000;font-size:11px;font-weight:700;}
+.orddtltbl .attachedlist{background:none;}
+#acchtmltable .attachedlist{background:none}
+.attachedlisting, .filename{color:#000;float:left; width:88%;}
+.formateicons{background: url(~/Templates/Shared/images/attachment_format_icons.png) no-repeat;border:1px solid #f1f1f1;clear:left;float:left;height:20px;margin:3px 4px 2px 0;width:20px;}
+.ExcelFile{background-position:0 0; }
+.MsWordFile{background-position:-18px 0;}
+.PdfFile{background-position:-56px 0;}
+.ImageFile{background-position:-74px 0;}
+.TextFile{background-position:-37px 0;}
+.DefaultFile{background-position:-35px 0;}
+.socialsitelogin label {float:left;line-height:21px;margin-right:5px;}
+.socialsitelogin a {background:url(../../Shared/images/socialsiteloginbutton_iconsaccount.png) no-repeat;float:left;height:20px;width:20px;}
+.socialsitelogin a.login_facebook {background-position:0 0px;}
+.socialsitelogin a.login_google {background-position:0 -22px;}
+.socialsitelogin a.login_twitter {background-position:0 -46px;}
+#Table1.altrrows .socialsitelogin,#Table1.altrrows label.Username {float:left; line-height:24px; margin-right:5px;}
+.accountinfo label, .accountinfo h4 {float:left; margin-right:5px;}
+.changepassword li .astrix{left:4px;}
+.changepassword input[type="text"], .changepassword input[type="password"] {padding:3px; width:56%; margin-bottom:5px; line-height:normal;}
+.changelogin_content .changepassword li.clearfix span{ line-height:25px; }
+.borderbottom{display:inline-block; margin-bottom:10px; border-bottom:1px solid #d9dfe0; width:100%}
+#subuser input, #subuser select {border: 1px solid #ccc!important; margin:0 5px 5px 0; padding:4px 2px; width: 208px !important;}
+#subuser input[type="checkbox"] {width:12px!important; padding:0!important;}
+#subuser select {width:209px!important}
+#subuser .astrix {padding-left:4px;}
+.createcontactlist th,.createcontactlist td {text-align:left!important; padding:3px; word-wrap:break-word; word-break:break-all; white-space:normal}
+.createcontactlist td .acc-subhead{width:auto;}
+.acc-container .lbl_head{display: inline-block; width: 34%;}
+.createcontactlist td .btn {margin:2px 0; padding:2px 10px 3px;}
+.actionbutton .actionbtnwrap{float: left;margin-left: 235px;width: 40%;}
+.actionbutton a {float:left; margin-right:5px;}
+
+/*-- My Account Left Navigation --*/
+.nav-title{  border-bottom: 4px solid #eee; font-size: 14px; margin-bottom: 10px; text-transform: uppercase;}
+.nav-title span { background: #fff;bottom: -8px; padding-right: 8px; position: relative;}
+.acc-nav dt.listname, .acc-nav li.listname{ border-bottom: 1px solid #eee; color: #444; font-size: 12px; line-height: 40px; }
+.acc-nav dt.listname .accountnav_line{ border-bottom: 1px solid #cf3341; bottom: -1px; display: block;  height: 1px; position: relative; width: 25px;}
+.acc-nav dd.listdefined ul li a{border-bottom: 1px dashed #eee; color: #666 !important; float: left; font-size: 12px;line-height: 40px;margin: 0; width: 100%;}
+.acc-nav dd.listdefined ul li a i.fa {color: #666; font-size: 4px; margin-right: 3px; position: relative; top: -3px;}
+.acc-nav dd.listdefined ul li a:hover{color:#1d6f9e;}
+.acc-nav dd.listdefined li span{border-bottom: 5px solid transparent; border-left: 5px solid #14376f; border-top: 5px solid transparent; content: ""; display: block; float: left; height: 0; margin-right: 5px; margin-top: 5px; width: 0;}
+.acc-nav dd.listdefined li:hover span {border-left: 5px solid #ee592b;}
+.acc-nav dd.listdefined,.acc-nav dd.listdefined ul,.acc-nav{font-size:14px; color:#444}
+.odr-his-content a{color:#197b30; font-size:13px; }
+.acc-nav li a:hover, .odr-his-content a:hover{color:#000}
+.odr-his-content th{background:#197b30; color:#fff; text-align:left; padding:3px 8px; vertical-align:top; width:33.33%;}
+.odr-his-content td{padding:3px 8px; width:33.33%;}
+.acc-navfooter{float:left;font-size:13px;font-weight:700;width:200px;height:20px;margin:2px 0 0;padding:7px 10px 4px}
+#ordercomplete .pgtitle {clear:left;float:left; font-size:18px;width:50%;}
+#ordercomplete a.printorder{ display: block; float: right; margin-left:10px;}
+#ordercomplete .occontainer {float:left;width:100%;}
+#account_content div.expressordercomplete div.orderlines .ordertotals{width:100%;}
+/*--Myaccount Savecart listing page --*/
+div#account_content #acccontent .no-save-msg{padding-bottom:5px; margin:10px 0; font-weight:700; color:#444; text-align:left; font-size:12px;}
+div.owl-carousel div.owl-item .prodimagelink{display:block; height:170px; text-align:center; overflow:hidden;}
+div.owl-carousel div.owl-item .prodimagelink img{position:inherit;}
+div.owl-carousel div.owl-item .qty_box{margin-top:0;}
+div.owl-carousel div.nextitem, div.owl-carousel div.previousitem{background: url(../images/icons.png)!important;cursor: pointer;height: 36px;position: absolute;top:70px;width: 18px;}
+div.owl-carousel div.previousitem, div.owl-carousel div.previousitem:hover{background-position: 0 -1096px!important; left: 0; }
+div.owl-carousel div.nextitem, div.owl-carousel div.nextitem:hover{background-position: 0 -1135px!important;overflow: hidden;right:0;}
+
+/*-- Copycart --*/
+#copycart{background: url("../images/groupimg.png") repeat scroll 0 0 #fff; border: 8px solid #fff; box-shadow: 0 0 10px 5px #7abae6; display: none; padding: 0; position:fixed!important;  left:31%!important;  width: 500px; z-index: 14;}
+#copycart .close {background: url("../images/icons.png") no-repeat scroll -5px -551px transparent; cursor: pointer; height: 30px; position: absolute; right: -20px; top: -20px; width: 30px;}
+#copycart .close
+{
+    background: #197b30;
+    border-radius: 100px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 10px;
+    cursor: pointer;
+    color: #fff!important;
+    position: absolute;
+    right: -12px;
+    top: -12px;
+    text-decoration: none!important;
+    padding: 4px 0 0;
+}
+#copycart .close:before{content: "\f00d";font-family: 'FontAwesome';}
+#copycart .note_message{background:#f1efef; padding:10px; margin-bottom:2px;}
+#copycart .note_message ol{margin:0 0 0 14px; padding:0;}
+#copycart .note_message li{margin:0 0 5px; padding:0; color:#7b7b7b; font-size:11px; list-style-type:disc;}
+#copycart .note_message p{margin:0 0 5px; padding:0; color:#7b7b7b; font-size:11px;}
+#copycart ul{background:none; border:0 none; margin:0; padding:0;}
+#copycart ul li{border:0 none; float:left; width:50%; text-align:center;}
+#copycart ul li a{display:block; font-size:12px; font-weight:700; width:125px; line-height:18px;  padding:69px 10px 0; margin:0 auto; cursor:pointer; }
+#copycart ul li a#copyorderlines{background:#fff url(../images/icons.png) no-repeat 34px 0;}
+#copycart ul li a#copyorderlinesandaddress{background:#fff url(../images/icons.png) no-repeat 34px -114px;}
+#copycart ul li a:hover{text-decoration:none; background-color:#f1efef!important;}
+
+/*-- Track Order --*/
+.btn_trackorder a{color:#01539b;}
+
+
+/*-- Track Order Table --*/
+table.trackingorders{width:90%;margin:20px auto;font-size: 12px;  border:0px none;}
+table.trackingorders h2{font-size:16px; font-weight:700; color:#1D6F9E;}
+table.trackingorders tr td{border:0px none; padding:5px;}
+table.trackingorders tr td.orderinvoice{background:none transparent;}
+table.trackingorders tr th, table.shippinginfo tr th{color: #fff; background:#555555;border:1px solid #555555; padding:5px;}
+table.shipmenttracking{background:#f9f9f9;}
+table.shippinginfo tr td, table#acchtmltable.acchtmltable_track tr td, table.shipmenttracking tr td{background:#f1f1f1; border:1px solid #ccc;}
+table#acchtmltable.acchtmltable_track tr td.tdBold, table.shippinginfo tr td.tdBh15{background:#999; border-color:#ccc; color:#fff;}
+table#acchtmltable.acchtmltable_track tr td.tdBold:first-child{border-right:1px solid #ccc;}
+table#acchtmltable.acchtmltable_track tr td, table.shipmenttracking tr td{width:50%;}
+table#acchtmltable.acchtmltable_track tr td a, table.shipmenttracking tr td a{color:#000;}
+.convertqoute {position:relative;
+}
+
+
+.astrix {color:#ff0000; position:absolute; left:0;}
+.acctable .add_edit_ads_content td {min-height: 35px;line-height: 21px;}
+.btn {vertical-align:top;}
+.myaccount_od{margin-bottom:18px;}
+.lblusername{margin-bottom:5px;}
+/************************* My Invoice CSS *********************/
+
+div.qksrchinvoice {clear:both; overflow:hidden}
+div.qksrchinvoice label {float:left; width:30%; line-height:27px}
+div.srchinvoice ul li{margin-bottom:10px;}
+div.srchinvoice ul li .error {clear:left; float:left;}
+div.srchinvoice ul li input[type="text"]{width:100%;}
+.invoice_btn_box{margin:10px 0 2px;}
+.invoice_btn_box .btn{margin:0 0 0 10px;}
+
+
+
+.tblInvExprt {margin-bottom:10px; clear:both; overflow:hidden}
+.tblInvExprt ul {clear:both; overflow:hidden; border-right:1px solid #e1e1e1;  border-bottom:1px solid #e1e1e1}
+.tblInvExprt ul.formhead {font-weight:bold; border-top:1px solid #e1e1e1; background-color: #e1e1e1;}
+.tblInvExprt ul li {float:left; border-right:1px solid #e1e1e1; padding:.5% 1px;}
+.tblInvExprt ul li label {display:none}
+.tblInvExprt ul li.chkinv {border-left:1px solid #e1e1e1; text-align:center; width:7%;}
+.tblInvExprt ul li.chkinv span {padding-bottom:3px; display:block}
+.tblInvExprt ul li.invno {width:13%; text-align:center; word-wrap:break-word;}
+.tblInvExprt ul li.invage {width:12%; text-align:center}
+.tblInvExprt ul li.invduedate {width:12%; text-align:center}
+.tblInvExprt ul li.invamt {width:11%; text-align:right}
+.tblInvExprt ul li.invpaidamt {width:11%; text-align:right}
+.tblInvExprt ul li.invpendingamt {width:11%; text-align:right}
+.tblInvExprt ul li.invorderpayment {width:11%; text-align:right}
+.tblInvExprt ul li.invorderpayment input[type="text"]{text-align:right;}
+.tblInvExprt ul li.invexport {width:12%; text-align:center; border:0}
+.tblInvExprt ul.footerordertotal {float:right; width:100%}
+.tblInvExprt ul.footerordertotal li.total {line-height: 36px; text-align: right; width: 77%;}
+.tblInvExprt ul.footerordertotal li.totalamt {border: 0 none; float: right; width: 23%;}
+.tblInvExprt ul.footerordertotal li.totalamt input[type=text] {margin-top:4px; text-align: right;}
+.tblInvExprt ul.footerordertotal li.totalamt span#spanamtcurrency {line-height:32px; padding-left:3px}
+
+div.paymentdetails {clear:both; overflow:hidden; margin-top:20px}
+div.paymentdetails ul.invoicecreatedetails {margin:15px 0 10px}
+div.paymentdetails ul.invoicecreatedetails li {clear:both; overflow:hidden; padding:5px 0}
+div.paymentdetails ul.invoicecreatedetails li label {float:left; width:30%; line-height:27px}
+div.paymentdetails ul.invoicecreatedetails li label span.error {float:left; width:10px}
+div.paymentdetails ul.invoicecreatedetails li input[type=text] {clear:none!important;width:22%;}
+div.paymentdetails ul.invoicecreatedetails li select{width:22%;}
+div.paymentdetails ul.invoicecreatedetails li select.small{width:10.7%;}
+div.paymentdetails ul.invoicecreatedetails li input.btn {margin-left:30%}
+div.paymentdetails ul.invoicecreatedetails li.preferred_address input[type=checkbox]{margin-top:8px;}
+
+/***************************Paging*************************************/
+
+div.acc_pagging {background:#f1f1f1;  clear: both; display:block; margin-bottom: 0; margin-top: 10px; padding:3px 9px; position: relative; width:100%;}
+div.acc_pagging div.matchfound {float:right; line-height:27px}
+div.acc_pagging .viewall a{font-size:14px; font-weight:bold; line-height:26px;}
+
+
+/*-- Add My Credit Card List --*/
+.mycreditcardlist_box{margin:10px 0 0; padding:0;}
+.mycreditcardlist_box ul{ border:1px solid #999; border-top:0 none; word-wrap: break-word;}
+.mycreditcardlist_box ul li{ padding:5px;  float:left; border-right:1px solid #8e8e8e; border-top:0 none; text-align:center;}
+.mycreditcardlist_box ul li:last-child{border-right:0 none;}
+.mycreditcardlist_box ul.heading{background:#999; border:1px solid #999; border-top:0 none; border-bottom:0 none; font-weight:bold; color:#fff;}
+.mycreditcardlist_box ul.heading li#th_MyCard_Name, .mycreditcardlist_box ul.listing li.td_MyCard_Name{width:19%;}
+.mycreditcardlist_box ul.heading li#th_MyCard_Name .astrix, .mycreditcardlist_box ul.listing li.td_MyCard_Name .astrix{position:inherit; left:inherit;}
+.mycreditcardlist_box ul.heading li#th_MyCard_NameonCard, .mycreditcardlist_box ul.listing li.td_MyCard_NameonCard{width:25.5%;}
+.mycreditcardlist_box ul.heading li#th_MyCard_Number, .mycreditcardlist_box ul.listing li.td_MyCard_Number{width:20%;}
+.mycreditcardlist_box ul.heading li#th_MyCard_Type, .mycreditcardlist_box ul.listing li.td_MyCard_Type{width:13%;}
+.mycreditcardlist_box ul.heading li#th_MyCard_Heading, .mycreditcardlist_box ul.listing li.td_MyCard_Heading{width:13.5%;}
+.mycreditcardlist_box ul.heading li.BtnSectionTH, .mycreditcardlist_box ul.listing li.BtnSectionTd{width:9%;}
+.mobile_th_mcl, .mobile_mycard_type, .mycreditcardlist_box ul.listing li.BtnSectionTd .divider{display:none;}
+/*.acctable p{line-height: 14px;margin: 3px 0 5px;padding: 2px 1px 2px 0;}*/
+
+/*-- Edit / Add My Credit Card List --*/
+.add_edit_address{margin:0; padding:0;}
+.add_edit_address li{min-height:40px;}
+.add_edit_address li input[type="text"], .add_edit_address li select{width:50%;}
+.add_edit_address li select.md{margin-right:1.2%; width:25%;}
+.add_edit_address li select.sm{width:22.8%;}
+.add_edit_address li:first-child{margin-bottom:10px;}
+.add_edit_address li span.col-xl-3.col-md-3.col-sm-5.col-xs-5{padding-top:6px;}
+.add_edit_address .error{display:block!important;}
+.add_edit_address input[type="checkbox"]{margin-top:10px;}
+.submit{margin-right:5px}
+
+/********************* Invoice Details Page ***********************/
+
+div.invdetails div#ordhddisp {background:#e1e1e1; clear:both; overflow:hidden; padding:5px}
+div.invdetails div#ordhddisp div.colm1 {float:left; clear:left; padding:3px 0}
+div.invdetails div#ordhddisp div.colm1 label {float:left; width:100px}
+div.invdetails #ordhddisp div span {color:#888; font-weight:bold}
+div.invdetails div#ordhddisp div.ordertrack {float:right; margin:7px 0}
+#invordqutdtl, #returnorderdtl {height: auto; margin-bottom: 15px; margin-top: 8px;}
+div.invdetails div#invordqutshipadd h4.acc-subhead, div.invdetails div#invordqutbilladd h4.acc-subhead {background:#f1f1f1;   color:#444; font-size: 15px; font-weight: 700; padding: 4px; border:1px solid #e1e1e1; border-bottom:0px;}
+div.invdetails div#invordqutshipadd table, div.invdetails div#invordqutbilladd table{ background:#fff; border:1px solid #e1e1e1;  font-size: 13px;}
+div.invdetails div#invordqutshipadd table td, div.invdetails div#invordqutbilladd table td{border:1px solid #e1e1e1; padding:4px; vertical-align:top;}
+div.invoiceorderdetails {clear:both; overflow:hidden; margin-bottom:15px; border:1px solid #e1e1e1; border-bottom:0}
+div.invoiceorderdetails ul li {border-bottom:1px solid #e1e1e1;}
+div.invoiceorderdetails ul li label {border-right:1px solid #e1e1e1; font-weight:bold; min-height:30px; padding-top:5px;}
+div.invoiceorderdetails ul li span {padding:5px 2%;}
+div.invoicelist {clear:both; overflow:hidden;  width:100%}
+div.invoicelist ul {border-bottom: 1px solid #e1e1e1; border-right: 1px solid #e1e1e1; clear: both; overflow: hidden;}
+div.invoicelist ul.formhead {background:#f5f5f5; color:#444; font-weight:bold; border-top:1px solid #e1e1e1}
+div.invoicelist ul.formhead li{border-right:1px solid #e1e1e1;font-size:11px}
+div.invoicelist ul li {border-right: 1px solid #e1e1e1; float: left; padding: 0.5%; word-wrap: break-word;}
+div.invoicelist ul li.orderedmgmt {width:10%; text-align:center;border-left: 1px solid #e1e1e1;}
+div.invoicelist ul li.itemshipped {width:10%; text-align:center; word-wrap:break-word; word-break:break-all}
+div.invoicelist ul li.itembo {width:8%; text-align:center}
+div.invoicelist ul li.invitemno {width:14%; text-align:center}
+div.invoicelist ul li.gendesc {width:25%; text-align:left}
+div.invoicelist ul li.skudiscount {width:10%; text-align:right}
+div.invoicelist ul li.unitprice {width:11%; text-align:right}
+div.invoicelist ul li.extprice {width:11%; text-align:right; border:0}
+div.invoicelist ul li label {display:none}
+div.invoicelist ul.invoicetotal {border-bottom:0}
+div.invoicelist ul.invoicetotal li {float:none; clear:both; overflow:hidden;  border-left:1px solid #e1e1e1; border-bottom:1px solid #e1e1e1;min-height: 30px !important; height: 30px !important; padding:0; border-right:0}
+div.invoicelist ul.invoicetotal li label {float:left; width:77%; padding:1%; border-right:1px solid #e1e1e1; text-align:right; display:block;}
+div.invoicelist ul.invoicetotal li span {float:right; width:20%; padding:1% 1.5% 1% 1%; text-align:right}
+
+/********************************************************************/
+.layacceditbtn.acceditbtn, .acc-new-address{display:none;}
+.editaddress .layacceditbtn.acceditbtn{display:block}
+.accdottedline {height: 1px;line-height: 1px;padding:1px 0;width: 100%;border-bottom:1px solid #eeeeee}
+
+
+/************************* Contact list ***************************/
+
+div.createcontactlist div.buttons {margin:10px 0;}
+div.createcontactlist div.buttons .acc-subhead {width:auto;}
+div.createcontactlist ul.contacthead{color:#fff; background:#999; clear:both; overflow:hidden; border-left:1px solid #999; }
+div.createcontactlist ul.contacthead:nth-child(2n+1) {}
+div.createcontactlist ul li {border-bottom:1px solid #999; border-right:1px solid #999; padding:0.5%; float:left;}
+div.createcontactlist ul li.name {width:20%}
+div.createcontactlist ul li.email {width:44.8%}
+div.createcontactlist ul li.status {width:15%}
+div.createcontactlist ul li.editcontact {width:20%}
+div.createcontactlist span.successmsg{display:none;}
+div.createcontactlist ul.contactlist {border-top:0}
+div.createcontactlist ul.contactlist li {height:40px}
+div.createcontactlist ul.contactlist li label {display:none}
+div.createcontactlist ul li.editcontact .btn{padding:3px 10px;}
+.tele_number_list{margin:0; padding:0; }
+.tele_number_list li{margin:0; padding:0; float:left;}
+.tele_number_list li.tel_heading{width:25%;}
+.tele_number_list li.colon{text-align:center; width:3%;}
+.tele_number_list li.tele_no{width:71%;word-break:break-all}
+.tele_number_list li.tele_no span.extn{margin-left:5px;}
+.tele_number_list li.tele_no span{line-height:18px;}
+.mobile_button_box{display:none;}
+
+
+
+/**************** Add Contact ****************/
+
+div.addcontact {margin:15px 0}
+div.addcontact .acc-subhead{font-size:20px;}
+div.addcontact ul {margin:0 0 10px}
+div.addcontact ul li {clear:both; overflow:hidden; padding:5px 0}
+div.addcontact ul li label {float:left; width:30%; line-height:27px}
+div.addcontact ul li span.error {clear:left; margin-left:30%; float:left}
+div.addcontact ul li label span.error {float:left; width:10px; margin:0}
+div.addcontact ul li input[type=text], div.addcontact ul li input[type=password] {clear:none!important; width:225px;}
+div.addcontact ul li select {clear:none!important; width:225px}
+div.addcontact ul li input.btn {margin-left:30%}
+
+div.addcontact ul li.chkemail input[type=checkbox] {float:left; margin:3px 5px 0 0}
+div.addcontact ul li.chkemail label {width:90%; line-height:20px;}
+div.actionbtnwrap {margin-left:30%}
+#addresswarning{margin-top:10px;}
+
+/*-- Change Login Detail Page --*/
+.changelogin_content .acc-subhead{margin-left:2px;}
+.error_msg_box{margin-left:1px;}
+
+/********************************************************************/
+
+.acc_pagging .placeholder {float:right;}
+.acc_pagging .qtypage{ border: 1px solid #d1d1e1;margin-left: 5px;padding:3px 6px;text-align: center; height:25px; width: 44px;}
+.acc_pagging .qtypage:focus{padding:3px 6px;}
+.acc_pagging .placeholder, .acc_pagging label {line-height: 23px;}
+.orderstatus {font-size:13px; margin-top:0px; word-spacing:-1px}
+.srch-odr-history {clear:both}
+.buyall,.addall {background:#f1f1f1; color:#444; padding:3px 0; position:relative;}
+.buyall .acc-subhead{float:left; color:#444; margin-left:10px; width:auto; }
+.wishlist_content .yourpricecontainer,.purchasehistory_content .yourpricecontainer{margin:0 0 12px 0;}
+.wishlist_content .yourpricecontainer span,.purchasehistory_content .yourpricecontainer span{margin-left:0; color:#cf3341;}
+#ctl00_MainContent_purchasehistory_PurchaseHistoryList tr:first-child{display:none;}
+.wishlist_grid, .purchasehistory_grid {border-bottom:1px dotted #bbb; padding-bottom:10px; margin-top:10px;}
+.wishlist_grid .addtocart_qty, .purchasehistory_grid .addtocart_qty{width:40px;}
+.wishlist_grid .acc-subhead, .purchasehistory_grid .acc-subhead{margin-top:-4px; padding-top:0; font-weight:normal;}
+.wishlist_grid .btn.addtocart, .purchasehistory_grid .btn.addtocart, .wishlist_grid #addtocart .addtocart_qty, .purchasehistory_grid #addtocart .addtocart_qty, .wishlist_grid .btn.addtocart_disabled, .purchasehistory_grid .btn.addtocart_disabled{border-radius:2px; margin-top:0; height:31px; line-height:21px; display:inline-block}
+.wishlist_grid .btn.addtocart_disabled, .purchasehistory_grid .btn.addtocart_disabled{font-size: 14px; float:none; padding:6px 12px; text-transform: capitalize;}
+
+.actionlinks #addtocart .remove_item{ clear:left;}
+ .lastupdon{margin-left:5px;}
+.srcitems input.srhitem {padding:4px ;width: 25%; height:25px; border-color:#888;}
+.addall .go {padding:4px 7px;}
+.srhbox {padding-left:96px;}
+.orderstatus select {padding:1px; height:23px; width:50.2%}
+.align_R{text-align:right}
+.creditlimit_content {margin-top:20px}
+.credit_bucket { margin:8px 0}
+.credit_bucket label {width:100px}
+.credit_bucket select {width:300px}
+.creditlist {margin:0;}
+.creditlist ul, .myordercontainer ul{ border:1px solid #999; border-top:0 none; display:inline-block; clear:both; width:100%}
+.creditlist ul.dsk-heading{border:0 none;}
+.creditlist ul li, .myordercontainer ul li{display:block; float:left; border:solid #ccc; border-width: 0 0 1px 1px; line-height:24px; overflow:hidden }
+.creditlist ul.dsk-heading li,.creditlist ul.dsk-content li {border-width: 0 0 0 1px; }
+.d-heading,.m-heading {background-color:#999; border:0 none; color:#fff; font-weight:bold; }
+.remove.small {display:none}
+.myordercontainer ul.shrcontent li a{color:#1d6f9e; font-size:14px;}
+.myordercontainer a.seemmorelines{float:right; text-decoration:underline;}
+.myordercontainer a.seemmorelines:hover{color:#000; text-decoration:none;}
+.ordertracking { float:right; display:inline-block; margin-top: 5px;}
+.qoutecontent ul li,.date_expire{display:block; width:100%}
+#adscontent .acc_pagging{margin-top:10px;}
+.viewadshead select {float:left; width:60%}
+.viewadshead .errorctn {float:left; clear:left;}
+#accsearchbg .ordercontent {margin:10px 0 0;}
+.ordercontent + .errormessage{padding:5px 0 0 0}
+#accsearchbg .searchval{border-radius:2px;border-color:#ccc;height:25px;line-height:20px; font-size:14px; padding:2px 0 2px;width:40%}
+.myadscontent {margin-top:10px; border-bottom:1px solid #bcbcbc;}
+.myadscontent ul{ padding:0 0 5px;}
+.myadscontent ul .btn{padding:3px 10px;}
+.myadscontent .th_heading{font-size:13px;}
+.srhordercontent span {float:left;}
+.ordercreditcard {padding:5px; width:44%}
+.srhcrigeriacontent td {padding-top:5px}
+.srhcrigeriacontent td label{line-height:26px;}
+.pickupdate {vertical-align:middle}
+
+#addtocart {vertical-align:top}
+.addtocart_successmsg {width:100%}
+div.orderdate{padding:0px; margin-right:2px; margin-left:-2px; white-space:nowrap}
+.searchcontent input[type=text], .searchcontent select{width:80%}
+.searchcontent .datecal input[type=text]{width:73%}
+.btn.export[disabled=disabled] {background-color: #ccc; color:#999}
+
+/*-- Download --*/
+.mobile_title{display:none;}
+.download_listing{margin:10px 0 0; padding:0;}
+.download_listing ul{border-bottom: 1px solid #bcbcbc; border-left: 1px solid #bcbcbc;}
+.download_listing ul.formhead {background:#999; color: #fff; font-weight:bold;}
+.download_listing li{border-right:1px solid #bcbcbc; padding-top:0.5%; padding-bottom:0.5%; word-wrap: break-word; text-align:center;}
+.download_listing li:nth-child(3){text-align:left;}
+
+/*-- Return  --*/
+#retorddtls #ordhddisp{background: #E1E1E1;   text-align: center; font-weight:bold;}
+#retorddtls #ordhddisp div{padding: 5px; text-align: left; display: inline-block;}
+#retorddtls #ordhddisp div span{color: #560101;  }
+#retorddtls #ordhddisp .colm1{float: left;}
+#retorddtls #ordhddisp .colm3{float: right;}
+#retorddtls .baddress{  border: 1px solid #e1e1e1;  padding: 5px;}
+#retorddtls .baddress.expand {border:0; padding:0 7px; width:100%;}
+#retorddtls .saddress{  border: 1px solid #e1e1e1; padding: 5px;}
+#retorddtls .baddress h4, .saddress h4{background:#F1F1F1; border-bottom: 1px solid #ddd; font-weight: 700; margin: -5px -5px 5px; padding: 4px 4px;}
+#retorddtls .baddress li, .saddress li{  margin: 4px 0;}
+#retorddtls .baddress li div, .saddress li div{width:70%}
+#retorddtls .baddress label, .saddress label{display: inline-block; padding: 0 4px; width:25%;}
+#retorddtls .returen_order{ border-right:1px solid #bcbcbc;  margin-top:10px; }
+#retorddtls .returen_order ul.returnmgmt_list{ min-height:30px; border-bottom:1px solid #bcbcbc;}
+#retorddtls .returen_order ul.head{ background:#efefef; border-top: 1px solid #bcbcbc; border-bottom: 1px solid #bcbcbc; font-weight: bold; }
+#retorddtls .returen_order ul.head li, #retorddtls .returen_order ul.returnmgmt_list li{border-left: 1px solid #bcbcbc; font-size: 12px;  padding: 3px 3px;   text-align: center; float:left; display:table; vertical-align:middle; }
+#retorddtls .returen_order ul.head li div, #retorddtls .returen_order ul.returnmgmt_list li div{ display:table-cell; vertical-align:middle;word-break:break-all;}
+#retorddtls .returen_order li.ReturnMgmt_Ordered{ width:7%;}
+#retorddtls .returen_order li.ReturnMgmt_Shipped{ width:15%;}
+#retorddtls .returen_order li.ReturnMgmt_QtyReturn input{ padding:0px; }
+#retorddtls .returen_order li.ReturnMgmt_ItemNo, #retorddtls .returen_order li.ReturnMgmt_LineTotal, #retorddtls .returen_order li.ReturnMgmt_QtyReturn{ width:10%;}
+#retorddtls .returen_order li.ReturnMgmt_Desc, #retorddtls .returen_order li.ReturnMgmt_ResonForReturn{ width:12.5%;}
+#retorddtls .returen_order li.ReturnMgmt_Return{ width:5%;}
+#retorddtls .returen_order li.ReturnMgmt_RestockingFee{ width:9%;}
+#retorddtls .returen_order li.ReturnMgmt_ReturnAmt{ width:9%;}
+.cmnpanel .return{ margin-top:0px;}
+.cmnpanel{ margin-bottom:10px;}
+
+/*-- Pending Cart Page --*/
+.abandoncartlistWrapper .overview{position:inherit!important;}
+
+.tblInvExprt ul.formhead li#th_MyInvoices_Export .checkedall{display:block; margin:5px auto;}
+
+
+
+@media screen and (max-width:1024px) {
+    .error_msg_box{margin-left:2px;}
+    .totalamt input[type=text]{width:85%!important;}
+    #copycart{left:26%!important;}
+    .tblInvExprt ul.footerordertotal li.total{width:76.4%;}
+    div.createcontactlist ul li.editcontact{width:20.2%;}
+    #ordhddisp{margin-bottom:0px;}
+    .myordercontainer ul.shrcontent .m-content .prod_name .astrix{position:inherit; line-height:15px;}
+    .wishlist_grid .btn.addtocart, .wishlist_grid #addtocart .addtocart_qty{line-height:20px;}
+}
+@media screen and (min-width: 768px) and (max-width:940px) {
+    .col-ip-10 {width: 83.33333333%;}
+    .col-ip-2 {width: 16.66666667%;}
+    .lastupdate label {font-size:10px; margin-left:-9px; text-align:center }
+    .col-ip-7 {width: 58.33333333%;}
+    .col-ip-6 {width: 50%;}
+    .col-ip-5 {width: 41.66666667%;}
+    .ordinput {width:64%}
+    .creditlist{font-size:11px;}
+    .searchcontent .datecal input[type="text"] {width: 68%;}
+    .invorderpayment input[type=text]{width:44px!important;}
+    .totalamt input[type=text]{width:88%!important;}
+    .acc_pagging .qtypage{padding: 3px 6px 2px;}
+    div.invoicelist ul.invoicetotal li{height:25px!important; min-height:25px!important;}
+   div.createcontactlist ul li.editcontact{width:20.3%;}
+}
+
+@media screen and  (min-width: 768px) {
+    div.createcontactlist ul li.email {width:44.7%}
+    .orderheader span { text-align:right; }
+    .orderheader span:first-child { text-align:left; }
+    .acctable .wishlist_content .addtocart_qty, .acctable .purchasehistory_content .addtocart_qty {border-radius: 5px;margin-top: 1px; text-align:center; padding: 4px;}
+    .prodimg + #remove {display:none;}
+    .m-heading {display:none!important}
+    .order_m_head {display:none!important;}
+    .order-dsk-head {clear:both; width:100% }
+    .srhordercontent .dsk-heading {background:#e1e1e1; border:0 none; color: #888; padding:0; font-size:14px;}
+    .creditlist ul li, .myordercontainer ul li {border:none; }
+    .myordercontainer ul {background:#fff; border-width:0 1px 1px 1px; border-color:#e1e1e1; padding:5px;}
+    .srhordercontent .last, .srhordercontent .qtycontent {text-align:right;}
+    .myordercontainer ul.shrcontent{font-size:13px;}
+    .myordercontainer ul.shrcontent li.prod_name a{display: block;font-size: 14px; line-height: 18px;padding-top: 2px;}
+    .orderstatus .btn.go{height:23px; float: none;padding: 2px 8px;display: inline-block;}
+    .order_history_content .srhcrigeriacontent .searchcontent {margin:0 0 10px;}
+    .orderdate + div {padding-left:0px;}
+    .tele_number_list li.tel_heading{width:20%;}
+    .tele_number_list li.tele_no{width:75%}
+    .tblInvExprt ul.formhead{background:#f5f5f5; color:#444}
+    .tblInvExprt ul.formhead li{min-height:60px; text-align:center} 
+    .invoicelist li{min-height:40px;}
+    .invoicelist li.invno{word-break:break-all}
+    .savemycard select{float:left}
+    .savemycard input {float:left; margin:7px;}
+    .savemycard input + label {float:left; width:auto}
+    #tblInvExprt input[type=checkbox]{clear:both; display:block;margin:3px auto 0; }
+    .btn.go {border-radius: 2px; height:25px; margin-left: 5px;  vertical-align: top;}  
+    div.paymentdetails ul.invoicecreatedetails li input[type=text] {width:30%;}
+    div.paymentdetails ul.invoicecreatedetails li select{width:30%;}
+    div.paymentdetails ul.invoicecreatedetails li select.small{width:14.7%;}
+   .orderstatuscol1{
+    width: 52%;
+    padding-right: 0;
+    }
+   .orderstatuscol1 select {
+    WIDTH: 57%!important;
+    }
+    .orderstatuscol2 {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:768px) {
+#copycart{left:19%!important;}
+#addtocart .addtocart_qty {border-radius:5px; text-align:center; margin-bottom:10px;}
+#ordercomplete .copy2cart{margin:0 0 15px;}
+.order-label{width:40%}
+.invoice_btn_box .btn.print_btn{display:none;}
+.srhordercontent .dsk-heading {background:#999; border:0 none; color: #fff; padding:0;}
+.m-heading {display: none !important;}
+.creditlist ul li, .myordercontainer ul li {border:none; }
+.odr-his-content .col-sm-4 {float: none;}
+.col-md-8, .col-md-4 , .col-sm-8, .col-xs-8{padding-left: 9px;padding-right: 9px;}
+.add_edit_ads_content .clearfix{display:block; margin-bottom:2px;}
+#account_content {position:relative}
+.addtocart + #remove {display:none;}
+.prodimg + #remove {position: absolute;right: 10px;top: 10px;}
+.wishlist_grid{clear:both;position:relative;}
+.remove.small {display:block; position:absolute; top:0px; right:6px; z-index:1;}
+.productname {padding-right:14%}
+.buyall {margin-bottom:6px;}
+.order-dsk-head {display:none;  }
+.acc-subhead {margin-top:0;}
+.accactivity {padding-top:10px;}
+.odr-his-content tr:first-child {background:#14376f;}
+.odr-his-content .odr-head { color:#fff;}
+.odr-his-content td {padding:3px 5px; text-align:left}
+.go {margin-left:5px;}
+#accsearchbg .heading {line-height:26px; }
+.btn.addtocart, .addtocart_qty{line-height:18px; vertical-align:top; margin:0;}
+.orderheader span:last-child {text-align: right;}
+#addallerrormsg, .addallerrormsg{margin-bottom:5px;}
+.odr-his-content th{padding:3px 5px;}
+.col-qu-9{width:100%!important;}
+.srhcrigeriacontent .orderstatus span{font-size:13px; line-height:19px;}
+.orderstatus select { display: inline-block; margin-bottom:5px; width:49%;}
+.d-w{text-align:right; width:100%!important; }
+.d-w .go{float:none;}
+div.orderdate{padding-left:12px; width:11.2%;}
+.orderheader .col1,.orderheader .col2 {width:100%;text-align:left !important}    
+.srcitems .lastupdon{padding-right:62px;margin:5px 0 0}
+ .addallbtn, .buyallbtn{margin-top:-16px;}
+    .NewsLetterSubscrption ul li input[type="text"] {width:95%}
+        div.acc_pagging.bottom .btn.addallbtn{margin-top:0;}
+}
+
+@media screen and (max-width:767px){
+    .acc-nav dd.listdefined{clear:left; float:left; width:100%;}
+    .acc-nav dd.listdefined ul li{float:left; margin-right:15px; color:#1d6f9e;}
+    #accountleftnav {background:#f5f5f5;border: 1px solid #e1e1e1;border-top:0px none; left:0.25%; width:99%; position: absolute;top:30px;z-index: 3; padding:5px;}
+    #accountleftnav .nav-title {display:none}
+    .mobile_nav_box{clear:left; position:relative;}
+    .acclinkcontent{background:#197b30;clear: both;display: block;height: 30px;margin-bottom: 10px;text-align: left;text-indent: 9px; position:relative;}
+    .acclinkcontent a {display:block!important; color: #fff; font-size: 20px; cursor:pointer; line-height:30px;}
+    .acclinkcontent span {float:left;background:url(../images/icon-btn-down.png) no-repeat right center; margin-left:4px; width:20px; height:20px; position:absolute; right:10px; top:5px;}
+    .acclinkcontent.down span {background-image:url(../images/icon-btn-up.png);}
+    #copycart{left: 15% !important;top:40px!important; width: 70%}
+    #ctl00_MainContent_SearchOrderQueryHistory_panelSubmitButton{margin-top:10px;}   
+    .add_edit_address li input[type="text"], .add_edit_address li select{width:100%;}
+    .searchcontent .datecal input[type=text]{width:65%;}
+    .savemycard select{float:left}
+    .savemycard input {float:left; margin:7px;}
+    .savemycard input + label {float:left; width:auto}
+    .pagingprevarrow::before {padding-left:0;padding-right:4px}
+}
+
+@media screen and (min-width:736px){
+        div.createcontactlist ul li.name {border-left:1px solid #999;}
+
+}
+
+
+@media screen and (max-width:667px){
+    .tblInvExprt ul li.chkinv span input[type=checkbox], .tblInvExprt ul li.invexport input[type=checkbox]{margin-top:5px;}
+}   
+
+@media screen and (min-width:596px) and (max-width:767px) {
+    .orderstatus span { display: inline-block; margin-bottom:5px; width: 100%;}
+    .col-64-8 {width: 66.66666667%;}
+    .col-64-4 {width: 33.33333333%;}
+    .lastupdon{width:80%; margin-left:0;}
+    #accdashboard .errormessage.error {padding-left:0;}
+    .invoicelist li{min-height:40px;}
+    .invorderpayment input[type=text]{width:44px!important;}
+    .totalamt input[type=text]{width:88%!important;} 
+    .tblInvExprt ul.formhead{background-color:#999; color:#fff}
+    .tblInvExprt ul.formhead li{min-height:60px; text-align:center} 
+}
+@media screen and (max-width:667px){
+    .orderstatus select{height:25px;}
+}
+
+@media screen and (max-width:600px){
+    .add_edit_address li select.sm{width:16%;}
+}
+@media screen and (max-width:767px) {
+    #ctl00_MainContent_SearchOrderQueryHistory_panelSubmitButton{margin-top:0;}
+    .orderstatus {background:#f1f1f1; border:1px solid #ccc; margin:0; padding:10px 0 0; font-size:15px;}
+    .d-w {display:block; margin:10px 0 0; width:100%}
+    .orderstatus span{width:100%; display:block}
+    .orderstatus select {width:58%; border:1px solid #ccc}
+    .orderstatus .go {display:inline-block; float:right;   margin:0 0 10px; font-weight:normal;}
+    .pagging .go {height: 25px; padding: 3px 12px;}
+    div.acc_pagging div.matchfound { color:#197b30; width:100%;  margin-top:10px; text-align:right;}
+    div.acc_pagging {margin-bottom:0px;}
+    .orderheader span:last-child {text-align:right }
+    .srhordercontent span:nth-child(1) {float:left; }
+    .srhordercontent input,.srhordercontent select{width:80%}
+    .srhcrigeriacontent td label{display:block;}
+    #ctl00_MainContent_SearchOrderQueryHistory_panelSubmitButton {margin-top: 10px;}
+    #ctl00_MainContent_SearchOrderQueryHistory_panelSubmitButton .btn.regularhead {display: inline-block;}
+    .lastupdon{margin-left:0;}
+    .totalamt input{width:80%}
+    .dsk-heading {display:none!important}
+    .dsk-content {margin-bottom:10px }
+    .dsk-content li {border-bottom:1px solid #ccc!important}
+    .m-heading{background:#fff;  color:#000; border-left:1px solid #ccc!important;}
+    .m-heading:after{content:": "}
+    .dsk-content li.align_R, .credittotal li.align_R{text-align:left;}
+    .creditlist ul, .myordercontainer ul{border:0 none; border-top:1px solid #ccc; border-right:1px solid #ccc;}
+    .creditlist ul li, .myordercontainer ul li, .dsk-content li{border-color:#ccc!important;}
+    
+    .myordercontainer ul.shrcontent .m-content .qtycontent, .myordercontainer ul.shrcontent .m-content .last{text-align:center;}
+    .myordercontainer ul.shrcontent .m-content .last span{float:none;}
+    .myordercontainer ul.shrcontent li {border:0; margin:2px 0; line-height:18px;}
+    .myordercontainer ul.shrcontent li .m-heading {background:none; border:0!important; color:#555}
+    .myordercontainer ul.shrcontent li .m-heading:after{content:": "}
+    .myordercontainer ul.shrcontent {border:1px solid #ddd; margin-top:5px;}
+    .m-heading {display: inline!important;}
+    .creditlist ul li{border-bottom:1px solid #ccc;}
+    .orderstatus label {float:left; display: inline-block; width:42%; }
+   .credittotal li:first-child {background:#999; color:#fff; font-weight:700}
+    .add_edit_address li select.md{margin-right:2.6%; width:54.4%;}
+    .add_edit_address li select.sm{width:41.4%;}
+    
+}
+@media screen and (max-width:568px){
+        #copycart{left:5% !important; width:90%; top:6px!important; }
+        .creditlimit_content .col-sm-6{width:50%;}
+        .creditlimit_content .credittotal .col-md-6{width:100%;}
+}
+
+@media screen and (max-width:567px){
+    .download_listing ul{border-top:1px solid #bcbcbc; margin-bottom:10px;}
+    .download_listing ul.formhead{display:none;}
+    .mobile_title{display:inline-block; float:left; font-weight:bold; width:40%;}
+    .mobile_title:after{content:": "}
+    .download_listing li{text-align:left;}
+    .orderheader .quoteby{float:right;}
+    .NewsLetterSubscrption ul li input[type="text"]{margin-bottom:10px;width:100%}
+
+}
+
+@media screen and (max-width:414px) {
+   .add_edit_address li select.md{width:53.9%;}
+    .srcitems .lastupdon {padding-right:0;width: 262px;
+    }
+}
+@media screen and (max-width:380px) {
+.col-sd-12 {width: 100%;}
+.col-sd-11 {width: 91.66666667%;}
+.col-sd-10 {width: 83.33333333%;}
+.col-sd-9 {width: 75%;}
+.col-sd-8 {width: 66.66666667%;}
+.col-sd-7 {width: 58.33333333%;}
+.col-sd-6 {width: 50%;}
+.col-sd-5 {width: 41.66666667%;}
+.col-sd-4 {width: 33.33333333%;}
+.col-sd-3 {width: 25%;}
+.col-sd-2 {width: 16.66666667%;}
+.col-sd-1 {width: 8.33333333%;}
+.acc_pagging .placeholder {float:left}
+.orderstatus select{width:58%}
+.orderheader span:last-child {text-align: left;}
+.extno {padding-left:0px;}
+}
+
+@media screen and (min-width:320px) and (max-width:420px) {
+#accsearchbg #ordernumber {clear:both; width:80%;}
+.changepassword .col-sm-5, .changepassword .col-sm-7 {width:50%; text-align:left; padding-top:5px}
+.order-status span, #ordhddisp span {width:100%}
+.orderheader span.place_order {display:block; width:100%; text-align:left }
+.changepassword input[type="text"], .changepassword input[type="password"]{width:100%;}
+
+}
+
+@media screen and (min-width:320px) and (max-width:680px) {
+     #copytocart{height:90%; overflow-y:auto;}
+    .tblInvExprt {border:0}
+    .tblInvExprt ul {border:0}
+    .tblInvExprt ul.formhead li, .tblInvExprt ul.formhead li#th_MyInvoices_Export {display:none}
+    .tblInvExprt ul.formhead li.invexport {display:block; width:100%; border-bottom:#bcbcbc 1px solid; padding-bottom:5px;}
+    .tblInvExprt ul.formhead li.invexport input[type=checkbox] {clear:none!important; margin:2px 5px}
+    #th_MyInvoices_Export .btn.export{float:right; opacity:1;}
+    #th_MyInvoices_Export .checkedall{float:right; margin-top:12px;}
+    .tblInvExprt ul li {height:auto; line-height:20px}
+    .tblInvExprt ul li label {color:#444; display:block; font-weight:normal; float:left; width:47%;}
+    .tblInvExprt ul li label:after{content:":"}
+    .tblInvExprt ul.invoicelist {background:#fcfbfb; margin-bottom:10px; padding:10px 2%; border:1px solid #f2f2f2; float:left; clear:none; width:100%; }
+    .tblInvExprt ul.invoicelist li {float:none; width:100%; text-align:left!important; border:0; clear:both}
+    .tblInvExprt ul.invoicelist li.invorderpayment input[type=text] {clear:none!important; padding:0; margin-right:3px}
+    .tblInvExprt ul.footerordertotal {background:#f1efef; margin-top:-1px}
+    .tblInvExprt ul.footerordertotal li.totalamt input[type="text"] {margin-top:1px}
+    div.qksrchinvoice label {width:100%; line-height:27px;}
+    div.qksrchinvoice #ctl00_MainContent_MyAccInvoices_updpnlQuickSearch label{margin-right:10px; width:inherit;}
+    div.invdetails div#invordqutshipadd {margin-bottom:15px}
+    div.invoicelist ul:nth-child(2){margin-bottom:0px;}
+    div.invoicelist ul.formhead {display:none}
+    div.invoicelist ul li {border:0; height:auto; padding:5px 0.5%}
+    div.invoicelist ul li label {display:block}
+    div.invoicelist ul.formlist {padding:0; background:#f5f5f5; border-left:1px solid #e1e1e1; border-top:1px solid #e1e1e1;}
+    div.invoicelist ul.formlist li.orderedmgmt,
+    div.invoicelist ul.formlist li.itemshipped,
+    div.invoicelist ul.formlist li.itembo  {float:left; width:33%; text-align:left}
+    div.invoicelist ul.formlist li.skudiscount,
+    div.invoicelist ul.formlist li.unitprice,
+    div.invoicelist ul.formlist li.extprice {float:right; width:100%; text-align:right; clear:right; line-height:22px; border-top:1px solid #e1e1e1}
+    div.invoicelist ul.formlist li.extprice {text-align:right; font-weight:bold; font-size:14px; }
+    div.invoicelist ul.formlist li label {font-weight:bold}
+    div.invoicelist ul.formlist li.orderedmgmt label,
+    div.invoicelist ul.formlist li.itemshipped label,
+    div.invoicelist ul.formlist li.itembo label,div.invoicelist ul.formlist li.skudiscount label,
+    div.invoicelist ul.formlist li.unitprice label, div.invoicelist ul.formlist li.extprice label{float:left; padding-right:5px}
+    div.invoicelist ul.formlist li.skudiscount label,
+    div.invoicelist ul.formlist li.unitprice label,
+    div.invoicelist ul.formlist li.extprice label {font-size:12px; text-align:left; width:72%}
+    div.invoicelist ul.invoicetotal li{height:24px!important; min-height:24px!important;}
+    div.invoicelist ul.invoicetotal li label {width:72%}
+    div.invoicelist ul li.orderedmgmt{border-left:0 none;}
+    div.invoicelist ul.formlist li.invitemno {float:left; width:33%; text-align:left}
+    div.invoicelist ul.formlist li.gendesc {float:left; width:66%; text-align:left}
+    div.createcontactlist ul.contactlist { border:1px solid #f2f2f2; padding:10px; margin-bottom:5px; float:left; width:100%;}
+    div.createcontactlist ul.contactlist:first-child {padding-top:0}
+    div.createcontactlist ul.contactlist li {border:0; height:auto}
+    div.createcontactlist ul.contactlist li label {display:block; float:left;  width:25%;}
+    div.createcontactlist ul.contactlist li label:after{content:":";}
+    div.createcontactlist ul.contacthead {display:none}
+    div.createcontactlist ul li.name, div.createcontactlist ul li.email, div.createcontactlist ul li.status, div.createcontactlist ul li.editcontact {width:100%}
+    div.createcontactlist ul li.email .socialsitelogin {padding-left:25%;}
+    div.createcontactlist ul li.editcontact{padding-left:25%;}                         
+    div.addcontact ul li{max-height:77px;}
+    div.addcontact ul li label {width:100%}
+    div.addcontact ul li input[type=text], div.addcontact ul li input[type=password], div.addcontact ul li select, div.addcontact ul li.chkemail, div.actionbtnwrap, div.addcontact ul li select {margin-left:10px; width:97%;}
+    div.addcontact ul li span.error{margin-left:3%;}
+    .tblInvExprt ul.footerordertotal li.total{width:46%; text-align:left; border:none; padding-left:12px;}
+    .tblInvExprt ul.footerordertotal li.totalamt{float:left; width:40%}
+}
+
+@media screen and (min-width:320px) and (max-width:480px) {
+    .tblInvExprt ul.greybg {width:100%}
+    div.paymentdetails ul.invoicecreatedetails li label {width:40%;}
+    div.paymentdetails ul.invoicecreatedetails li input.btn {margin-left:40%}
+    div.paymentdetails ul.invoicecreatedetails li input[type=text] {width:60%;}
+    div.paymentdetails ul.invoicecreatedetails li select{width:60%;}
+    div.paymentdetails ul.invoicecreatedetails li select.small{width:29.1%;}
+    div.invoicelist ul.formlist li.invitemno {width:100%}
+    div.invoicelist ul.formlist li.invitemno label {float:left; padding-right:5px}
+    div.invoicelist ul.formlist li.gendesc {width:100%}
+    div.invdetails #ordhddisp div span {clear:left; float:left}
+    .srhcrigeriacontent input.pickupdate {width:auto; cursor:none;}
+    .srhcrigeriacontent input.pickupdate:focus{cursor:none;}
+    .myordercontainer ul.shrcontent .m-content .qtycontent, .myordercontainer ul.shrcontent .m-content .last{text-align:left;}
+    #accsearchbg{margin-bottom:5px; margin-top:15px;}
+}
+@media screen and (max-width:480px) {
+    .col-sd-12 {width: 100%; text-align:left!important}
+    a.editquote, a.converttoorder, a.printquotes{font-size:13px;}
+    #copycart ul li.divider{background-position:45px -879px}
+   
+    .viewadshead select {width:100%}
+    .btn.layaccaddnewaddbtn{margin-top:10px;}
+    .col-xs-12 {width:100% }
+    .mobile_button_box{display:block;}
+    .myadscontent li.buttons{display:none;}
+    .add_edit_ads_content input[type="text"], .add_edit_ads_content select{width:100%;}
+    .extno {margin:10px 0;}
+    .mycreditcardlist_box ul.heading{display:none;}
+    .mycreditcardlist_box ul.mobile_mycard_type{background:#999; border:1px solid #999; display:block; padding:0; color:#fff; margin-top:10px;}
+    .mycreditcardlist_box ul.mobile_mycard_type li{border:0 none; width:50%; font-size:13px; text-align:left; padding:5px 13px;}
+    .mycreditcardlist_box ul.mobile_mycard_type li img{width:28px;}
+    .mycreditcardlist_box ul{background:#e6e7e8; border:1px solid #c3c4c5; border-top:0 none; padding:8px;}
+    .mycreditcardlist_box ul li .mobile_th_mcl{display:inline-block; font-weight:bold; text-align:left; float:left;}
+    .mycreditcardlist_box ul.listing li.td_MyCard_Name, .mycreditcardlist_box ul.listing li.td_MyCard_NameonCard, .mycreditcardlist_box ul.listing li.td_MyCard_Number, .mycreditcardlist_box ul.listing li.td_MyCard_Type, .mycreditcardlist_box ul.listing li.td_MyCard_Heading, .mycreditcardlist_box ul.listing li.BtnSectionTd{border:0 none; float:none; width:100%; text-align:right; font-size:13px;}
+    .mycreditcardlist_box ul.listing li.BtnSectionTd{font-size:13px; text-align:center;}
+    .mycreditcardlist_box ul.listing li.td_MyCard_Type{display:none;}
+    .mycreditcardlist_box ul.listing li.BtnSectionTd .divider{display:inline-block; margin:0 3px;}
+    .card_select_box select{width:80%;}
+    .NewsLetterSubscrption .btn.subscribeNL.laysubscribeNL.regularhead{margin-top:10px;}
+}
+@media screen and (max-width:419px){
+    .my_ads_content .viewadshead .btn{margin-top:10px;}
+    .tele_number_list li.tele_no span.extn{margin-left:0;}
+     .tele_number_list li.tel_heading{width:34%;}
+     .tele_number_list li.tele_no{width:63%;}
+}
+@media screen and (max-width:360px) {
+    .addallbtn {
+    margin-top: -45px;
+    }
+}
+@media screen and (max-width:320px) {
+     .add_edit_address li select.md{width:48.6%;}
+     .add_edit_address li select.sm{width:46%;}
+
+     div.acc_pagging.bottom .btn.addallbtn{margin-top:0;}
+     
+
+}

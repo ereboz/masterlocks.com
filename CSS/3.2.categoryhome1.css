@@ -1,0 +1,222 @@
+﻿div#apparel1productlist div#productlist{min-height: 1000px; margin-bottom:15px;}
+
+div#apparel1productlist div#productlist div.header{ display:inline-block; width:100%; padding-bottom:35px; border-bottom:1px solid #eeeeee; margin-bottom:40px;}
+div#apparel1productlist div#productlist div.header h1{font-size:36px; border-bottom:4px solid #eeeeee; margin-bottom:35px; color:#444444;}
+div#apparel1productlist div#productlist div.header h1 span{ position:relative; background:#fff; bottom:-14px; padding-right:10px; }
+div#apparel1productlist div#productlist div.header ol.pagecount{ display:none;}
+
+div#apparel1productlist div#productlist .productssortby, div#apparel1productlist ul.products_viewmode, div#apparel1productlist ol.showitemsperpage  { display: inline-block;  float:right; line-height:30px; font-size:11px; color:#888888; margin-left:25px;}
+div#apparel1productlist ul.products_viewmode{ float:left;}
+div#apparel1productlist ul.products_viewmode li{ float:left;}
+div#apparel1productlist ul.products_viewmode li.listname{ color:#888888; padding-left:8px; font-size:11px; line-height:30px;}
+div#apparel1productlist ul.products_viewmode li a{ width:30px; height:30px; background:#eeeeee; color:#aaaaaa; display:block; border-radius:2px; text-align:center;}
+div#apparel1productlist ul.products_viewmode li a:hover, div#apparel1productlist ul.products_viewmode li a.selectedviewmode{ background:#3b4348; color:#fff;}
+div#apparel1productlist ul.products_viewmode li a i.fa{ font-size:14px; margin-top:9px;}
+div#apparel1productlist div#productlist .productssortby select, div#apparel1productlist ol.showitemsperpage select{ border:1px solid #dddddd; background:#f5f5f5; color:#aaaaaa; height:30px; line-height:30px; border-radius:3px; padding:0px 8px; font-size:11px; font-style:italic;}
+div#apparel1productlist div.body{  width:100%; min-height: 200px; float: left;}
+
+div#apparel1productlist div#narrowsearchfilter ul.products_viewmode li{  width: 106px!important;  padding: 0;}
+div#apparel1productlist div#productlist div#articlelistcontainer ol.grid > li{float: none!important;}
+div#apparel1productlist div#productlist ol.grid > li{ min-height:480px;}
+div#apparel1productlist div#productlist ol.grid > li ul li.prodimage{ min-height:340px; position:relative;}
+div#apparel1productlist div#productlist ol.grid > li ul li.prodimage img{ left:0; top:0; bottom:0; right:0; position:absolute; margin:auto;}
+div#apparel1productlist div#narrowsearchfilter dl.selectedfilter a.removefilter{float: right;}
+div#productcompare #viewcomparison span.actionlinks{position: relative;}
+div#apparel1productlist div#productlist ol.grid a.addtocart, 
+div#apparel1productlist div#productlist ol.grid a.addtocart_disabled, 
+div#apparel1productlist div#productlist ol.grid a.movetowishlist, 
+div#apparel1productlist div#productlist ol.grid a.showallskus, 
+div#apparel1productlist div#productlist ol.grid a.addtocart_configure{float: none; display: inline-block; margin-right: 0;}
+div#apparel1productlist dl.productlistscontainer{ float: left; width: 100%; margin-left: 5px; padding: 0 0 10px;}
+div#apparel1productlist div#productlist ol.grid .addtocart_successmsg, div#apparel1productlist div#productlist ol.grid .addtocart_errormsg{ width: 100%; float: left; bottom: 39px; left: -39px;}
+div#apparel1productlist div#productlist ol.grid li.actionlinks .wishlistmsg{ width: 100%; display: block; height: 10px;}
+div#apparel1productlist div#productlist ol.grid .actionaddtocart,div#apparel1productlist div#productlist ol.grid .actionshowall{ margin-left: 20px;}
+div#apparel1productlist div#productlist ol.grid .actionaddtocart .btn.showall,
+div#apparel1productlist div#productlist ol.grid .actionshowall .btn.showall {padding:3px 12px 4px;}
+div#apparel1productlist div#productlist ol.grid span.promotag { color:#197b30; display:block; font-weight:bold; font-size:14px; padding:4px 0 10px; }
+div#apparel1productlist div#productlist ol.list span.promotag { color:#197b30; display:block; font-weight:bold; font-size:14px; padding:10px 0; }
+
+div#apparel1productlist div#productlist ol li ul li.proddescription, 
+div#apparel1productlist div#narrowsearchfilter dl.selectedfilter{  display: none;}
+div#apparel1productlist div#narrowsearchfilter.narrowsearchfilter1 dl{  border: none;}
+div#apparel1productlist div#narrowsearchfilter li.pricesearch{  float: left;  margin: 10px 0 0;}
+div#apparel1productlist div#narrowsearchfilter li.pricesearch span, div#apparel1productlist div#narrowsearchfilter li.pricesearch input{  float: left;  text-indent: 0;}
+div#apparel1productlist div#narrowsearchfilter li.pricesearch input.filterprice{  width: 43px;  border: 1px solid #bbb;  margin: 0 9px 0 2px;}
+div#apparel1productlist div#narrowsearchfilter li.pricesearch input.submitprice{ background: url(../images/actionlist.png) no-repeat -650px -153px; border: medium none; cursor: pointer; display: block;  float: left;  height: 31px;  width: 47px;  margin: -8px 0 0;}
+
+
+
+
+div#apparel1productlist ul.products_sorting li{  list-style-type: none;  float: left;  margin: 0 1px 1px 0;}
+div#apparel1productlist ul.products_sorting li.listname{  height: 40px;}
+div#apparel1productlist div.catlog_footer{ display:inline-block; width:100%; margin-top:20px;}
+div#apparel1productlist ol.pagecount{  list-style-type: none; float: right; font-size: 12px;}
+div#apparel1productlist ol.pagecount li{ float:left; margin-right:1px;}
+div#apparel1productlist ol.pagecount li a, div#apparel1productlist ol.pagecount .selectedpage{ width:30px; height:30px; display:block; background:#eeeeee; border-radius:2px; color:#444; text-align:center; line-height:30px; float:left;} 
+div#apparel1productlist ol.pagecount li span.ellipses{ float:left; display:block; width:15px; text-align:center; padding-top:15px;}
+div#apparel1productlist ol.pagecount a.previouspage, div#apparel1productlist ol.pagecount a.nextpage, div#apparel1productlist ol.pagecount a.previouspage:hover, div#apparel1productlist ol.pagecount a.nextpage:hover{ background:none; color:#444; text-align:left; width:auto;}
+div#apparel1productlist ol.pagecount a.previouspage{ padding-right:15px;}
+div#apparel1productlist ol.pagecount a.nextpage{ padding-left:15px;}
+div#apparel1productlist ol.pagecount .selectedpage, div#apparel1productlist ol.pagecount li a:hover{ background:#197b30; color:#fff;}
+div#apparel1productlist div.catlog_footer ol.showitemsperpage  { display:none;}
+
+
+/*Search text display on product list */
+.srchresultcountdisabled {pointer-events: none;}
+
+div#apparel1productlist .grid .prodname a{color:#3b4348; display:block;  min-height: 56px; font-size: 14px; text-transform:uppercase; background:url(../images/product_heading.png) no-repeat center top; padding-top:15px; }
+
+
+div#apparel1productlist div#productlist span.infomsg{color:#1D6F9E;font-size:14px;float:left;width:96%;padding:10px 2%}
+div#apparel1productlist ul.productitem{ text-align:center;}
+div#apparel1productlist div.head{float: left;margin: 15px 0 5px 0; overflow: hidden; width: 100%;}
+div#apparel1productlist .list ul.productitem{ min-height:230px; padding-top:15px; padding-bottom:15px; border-bottom:1px solid #eeeeee;}
+div#apparel1productlist .list li:last-child ul.productitem{ border-bottom:0px;}
+div#apparel1productlist .list ul.productitem li.prod_name_description{ text-align:left;}
+div#apparel1productlist .list ul.productitem li.prod_name_description div.prodprice { padding:10px 0px;}
+div#apparel1productlist .list ul.productitem li.prod_name_description div.More_details { padding:10px 0px; }
+div#apparel1productlist .list ul.productitem li.prod_name_description div.More_details a{ color:#197b30!important; font-size:12px;}
+div#apparel1productlist .list ul.productitem li.prod_name_description h3 a{font-size:14px; color:#3b4348; text-transform:uppercase; }
+
+div#apparel1productlist div#productlist ol li ul div.proddescription{display:block;padding-top:5px;  line-height: 1.5em; color: #888888;}
+div#apparel1productlist div#productlist ol li ul div.proddescription
+div#apparel1productlist li.prodprice{float:right!important; margin-top:5px; width:145px; position:relative;}
+.inventorymsg .stockstatus{display:inline-block;font-size:12px;margin-top:6px;font-weight:100}
+div#apparel1productlist .addtocartcontainer{width:242px;background:url(../images/backgrounds.png) no-repeat 0 0;float:left;height:36px;position:absolute;bottom:8px;right:8px}
+div#apparel1productlist .addtocartcontainer .actionaddtocart,
+div#apparel1productlist .addtocartcontainer .actionshowall{width:120px;float:left;padding:7px 9px}
+div#apparel1productlist .addtocartcontainer .actionaddtocart .btn.showall, ol.list .btn.showall{padding:2px 12px;}
+div#apparel1productlist .addtocartcontainer .actionaddtocart .btn.addtocart, div#apparel1productlist .addtocartcontainer .actionshowall .btn.addtocart{padding:2px 12px;}
+div#apparel1productlist .addtocartcontainer li.viewlinks{float:left!important;max-width:94px!important;padding:3px 0 0 20px}
+div#apparel1productlist .addtocartcontainer li.viewlinks li{max-width:100%!important}
+div#apparel1productlist .addtocartcontainer li.viewlinks li.showallcomparelist,
+div#apparel1productlist .addtocartcontainer li.viewlinks li.addtocartlist{padding:9px 0 0 15px}
+div#apparel1productlist li.actionslink ul li a.movetowishlist,
+div#apparel1productlist li.actionslink .addtocartcontainer a.compare{background:none!important;text-indent:0;color:#1D6F9E;font-size:11px;width:100px;display:block; cursor:pointer;}
+div#apparel1productlist div#productlist  a.addtocart_disabled{ cursor:inherit;float: left;  overflow: hidden; font-family: TradeGothicLTPro-Cn18,TradeGothicLTCom,Helvetica,Arial,sans-serif; font-size:14px; padding: 2px 12px; text-transform: none;}
+div#apparel1productlist div#productlist span.reviewscount,.reviewscount{display:block;color:#1D6F9E;float:left;cursor:pointer;margin:5px 3px 0 0; white-space:nowrap}
+div#apparel1productlist div#productlist span.inventorymsg{color: #1D6F9E;display: inline-block;  width:100%;}
+div#apparel1productlist dl.productlistscontainer{float:left;width:100%;margin-left:5px;padding:0 0 10px}
+div#apparel1productlist dl.productlistscontainer dd.panes{margin:0 10px 0 0}
+div#apparel1productlist div#productlist  span.addtocart_successmsg,
+div#apparel1productlist div#productlist  span.addtocart_errormsg,
+div#apparel1productlist div#productlist  li.actionlinks .wishlistmsg{position:absolute;bottom:48px;right:8px}
+
+
+div#apparel1productlist div#productlist div.header span.itemcount{float:right;width:100px;font-size:12px;margin:2px 0 0}
+div#apparel1productlist ul.products_sorting{list-style-type:none;float:left;font-size:12px;width:100%}
+div#apparel1productlist ul.products_sorting li{list-style-type:none;float:left;width:260px;text-align:center}
+div#apparel1productlist ul.products_sorting li a,div#apparel1productlist ul.products_sorting li a strong{background:url(../images/tabbackgrounds.png) no-repeat 0 0}
+div#apparel1productlist ul.products_sorting li a{background-position:left bottom;display:block;font-size:14px;font-weight:700;padding-left:8px;position:relative;text-decoration:none!important;color:#fff;text-shadow:1px 1px 1px #333}
+div#apparel1productlist ul.products_sorting li a strong{background-position:right bottom;display:block;height:41px;line-height:41px;text-indent:-8px}
+div#apparel1productlist ul.products_sorting li a:hover{background-position:-8px -82px;cursor:pointer}
+div#apparel1productlist ul.products_sorting li a:hover strong{background-position:right -82px}
+div#apparel1productlist ul.products_sorting li:last-child a.selectedsorting strong{background-position:right top!important}
+div#apparel1productlist div#productListContainer div#products{border:solid #cdcdcd;float:left;width:99.5%;margin-top:-1px;border-radius:0 0 8px 8px !important;border-width:0 1px 1px}
+div#apparel1productlist ol#productlisting li:last-child span ul.productitem,tr.altrrows th,div#apparel1productlist div#productListContainer ol.bestsellers li ul li:last-child span ul.productitem{border-bottom:none!important}
+div#apparel1productlist div#productlist  li ul li.actionslink ul li.prodprice span.price, div#apparel1productlist div#productlist li.rating a.customerreviewslink{display:block!important}
+div#apparel1productlist div#productlist  li ul li.actionslink ul li.prodprice span.price{font-size:20px;}
+#acctable td#acchtmltable div table tbody tr td.rewardtextleft,div#productcompare2 #viewcomparison div#compareproductfeatures li.placeholder_heading h3{text-align:left}
+div#checkout div.payvia span.paymentoptioncc,div#checkout div.payvia span.savecreditcard,div#checkout div.payvia span.preferredcreditcard,div#checkout div.giftcertificate .balance,#minicatalog_content div#apparel3 span.wishlistmsg,#minicatalog_content div#apparel1 span.wishlistmsg{width:100%;float:left}
+div#apparel1productlist div#narrowsearchfilter li a,div#popupcontainer div#sendtofriendcntrl .send_to_friend div font{color:#666666!important; font-size:11px; display:block;}
+div#apparel1productlist div#narrowsearchfilter li a:hover{ background:#f5f5f5; cursor:pointer;}
+div#apparel1productlist a.applysearchfilter{ cursor:pointer; display:inline-block;float:left}
+li.actionslink a.prodlink{background:url(../images/icons.png) no-repeat scroll 39px -954px transparent; bottom:-112px;color:#999!important;font-size:8pt;font-weight:700;padding-right:6px;position:absolute;right:24px;text-align:right;width:100%}
+div#apparel1productlist div#productListContainer ol.bestsellers {border-radius: 8px 8px 8px 8px;border-width: 1px;}
+.categorynamemobile, #fblikeboxmobile{display:none;}
+div#apparel1productlist ol.grid li.prod_name_description .plpmsrpprice > label {font-weight:bold;}
+div#apparel1productlist ol.grid li.prod_name_description .plpmsrpprice > label, div#apparel1productlist ol.grid li.prod_name_description .prodprice > label, 
+ol.grid li.prod_name_description .prodprice .pricemap span.aslowastext{
+    color: #888;
+    float: left;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    width: 49%; 
+    padding:0;
+}
+div#apparel1productlist ol.grid li.prod_name_description .plpmsrpprice span.price, div#apparel1productlist ol.grid li.prod_name_description .prodprice span.price, 
+ol.grid li.prod_name_description .prodprice .pricemap span.priceaslowas {
+    float: left;
+    margin-left:1%;
+    text-align: left;
+    }
+ol.list li.prod_name_description .plpmsrpprice > label, ol.list li.prod_name_description .prodprice > label { color:#888; font-size: 16px; }
+
+@media screen and (max-width:768px) {
+    .categorynamemobile{display:block; margin-bottom:10px; float:none; font-size:20px; cursor:pointer; text-align:center; position:relative; padding:5px 0; color:#fff; background:#197b30; text-transform:capitalize; border-radius:2px;}
+    .categorynamemobile .btn-back{position:absolute; left:5px; top:8px; width:18px; display: inline-block;  font: normal normal normal 14px/1 FontAwesome;  font-size: inherit;}
+    .categorynamemobile .btn-back:before{ content: "\f053";  }
+    .categorynamemobile a{   color: #fff;  cursor: pointer;  display: block;  margin-top: -18px; position: absolute;  top: 50%;}
+    .categorynamemobile span.categoryname{ padding-left: 26px;}
+    div#apparel1productlist li.actionslink ul li a.movetowishlist,
+    div#apparel1productlist li.actionslink .addtocartcontainer a.compare{display:none;}
+    h2#category_head{text-align:center; margin:10px 0;}
+    div#apparel1productlist div#productlist .productssortby{width:100%; float:none; margin:5px 0; text-align:center; font-size:11px;}
+    div#apparel1productlist .list ul.productitem li.prod_name_description div.More_details { display:none;}
+    div#apparel1productlist ul.products_viewmode{display:none;}
+    div#apparel1productlist div#productlist div.header{ padding-bottom:10px;}
+    div#apparel1productlist div#productlist div.header h1{display:none;}
+    div#apparel1productlist ul.productitem li{float:none;}
+    div#apparel1productlist ul.productitem li.prodimage{text-align:center; padding-bottom:0;}
+    div#apparel1productlist .list ul.productitem li.prod_name_description{float:none; width:100%!important; padding:0 15px; margin-bottom:5px; text-align:center;}
+    div#apparel1productlist div#productlist ol li ul div.proddescription{display:none;}
+    div#apparel1productlist ol.grid li ul.productitem{height:auto; min-height:330px} 
+    div#apparel1productlist ul.productitem li.actionslink{float: none; text-align: center; width: 100%;}
+    div#apparel1productlist ul.productitem li.actionslink ul li.rating{ margin:0 auto; text-align:center; width:180px;}
+    div#apparel1productlist ul.productitem li.rating .customerreviewslink{display:inline-block;}
+    div#apparel1productlist div#productlist span.reviewscount{display:inline; float:none; margin:0; padding:0;}
+    div#apparel1productlist ul.productitem li.prodprice{margin-top:8px;}
+    div#apparel1productlist .addtocartcontainer{float:none; margin:5px 0 20px 0; position:inherit; width:100%; background:none;}
+    div#apparel1productlist .addtocartcontainer .actionaddtocart{float:right; width:100%;}
+    div#apparel1productlist .addtocartcontainer .actionaddtocart, div#apparel4productlist .addtocartcontainer .actionshowall{float:none; margin:0 auto;}
+    div#apparel1productlist div#productlist span.inventorymsg{display:none;}
+    div#apparel1productlist ul.productitem li.actionslink a.proddetails{display:none;}
+    div#apparel1productlist .addtocartcontainer li.viewlinks{display:none;}
+    div#apparel1productlist div#productlist span.addtocart_successmsg, div#apparel1productlist div#productlist span.addtocart_errormsg, div#apparel1productlist div#productlist li.actionlinks .wishlistmsg{bottom:0; left:0; width:100%; display:block; text-align:center;}
+    div#apparel1productlist ul.productitem li, div#apparel4productlist ol.pagecount span.ellipses{float:none;}
+    div#apparel1productlist li.prodprice span.yourprice, span.price{font-size:16px; font-weight:bold; color:#cf3341;}
+    div#apparel1productlist li.prodprice{float:none!important;  text-align:center; text-indent:15px; width:100%; margin:0; margin-top:5px/0;}    
+    div#apparel1productlist li.prodprice span.aslowasprice{font-size:16px; font-weight:bold; color:#000;}
+    div#apparel1productlist li.prodprice .prodlink{display:none;}
+    div#apparel1productlist .addtocartcontainer .actionaddtocart, div#apparel1productlist .addtocartcontainer .actionshowall{float:none; margin:0 auto -10px;}
+    div#apparel1productlist div#productlist .productssortby .sort-lbl{width:24%; float:left; line-height:35px; font-size:16px; font-weight:bold;}
+    div#apparel1productlist div#productlist .productssortby .select{width:76%; float:left; padding:10px;font-weight:bold; border:1px solid #999;}
+    div#apparel1productlist .addtocartcontainer .actionaddtocart, div#apparel1productlist .addtocartcontainer .actionshowall{width:100%;}
+    div#apparel1productlist .addtocartcontainer .actionaddtocart .btn.showall, div#apparel1productlist .addtocartcontainer .actionshowall .btn.showall{ font-size: 16px; font-weight: bold; height: auto; padding:7px 20px; width: 100%;}
+    div#apparel1productlist div#productlist a.addtocart_disabled{background:#dddddf; color: #a5a4a4; display: block; float: none; font-size: 16px; font-weight: bold; height: auto; margin: 0 auto; padding: 6px 0; text-indent: 0; width: 100%;}
+    div#apparel1productlist div#productlist a.addtocart_disabled:hover{text-decoration:none;}
+    div#apparel1productlist div.head h1#categoryname{float:none;min-height: 36px; font-size:20px; margin-bottom:0;}
+    div#apparel1productlist ol.showitemsperpage{ display:none;}
+}
+@media screen and (max-width:1024px)
+{
+div#apparel1productlist ol.grid li ul.productitem{height:367px; width:251px;}
+div#apparel1productlist ol.grid li ul.productitem > li.addtocartcontainergrid{width:250px;}
+div#apparel1productlist div#productlist span.inventorymsg{min-height:35px;}
+div#apparel1productlist div#productlist ol.grid .actionaddtocart, div#apparel1productlist div#productlist ol.grid .actionshowall{margin-left:5px;}
+div#apparel1productlist ul.productitem li.actionslink a.proddetails{background-position:right -954px;}
+li.actionslink a.prodlink{background-position:39px -957px}
+}
+@media screen and (max-width:768px) {
+    div#apparel1productlist .addtocartcontainer .actionaddtocart .btn.showall, div#apparel1productlist .addtocartcontainer .actionshowall .btn.showall{font-size: 20px; font-weight: normal; height: auto; padding: 10px 20px; width: auto;}
+    div#apparel1productlist ul.productitem li.actionslink a.proddetails{background-position:right -957px;}
+    div#apparel1productlist div#productlist ol.grid > li{ width:100%; border-bottom:1px solid #eeeeee;}
+    div#apparel1productlist .grid .prodname a, div#apparel1productlist .list ul.productitem li.prod_name_description h3 a{ background:none; min-height:10px; padding:10px 0px; display:block;}
+    div#apparel1productlist .list ul.productitem li.prod_name_description div.prodprice{ padding:0px;}
+    div#apparel1productlist div#productlist ol.grid > li, div#apparel1productlist div#productlist ol.list > li{ min-height:434px;}
+    div#apparel1productlist ol.grid li ul.productitem, div#apparel1productlist ol.grid li ul.productitem li.prod_name_description{ width:100%;}
+    div#apparel1productlist ol.grid .prod_name_description .prodprice{ border:0px none; text-align:center;}
+    div#apparel1productlist ol.grid li ul.productitem > li.addtocartcontainergrid{ background:none;}
+    div#apparel1productlist ol.grid li ul.productitem li.viewlinks{ display:none;}
+    div#apparel1productlist ol.grid li ul.productitem > li.prod_name_description{ min-height:50px!important;}
+    div#apparel1productlist ol.grid li ul.productitem{ height:auto;}
+    div#apparel1productlist ol.grid li ul.productitem li.prodprice span.yourprice{ display:block!important; font-size:20px!important;}    
+    div#apparel1productlist div#productlist ol.grid .addtocartcontainergrid .actionshowall .btn.showall{font-size:20px; padding:3px 55px;}
+
+ }
+
+@media screen and (max-width:767px){
+    div#apparel1productlist ul.productitem li.actionslink ol.qualifiers{padding-left:0;}
+    div#apparel1productlist ul.productitem li.prodprice{text-indent:0;}
+}

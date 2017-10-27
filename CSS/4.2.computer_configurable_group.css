@@ -1,0 +1,289 @@
+﻿#computer_configurable_group{margin-top:10px;}
+#computer_configurable_group div#maincontent dl#configtabs dd.panes{ min-height:283px;}
+#computer_configurable_group div#maincontent_nocrossselling{width:1002px;clear:both;overflow:hidden;}
+#computer_configurable_group div#productoverview{border: 1px solid #B8CCD2; padding: 5px;  margin:10px 0; font-size:11px;}
+#computer_configurable_group h1{color: #1D6F9E;font-size: 16px;margin-bottom:10px;}
+#computer_configurable_group ul.navigation{float: right; padding: 3px 0 5px;}
+#computer_configurable_group ul.navigation a, .navigation span{padding: 0 8px;}
+#computer_configurable_group ul.navigation a:last-child{padding-right:0;}
+#computer_configurable_group ul.customerreview li.prodimage{height: 70px;margin: 0 10px 10px 0;width: 70px;}
+#computer_configurable_group div#proddetails{width: 340px;float: right;clear: right;margin:0;}
+#computer_configurable_group div#step1 dl dd.selectheading{clear:left; width:210px;}
+#computer_configurable_group div#prodmainimage, #computer_configurable_group div#swatchimage {min-height:250px; text-align:center;}
+#computer_configurable_group div#maincontent div#proddetails{width: 615px;}
+#computer_configurable_group div#proddetails div#loadingdiv{display: none;}
+#computer_configurable_group div.skudetails{ text-align:center;}
+#computer_configurable_group div.skudetails div.sys-template span#skucode,
+#computer_configurable_group div.skudetails li span#skucode{font-weight:700; padding-top:5px; float:left; color:#000;}
+#computer_configurable_group div.skuimage{float:left; padding-top:5px;}
+#computer_configurable_group div.skuimage img{float:left}
+#computer_configurable_group div.skudetails ul{float:left;margin: 0 0 2px;min-height: 50px;width:100%;}
+#computer_configurable_group div.skudetails ul li.warningmsg{padding: 0 0 14px;background: url(../images/icons.png) no-repeat 151px -170px;}
+#computer_configurable_group div.skudetails ul li.warningmsg p{-moz-border-radius: 5px;-webkit-border-radius: 5px;background-color: #37ACDE;color: red;font-size: 14px;font-weight: bold;padding: 4px 10px;min-height:34px;}
+#computer_configurable_group div.skudetails ul li.warningmsg p a.notifyme{color: #ffffff;}
+#computer_configurable_group div.skudetails ul div#notifymepopup{display: none; /*must be initially hidden */position: absolute !important;top: 90px !important;z-index: 9999;left:-23px !important;}
+#computer_configurable_group div.skudetails ul div#notifymepopup a.close{background: url(../images/icons.png) 0 -658px no-repeat;position: absolute;right: -2px;top: -2px;cursor: pointer;height: 35px;width: 35px;}
+#computer_configurable_group div.skudetails ul div#notifyme{width: 600px;padding: 15px;background: none repeat scroll 0 0 #F3F3F3;border: 1px solid #B8CCD2;font-size: 13px;float: left;min-height:90px;}
+#computer_configurable_group div.skudetails ul div#notifyme legend{font:700 22px arial; color:#555;}
+#computer_configurable_group div.skudetails ul div#notifyme p{background:none!important;font-size: 12px;font-weight:normal;padding: 7px 0px;color:#555;}
+#computer_configurable_group div.skudetails ul div#notifyme label {float:left;padding: 10px 10px 0 13px;}
+#computer_configurable_group div.skudetails ul div#notifyme label.error {clear: none;color: #eb0a34;float: left;font-weight: bold;padding: 10px 0 0 5px;width: 280px;}
+#computer_configurable_group div.skudetails ul div#notifyme input.email{ padding:0 10px 0 2px; margin:10px 20px 10px 0; float:left; border:1px solid #B8CCD2}
+#computer_configurable_group div.skudetails ul div#notifyme input.emailupdates{ padding:0 10px 0 0; clear:left; float:left;  margin-top:9px; width:10px}
+#computer_configurable_group div.skudetails ul div#notifyme label.emailupdates{width:500px; float:left;}
+#computer_configurable_group div.skudetails ul div#notifyme  a.notifyme{padding:5px 30px; font:700 14px arial; color:#fff; border:none;background:#26b3f7;-moz-box-shadow: 0 0 1px 1px #333;-webkit-box-shadow: 0 0 1px #333;-moz-border-radius: 5px;-webkit-border-radius: 5px;text-align:right;text-decoration:none;margin:10px 0 0 30px;float:right;}
+div#apparelgroup2 div.skudetails ul div{min-height:31px}
+#computer_configurable_group div.skudetails ul li.inventorymsg{float: right;margin: 4px 14px 0 0;}
+#computer_configurable_group div.skudetails ul ul.skuprice{float: right;}
+#minicatalog_content div.skudetails ul li ul.skuprice{float: right;position:absolute;right:29px;top:85px;}
+#computer_configurable_group div.skudetails ul ul.skuprice li{text-align: right;float: left;}
+#minicatalog_content div.skudetails ul ul.skuprice li{clear:none;}
+#computer_configurable_group div.skudetails ul ul.skuprice li span{padding: 0 7px 0 5px;}
+#computer_configurable_group .totalprice {padding-right:10px; line-height:40px;}
+#computer_configurable_group .totalprice span {color:#000; font-size:14px;}
+#computer_configurable_group .totalprice,
+#computer_configurable_group div.skudetails ul ul.skuprice li span.yourprice, 
+#computer_configurable_group div.skudetails ul ul.skuprice li span.price
+{
+    color: #882333;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline;
+}
+#computer_configurable_group div.skudetails ul ul.skuprice li span.listprice{display:table;padding-top:4px;}
+#computer_configurable_group div#proddetails span.udfno {margin-left:14px;}
+#computer_configurable_group div#proddetails ul.shoppingstep>li span{padding-right:29px}
+#computer_configurable_group div#proddetails ul.actionlinks li.stepfollowed{float:right;}
+#computer_configurable_group div#proddetails ul.actionlinks li.stepfollowed span{color:#0B0B3B;float: left;font-size: 12px;font-weight:700;padding: 2px 9px 2px 0;}
+#computer_configurable_group span.addtocart_successmsg
+{
+	clear:right;
+	float: right;
+	font-size: 12px;
+	margin: 2px 2px 0;
+}
+#computer_configurable_group span.addtocart_errormsg
+{
+    background: none repeat scroll 0 0 #FFEAE9;
+    color: #444444;
+    display: block;
+    float: right;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 10px 0 0;
+    padding: 6px 10px;
+}
+#computer_configurable_group span.wishlistmsg{display: block;margin: 4px 0;font-size: 14px;}
+#computer_configurable_group ul.actionlinks{float: right;margin-top:40px;}
+#computer_configurable_group ul.actionlinks a.addtocart{font-size:16px;  padding: 13px 26px; float:right;}
+
+#computer_configurable_group a.sendtofriend {background: url(../images/icons.png) no-repeat scroll -88px -23px;float: left;margin: 25px 10px 0;padding-left: 20px;}
+#computer_configurable_group ul.actionlinks a.addtocart_disabled{font-size:16px;  padding: 13px 26px; float:right;}
+#computer_configurable_group div.options, #computer_configurable_group div.options dl, #computer_configurable_group div.options dd{float: left;width: 100%;}
+#computer_configurable_group div.options dl
+{
+    margin: 5px 0 0;
+    padding: 5px 0;
+    border-top: 1px dotted #FFFFFF;
+    border-bottom: 1px dotted #FFFFFF;
+}
+#computer_configurable_group div.options dt
+{
+    margin: 0 0 5px 0;
+    font-weight: bold;
+    float: left;
+    width: 100%;
+}
+#computer_configurable_group div.options dd ol li{float: left;margin: 0 8px 1px 0;}
+#computer_configurable_group div.options dd ol li a
+{
+    background-color: #eeeeee;
+    border: 1px solid #aaa;
+    float: left;
+    padding: 2px 11px;
+    text-decoration: none;
+    font-weight:700;
+    color:#aaa;
+}
+#computer_configurable_group div.options dd ol li a.selected{background: none repeat scroll 0 0 #FFFFFF;border: 1px solid #000;color: #000000;float: left;font-weight: bold;cursor: default;}
+#computer_configurable_group div.options dd ol li a.notallowed{background: none;border: 1px dotted #999;color: #999898;float: left; font-weight: bold;cursor: pointer;}
+#computer_configurable_group div.options .moresizes{display:none;}
+#computer_configurable_group div.options p.moresizes{float: left;width: 100%;margin: 5px 0;}
+#computer_configurable_group div.options p.moresizes a{color: #882333;}
+#computer_configurable_group div.options div.sizechartpopup {display:none;/* must be initially hidden */ z-index: 9999;position: absolute !important;    top: 90px !important;}
+#computer_configurable_group div#prodimages{float:left;}
+#computer_configurable_group div#prodimages div.productshortdescription{background: none repeat scroll 0 0 #ECCEF5;border: 1px solid #F5A9F2;color:#8A0868;padding: 7px;margin-bottom:1px;}
+#computer_configurable_group div#prodimages p.zoommsg{color: #AFBED0;display: block;float: left;font-size: 12px;font-weight: bold;padding: 0 0 7px;width: 75%;}
+#computer_configurable_group #imagelinks a {padding:0 4px; border:1px solid #B8CCD2;padding:2px 5px; font-weight:700}
+#computer_configurable_group #imagelinks a.selected{background:#37ACDE!important;  color:#fff; text-decoration:none}
+#computer_configurable_group #imagelinks .back{background:none !important; display:inline;}
+#computer_configurable_group .MagicZoomHeader{display:none;}
+#computer_configurable_group .MagicZoomPup{border: 1px solid #949494;background: #c1c0c0;}
+#computer_configurable_group .MagicThumb{cursor: pointer;outline: none;width:100%!important}
+#computer_configurable_group div#sendtofriendcntrl a{text-decoration:underline;}
+table#tblSkuList .showvariantsrowcolor{background-color:#e0e0e2;}
+#computer_configurable_group div#maincontent_nocrossselling dl#configtabs{margin:0 0 10px 0;}
+#computer_configurable_group ol.groupproducts{clear: left;width:100%;padding-top:10px;}
+#computer_configurable_group ol.groupproducts li.groupproduct {float:left;width:120px; text-align:center; border-left:dotted 1px #ccc;}
+#computer_configurable_group ol.groupproducts li.groupproduct:first-child{border-left:0;}
+#computer_configurable_group dl#configtabs #tab-performance ol.groupproducts li.groupproduct div.skudetails h2,
+#computer_configurable_group dl#configtabs #tab-performance ol.groupproducts li.groupproduct h2{font-size:12px; font-weight:700; color:#1D6F9E;}
+#computer_configurable_group dl.installstaticontent{float: right;margin:9px 0;width:264px;}
+#computer_configurable_group dl.installstaticontent dt {background: url("../images/backgrounds_repeat_x.png") repeat-x scroll 0 -4969px transparent;color: #FFFFFF;font-size: 15px;line-height: 30px;margin: 0;text-indent: 9px;}
+#computer_configurable_group dl.installstaticontent ul.pdpcontent{padding:10px 0 0 ;}
+#computer_configurable_group dl.installstaticontent ul.pdpcontent li.leftcol {width: 66px;float:left;}
+#computer_configurable_group dl.installstaticontent ul.pdpcontent li.rightcol {float:left;width:75%;color: #1D6F9E;font-size: 11px;}
+#computer_configurable_group dl.installstaticontent ul.pdpcontent li.rightcol a {color: #1D6F9E;}
+#computer_configurable_group .r-tabs .r-tabs-nav .r-tabs-anchor {width:120.9px !important;}
+/*#computer_configurable_group #tab-performance div#groupprodskudetails,
+#computer_configurable_group #tab-addons ol.productlist,
+#computer_configurable_group #tab-personalize div#swatchdetails{width:477px; }*/
+#computer_configurable_group #tab-performance div#groupprodskudetails table#tblskulist tr{ margin:0px;}
+#computer_configurable_group #tab-performance div#groupprodskudetails table#tblskulist tr#trSkuList td{padding:5px 0;}
+#computer_configurable_group #tab-performance div#groupprodskudetails table#tblskulist tr#trSkuList td.checkselect{padding-top:5px; width:10%;}
+#computer_configurable_group #tab-performance div#groupprodskudetails table#tblskulist tr#trSkuList td.skuname{ width:90%;}
+#computer_configurable_group #tab-performance div#groupprodskudetails table#tblskulist tr#trSkuList td.skupricedetails{width:30%;}
+#computer_configurable_group #tab-performance div#groupprodskudetails table#tblskulist tr#trSkuList td.skupricedetails ul{text-align:right; }
+#computer_configurable_group #tab-performance div#groupprodskudetails table#tblskulist tr#trSkuList td.checkselect,
+#computer_configurable_group #tab-performance div#groupprodskudetails table#tblskulist tr#trSkuList td.skuname,
+#computer_configurable_group #tab-addons ol.productlist li ul.warrantyplanslist li.cartline span.warrantyplan,
+#computer_configurable_group #tab-performance div#groupprodskudetails,
+#computer_configurable_group #tab-performance div.color_swatch table#tblskulist,
+#computer_configurable_group #tab-addons ol.productlist,
+#computer_configurable_group #tab-personalize div#swatchdetails{float:left}
+#computer_configurable_group #tab-addons ol.productlist li ul.warrantyplanslist li.cartline span.inputcontainer{width:20px; float:left;}
+#computer_configurable_group #tab-personalize div.color_swatch ol#skuswatchlist{clear:both;}
+#computer_configurable_group #tab-addons ol.productlist li ul.warrantyplanslist li.cartline span.warrantyplan,
+#computer_configurable_group #tab-personalize div.color_swatch ol#skuswatchlist li ul li.swatchname { font-weight:700; width:73%;}
+#computer_configurable_group #tab-addons ol.productlist li ul.warrantyplanslist li.cartline span.warrantyprice,
+#computer_configurable_group #tab-personalize div#groupprodskudetails table#tblskulist tr#trSkuList td.skupricedetails{ width:100px; text-align:right;}
+#computer_configurable_group #tab-performance div#groupprodskudetails table#tblskulist tr#trSkuList,
+#computer_configurable_group #tab-addons ol.productlist li ul.warrantyplanslist li.cartline{ padding:7px; width:100%; clear:left; border-top:dotted 1px #ccc; }
+#computer_configurable_group #tab-personalize div.color_swatch ol#skuswatchlist li{ padding:7px;border-top:dotted 1px #ccc;}
+#computer_configurable_group #tab-personalize div.color_swatch ol#skuswatchlist li ul li{ border:none; float:left; padding:0px; background:none;}
+#computer_configurable_group #tab-personalize div.color_swatch ol#skuswatchlist li ul li.swatchselect{width:20px; float:left;}
+#computer_configurable_group #tab-personalize div.color_swatch ol#skuswatchlist li ul li.skupricedetails { width:100px;}
+#computer_configurable_group #tab-performance div#groupprodskudetails table#tblskulist tr td div.shortdescription,
+#computer_configurable_group #tab-addons ol.productlist li div.shortdescription,
+#computer_configurable_group #tab-performance div.shortdescription{padding: 10px 0;}
+#computer_configurable_group #tab-performance div#groupprodskudetails table#tblskulist tr#trSkuList:nth-child,
+#computer_configurable_group #tab-personalize div.color_swatch ol#skuswatchlist li:first-child,
+#computer_configurable_group #tab-addons ol.productlist li ul.warrantyplanslist li.cartline:first-child,
+#computer_configurable_group #tab-performance ol.groupproducts li.groupproduct:first-child{ border:none;}
+#computer_configurable_group #tab-performance div#groupprodskudetails table#tblskulist tr#trSkuList:hover,
+#computer_configurable_group #tab-personalize div.color_swatch ol#skuswatchlist li:hover,
+#computer_configurable_group #tab-addons ol.productlist li ul.warrantyplanslist li.cartline:hover{ background-color:#f1f1f1;}
+#computer_configurable_group #tab-performance div#groupprodskudetails table#tblskulist{margin:0px;}
+#computer_configurable_group #tab-performance ol.groupproducts li.groupproduct img{ position:relative;} 
+#computer_configurable_group #tab-reviewcheckout div#finalprodimage{text-align:center;}
+#computer_configurable_group #tab-reviewcheckout div#selectedskulist { clear:left; }
+#computer_configurable_group #tab-reviewcheckout span.reviewmysummarytitle{ font-size:14px; font-weight:700; }
+#computer_configurable_group #tab-performance span.congratulationsmsg{ color:#5A8205; clear:left;font-size:14px; font-weight:700; display:block; padding:6px 0 0 0}
+/*#computer_configurable_group #tab-reviewcheckout div#selectedskulist ul li{width:100%;}*/
+#computer_configurable_group #tab-reviewcheckout div#selectedskulist ul li ol li.itemtitle{padding:5px; font-weight:700;}
+#computer_configurable_group #tab-reviewcheckout div#selectedskulist ul li ol li.itemname{padding:5px;}
+#computer_configurable_group #tab-reviewcheckout div#selectedskulist ul li ol li.itemprice{padding:5px; font-size:14px; text-align:right;}
+/*#computer_configurable_group #tab-reviewcheckout div#selectedskulist ul li ol li{ border-bottom: 1px solid #efefef ;}*/
+#computer_configurable_group #tab-reviewcheckout div#selectedskulist ul li ol li.showvariantsrowcolorname{background-color:#f1f1f1;}
+#computer_configurable_group #tab-reviewcheckout div#selectedskulist ul li ol li.showvariantsrowcolortitle{ background-color:#e8e8e8;}
+#computer_configurable_group #tab-reviewcheckout div#selectedskulist ul li ol li.showvariantsrowcolorprice{background-color:#f1f1f1;}
+#computer_configurable_group #tab-reviewcheckout div#selectedskulist ul li h3{background-color:#e1e1e1;padding:5px; overflow:hidden; clear:left;}
+#computer_configurable_group #tab-reviewcheckout div#selectedskulist ul li h3 span.price{ float: right;font-size: 15px;}
+#computer_configurable_group #tab-reviewcheckout div#reviewmysummary {margin-bottom: 10px;}
+#computer_configurable_group #tab-addons div#warrantyplanimg{text-align:center; min-height:100px;}
+#computer_configurable_group div#productoverview div#selectedskulist_overview ul li ol li.itemtitle{padding:5px; font-weight:700;float:left; width:116px; display:none;}
+#computer_configurable_group div#productoverview div#selectedskulist_overview ul li ol li.itemname{padding-top:5px; padding-bottom:5px;}
+#computer_configurable_group div#productoverview div#selectedskulist_overview ul li ol li.itemprice{ font-size:14px;  padding-top:5px; padding-bottom:5px; text-align:right; float:right;}
+#computer_configurable_group div#productoverview div#selectedskulist_overview ul li ol,#computer_configurable_group div#productoverview div#selectedskulist_overview h3 { clear:left;}
+#computer_configurable_group div#productoverview div#selectedskulist_overview ul li ol{border-bottom: 1px solid #e7e7e7 ; clear:both; width:100%;}
+#computer_configurable_group div#productoverview div#selectedskulist_overview ul li ol:first-child{ border:none;}
+#computer_configurable_group #tab-reviewcheckout div#reviewmysummary span.congratulationsmsg{ color:#5A8205; clear:left;font-size:14px; font-weight:700; display:block; padding:6px 0 0 0}
+#computer_configurable_group div#productoverview div#prodimagethumb{clear:left; text-align:center;}
+#computer_configurable_group div#productoverview div#selectedskulist_overview h3{ margin:10px 0 0;background-color: #E1E1E1;padding: 5px 4px}
+#computer_configurable_group div#productoverview div#selectedskulist_overview h3 span.price{ float:right;}
+#computer_configurable_group ol.groupproducts li.groupproduct a{text-decoration:none;}
+#computer_configurable_group ol.groupproducts li.groupproduct a.active h2{background:url(../images/backgrounds.png) no-repeat -522px -363px;width:120px;padding:10px 0; display:block;color:#fff; line-height:20px;}
+#computer_configurable_group ol.groupproducts li.groupproduct h2{color: #1d6f9e; font-size: 12px; font-weight: 700;}
+a.continuetopersonalize{font-size:14px; display:block;float:right;margin-top:15px;}
+div.tblgroupproductskulist{display:none;}
+a.continuetoreview{font-size:14px; float:right;margin-left:10px;margin-top:15px;}
+#computer_configurable_group div.adbanner{margin: 0 0 10px; text-align:center;}
+#computer_configurable_group div#maincontent dl#configtabs dd.panes ol li ol.groupproducts li.groupproduct a{text-decoration:none;}
+div#computer_configurable_group dt.tabs a{width:124px!important}
+div#customerreviewsfeedback textarea {width: 270px;}
+div#customerreviewsfeedback textarea.error{color:#000!important;}
+div#dealdetails span#sucseescartmessage { color: #72E22E; display: inline; font-weight: 700; position: absolute; right: 180px; top: 4px;}
+div#existingnumberblock{background-color: #F6F6F6;border: 1px solid #CFCFCF;border-radius: 5px 5px 5px 5px;padding: 10px;-moz-border-radius: 5px 5px 5px 5px;-webkit-border-radius: 5px 5px 5px 5px;margin-top:10px;width:91%;}
+div#existingnumberblock input#txtexistingnumber{border: 1px solid #CFCFCF; margin-left:10px;}
+div#existingnumberblock ol li{padding:3px 0;}
+div#existingnumberblock ol.lineoptions{ margin:10px 0 0 97px;}
+div#newcustomerblock{background-color: #F6F6F6;border: 1px solid #CFCFCF;border-radius: 5px 5px 5px 5px;padding: 10px;-moz-border-radius: 5px 5px 5px 5px;-webkit-border-radius: 5px 5px 5px 5px;margin-top:10px;width:91%;}
+div#newcustomerblock input#txtnewnumber{border: 1px solid #CFCFCF; margin-left:10px;}
+div#newcustomerblock ol li{padding:3px 0;}
+div#newcustomerblock ol.lineoptions{ margin:0 0 5px 97px;}
+div#customerreviewsfeedback legend{font-size:13px;font-weight:400;color:#1D6F9E;margin:7px 0 6px -7px}
+div#customerreviewsfeedback label{float:left;clear:both;width:120px;padding:3px 0 0 13px}
+#customerreviewsfeedback label.required{background:url(../images/icons.png) 0 -252px no-repeat}
+div#customerreviewsfeedback input{border:1px solid grey;float:left;width:200px;margin: 2px 10px 3px 0;padding:3px 0}
+div#customerreviewsfeedback input.error{color:#000!important;}
+div#customerreviewsfeedback textarea{border:1px solid grey;float:left;height:100px;width:270px;margin:2px 10px 3px 0;padding:2px}
+div#maincontent_nocrossselling div#customerreviewsfeedback textarea,div#apparel3 div#customerreviewsfeedback textarea{width:505px}
+div#maincontent_nocrossselling div#customerreviewsfeedback textarea,div#apparel3 div#customerreviewsfeedback textarea.error{color:#000!important;}
+div#customerreviewsfeedback .rating{display:block;float:left;position:relative;width:100%;margin:10px 0 0}
+div#customerreviewsfeedback #ratingerror{width:200px;color:red;}
+div#customerreviewsfeedback .ratingremark{display:inline-block;width:105px}
+div#customerreviewsfeedback p.actionlink{float:left;margin:10px 0 0 121px}
+p.actionlink a.submitreview{  cursor:pointer; font-size:13px;}
+div#customerreviewsfeedback span.reviewfeedbackmsg{color:#5A8205;font-size:13px;display:block;margin:4px 0 0}
+div#customerreviewsfeedback label.error{clear:none;color:red;float:left;width:210px;padding: 3px 0 0;}
+/*recently viewed view*/
+#recentlyviewed,#customerswhobought{margin-top:5px;width:100%!important}
+#recentlyviewedcontent,#customerswhobought div.header h3{ background-repeat: repeat-x; overflow:hidden}
+#customerswhobought div.header h3,
+#recentlyviewed div.header h3{background:url(../images/backgrounds_repeat_x.png) repeat-x scroll 0 -4969px;color:#FFF; font-size:12px;font-weight:700;height:32px;line-height:32px;padding:0 4px}
+.customerwhobought1carousel{margin:10px 28px 0}
+.recentlyviewedrecommendationscarousel{margin:10px 40px 0}
+.customerwhobought1carousel li,
+.recentlyviewedrecommendationscarousel li{text-align:center;width:180px!important; margin:0 5px}
+.recentlyviewedrecommendationscarousel li.prodimage,
+.customerwhobought1carousel li.prodimage{min-height:111px;overflow:hidden}
+.recentlyviewfeatureproduct{float:right;min-height:250px;width:54%;}
+.recentlyviewedproductlist{float:left;min-height:250px;width:45%;}
+li.proddesc{margin-top:8px;min-height:70px;}
+li.proddesc span.prodimg{float:left;width:60px}
+li.proddesc span.prodimg img{width:60px; overflow:hidden; word-wrap:break-word;}
+li.proddesc div.recentviewedproductdetails{float:right;width:75%;padding-left:5px}
+.nextitem{background:url(../images/icons.png) no-repeat scroll 0 -1134px transparent;cursor:pointer;height:36px;overflow:hidden;position:absolute;right:-28px;top:40%;width:18px}
+.previousitem{background:url(../images/icons.png) no-repeat scroll 0 -1095px transparent;cursor:pointer;height:36px;left:-28px;position:absolute;top:40%;width:18px}
+/*recently viewed view*/
+
+@media screen and (max-width:768px) {
+#computer_configurable_group #tab-personalize div.color_swatch ol#skuswatchlist li ul li.swatchname{width:63%;}
+} 
+
+@media screen and (max-width:480px) {
+    .recentlyviewfeatureproduct{width:100%;}
+    .recentlyviewedproductlist{min-height:inherit; margin-bottom:10px; width:100%;}
+    #computer_configurable_group ol.groupproducts li.groupproduct{width:25%;}
+    #computer_configurable_group ol.groupproducts li.groupproduct a.active h2{width:100%;}
+    #computer_configurable_group #tab-personalize div.color_swatch ol#skuswatchlist li ul li.swatchname{width:70%;}
+}
+
+@media screen and (max-width:479px) {
+    #computer_configurable_group ol.groupproducts li.groupproduct{min-height:115px; margin-bottom:5px; width:50%;}
+    #computer_configurable_group ol.groupproducts li.groupproduct:nth-child(3){border-left:0;}
+    #computer_configurable_group ol.groupproducts li.groupproduct a.active h2{width:120px; margin:0 auto;}
+    #computer_configurable_group #tab-personalize div.color_swatch ol#skuswatchlist li ul li.swatchname{width:51%;}
+
+}
+@media screen and (max-width:320px) {
+    a.continuetoreview{ margin-left: 16px; margin-right: 4px;}
+    #computer_configurable_group #tab-performance div#groupprodskudetails table#tblskulist tr td div.shortdescription, #computer_configurable_group #tab-addons ol.productlist li div.shortdescription, #computer_configurable_group #tab-performance div.shortdescription{text-align:justify;}
+    div#customerreviewsfeedback .ratingremark{display:inline;}
+    div#customerreviewsfeedback label.required{ width:100%;}
+}
+
+
+
+div.discountdetails ol li:first-child, div.discountdetails ol li.cartline {position:relative}
+div.discountdetails span#cartmessage1 {float:right; padding-right:2px;margin-top:43px;}

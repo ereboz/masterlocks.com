@@ -1,0 +1,50 @@
+/*-- Abandoned Cart --*/
+    .mobile_lbl{display:none;}
+    div#cartcontainer ul.abandoncarthead{ border-bottom:0; color:#fff; float:none; font-weight:700; margin-top:10px; width:100%; display:inline-block;} 
+    div#cartcontainer ul.abandoncarthead li{border-left:1px solid #ccc; float:left; padding:5px; width:auto;}
+    div#cartcontainer ul.trSkuList {background:#fff; border-bottom:1px solid #ccc; border-left:1px solid #ccc; border-right:1px solid #ccc; float:left; width:100%}
+    div#cartcontainer ul.trSkuList li{padding:5px; border-right:1px solid #ccc; float:left; word-wrap: break-word;}
+    div#cartcontainer ul.abandoncarthead li:first-child, div#cartcontainer ul.trSkuList li:first-child{border-left:0; width:auto;}
+    div#cartcontainer ul.abandoncarthead li.headingSkuselect, div#cartcontainer ul.trSkuList li.skucodeselect{text-align:center; width:5%;}
+    div#cartcontainer ul.abandoncarthead li.headingSkuselect input[type="checkbox"], div#cartcontainer ul.trSkuList  li.skucodeselect input[type="checkbox"]{margin-top:3px;}
+    div#cartcontainer ul.abandoncarthead li.headingSkuCode, div#cartcontainer ul.trSkuList li.skucode{width:20%;}
+    div#cartcontainer ul.abandoncarthead li.headingSkuName, div#cartcontainer ul.trSkuList li.skuname{width:52%;}
+    div#cartcontainer ul.trSkuList li.skuname{width:52.2%;}
+    div#cartcontainer ul.abandoncarthead li.headingSkuQty, div#cartcontainer ul.trSkuList li.Qty{text-align:center; width:8%;}
+    div#cartcontainer ul.abandoncarthead li.headingSkuadd, div#cartcontainer ul.trSkuList li.skuadd{border-right:0; text-align:center; width:15%;}
+    div#cartcontainer ul.trSkuList li.skuadd{width:14.8%;}
+    div#cartcontainer ul.trSkuList li.skuname .mobile_skutitle .successmsg{padding-bottom:0;}
+    div#cartcontainer ul.trSkuList li.skuname .skutitle{font-size:14px;}
+    .scrollbar.disable{display:none;}
+
+    #divAbandonCartGrid .addtocartgrid .btn.addtocart{margin-bottom:10px;}
+    .abandoncartlistWrapper{position:relative;}
+    #abandoncart .abandoncartlistWrapper .viewport {clear:left;  height:200px; overflow: hidden; position: relative; }
+    .abandoncartlistWrapper .overview { list-style: none; position: absolute; left: 0; top: 0; padding: 0; margin: 0; width:100%; }
+    .abandoncartlistWrapper .scrollbar{ background-color:#e1e1e1; position: absolute; top:0; right:-12px; background-position: 0 0; width:10px; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; padding:0; z-index:1 }
+    .abandoncartlistWrapper .track { width:10px; position: relative; }
+    .abandoncartlistWrapper .thumb { background-color:#666; height:20px; width:10px; cursor: pointer; overflow: hidden; position: absolute; top: 0; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;}
+    .abandoncartlistWrapper .thumb .end { display:none; overflow: hidden; height: 5px; width: 25px; }
+ 
+
+@media screen and (max-width:567px) {
+    .abandoncartlistWrapper .scrollbar{display:none;}
+}
+
+@media screen and (min-width:320px) and (max-width:480px){
+    #abandoncart .abandoncartlistWrapper .viewport{height:auto\9;}
+    .abandoncartlistWrapper .overview{position:inherit\9;}
+    .abandoncartlistWrapper .scrollbar{display:none\9;}
+    #exposeMask{height:auto\9!important; height:100%\9!important; position:fixed\9!important;}
+    .mobile_lbl{display:block; vertical-align:top; float:left; font-weight:bold; padding-left:20px; width:40%;}
+    .mobile_lbl:after{content:": ";}
+    div#cartcontainer ul.abandoncarthead{display:none;}    
+    div#cartcontainer #abandoncartlist{margin-top:10px;}
+    div#cartcontainer ul.trSkuList{border:1px solid #f2f2f2; margin-bottom:10px;width:100%;}
+    div#cartcontainer ul.trSkuList li{border-right:1px solid #f2f2f2;}
+    div#cartcontainer ul.trSkuList li.skucodeselect, div#cartcontainer ul.trSkuList li.skucode, div#cartcontainer ul.trSkuList li.skuname, div#cartcontainer ul.trSkuList li.Qty, div#cartcontainer ul.trSkuList li.skuadd{float:none; text-align:left; width:100%;}
+    div#cartcontainer ul.trSkuList li.skucodeselect{position:absolute;}
+    div#cartcontainer ul.trSkuList li .mobile_skutitle{display:block; float:left; width:57%;}
+    div#cartcontainer .showorderlist{margin-bottom:10px;}
+    div#cartcontainer ul.trSkuList li{height:auto!important;}
+}

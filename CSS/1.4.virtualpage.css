@@ -1,0 +1,33 @@
+div#catalog_content div#home .virtual_title{border-bottom:3px solid #555; color: #1d6f9e; display: block; font-size: 20px; font-weight:normal; margin:15px 0;}
+div#catalog_content div#home table#Table1 ul {padding-bottom:20px}
+div#catalog_content div#home table#Table1 ul li.question {font-weight:bold; padding-bottom:10px; color: #1D6F9E;}
+div#catalog_content div#home table#Table1 p {padding-bottom:10px}
+div#catalog_content div#home table#Table1 ol li {list-style:decimal; margin-left:25px; padding-bottom:10px}
+div#catalog_content div#home div.policyquestion {padding:10px; background:#f7f7f7; border:1px solid #ccc; margin-bottom:10px}
+div#catalog_content div#home div.policyquestion ol li, div#catalog_content div#home a {color: #1D6F9E;}
+div#catalog_content div#home table#Table1 ul.heading{margin:10px 0; overflow:hidden; padding:0;width:100%;}
+div#catalog_content div#home img{max-width:inherit!important;}
+div#faqcontent ul.questionslist li{font-weight:700;padding:3px 0 0}
+div#faqcontent ul.questionans{margin:10px 0 10px 10px}
+div#faqcontent ul.questionans li{border-bottom:1px dotted #111;padding:10px 0}
+div#faqcontent ul.questionans li span{font-weight:700;padding-bottom:3px;display:block}
+div#contactconatainer{margin-top:10px;margin-left:10px}
+div#contactconatainer ul.emailcontactlist{margin-top:10px;font-weight:700}
+div#contactconatainer ul.emailcontactlist li.heading{font-weight:400;color:#1d6f96;margin:10px 0}
+div#contactconatainer ul.emailcontactlist li ol li{border-bottom:1px dotted #111;padding:3px 0 5px}
+div#contactconatainer ul.addresslist{margin-top:10px;font-weight:400}
+div#contactconatainer ul.addresslist h3.heading{font-weight:400;color:#1d6f96;border:none;margin:10px 0;padding:0}
+div#contactconatainer ul.addresslist li{border-bottom:1px dotted #111;padding:10px 0}
+div#contactconatainer ul.addresslist li ol li{border:none;vertical-align:top;display:inline-block;padding:0}
+div#contactconatainer ul.addresslist li ol li.location{width:180px}
+div#contactconatainer ul.addresslist li ol li.address{width:195px}
+div#contactconatainer ul.addresslist li ol li.mapicon{width:100px;text-align:center}
+
+.hd{ border-bottom: 4px solid #eee;  color: #444;  font-family: montserratregular;  margin-bottom: 0; margin-top: 0px;}
+.hd h1 {background: #fff; bottom: -10px; display: inline-block; padding-right: 8px; position: relative;  font-size: 25px;}
+
+/*HPI ADDITIONS*/
+
+.center {
+    text-align:center;
+}

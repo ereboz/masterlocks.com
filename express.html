@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Express Program</title>
+
+<!-- START LOCAL ONLY -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<link href="CSS/bootstrap.min.css" rel="stylesheet">-->
+    <link href="CSS/hpi-virtual-express.css" rel="stylesheet">
+<!-- END LOCAL ONLY -->
+
+    <link href="/Templates/Hodge/CSS/hpi-virtual-express.css" rel="stylesheet">
+</head>
+<body>
+
+<!--START FIRST PRODUCT SLIDER - BEST SELLERS -->
+<div class="container product-slider-wrapper">
+    <div class="row">
+        <div class="row product-slider-head">
+            <div class="product-slider-title">                          <!-- col's defined in less -->
+                <h3>Best Sellers</h3>
+            </div>
+            <div class="product-slider-chevrons">                       <!-- col's defined in less -->
+                <!-- Controls -->
+                <div class="controls pull-right hidden-xs">
+                    <a class="left fa fa-chevron-left btn btn" href="#carousel-example1" data-slide="prev"></a>
+                    <a class="right fa fa-chevron-right btn" href="#carousel-example1" data-slide="next"></a>
+                </div>
+            </div>
+        </div>
+        <div class="page-separator"></div>
+        <div id="carousel-example1" class="carousel slide" data-interval="false" data-ride="carousel1">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner best-sellers">                   <!-- col's defined in less -->
+                <div class="item active">
+                    <div class="row">
+                        <!--1st Best Seller in carousel -->
+                        <div class="element">                           <!-- col's defined in less -->
+                            <div class="product-wrapper">
+                                <div class="product-image-wrapper">
+                                    <div class="product-image-bg">
+                                        <img alt="" src="dist/images/sale.png" class="product-sale" />
+                                        <a href="http://masterkeyed.com/product/2534/3MK-master-keyed-laminated-steel-padlocks">
+                                            <img src="dist/images/3-best-seller.png" class="product-image img-responsive" alt="a" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-desc-wrapper">
+                                    <div class="product-desc">3MK Laminated Steel Padlock</div>
+                                </div>
+                                <div class="info">
+                                    <div class="product-footer-wrapper">
+                                        <div class="prices">
+                                            <span class="sale-price">$10.69</span><br />
+                                            <span class="retail-price">$14.66</span>
+                                        </div>
+                                        <div class="details">
+                                            <a class="view-details" href="http://masterkeyed.com/product/2534/3MK-master-keyed-laminated-steel-padlocks">View
+                                                Details</a>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--2nd Best Seller in carousel -->
+                        <div class="element">                           <!-- col's defined in less -->
+                            <div class="product-wrapper">
+                                <div class="product-image-wrapper">
+                                    <div class="product-image-bg">
+                                        <img alt="" src="dist/images/sale.png" class="product-sale" />
+                                        <a href="http://masterkeyed.com/product/2885/a1105MK-master-keyed-solid-aluminum-padlocks">
+                                            <img src="dist/images/a1105.png" class="product-image img-responsive" alt="a" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-desc-wrapper">
+                                    <div class="product-desc">A1105MK Aluminum Safety Lockout</div>
+                                </div>
+                                <div class="info">
+                                    <div class="product-footer-wrapper">
+                                        <div class="prices">
+                                            <span class="sale-price">$11.61</span><br />
+                                            <span class="retail-price">$19.40</span>
+                                        </div>
+                                        <div class="details">
+                                            <a class="view-details" href="http://masterkeyed.com/product/2885/a1105MK-master-keyed-solid-aluminum-padlocks">View Details</a>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--3rd Best Seller in carousel -->
+                        <div class="element">                           <!-- col's defined in less -->
+                            <div class="product-wrapper">
+                                <div class="product-image-wrapper">
+                                    <div class="product-image-bg">
+                                        <img alt="" src="dist/images/sale.png" class="product-sale" />
+                                        <a href="http://masterkeyed.com/product/2686/a20mk-master-keyed-solid-brass-padlocks">
+                                            <img src="dist/images/a20.png" class="product-image img-responsive" alt="a" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-desc-wrapper">
+                                    <div class="product-desc">A20MK Solid Brass Padlock</div>
+                                </div>
+                                <div class="info">
+                                    <div class="product-footer-wrapper">
+                                        <div class="prices">
+                                            <span class="sale-price">$12.41</span><br />
+                                            <span class="retail-price">$20.73</span>
+                                        </div>
+                                        <div class="details">
+                                            <a class="view-details" href="http://masterkeyed.com/product/2686/a20mk-master-keyed-solid-brass-padlocks">View Details</a>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--4th Best Seller in carousel -->
+                        <div class="element">                           <!-- col's defined in less -->
+                            <div class="product-wrapper">
+                                <div class="product-image-wrapper">
+                                    <div class="product-image-bg">
+                                        <img alt="" src="dist/images/sale.png" class="product-sale" />
+                                        <a href="http://masterkeyed.com/product/2874/6321mk-master-keyed-shrouded-shackle-padlocks">
+                                            <img src="dist/images/6121.png" class="product-image img-responsive" alt="a" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-desc-wrapper">
+                                    <div class="product-desc">6321MK Pro Series</div>
+                                </div>
+                                <div class="info">
+                                    <div class="product-footer-wrapper">
+                                        <div class="prices">
+                                            <span class="sale-price">$26.60</span><br />
+                                            <span class="retail-price">$36.49</span>
+                                        </div>
+                                        <div class="details">
+                                            <a class="view-details" href="http://masterkeyed.com/product/2874/6321mk-master-keyed-shrouded-shackle-padlocks">View Details</a>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <!--5th Best Seller in carousel -->
+                        <div class="element">                           <!-- col's defined in less -->
+                            <div class="product-wrapper">
+                                <div class="product-image-wrapper">
+                                    <div class="product-image-bg">
+                                        <img alt="" src="dist/images/sale.png" class="product-sale" />
+                                        <a href="http://masterkeyed.com/product/2554/5mklj-Master-Keyed-Laminated-Steel-Padlocks">
+                                            <img src="dist/images/5lj-best-seller.png" class="product-image img-responsive" alt="a" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-desc-wrapper">
+                                    <div class="product-desc">5MKLJ Laminated Steel Padlock</div>
+                                </div>
+                                <div class="info">
+                                    <div class="product-footer-wrapper">
+                                        <div class="prices">
+                                            <span class="sale-price">$15.49</span><br />
+                                            <span class="retail-price">$21.24</span>
+                                        </div>
+                                        <div class="details">
+                                            <a class="view-details" href="http://masterkeyed.com/product/2554/5mklj-Master-Keyed-Laminated-Steel-Padlocks">View Details</a>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 6th Best Seller in carousel -->
+                        <div class="element">                           <!-- col's defined in less -->
+                            <div class="product-wrapper">
+                                <div class="product-image-wrapper">
+                                    <div class="product-image-bg">
+                                        <img alt="" src="dist/images/sale.png" class="product-sale" />
+                                        <a href="http://masterkeyed.com/product/2551/5mklf-Master-Keyed-Laminated-Steel-Padlocks">
+                                            <img src="dist/images/5lf-best-seller.png" class="product-image img-responsive" alt="a" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-desc-wrapper">
+                                    <div class="product-desc">5MKLF Laminated Steel Padlock</div>
+                                </div>
+                                <div class="info">
+                                    <div class="product-footer-wrapper">
+                                        <div class="prices">
+                                            <span class="sale-price">$15.20</span><br />
+                                            <span class="retail-price">$20.84</span>
+                                        </div>
+                                        <div class="details">
+                                            <a class="view-details" href="http://masterkeyed.com/product/2551/5mklf-Master-Keyed-Laminated-Steel-Padlocks">View Details</a>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--carousel-inner-->
+        </div>
+    </div>
+</div>
+<!--END FIRST PRODUCT SLIDER - BEST SELLERS -->
+
+<!-- START SCHOOLS PAGE -->
+<div class="virtualpage-express-wrapper container">
+
+    <div class="page-header">
+        <span class="title">We ship custom built safety padlocks or lockout products in 24 to 72 hours</span>
+        <span class="sub-title">(with expedited shipment options available)</span>
+    </div>
+
+    <div class="">
+        <span>Inspections, plant shut-downs, whatever the situation may be...when you need safety lockout products in a hurry, we will ship custom built safety padlocks or lockout products in 24 to 72 hours, with expedited shipment options available, to support your customer's needs.</span>
+    </div>
+
+    <div class="row wrapper-items">
+
+        <!-- start item 410 -->
+        <div class="item-wrapper">                                              <!-- col's defined in less -->
+            <div class="item-2">
+                <div class="item-image-wrapper">
+                    <div class="item-image">
+                        <a href="/product/1236/410-safety-lockout-padlocks" target="_blank">
+                            <img class="item-image img-responsive" src="http://199.187.242.120/Templates/Hodge/images/virtual-pages/express-items-410.png" alt="" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="item-title">
+                    <div class="construction-type">No. 410 Safety Lockout Padlocks</div>
+                    <!--<div class="item-grade">With Charts</div>-->
+                </div>
+
+                <div class="item-desc-wrapper">
+                    <div class="item-desc">
+                        <div class="packaged">Buy 24 or more</div>
+                        <div class="text">As low as $10.10</div>
+                    </div>
+                    <div class="btn-view-details">
+                        <a class="view-details" href="/product/1236/410-safety-lockout-padlocks" target="_blank">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end item 410 -->
+
+        <!-- start item 411 -->
+        <div class="item-wrapper">                                              <!-- col's defined in less -->
+            <div class="item-2">
+                <div class="item-image-wrapper">
+                    <div class="item-image">
+                        <a href="/product/1237/411-safety-padlocks" target="_blank">
+                            <img class="item-image img-responsive" src="http://199.187.242.120/Templates/Hodge/images/virtual-pages/express-items-411.png" alt="" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="item-title">
+                    <div class="construction-type">No. 411 Safety Lockout Padlocks</div>
+                    <!--<div class="item-grade">With Key Control</div>-->
+                </div>
+
+                <div class="item-desc-wrapper">
+                    <div class="item-desc">
+                        <div class="packaged">Buy 24 or more</div>
+                        <div class="text">As low as $11.17</div>
+                    </div>
+                    <div class="btn-view-details">
+                        <a class="view-details" href="/product/1237/411-safety-padlocks" target="_blank">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end item 411 -->
+
+        <!-- start item 406 -->
+        <div class="item-wrapper">                                              <!-- col's defined in less -->
+            <div class="item-2">
+                <div class="item-image-wrapper">
+                    <div class="item-image">
+                        <a href="/product/1238/406-safety-padlocks" target="_blank">
+                            <img class="item-image img-responsive" src="http://199.187.242.120/Templates/Hodge/images/virtual-pages/express-items-406.png" alt="" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="item-title">
+                    <div class="construction-type">No. 406 Dielectric Safety Lockout Padlocks</div>
+                    <!--<div class="item-grade">Locker Locks</div>-->
+                </div>
+
+                <div class="item-desc-wrapper">
+                    <div class="item-desc">
+                        <div class="packaged">Buy 24 or more</div>
+                        <div class="text">As Low as $10.48</div>
+                    </div>
+                    <div class="btn-view-details">
+                        <a class="view-details" href="/product/1238/406-safety-padlocks" target="_blank">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end item 406 -->
+
+        <!-- start item 6835 -->
+        <div class="item-wrapper">                                              <!-- col's defined in less -->
+            <div class="item-2">
+                <div class="item-image-wrapper">
+                    <div class="item-image">
+                        <a href="/product/601/6835-solid-aluminum-padlocks" target="_blank">
+                            <img class="item-image img-responsive" src="http://199.187.242.120/Templates/Hodge/images/virtual-pages/express-items-6835.png" alt="" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="item-title">
+                    <div class="construction-type">No. 6835 Keyed Different Solid Aluminum Padlocks</div>
+                    <!--<div class="item-grade">Locker Locks</div>-->
+                </div>
+
+                <div class="item-desc-wrapper">
+                    <div class="item-desc">
+                        <div class="packaged">Buy 24 or more</div>
+                        <div class="text">As Low as $9.27</div>
+                    </div>
+                    <div class="btn-view-details">
+                        <a class="view-details" href="/product/601/6835-solid-aluminum-padlocks" target="_blank">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end item 6835 -->
+
+        <!-- start item 3 -->
+        <div class="item-wrapper">                                              <!-- col's defined in less -->
+            <div class="item-2">
+                <div class="item-image-wrapper">
+                    <div class="item-image">
+                        <a href="/product/1410/3-laminated-steel-padlocks" target="_blank">
+                            <img class="item-image img-responsive" src="http://199.187.242.120/Templates/Hodge/images/virtual-pages/express-items-3.png" alt="" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="item-title">
+                    <div class="construction-type">No. 3 Keyed Different Laminated Steel Padlocks</div>
+                    <!--<div class="item-grade">Combination Accessories</div>-->
+                </div>
+
+                <div class="item-desc-wrapper">
+                    <div class="item-desc">
+                        <div class="packaged">Buy 24 or more</div>
+                        <div class="text">As Low as $5.93</div>
+                    </div>
+                    <div class="btn-view-details">
+                        <a class="view-details" href="/product/1410/3-laminated-steel-padlocks" target="_blank">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end item 3 -->
+    </div>
+
+
+    <div class="row wrapper-orders">
+        <!-- start PO -->
+        <div class="item-wrapper">
+
+            <div class="item-title">
+                <div class="purchase-order">
+                    <span>Ordering with a P.O.</span>
+                </div>
+            </div>
+
+            <div class="item-desc">
+                <div class="desc">
+                    <span>All Schools |  Institutions | and Government Agencies</span>
+                    <span>No Credit Application Needed.</span>
+                    <span>Fax, email, or call us with your PO # and order.</span>
+                    <span>ORDERING IS EASY...</span>
+                    <span>1. CLICK THE 1502/1525 ORDER FORM BUTTON</span>
+                    <span>2. ENTER YOUR ORDER</span> <span>3. SUBMIT</span>
+                    <span>FAX: 619.444.5677 |  EMAIL: help@masterlocks.com</span>
+                </div>
+            </div>
+
+            <div class="item-image-wrapper">
+                <div class="item-image">
+                    <a href="http://www.masterlocks.com/downloads/2017_lockerlock_form.pdf" target="_blank">
+                        <span class="button-order" style="cursor:pointer;">1502/1525 Order Form</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- end PO -->
+
+        <!-- start charts -->
+        <div class="item-wrapper">
+
+            <div class="item-title">
+                <div class="purchase-order">
+                    <span>CHART REQUIREMENTS</span>
+                </div>
+            </div>
+
+            <div class="item-desc">
+                <div class="desc">
+                    <span>Note: For your protection, two signatures are required.</span>
+                    <span>All combination requests must be submitted in writing. Please print, fill out and sign the printable request form and fax or mail back with your signature on a copy of your school's or company's letter head.</span>
+                    <span>End user serial number is required for combination recovery</span>
+                </div>
+            </div>
+
+            <div class="item-image-wrapper">
+                <div class="item-image">
+                    <a href="/ContentImages/chartform_2015_web_distributed.pdf" target="_blank">
+                        <span class="button-order" style="cursor:pointer;">Charts Order Form</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- end charts -->
+    </div>
+
+    <!-- Start Models -->
+    <div class="row wrapper-models">
+        <!-- start model differences -->
+        <div class="item-wrapper">
+
+            <div class="item-title">
+                <div class="title">
+                    <span>WHAT'S THE DIFFERENCE BETWEEN A<br> 1500 AND 1502?</span>
+                </div>
+            </div>
+
+            <div class="item-desc">
+                <div class="desc">
+                    <span>Both models are equal in their performance.</span>
+                    <span>Model 1500 is a standard dial combination.</span>
+                    <span>Model 1502 is a standard dial combination that includes combination chart to facilitate lock system administration.</span>
+                </div>
+            </div>
+
+            <div class="item-image-wrapper">
+                <div class="item-image">
+                    <iframe class="youtube-lock-model" src="https://www.youtube.com/embed/th5pW7VT0oU" allowfullscreen="" width="560" height="315" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+        <!-- end model differences -->
+
+
+    </div>
+    <!-- End Models -->
+
+    <div class="row wrapper-tax-exempt">
+        <div class="item-wrapper">
+            <div class="item-title">
+                <div class="title">
+                    <span>Is your school tax exempt?</span>
+                </div>
+            </div>
+
+            <div class="item-desc">
+                <div class="desc">
+                    <span>Be sure to send or fax us your tax exemption form for your state.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- END SCHOOLS PAGE -->
+
+<!-- START LOCAL ONLY -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- END LOCAL ONLY -->
+</body>
+</html>
