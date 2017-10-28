@@ -42,7 +42,7 @@
 /* VIRTUAL PAGES (SCHOOLS)
 ========================================================================== */
 .virtualpage-express-wrapper .wrapper-items {
-  margin: 50px 0;
+  margin: 50px 0 20px 0;
 }
 .virtualpage-express-wrapper .page-header span {
   display: block;
@@ -342,7 +342,7 @@
   margin-bottom: 10px;
 }
 .product-slider-wrapper {
-  margin: 35px auto 50px auto;
+  margin: 35px auto 0 auto;
 }
 @media (min-width: 768px) {
   .product-slider-wrapper {
@@ -501,4 +501,37 @@
 .product-desc .view-details:hover {
   background: #d7f0dc;
   color: #222;
+}
+/* TERMS AND CONDITIONS
+========================================================================== */
+@media (min-width: 375px) {
+  .wrapper-lockout-devices,
+  .wrapper-terms {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .wrapper-lockout-devices,
+  .wrapper-terms {
+    width: 50%;
+  }
+}
+.wrapper-devices-terms {
+  width: 100%;
+  margin: 0 0 50px 0;
+}
+.wrapper-devices-terms .wrapper-lockout-devices {
+  width: 50%;
+  float: left;
+}
+.wrapper-devices-terms .wrapper-lockout-devices .title {
+  font-size: 20px;
+}
+.wrapper-devices-terms .wrapper-lockout-devices .lockout-devices {
+  width: 50%;
+  float: left;
+}
+.wrapper-devices-terms .wrapper-terms {
+  width: 50%;
+  float: left;
 }

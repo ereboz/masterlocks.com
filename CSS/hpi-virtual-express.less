@@ -141,7 +141,7 @@
 
 .virtualpage-express-wrapper {
     .wrapper-items {
-        margin: 50px 0;
+        margin: 50px 0 20px 0;
     }
     
     .page-header {
@@ -513,7 +513,7 @@
 
 // Product Slider (Best Sellers Section)
 .product-slider-wrapper {
-    margin: 35px auto 50px auto;
+    margin: 35px auto 0 auto;
     
     @media @tablet-min {
         margin-top: 0;
@@ -689,6 +689,52 @@
     }
 }
 
+
+/* TERMS AND CONDITIONS
+========================================================================== */
+
+// since they butchered bootstrap mobile first approach, we'll monkey around it.
+
+.wrapper-lockout-devices, .wrapper-terms {
+    
+    @media @phone-xxs-min {
+        width: 100%;
+    }
+    
+    @media @tablet-min {
+        width: 50%;
+    }
+
+}
+
+
+
+.wrapper-devices-terms {
+    width: 100%;
+    margin: 0 0 50px 0;
+    
+    .wrapper-lockout-devices {      // column
+        width: 50%;
+        float: left;
+        
+        .title {
+            font-size: 20px
+        }
+        
+        .lockout-devices {
+            width: 50%;
+            float: left;
+        
+        }
+    }
+    
+    .wrapper-terms {            // column
+        width: 50%;
+        float: left;
+    
+    }
+    
+}
 
 
 
