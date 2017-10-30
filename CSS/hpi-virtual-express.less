@@ -140,6 +140,9 @@
 ========================================================================== */
 
 .virtualpage-express-wrapper {
+    
+    margin: 25px auto 0 auto;
+    
     .wrapper-items {
         margin: 50px 0 20px 0;
     }
@@ -693,48 +696,126 @@
 /* TERMS AND CONDITIONS
 ========================================================================== */
 
+// set titles the shipping sections
+
+.wrapper-devices-terms {            // main terms and conditions wrapper
+    
+    div[class^="wrapper"] {
+        .header {
+            .title {
+                font-size: 20px;
+                margin: 0 0 35px 0;
+            }
+            
+            img {
+                margin: 0 0 15px 0;
+            }
+        }
+        
+    }
+}
+
+
 // since they butchered bootstrap mobile first approach, we'll monkey around it.
 
-.wrapper-lockout-devices, .wrapper-terms {
-    
-    @media @phone-xxs-min {
-        width: 100%;
-    }
+.wrapper-lockout-devices, .wrapper-terms {      // column definitions
+    float: left;
+    width: 100%;
+    padding: 20px;
     
     @media @tablet-min {
         width: 50%;
     }
-
+    
+    .wrapper-inner {
+        min-height: 600px;
+        
+        @media @tablet-min {
+            min-height: 510px;
+        }
+        
+        @media @desktop-min {
+            min-height: 610px;
+        }
+ 
+        border: 1px dotted @gray-light;
+        overflow: auto;
+        padding: 15px;
+    }
 }
-
 
 
 .wrapper-devices-terms {
     width: 100%;
     margin: 0 0 50px 0;
     
-    .wrapper-lockout-devices {      // column
-        width: 50%;
-        float: left;
+    .wrapper-lockout-devices {      // column (defined above)
         
-        .title {
-            font-size: 20px
+        .header {
+            width: 100%;
+            float: left;
+            
+            .title {
+            
+            }
+            
+            .header-images {
+                .item-image-wrapper {
+                    float: left;
+            
+                    .item-image {
+                
+                    }
+                }
+            }
         }
         
         .lockout-devices {
-            width: 50%;
+            width: 100%;
             float: left;
-        
+    
+            
+            ul {
+                float: left;
+                list-style-type: none;
+                padding: 0;
+                margin: 0 0 0 20px;
+                text-align: left;
+                width: 90%;
+                
+                @media @tablet-min {
+                    width: 45%;
+                }
+                
+            }
+    
+            li {
+                list-style-image: url("http://199.187.242.120/Templates/Hodge/images/virtual-pages/check.png");
+                background-repeat: no-repeat;
+                background-position: 100% .4em;
+                padding-right: .6em;
+                margin: 1em 0;
+            }
+            
         }
     }
     
-    .wrapper-terms {            // column
-        width: 50%;
-        float: left;
-    
+    .wrapper-terms {                // column (defined above)
+        
+        .topic {
+            .title {
+                font-size: 18px;
+                margin: 25px 0 15px 0;
+            }
+        }
+        
     }
     
 }
+
+
+
+
 
 
 
