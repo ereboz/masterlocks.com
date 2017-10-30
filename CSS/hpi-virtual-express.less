@@ -1,5 +1,7 @@
-/* Brian's Grid Variables to make life easier
+/* Brian's Grid / General Variables to make life easier
 ========================================================================== */
+
+//<editor-fold desc="Grid / General Variables">
 // min-widths
 @phone-xxxs-min: ~"(min-width: 320px)";
 @phone-xxs-min: ~"(min-width: 375px)";
@@ -31,9 +33,14 @@
 @green-dark: #197b30;
 @orange: #fa0;
 @white: #fff;
+//</editor-fold>
 
-/* MIXIN'S
+
+/* Mixins
 ========================================================================== */
+
+//<editor-fold desc="Mixins">
+
 .btn-transparent() {                // Popular Models
     display: inline-block;
     border: 1px solid @gray-medium;
@@ -136,9 +143,17 @@
     }
 }
 
-/* VIRTUAL PAGES (SCHOOLS)
+//</editor-fold>
+
+
+
+/* Virtual Pages (EXPRESS)
 ========================================================================== */
 
+/* Page Header
+========================================================================== */
+
+//<editor-fold desc="Page Header">
 .virtualpage-express-wrapper {
     
     margin: 25px auto 0 auto;
@@ -164,11 +179,82 @@
         }
     }
     
+    .head-intro {
+        margin: 20px 0;
+    }
+    
+}
+//</editor-fold>
+
+
+/* Slideshow Header Section
+========================================================================== */
+
+//<editor-fold desc="Slide show Header Section">
+
+.product-slider-wrapper {
+    margin: 35px auto 0 auto;
+    
+    @media @tablet-min {
+        margin-top: 0;
+    }
 }
 
-// bootstrap would handle mobile first, but someone butchered the framework, so need to
-// handle this monkey work.
+.product-slider-title {
+    float: left;
+    
+    span {
+        font-size: 20px;
+    }
+}
 
+.product-slider-head {
+    margin-bottom: 10px;
+    
+    .product-slider-chevrons {
+        //float: left;
+        position: relative;
+        
+        .controls {
+            position: absolute;
+            width: 100%;
+            
+            .fa.btn {
+                padding: 12px;
+                color: @white !important;
+                background-color: @gray-light !important;
+            }
+            
+            .left {
+                float: left;
+            }
+            
+            .right {
+                float: right;
+            }
+        }
+    }
+}
+
+.carousel {
+    &.padlocks {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+.product-slider-chevrons {
+    //.make-sm-column(3);     // 768px (min)
+    width: 100%;
+}
+
+//</editor-fold>
+
+
+/* Items in the slide show
+========================================================================== */
+
+//<editor-fold desc="Items in the slideshow">
 .item-wrapper {
     float: left;
     padding: 0 10px;
@@ -190,6 +276,28 @@
     }
 }
 
+
+.carousel-inner.best-sellers {
+    //.make-xs-column(12);     // 480px
+    //.make-md-column(12);     // 992px (min)
+    width: 100%;
+    
+    .element {
+        //.make-xs-column(12);    // 480px
+        //.make-sm-column(3);     // 768px (min)
+        width: 25%;
+        float: left;
+        
+    }
+}
+
+.best-sellers {
+    margin-bottom: 20px;
+    
+    .element {
+        margin-bottom: 20px;
+    }
+}
 
 
 .item-2 {
@@ -302,401 +410,15 @@
         
     }
 }
+//</editor-fold>
 
 
-.wrapper-orders {
-    float: left;
-    width: 100%;
-    padding: 0 15px;
-    margin: 0 0 75px 0;
-    border-bottom: 1px solid @gray-light;
-    
-    .item-wrapper {
-        
-        &:first-child {
-            border-right: 0;
-            margin-bottom: 50px;
-            
-            @media @tablet-min {
-                border-right: 1px dotted darken(@gray-light, 20%);
-            }
-        
-        }
-        
-        &:last-child {
-            @media @tablet-min {
-                padding-left: 30px;
-            }
-        }
-    
-        float: left;
-        padding: 0 15px;
-        margin: 0 0 20px 0;
-        
-        @media @phone-xxs-min {
-            width: 100%;
-        }
-    
-        @media @tablet-min {
-            width: 50%;
-        }
-    
-        @media @desktop-min {
-            width: 50%;
-        }
-        
-        .item-title {
-        
-            .purchase-order {
-                font-size: 24px;
-            }
-        }
-    
-        .item-desc {
-            
-            .desc {
-                padding: 0 0 20px 0;
-                
-                @media @tablet-min {
-                    min-height: 271px;
-                }
-                
-                @media @desktop-min {
-                    min-height: 200px;
-                }
-                
-                span {
-                    display: block;
-                    margin: 0 0 0 0;
-                    
-                    &:first-child {
-                        font-size: 20px;
-                        margin: 0 0 15px 0;
-                    }
-                }
-            }
-        }
-        
-        .item-image-wrapper {
-            
-            .item-image {
-                span {
-                    width: 35%;
-                    text-align: center;
-                }
-            }
-        }
-        
-    }
-}
-
-.wrapper-models {
-    float: left;
-    width: 100%;
-    margin: 0 0 75px 0;
-    padding: 0 15px;
-    border-bottom: 1px solid @gray-light;
-    
-    .item-wrapper {
-    
-        float: left;
-        width: 100%;
-        padding: 0 15px;
-        
-        // center this element when >=tablet
-        @media @tablet-min {
-            float: none !important;
-            width: 50%;
-            padding: 0 15px;
-            margin: 0 auto 20px auto;
-        }
-
-        
-        .item-title {
-            
-            .title {
-                font-size: 24px;
-            }
-        }
-        
-        .item-desc {
-            margin-bottom: 50px;
-            
-            .desc {
-                min-height: 75px;
-                
-                span {
-                    display: block;
-                    margin: 0 0 10px 0;
-                    
-                    &:first-child {
-                        font-size: 20px;
-                        margin: 0 0 15px 0;
-                    }
-                }
-            }
-        }
-        
-        .item-image-wrapper {
-            
-            .item-image {
-                .youtube-lock-model {
-                    width: 100%;
-                }
-            }
-        }
-        
-    }
-}
-
-
-.wrapper-tax-exempt {
-    float: left;
-    width: 100%;
-    padding: 0 15px;
-    
-    .item-wrapper {
-        
-        float: left;
-        padding: 0 15px;
-        margin: 0 0 20px 0;
-        width: 100%;
-        
-        .item-title {
-            
-            .title {
-                font-size: 24px;
-            }
-        }
-        
-        .item-desc {
-            margin-bottom: 50px;
-            
-            .desc {
-                min-height: 75px;
-                
-                span {
-                    display: block;
-                    margin: 0 0 10px 0;
-                    
-                    &:first-child {
-                        font-size: 20px;
-                        margin: 0 0 15px 0;
-                    }
-                }
-            }
-        }
-        
-        .item-image-wrapper {
-            
-            .item-image {
-                img {
-                    width: 50%;
-                }
-            }
-        }
-        
-    }
-}
-
-// add some space below titles (but not the titles in the imaage items)
-.wrapper-orders, .wrapper-models, .wrapper-tax-exempt {
-    .item-title {
-        margin-bottom: 10px;
-    }
-}
-
-
-
-
-
-
-
-// best sellers import
-
-// Product Slider (Best Sellers Section)
-.product-slider-wrapper {
-    margin: 35px auto 0 auto;
-    
-    @media @tablet-min {
-        margin-top: 0;
-    }
-}
-
-.product-slider-head {
-    margin-bottom: 10px;
-    
-    .product-slider-title {
-        float: left;
-        
-        span {
-            font-size: 20px;
-        }
-    }
-    
-    .product-slider-chevrons {
-        float: left;
-        
-        .controls {
-            .fa.btn {
-                padding: 12px;
-                color: @white !important;
-                background-color: @green-dark !important;
-            }
-        }
-    }
-}
-
-
-
-// Product Slider - product (slides)
-.product-wrapper {
-    border: 1px solid @gray-light;
-    background: @white;
-    .border-radius();
-    
-    &.listing {
-        border: none;
-        border-bottom: 2px solid @gray-light;
-        .border-radius(0);
-        
-        &:hover {
-            border-bottom: 2px solid @black;
-        }
-    }
-}
-
-
-.product-image {
-    margin: 0 auto;
-}
-
-.product-wrapper .info {
-    margin-top: 1px;
-}
-
-/* Best Seller Section
+/* Lockout Devices & Terms and Conditions
 ========================================================================== */
 
-.product-slider-head {
-    width: 100%;
-}
+//<editor-fold desc="Lockout Devices & Terms and Conditions">
 
-.product-slider-title {
-    //.make-sm-column(9);     // 768px (min)
-    width: 70%;
-}
-
-.product-slider-chevrons {
-    //.make-sm-column(3);     // 768px (min)
-    width: 30%;
-}
-
-.carousel-inner.best-sellers {
-    //.make-xs-column(12);     // 480px
-    //.make-md-column(12);     // 992px (min)
-    width: 100%;
-    
-    .element {
-        //.make-xs-column(12);    // 480px
-        //.make-sm-column(3);     // 768px (min)
-        width: 25%;
-        float: left;
-        
-    }
-}
-
-.best-sellers {
-    margin-bottom: 20px;
-    
-    .element {
-        margin-bottom: 20px;
-    }
-}
-
-.product-wrapper {
-    //font-family: @font-roboto;
-    font-size: 15px !important;
-}
-
-.product-image-bg {
-    width: 90%;
-    background-color: lighten(@gray-background, 1%);
-    margin: 10px auto;
-    
-    .product-image {
-        margin: 0 auto;
-    }
-    
-    .product-sale {
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 12px;
-        
-        &.sale-on {
-            display: block;
-        }
-        
-        &.sale-off {
-            display: none;
-        }
-    }
-}
-
-.product-desc {
-    position: relative;
-    margin: 10px;
-    text-align: center;
-    
-    @media @desktop-max {
-        min-height: 36px;
-    }
-    
-    .prod-title {
-        margin-bottom: 5px;
-        font-size: 15px;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-    
-    p {
-        margin-bottom: 0;
-    }
-    
-    .prod-price {
-        .price-hpi {
-            display: inline-block;
-            margin-bottom: 8px;
-            color: @gray-medium;
-            font-weight: bold;
-            word-spacing: 10px;
-        }
-        .price-msrp {
-            font-size: 12px;
-            word-spacing: 10px;
-        }
-    }
-    
-    .prod-models {
-        font-size: 12px;
-        margin-bottom: 20px;
-    }
-    
-    .view-details {
-        .btn-transparent();
-        display: block;
-        margin: 0 auto;
-        text-align: center;
-        width: 125px;
-    }
-}
-
-
-/* TERMS AND CONDITIONS
-========================================================================== */
-
-// set titles the shipping sections
+// set titles for Lockout Devices and Terms Section
 
 .wrapper-devices-terms {            // main terms and conditions wrapper
     
@@ -715,8 +437,6 @@
     }
 }
 
-
-// since they butchered bootstrap mobile first approach, we'll monkey around it.
 
 .wrapper-lockout-devices, .wrapper-terms {      // column definitions
     float: left;
@@ -813,7 +533,7 @@
     
 }
 
-
+//</editor-fold>
 
 
 
