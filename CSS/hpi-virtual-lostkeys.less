@@ -1,0 +1,252 @@
+/* Brian's Grid / General Variables to make life easier
+========================================================================== */
+
+//<editor-fold desc="Grid / General Variables">
+// min-widths
+@phone-xxxs-min: ~"(min-width: 320px)";
+@phone-xxs-min: ~"(min-width: 375px)";
+@phone-min: ~"(min-width: 480px)";
+@tablet-min: ~"(min-width: 768px)";
+@desktop-min: ~"(min-width: 992px)";
+@desktop-large-min: ~"(min-width: 1200px)";
+
+// max-widths
+@phone-xxxs-max: ~"(max-width: 320px)";
+@phone-xxs-max: ~"(max-width: 375px)";
+@phone-max: ~"(max-width: 480px)";
+@tablet-max: ~"(max-width: 768px)";
+@desktop-max: ~"(max-width: 992px)";
+@desktop-large-max: ~"(max-width: 1200px)";
+
+
+// color variables
+@black: #000;
+@font-roboto: "Roboto", sans-serif;
+@font-opensans: "Open Sans",sans-serif;
+@font-title: 'montserratregular', sans-serif;
+@gray-background: #f5f7f9;
+@black: #000;
+@blue: #48c;
+@gray-light: #e0e0e0;
+@gray-medium: #5d5e5e;
+@gray-dark: #3f454a;
+@green-light: #bde6c6;
+@green-dark: #197b30;
+@orange: #fa0;
+@white: #fff;
+//</editor-fold>
+
+
+/* Mixins
+========================================================================== */
+
+//<editor-fold desc="Mixins">
+
+.btn-transparent() {                // Popular Models
+    display: inline-block;
+    border: 1px solid @gray-medium;
+    padding: 9px 15px 7px 10px;
+    height: 36px;
+    background: white;
+    font-family: @font-roboto;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #000;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    
+    &:hover {
+        background: lighten(@green-light,7%);
+        color: #222;
+    }
+}
+
+.btn-view-details() {               // Best Sellers
+    display: block;
+    float: left;
+    .size(200px, 50px);
+    padding: 14px 5px 5px 10px;
+    overflow: hidden;
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 12px;
+    color: @black;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    background-color: lighten(@gray-background, 1%);
+    text-align: center;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    
+    &:hover {
+        //background-color: @gold;
+        color: @black;
+    }
+}
+
+.border-radius (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+    
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+.rounded-corners (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+
+
+.box-shadow (@arguments) {
+    -moz-box-shadow: @arguments;
+    -ms-box-shadow: @arguments;
+    -o-box-shadow: @arguments;
+    box-shadow: @arguments;
+}
+
+.size(@width, @height) {
+    width: @width;
+    height: @height;
+}
+
+// button gradient to replace the images
+
+.button-order {
+    width: 180px;
+    min-width: 180px;
+    
+    border:1px solid #019C92;-webkit-box-shadow: #FFF563 0px 1px 0px inset;-moz-box-shadow: #FFF563 0px 1px 0px inset; box-shadow: #FFF563 0px 1px 0px inset; -webkit-border-radius: 10px; -moz-border-radius: 10px;border-radius: 10px;font-family:arial, helvetica, sans-serif; padding: 7px 14px 7px 14px; text-decoration:none; display:inline-block;text-shadow: 0px 1px 0 rgba(238,238,238,0.44);font-weight:bold; color: #FFFFFF;
+    background-color: #92cfde; background-image: -webkit-gradient(linear, left top, left bottom, from(#92cfde), to(#76bdd1));
+    background-image: -webkit-linear-gradient(top, #92cfde, #76bdd1);
+    background-image: -moz-linear-gradient(top, #92cfde, #76bdd1);
+    background-image: -ms-linear-gradient(top, #92cfde, #76bdd1);
+    background-image: -o-linear-gradient(top, #92cfde, #76bdd1);
+    background-image: linear-gradient(to bottom, #92cfde, #76bdd1);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#92cfde, endColorstr=#76bdd1);
+    
+    &:hover {
+        border:1px solid #019C92;
+        background-color: #6bbed2; background-image: -webkit-gradient(linear, left top, left bottom, from(#6bbed2), to(#50abc4));
+        background-image: -webkit-linear-gradient(top, #6bbed2, #50abc4);
+        background-image: -moz-linear-gradient(top, #6bbed2, #50abc4);
+        background-image: -ms-linear-gradient(top, #6bbed2, #50abc4);
+        background-image: -o-linear-gradient(top, #6bbed2, #50abc4);
+        background-image: linear-gradient(to bottom, #6bbed2, #50abc4);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#6bbed2, endColorstr=#50abc4);
+    }
+}
+
+//</editor-fold>
+
+
+
+/* Virtual Pages (EXPRESS)
+========================================================================== */
+
+/* Page Header
+========================================================================== */
+
+//<editor-fold desc="Page Header">
+.virtualpage-lostkeys-wrapper {
+    
+    margin: 25px auto 0 auto;
+    
+    .wrapper-items {
+        margin: 50px 0 20px 0;
+    }
+    
+    .page-header {
+        span {
+            display: block;
+            margin: 20px auto;
+        }
+        
+        .title {
+            font-size: 24px;
+            font-family: @font-title;
+        }
+        
+        .sub-title {
+            font-size: 16px;
+            font-family: @font-title;
+        }
+    }
+    
+    .head-intro {
+        margin: 20px 0;
+    }
+    
+}
+//</editor-fold>
+
+/* Accordion for FAQs
+========================================================================== */
+
+//<editor-fold desc="Accordion for FAQs">
+
+#accordion {
+
+    margin: 0 0 150px 0;
+    
+    .ui-state-active {
+        background-color: @gray-dark;
+        border: 1px solid @gray-light;
+    }
+    
+    h3 {
+        //text-transform: uppercase;
+        //color: @black;
+        //font-family: @font-roboto;
+    }
+    
+    .ui-widget-content {
+        border: none;
+    }
+    
+    div {
+        //border-bottom: 1px solid @gray-light !important;
+    }
+    
+}
+
+.ui-accordion .ui-accordion-header {
+    padding: 10px;
+    cursor: help;
+    text-transform: uppercase;
+    color: @black;
+    font-family: @font-roboto;
+    font-size: 16px;
+}
+
+.ui-state-default {
+    border: none !important;
+    background: none !important;
+}
+
+.ui-state-hover {
+    background: none !important;
+}
+
+
+//</editor-fold>
+
+
+
+
+
+
+
+
+
+
+
+
+
