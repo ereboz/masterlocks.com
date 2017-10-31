@@ -125,16 +125,85 @@
 }
 
 
+//</editor-fold>
+
+/* Lost Combination Page
+========================================================================== */
+
+//<editor-fold desc="Lost Combination Page">
+
+// had to override much of their default hacks that don't cascade. /cry
+
+.virtualpage-lostkeys-wrapper {
+
+// body text
+div {
+    p {
+        font-size: 14px;
+        color: @gray-medium;
+    }
+}
+
+ol, li {
+    font-size: 14px;
+    color: @gray-medium;
+}
+    
+ul li {
+    list-style-type: upper-alpha !important;
+    margin: auto;
+}
+
+ol li {
+    list-style-type: decimal !important;
+    margin: 10px 45px;
+}
+
+
+
+// main ul and ol
 div ul {
-     list-style-type: upper-alpha;
+     list-style-type: upper-alpha !important;
  }
 
 div ul {
     ol {
-        list-style-type: decimal;
+        list-style-type: decimal !important;
     }
 }
 
+// headers
+li,div {
+    .li-header {
+        font-weight: 700;
+        margin: 0 0 10px 0;
+        color: @gray-dark;
+    }
+}
+
+// sub-headers
+ol li {
+    .li-sub-header {
+        font-weight: 600;
+        margin: 0 0 10px 0;
+        color: @gray-medium;
+    }
+}
+
+// display spans as block so no one had to put <br> in the DOM
+li[class*="serial-number"], li[class*="activation-code-request"] {
+    span {
+        display: block;
+    }
+}
+
+.activation-code-request {
+    span:last-of-type {
+        margin: 0 0 10px 0;
+    }
+}
+
+}
 //</editor-fold>
 
 

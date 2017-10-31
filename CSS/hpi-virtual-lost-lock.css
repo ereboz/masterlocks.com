@@ -52,9 +52,46 @@
 .ui-state-hover {
   background: none !important;
 }
-div ul {
-  list-style-type: upper-alpha;
+/* Lost Combination Page
+========================================================================== */
+.virtualpage-lostkeys-wrapper div p {
+  font-size: 14px;
+  color: #5d5e5e;
 }
-div ul ol {
-  list-style-type: decimal;
+.virtualpage-lostkeys-wrapper ol,
+.virtualpage-lostkeys-wrapper li {
+  font-size: 14px;
+  color: #5d5e5e;
+}
+.virtualpage-lostkeys-wrapper ul li {
+  list-style-type: upper-alpha !important;
+  margin: auto;
+}
+.virtualpage-lostkeys-wrapper ol li {
+  list-style-type: decimal !important;
+  margin: 10px 45px;
+}
+.virtualpage-lostkeys-wrapper div ul {
+  list-style-type: upper-alpha !important;
+}
+.virtualpage-lostkeys-wrapper div ul ol {
+  list-style-type: decimal !important;
+}
+.virtualpage-lostkeys-wrapper li .li-header,
+.virtualpage-lostkeys-wrapper div .li-header {
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  color: #3f454a;
+}
+.virtualpage-lostkeys-wrapper ol li .li-sub-header {
+  font-weight: 600;
+  margin: 0 0 10px 0;
+  color: #5d5e5e;
+}
+.virtualpage-lostkeys-wrapper li[class*="serial-number"] span,
+.virtualpage-lostkeys-wrapper li[class*="activation-code-request"] span {
+  display: block;
+}
+.virtualpage-lostkeys-wrapper .activation-code-request span:last-of-type {
+  margin: 0 0 10px 0;
 }
