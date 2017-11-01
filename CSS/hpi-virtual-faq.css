@@ -1,6 +1,35 @@
 /* Brian's Grid / General Variables to make life easier
 ========================================================================== */
-/* Virtual Pages (lost keys/combo)
+.fa.fa-file-pdf-o,
+.fa.fa-download,
+.fa.fa-file-video-o,
+.fa.fa-file-powerpoint-o,
+.fa.fa-file-text-o,
+.fa.fa-file-zip-o,
+.fa.fa-file-word-o,
+.fa-vcard-o {
+  font-size: 16px !important;
+  margin: 0 5px;
+}
+.fa-file-word-o {
+  color: #48c;
+}
+.fa-file-pdf-o {
+  color: #d41;
+}
+.fa-file-powerpoint-o {
+  color: #f38661;
+}
+.fa-file-video-o {
+  color: #245586;
+}
+.fa-download {
+  color: #6ca1d7;
+}
+.fa-file-zip-o {
+  color: #193b5e;
+}
+/* Virtual Pages (faq lost keys/combo)
 ========================================================================== */
 /* Page Header
 ========================================================================== */
@@ -52,8 +81,11 @@
 .ui-state-hover {
   background: none !important;
 }
-/* Lost Combination Page
+/* FAQ General, FAQ Lost Keys, FAQ Lost Combo Page
 ========================================================================== */
+.virtualpage-lostkeys-wrapper p {
+  margin: 0 0 10px;
+}
 .virtualpage-lostkeys-wrapper div p {
   font-size: 14px;
   color: #5d5e5e;
@@ -80,7 +112,7 @@
 .virtualpage-lostkeys-wrapper li .li-header,
 .virtualpage-lostkeys-wrapper div .li-header {
   font-weight: 700;
-  margin: 0 0 10px 0;
+  margin: 10px 0;
   color: #3f454a;
 }
 .virtualpage-lostkeys-wrapper ol li .li-sub-header {

@@ -33,11 +33,43 @@
 @green-light: #bde6c6;
 @green-dark: #197b30;
 @orange: #fa0;
+@red: #d41;
 @white: #fff;
 //</editor-fold>
 
+//<editor-fold desc="Font Awesome icon styles - pdf, download, video, power point, file, zip icon">
 
-/* Virtual Pages (lost keys/combo)
+.fa.fa-file-pdf-o, .fa.fa-download, .fa.fa-file-video-o, .fa.fa-file-powerpoint-o, .fa.fa-file-text-o, .fa.fa-file-zip-o, .fa.fa-file-word-o, .fa-vcard-o {
+    font-size: 16px !important;
+    margin: 0 5px;
+}
+
+.fa-file-word-o {
+    color: @blue;
+}
+
+.fa-file-pdf-o {
+    color: @red;
+}
+
+.fa-file-powerpoint-o {
+    color: lighten(@red, 20%);
+}
+
+.fa-file-video-o {
+    color: darken(@blue, 20%);
+}
+
+.fa-download {
+    color: lighten(@blue, 10%);
+}
+
+.fa-file-zip-o {
+    color: darken(@blue, 30%);
+}
+//</editor-fold>
+
+/* Virtual Pages (faq lost keys/combo)
 ========================================================================== */
 
 /* Page Header
@@ -127,16 +159,21 @@
 
 //</editor-fold>
 
-/* Lost Combination Page
+/* FAQ General, FAQ Lost Keys, FAQ Lost Combo Page
 ========================================================================== */
 
-//<editor-fold desc="Lost Combination Page">
+//<editor-fold desc="FAQ General, FAQ Lost Keys, FAQ Lost Combo Page">
 
 // had to override much of their default hacks that don't cascade. /cry
 
 .virtualpage-lostkeys-wrapper {
 
 // body text
+
+p {
+        margin: 0 0 10px;
+}
+    
 div {
     p {
         font-size: 14px;
@@ -176,7 +213,7 @@ div ul {
 li,div {
     .li-header {
         font-weight: 700;
-        margin: 0 0 10px 0;
+        margin: 10px 0;
         color: @gray-dark;
     }
 }
@@ -211,6 +248,7 @@ ul li.hide-list-style-type {
 
 
 }
+
 //</editor-fold>
 
 
