@@ -95,3 +95,6 @@
 .virtualpage-lostkeys-wrapper .activation-code-request span:last-of-type {
   margin: 0 0 10px 0;
 }
+.virtualpage-lostkeys-wrapper ul li.hide-list-style-type {
+  list-style-type: none !important;
+}
