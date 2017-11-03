@@ -1,5 +1,7 @@
 /* Brian's Grid Variables to make life easier
 ========================================================================== */
+
+//<editor-fold desc="Grid / General Variables">
 // min-widths
 @phone-xxxs-min: ~"(min-width: 320px)";
 @phone-xxs-min: ~"(min-width: 375px)";
@@ -31,10 +33,12 @@
 @green-light: #bde6c6;
 @orange: #fa0;
 @white: #fff;
+//</editor-fold>
 
 /* MIXIN'S
 ========================================================================== */
 
+//<editor-fold desc="Mixins">
 
 .border-radius (@radius: 5px) {
     -webkit-border-radius: @radius;
@@ -90,17 +94,43 @@
     }
 }
 
+//</editor-fold>
+
 /* VIRTUAL PAGES (SCHOOLS)
 ========================================================================== */
 
+/* 2 Rows of Product
+========================================================================== */
+//<editor-fold desc="2 rows of product">
+
 .virtualpage-speed-index-wrapper {
+    
+    margin: 25px auto 0 auto;
+    
     .wrapper-items {
         margin: 50px 0;
     }
+    
+    .page-header {
+        span {
+            display: block;
+            margin: 20px auto;
+        }
+        
+        .title {
+            font-size: 24px;
+            font-family: @font-title;
+        }
+        
+        .sub-title {
+            font-size: 16px;
+            font-family: @font-title;
+        }
+    }
+    
 }
 
-// bootstrap would handle mobile first, but someone butchered the framework, so need to
-// handle this monkey work.
+
 .item-wrapper {
     float: left;
     padding: 0 15px;
@@ -123,7 +153,6 @@
 }
 
 
-
 .item {
     .border-radius();
     .box-shadow(1px 1px 5px @gray-light);
@@ -142,24 +171,24 @@
         }
         
         .item-image {
-            margin: 5px 0 10px 0;
+            margin: 10px 0;
             
             img {
                 display: inline-block;
-                
-                @media @tablet-min {
-                    //max-width: 35px;
-                }
-                
-                @media @desktop-min {
-                    //max-width: 60px;
+    
+                &:last-child {
+                    display: none;
                 }
             }
     
-            img:last-child{display:none}
-            &:hover img:first-child{display:none}
-            &:hover img:last-child{display:inline-block}
-            
+            &:hover {
+                img:first-child {
+                    display: none;
+                }
+                img:last-child {
+                    display: inline-block;
+                }
+            }
         }
     }
     
@@ -197,18 +226,13 @@
             .item-desc {
                 //display: none;
             }
-            
         }
         
         .item-desc {
             color: darken(@gray-medium,20%);
-            
         }
-        
     }
 }
-
-
 
 .virtualpage-speed-index-wrapper {
 // fancy icon for <SELECT>
@@ -231,33 +255,30 @@
         background: #fff;
     }
     
-    /* Select arrow styling */
-    .notIE .fancyArrow {
+    /* Select padlock styling */
+    .notIE .padlockSelectIcon {
         width: 23px;
         height: 27px;
         position: absolute;
         display: inline-block;
         top: 2px;
         right: 3px;
-        background: url(http://localhost:63342/masterlocks.com/images/select-img.png) right / 90%  no-repeat #fff;
+        //background: url(http://localhost:63342/masterlocks.com/images/select-img.png) right / 90%  no-repeat #fff;
+        background: url(http://199.187.242.120/Templates/Hodge/images/virtual-pages/select-img.png) right / 90%  no-repeat #fff;
         pointer-events: none;
-        
     }
+    
     /*target Internet Explorer 9 and Internet Explorer 10:*/
     //@media screen and (min-width:0) {
-    //    .notIE .fancyArrow
+    //    .notIE .padlockSelectIcon
     //    {
     //        display:none;
     //    }
     //}
 
-
-
-
 }
 
-
-
+//</editor-fold>
 
 
 
