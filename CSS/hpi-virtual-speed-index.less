@@ -93,7 +93,7 @@
 /* VIRTUAL PAGES (SCHOOLS)
 ========================================================================== */
 
-.virtualpage-school-wrapper {
+.virtualpage-speed-index-wrapper {
     .wrapper-items {
         margin: 50px 0;
     }
@@ -118,7 +118,7 @@
     }
     
     @media @desktop-min {
-        width: 20%;
+        width: 25%;
     }
 }
 
@@ -155,6 +155,11 @@
                     //max-width: 60px;
                 }
             }
+    
+            img:last-child{display:none}
+            &:hover img:first-child{display:none}
+            &:hover img:last-child{display:inline-block}
+            
         }
     }
     
@@ -162,9 +167,9 @@
         text-align: center;
         margin-bottom: 15px;
         font-weight: 700;
-        min-height: 52px;
+        //min-height: 52px;
         
-        .construction-type {
+        .category {
             font-size: 16px;
             color: darken(@gray-medium,12%);
             
@@ -173,24 +178,24 @@
             }
         }
         
-        .item-grade {
-            font-size: 14px;
-            @media @phone-min and @tablet-max {
-                min-height: 40px;
-            }
-        }
+        //.details {
+        //    font-size: 14px;
+        //    @media @phone-min and @tablet-max {
+        //        min-height: 40px;
+        //    }
+        //}
     }
     
     .item-desc-wrapper {
         display: block;
         text-align: center;
         background-color: lighten(@gray-medium,37%);
-        height: 60px;
+        height: 50px;
         padding-top: 12px;
         
         &:hover {
             .item-desc {
-                display: none;
+                //display: none;
             }
             
         }
@@ -198,232 +203,58 @@
         .item-desc {
             color: darken(@gray-medium,20%);
             
-            .packaged {
-                font-size: 14px;
-                font-weight: 500;
-            }
-            
-            .text {
-                font-size: 12px;
-            }
-            
-            @media @tablet-min {
-                margin: 4px;
-            }
         }
         
     }
 }
 
 
-.wrapper-orders {
-    float: left;
-    width: 100%;
-    padding: 0 15px;
-    margin: 0 0 75px 0;
-    border-bottom: 1px solid @gray-light;
+
+.virtualpage-speed-index-wrapper {
+// fancy icon for <SELECT>
     
-    .item-wrapper {
-        
-        &:first-child {
-            border-right: 0;
-            margin-bottom: 50px;
-            
-            @media @tablet-min {
-                border-right: 1px dotted darken(@gray-light, 20%);
-            }
-        
-        }
-        
-        &:last-child {
-            @media @tablet-min {
-                padding-left: 30px;
-            }
-        }
+    .notIE {
+        position: relative;
+        display: inline-block;
+    }
     
-        float: left;
-        padding: 0 15px;
-        margin: 0 0 20px 0;
-        
-        @media @phone-xxs-min {
-            width: 100%;
-        }
+    select {
+        display: inline-block;
+        height:30px;
+        width: 150px;
+        padding: 2px 10px 2px 2px;
+        outline: none;
+        color: #74646e;
+        border: 1px solid #C8BFC4;
+        border-radius: 4px;
+        box-shadow: inset 1px 1px 2px #ddd8dc;
+        background: #fff;
+    }
     
-        @media @tablet-min {
-            width: 50%;
-        }
-    
-        @media @desktop-min {
-            width: 50%;
-        }
-        
-        .item-title {
-        
-            .purchase-order {
-                font-size: 24px;
-            }
-        }
-    
-        .item-desc {
-            
-            .desc {
-                padding: 0 0 20px 0;
-                
-                @media @tablet-min {
-                    min-height: 271px;
-                }
-                
-                @media @desktop-min {
-                    min-height: 200px;
-                }
-                
-                span {
-                    display: block;
-                    margin: 0 0 0 0;
-                    
-                    &:first-child {
-                        font-size: 20px;
-                        margin: 0 0 15px 0;
-                    }
-                }
-            }
-        }
-        
-        .item-image-wrapper {
-            
-            .item-image {
-                span {
-                    width: 35%;
-                    text-align: center;
-                }
-            }
-        }
+    /* Select arrow styling */
+    .notIE .fancyArrow {
+        width: 23px;
+        height: 27px;
+        position: absolute;
+        display: inline-block;
+        top: 2px;
+        right: 3px;
+        background: url(http://localhost:63342/masterlocks.com/images/select-img.png) right / 90%  no-repeat #fff;
+        pointer-events: none;
         
     }
+    /*target Internet Explorer 9 and Internet Explorer 10:*/
+    //@media screen and (min-width:0) {
+    //    .notIE .fancyArrow
+    //    {
+    //        display:none;
+    //    }
+    //}
+
+
+
+
 }
-
-.wrapper-models {
-    float: left;
-    width: 100%;
-    margin: 0 0 75px 0;
-    padding: 0 15px;
-    border-bottom: 1px solid @gray-light;
-    
-    .item-wrapper {
-    
-        float: left;
-        width: 100%;
-        padding: 0 15px;
-        
-        // center this element when >=tablet
-        @media @tablet-min {
-            float: none !important;
-            width: 50%;
-            padding: 0 15px;
-            margin: 0 auto 20px auto;
-        }
-
-        
-        .item-title {
-            
-            .title {
-                font-size: 24px;
-            }
-        }
-        
-        .item-desc {
-            margin-bottom: 50px;
-            
-            .desc {
-                min-height: 75px;
-                
-                span {
-                    display: block;
-                    margin: 0 0 10px 0;
-                    
-                    &:first-child {
-                        font-size: 20px;
-                        margin: 0 0 15px 0;
-                    }
-                }
-            }
-        }
-        
-        .item-image-wrapper {
-            
-            .item-image {
-                .youtube-lock-model {
-                    width: 100%;
-                }
-            }
-        }
-        
-    }
-}
-
-
-.wrapper-tax-exempt {
-    float: left;
-    width: 100%;
-    padding: 0 15px;
-    
-    .item-wrapper {
-        
-        float: left;
-        padding: 0 15px;
-        margin: 0 0 20px 0;
-        width: 100%;
-        
-        .item-title {
-            
-            .title {
-                font-size: 24px;
-            }
-        }
-        
-        .item-desc {
-            margin-bottom: 50px;
-            
-            .desc {
-                min-height: 75px;
-                
-                span {
-                    display: block;
-                    margin: 0 0 10px 0;
-                    
-                    &:first-child {
-                        font-size: 20px;
-                        margin: 0 0 15px 0;
-                    }
-                }
-            }
-        }
-        
-        .item-image-wrapper {
-            
-            .item-image {
-                img {
-                    width: 50%;
-                }
-            }
-        }
-        
-    }
-}
-
-// add some space below titles (but not the titles in the imaage items)
-.wrapper-orders, .wrapper-models, .wrapper-tax-exempt {
-    .item-title {
-        margin-bottom: 10px;
-    }
-}
-
-
-
-
-
-
-
 
 
 
