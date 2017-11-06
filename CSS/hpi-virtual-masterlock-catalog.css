@@ -43,6 +43,10 @@
 ========================================================================== */
 /* 2 Rows of Product
 ========================================================================== */
+body {
+  font-family: 'Mukta Malar', sans-serif;
+  font-size: 16px;
+}
 .virtual-masterlock-catalog-wrapper {
   margin: 25px auto 0 auto;
 }
@@ -61,6 +65,8 @@
 .virtual-masterlock-catalog-wrapper .wrapper-products {
   margin: 50px 0;
 }
+/* Define Columns and Products
+========================================================================== */
 .wrapper-products .col-wrapper {
   float: left;
   padding: 0 15px;
@@ -81,4 +87,72 @@
   .wrapper-products .col-wrapper {
     width: 50%;
   }
+}
+/* Define Columns and Products
+========================================================================== */
+/* Define Call-out (tool-tip) Info
+========================================================================== */
+.prod-category .header .more-info {
+  font-size: 18px;
+}
+.prod-category .header .more-info span {
+  display: inline-block;
+}
+.wrapper-callout {
+  font-family: 'Encode Sans Expanded', sans-serif;
+}
+.wrapper-callout .title {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 0 5px;
+}
+.wrapper-callout .divider {
+  width: 100%;
+  border-bottom: 1px dashed #929292;
+  margin: 0 0 10px 0;
+}
+.wrapper-callout .body {
+  margin-left: 10px;
+}
+.wrapper-callout .wrapper-images {
+  width: 100%;
+  margin: 15px auto 0 auto;
+  text-align: center;
+}
+a.more-info {
+  outline: none;
+}
+a.more-info .title {
+  line-height: 30px;
+}
+a.more-info:hover {
+  text-decoration: none;
+}
+a.more-info div {
+  z-index: 10;
+  display: none;
+  padding: 14px 20px;
+  margin-top: -30px;
+  margin-left: 28px;
+  width: 300px;
+  line-height: 20px;
+  font-size: 14px;
+}
+a.more-info:hover div {
+  display: inline;
+  position: absolute;
+  color: #111;
+  border: 1px solid #DCA;
+  background: #fffAF0;
+}
+.callout {
+  z-index: 20;
+  position: absolute;
+  top: 30px;
+  border: 0;
+  left: -12px;
+}
+a.more-info div {
+  border-radius: 4px;
+  box-shadow: 5px 5px 8px #CCC;
 }

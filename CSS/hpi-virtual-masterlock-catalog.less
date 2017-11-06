@@ -18,14 +18,14 @@
 @desktop-max: ~"(max-width: 992px)";
 @desktop-large-max: ~"(max-width: 1200px)";
 
-
-// color variables
-@black: #000;
+// fonts
 @font-roboto: "Roboto", sans-serif;
 @font-opensans: "Open Sans",sans-serif;
 @font-title: 'Mukta Malar', sans-serif;
-@gray-background: #f5f7f9;
+@font-sans-encoded: 'Encode Sans Expanded', sans-serif;
 
+// color variables
+@gray-background: #f5f7f9;
 @black: #000;
 @blue: #48c;
 @gray-light: #e0e0e0;
@@ -102,7 +102,12 @@
 /* 2 Rows of Product
 ========================================================================== */
 
-//<editor-fold desc="2 rows of product">
+body {
+    font-family: @font-title;
+    font-size: 16px;
+}
+
+//<editor-fold desc="Define rows and header">
 
 .virtual-masterlock-catalog-wrapper {
     
@@ -131,8 +136,13 @@
     
 }
 
+//</editor-fold>
 
-//<editor-fold desc="product">
+
+/* Define Columns and Products
+========================================================================== */
+
+//<editor-fold desc="Define Columns and Products">
 .wrapper-products {
     
     .col-wrapper {
@@ -155,20 +165,106 @@
             width: 50%;
         }
     }
+}
+
+//</editor-fold>
+
+
+/* Define Columns and Products
+========================================================================== */
+
+
+/* Define Call-out (tool-tip) Info
+========================================================================== */
+
+//<editor-fold desc="Define Call-out (tool-tip) Info">
+
+.prod-category {
+    .header {
+        .more-info {
+            font-size: 18px;
+            
+            span {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+.wrapper-callout {
     
+    font-family: @font-sans-encoded;
+    
+    .title {
+        font-size: 18px;
+        font-weight: 700;
+        //border-bottom: 1px dashed @gray-medium;
+        padding: 0 5px;
+    }
+    
+    .divider {
+        width: 100%;
+        border-bottom: 1px dashed @gray-medium;
+        margin: 0 0 10px 0;
+    }
+    
+    .body {
+        margin-left: 10px;
+    }
+    
+    .wrapper-images {
+        width: 100%;
+        margin: 15px auto 0 auto;
+        text-align: center;
+    }
 }
 
 
 
+a.more-info {
+    outline: none;
+}
+
+a.more-info .title {
+    line-height: 30px;
+}
+
+a.more-info:hover {
+    text-decoration: none;
+}
+
+a.more-info div {
+    z-index: 10;
+    display: none;
+    padding: 14px 20px;
+    margin-top: -30px;
+    margin-left: 28px;
+    width: 300px;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+a.more-info:hover div{
+    display: inline;
+    position: absolute; color:#111;
+    border: 1px solid #DCA;
+    background: #fffAF0;
+}
+
+.callout {
+    z-index: 20;
+    position: absolute;
+    top: 30px;
+    border: 0;
+    left: -12px;
+}
+
+a.more-info div {
+    border-radius: 4px;
+    box-shadow: 5px 5px 8px #CCC;
+}
+
 //</editor-fold>
-
-
-
-//</editor-fold>
-
-
-
-
 
 
 
