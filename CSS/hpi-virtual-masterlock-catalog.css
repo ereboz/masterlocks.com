@@ -98,6 +98,9 @@ body {
 .prod-category .header .more-info span {
   display: inline-block;
 }
+.prod-category .header .more-info .category-title {
+  font-weight: 700;
+}
 .wrapper-callout {
   font-family: 'Encode Sans Expanded', sans-serif;
 }
@@ -119,6 +122,9 @@ body {
   margin: 15px auto 0 auto;
   text-align: center;
 }
+.wrapper-callout .wrapper-images img {
+  margin-right: 5px;
+}
 a.more-info {
   outline: none;
 }
@@ -129,23 +135,23 @@ a.more-info:hover {
   text-decoration: none;
 }
 a.more-info div {
-  z-index: 10;
+  z-index: 1;
   display: none;
   padding: 14px 20px;
   margin-top: -30px;
   margin-left: 28px;
-  width: 300px;
+  width: 350px;
   line-height: 20px;
   font-size: 14px;
 }
-a.more-info:hover div {
+a.more-info:hover .wrapper-callout {
   display: inline;
   position: absolute;
   color: #111;
   border: 1px solid #DCA;
   background: #fffAF0;
 }
-.callout {
+.callout-arrow {
   z-index: 20;
   position: absolute;
   top: 30px;

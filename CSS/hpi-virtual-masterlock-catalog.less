@@ -184,8 +184,13 @@ body {
         .more-info {
             font-size: 18px;
             
+            // display block for all spans in .more-info
             span {
                 display: inline-block;
+            }
+            
+            .category-title {
+                font-weight: 700;
             }
         }
     }
@@ -216,6 +221,10 @@ body {
         width: 100%;
         margin: 15px auto 0 auto;
         text-align: center;
+        
+        img {
+            margin-right: 5px;
+        }
     }
 }
 
@@ -234,24 +243,24 @@ a.more-info:hover {
 }
 
 a.more-info div {
-    z-index: 10;
+    z-index: 1;
     display: none;
     padding: 14px 20px;
     margin-top: -30px;
     margin-left: 28px;
-    width: 300px;
+    width: 350px;
     line-height: 20px;
     font-size: 14px;
 }
 
-a.more-info:hover div{
+a.more-info:hover .wrapper-callout {
     display: inline;
     position: absolute; color:#111;
     border: 1px solid #DCA;
     background: #fffAF0;
 }
 
-.callout {
+.callout-arrow {
     z-index: 20;
     position: absolute;
     top: 30px;
