@@ -99,6 +99,25 @@
 /* VIRTUAL PAGES (SCHOOLS)
 ========================================================================== */
 
+/* Undo their ul li defaults for this page only
+========================================================================== */
+.virtual-masterlock-catalog-wrapper {
+    
+    .prod-category {
+    
+        ul {
+            margin: 10px 20px !important;
+        }
+    
+        li {
+            margin: 0 20px !important;
+            list-style-type: none !important;
+        }
+        
+    }
+}
+
+
 /* 2 Rows of Product
 ========================================================================== */
 
@@ -131,7 +150,7 @@ body {
     }
     
     .wrapper-products {
-        margin: 50px 0;
+        margin: 0 0 50px 0;
     }
     
 }
@@ -184,7 +203,7 @@ body {
         .more-info {
             font-size: 18px;
             
-            // display block for all spans in .more-info
+            // display block for all spans in .more-info (for line breaks)
             span {
                 display: inline-block;
             }
@@ -229,35 +248,39 @@ body {
 }
 
 
+// call-out info
 
 a.more-info {
     outline: none;
-}
-
-a.more-info .title {
-    line-height: 30px;
-}
-
-a.more-info:hover {
-    text-decoration: none;
-}
-
-a.more-info div {
-    z-index: 1;
-    display: none;
-    padding: 14px 20px;
-    margin-top: -30px;
-    margin-left: 28px;
-    width: 350px;
-    line-height: 20px;
-    font-size: 14px;
-}
-
-a.more-info:hover .wrapper-callout {
-    display: inline;
-    position: absolute; color:#111;
-    border: 1px solid #DCA;
-    background: #fffAF0;
+    
+    .title {
+        line-height: 30px;
+    }
+    
+    &:hover {
+        text-decoration: none;
+    
+        .wrapper-callout {
+            display: inline;
+            position: absolute; color:#111;
+            border: 1px solid #DCA;
+            background: #fffAF0;
+        }
+    }
+    
+    .wrapper-callout {
+        z-index: 1;
+        display: none;
+        padding: 14px 20px;
+        margin-top: -30px;
+        margin-left: 28px;
+        width: 350px;
+        line-height: 20px;
+        font-size: 14px;
+    
+        border-radius: 4px;
+        box-shadow: 5px 5px 8px #CCC;
+    }
 }
 
 .callout-arrow {
@@ -268,10 +291,6 @@ a.more-info:hover .wrapper-callout {
     left: -12px;
 }
 
-a.more-info div {
-    border-radius: 4px;
-    box-shadow: 5px 5px 8px #CCC;
-}
 
 //</editor-fold>
 

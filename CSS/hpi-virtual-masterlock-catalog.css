@@ -41,6 +41,15 @@
 }
 /* VIRTUAL PAGES (SCHOOLS)
 ========================================================================== */
+/* Undo their ul li defaults for this page only
+========================================================================== */
+.virtual-masterlock-catalog-wrapper .prod-category ul {
+  margin: 10px 20px !important;
+}
+.virtual-masterlock-catalog-wrapper .prod-category li {
+  margin: 0 20px !important;
+  list-style-type: none !important;
+}
 /* 2 Rows of Product
 ========================================================================== */
 body {
@@ -63,7 +72,7 @@ body {
   font-family: 'Mukta Malar', sans-serif;
 }
 .virtual-masterlock-catalog-wrapper .wrapper-products {
-  margin: 50px 0;
+  margin: 0 0 50px 0;
 }
 /* Define Columns and Products
 ========================================================================== */
@@ -134,7 +143,14 @@ a.more-info .title {
 a.more-info:hover {
   text-decoration: none;
 }
-a.more-info div {
+a.more-info:hover .wrapper-callout {
+  display: inline;
+  position: absolute;
+  color: #111;
+  border: 1px solid #DCA;
+  background: #fffAF0;
+}
+a.more-info .wrapper-callout {
   z-index: 1;
   display: none;
   padding: 14px 20px;
@@ -143,13 +159,8 @@ a.more-info div {
   width: 350px;
   line-height: 20px;
   font-size: 14px;
-}
-a.more-info:hover .wrapper-callout {
-  display: inline;
-  position: absolute;
-  color: #111;
-  border: 1px solid #DCA;
-  background: #fffAF0;
+  border-radius: 4px;
+  box-shadow: 5px 5px 8px #CCC;
 }
 .callout-arrow {
   z-index: 20;
@@ -157,8 +168,4 @@ a.more-info:hover .wrapper-callout {
   top: 30px;
   border: 0;
   left: -12px;
-}
-a.more-info div {
-  border-radius: 4px;
-  box-shadow: 5px 5px 8px #CCC;
 }
