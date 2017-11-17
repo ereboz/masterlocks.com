@@ -1,3 +1,6 @@
+// for #contentId_Hodge_homebanner1, 2,3,4
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+
 @color_1: #fff;
 @color_2: #444444;
 @color_3: #555;
@@ -8,89 +11,321 @@
 @font_family_1: 'Montserrat', sans-serif;
 @font_family_2: montserratregular;
 @font_family_3: FontAwesome;
+@font-title: "Oswald",sans-serif;
+@white: #fff;
 
-/* START brian fixes for homepage carousel */
-/* END brian fixes for homepage carousel */
-/*-- Clerfix --*/
+
+// Brian Custom Grid Variables
+// min-widths
+@phone-xxxs-min: ~"(min-width: 320px)";
+@phone-xxs-min: ~"(min-width: 375px)";
+@phone-min: ~"(min-width: 480px)";
+@tablet-min: ~"(min-width: 768px)";
+@desktop-min: ~"(min-width: 992px)";
+@desktop-large-min: ~"(min-width: 1200px)";
+
+// max-widths
+@phone-xxxs-max: ~"(max-width: 320px)";
+@phone-xxs-max: ~"(max-width: 375px)";
+@phone-max: ~"(max-width: 480px)";
+@tablet-max: ~"(max-width: 768px)";
+@desktop-max: ~"(max-width: 992px)";
+@desktop-large-max: ~"(max-width: 1200px)";
+
+
 /*HODGE ADDITIONS */
+
 #banners {
     position: static !important;
 }
+
 .banner {
+    
     img {
         max-width: 100%;
         height: auto;
         width: 100%;
         width: auto !important;
     }
-    background: #eaeaea;
+    
+    background: @white;
     position: relative;
     overflow: hidden;
-    .leftHalf {
-        background: #ffffff;
-        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIzMiUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZjNmM2YzIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
-        background: -moz-linear-gradient(top, #ffffff 32%, #f3f3f3 100%);
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(32%,#ffffff), color-stop(100%,#f3f3f3));
-        background: -webkit-linear-gradient(top, #ffffff 32%,#f3f3f3 100%);
-        background: -o-linear-gradient(top, #ffffff 32%,#f3f3f3 100%);
-        background: -ms-linear-gradient(top, #ffffff 32%,#f3f3f3 100%);
-        background: linear-gradient(to bottom, #ffffff 32%,#f3f3f3 100%);
-        width: 35%;
-        position: absolute;
-        left: 0px;
-        height: 100%;
-    }
+    
+    //.leftHalf {
+    //    background: #ffffff;
+    //    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIzMiUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZjNmM2YzIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+    //    background: -moz-linear-gradient(top, #ffffff 32%, #f3f3f3 100%);
+    //    background: -webkit-gradient(linear, left top, left bottom, color-stop(32%,#ffffff), color-stop(100%,#f3f3f3));
+    //    background: -webkit-linear-gradient(top, #ffffff 32%,#f3f3f3 100%);
+    //    background: -o-linear-gradient(top, #ffffff 32%,#f3f3f3 100%);
+    //    background: -ms-linear-gradient(top, #ffffff 32%,#f3f3f3 100%);
+    //    background: linear-gradient(to bottom, #ffffff 32%,#f3f3f3 100%);
+    //    width: 35%;
+    //    position: absolute;
+    //    left: 0px;
+    //    height: 100%;
+    //}
+    
     #banners {
         float: left;
         width: 100%;
+        min-height: 90px;
         max-height: 300px;
         height: auto;
         overflow: hidden;
         z-index: 0;
+        
+        @media @phone-max {
+            height: 100px;
+        }
     }
 }
+
 .dyn_content {
     max-width: 100%;
     height: auto;
     width: 100%;
     width: auto !important;
 }
+
 .carousel-inner {
     >.item {
         z-index: 88;
         text-align: center;
     }
 }
+
 #homepagebanners {
     .item {
-        height: 300px !important;
-        font-family: @font_family_1;
+        height: auto;
+        font-family: @font-title;
     }
     >.container {
         position: relative;
     }
 }
-.carousel-caption {
-    position: relative;
-    width: 75%;
-    top: 45%;
-    left: -5%;
-    h1 {
-        color: @color_1;
-        font-size: 40px;
-    }
-    h2 {
-        color: @color_1;
-        font-size: 35px;
-    }
+
+#contentId_Hodge_homebanner1 {
+    // nothing needed. just an image that already has text on it. :(
 }
 #contentId_Hodge_homebanner2 {
-    background-repeat: no-repeat;
-    background-size: 1300x 300px;
-    background-position: center;
-    background-image: url("http://199.187.242.120/UltimateEditorInclude/ImageViewer.aspx?id=231");
-    height: 300px;
+    
+    .carousel-caption {
+        
+        h1, h2, h3 {
+            color: @white;
+        }
+        
+        h1 {
+            text-transform: uppercase;
+        }
+        
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 42%;
+        left: 10%;
+        text-align: left;
+        
+        @media @tablet-min {
+            
+            display: block;
+            position: absolute;
+            width: 100%;
+            top: 42%;
+            left: 10%;
+            text-align: left;
+            
+            h1 {
+                font-size: 30px;
+            }
+            
+            h2 {
+                color: @white;
+                font-size: 25px;
+            }
+            
+            h3 {
+                color: @white;
+                font-size: 15px;
+            }
+        }
+        
+        @media @desktop-min {
+            
+            display: block;
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            left: 23%;
+            text-align: left;
+            
+            h1 {
+                font-size: 40px;
+            }
+            h2 {
+                font-size: 35px;
+            }
+            
+            h3 {
+                font-size: 25px;
+            }
+        }
+    }
 }
+
+#contentId_Hodge_homebanner3 {
+    
+    .carousel-caption {
+        
+        h1, h2, h3 {
+            color: @white;
+        }
+        
+        h1 {
+            text-transform: uppercase;
+        }
+        
+        h3 {
+            width: 45%;
+        }
+    
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 33%;
+        left: 6%;
+        text-align: left;
+        
+        @media @tablet-min {
+            
+            display: block;
+            position: absolute;
+            width: 100%;
+            top: 42%;
+            left: 10%;
+            text-align: left;
+            
+            h1 {
+                font-size: 30px;
+            }
+            
+            h2 {
+
+                font-size: 25px;
+            }
+            
+            h3 {
+
+                font-size: 15px;
+            }
+        }
+        
+        @media @desktop-min {
+            
+            display: block;
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            left: 20%;
+            text-align: left;
+            
+            h1 {
+                font-size: 40px;
+            }
+            
+            h2 {
+                font-size: 35px;
+            }
+            
+            h3 {
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+#contentId_Hodge_homebanner4 {
+    
+    .carousel-caption {
+        
+        h1, h2, h3 {
+            color: @white;
+        }
+        
+        h1 {
+            text-transform: uppercase;
+        }
+        h3 {
+            width: 70%;
+        }
+    
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 34%;
+        left: 5%;
+        text-align: left;
+        
+        @media @tablet-min {
+            
+            display: block;
+            position: absolute;
+            width: 100%;
+            top: 42%;
+            left: 8%;
+            text-align: left;
+            
+            h1 {
+                font-size: 30px;
+            }
+            
+            h2 {
+                font-size: 25px;
+            }
+            
+            h3 {
+                font-size: 15px;
+                width: 50%;
+            }
+        }
+        
+        @media @desktop-min {
+            
+            display: block;
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            left: 21%;
+            text-align: left;
+            
+            h1 {
+                font-size: 40px;
+            }
+            
+            h2 {
+                font-size: 35px;
+            }
+            
+            h3 {
+                font-size: 25px;
+                width: 50%;
+            }
+        }
+    }
+}
+
+
+
+#contentId_Hodge_homebanner2 {
+    //background-repeat: no-repeat;
+    //background-size: 1300x 300px;
+    //background-position: center;
+    //background-image: url("http://199.187.242.120/UltimateEditorInclude/ImageViewer.aspx?id=231");
+    //height: 300px;
+}
+
 #home_column1 {
     padding-bottom: 5px;
     width: 100%;

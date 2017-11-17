@@ -1,0 +1,25 @@
+/* Brian's Grid Variables to make life easier
+========================================================================== */
+/* MIXIN'S
+========================================================================== */
+.col-wrapper {
+  float: left;
+  padding: 0 15px;
+  margin: 0 0 20px 0;
+  width: 100%;
+}
+@media (min-width: 375px) {
+  .col-wrapper {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .col-wrapper {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .col-wrapper {
+    width: 50%;
+  }
+}
