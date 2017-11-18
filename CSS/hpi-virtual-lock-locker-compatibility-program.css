@@ -43,7 +43,7 @@ div [class^="section"] h2:first-child {
 }
 @media (min-width: 768px) {
   div [class^="section"] {
-    min-height: 1105px;
+    min-height: 1175px;
   }
 }
 @media (min-width: 992px) {
@@ -78,26 +78,35 @@ h4 ~ p {
     width: 50%;
   }
 }
-.col-wrapper.details {
-  border-right: 1px dashed #929292;
-}
 .col-wrapper .section-architects div:last-child {
   padding: 10px;
 }
 .wrapper-matrix {
   float: left;
   width: 100%;
-  margin: 0 0 30px 0;
+  margin: 25px 0 30px 0;
+}
+.wrapper-matrix .vendor-participation {
+  border-bottom: 1px dotted #7e7e7e;
+  margin: 0 0 10px 0;
 }
 .col-matrix {
   float: left;
   width: 50%;
-  border: 1px dotted #929292;
   padding: 5px;
+  border-right: none;
+  min-height: 320px;
+  margin-top: 40px;
 }
 @media (min-width: 768px) {
   .col-matrix {
     width: 25%;
+    border-right: 1px dotted #7e7e7e;
+    min-height: 300px;
+    margin-top: 10px;
+  }
+  .col-matrix:last-child {
+    border-right: none;
   }
 }
 @media (min-width: 992px) {
@@ -110,9 +119,20 @@ h4 ~ p {
 }
 .col-matrix span {
   display: block;
+  font-size: 12px;
 }
 .col-matrix .wrapper-logo {
-  height: 100px;
+  height: 80px;
+}
+@media (min-width: 768px) {
+  .col-matrix .wrapper-logo {
+    height: 45px;
+  }
+}
+@media (min-width: 992px) {
+  .col-matrix .wrapper-logo {
+    height: 100px;
+  }
 }
 .small-text {
   font-size: 12px;

@@ -30,7 +30,7 @@
 @blue: #48c;
 @gray-dark: #3b4348;
 @gray-light: #e0e0e0;
-@gray-medium: #929292;
+@gray-medium: #7e7e7e;
 @green-light: #bde6c6;
 @orange: #fa0;
 @white: #fff;
@@ -118,7 +118,7 @@ div [class^="section"] {
     }
     
     @media @tablet-min {
-        min-height: 1105px;
+        min-height: 1175px;
     }
     
     @media @desktop-min {
@@ -126,7 +126,7 @@ div [class^="section"] {
     }
 }
 
-h3 ~p, h4 ~ p {
+h3 ~ p, h4 ~ p {
     margin-left: 20px
 }
 
@@ -155,7 +155,7 @@ h3 ~p, h4 ~ p {
     }
     
     &.details {
-        border-right: 1px dashed @gray-medium;
+        //border-right: 1px dashed @gray-medium;
     }
     
     .section-details {
@@ -174,17 +174,31 @@ h3 ~p, h4 ~ p {
 .wrapper-matrix {
     float: left;
     width: 100%;
-    margin: 0 0 30px 0;
+    margin: 25px 0 30px 0;
+    
+    .vendor-participation {
+        border-bottom: 1px dotted @gray-medium;
+        margin: 0 0 10px 0;
+    }
 }
 
 .col-matrix {
     float: left;
     width: 50%;
-    border: 1px dotted @gray-medium;
     padding: 5px;
+    border-right: none;
+    min-height: 320px;
+    margin-top: 40px;
     
     @media @tablet-min {
         width: 25%;
+        border-right: 1px dotted @gray-medium;
+        &:last-child {
+            border-right: none;
+        }
+        
+        min-height: 300px;
+        margin-top: 10px;
     }
     
     @media @desktop-min {
@@ -197,10 +211,19 @@ h3 ~p, h4 ~ p {
     
     span {
         display: block;
+        font-size: 12px;
     }
     
     .wrapper-logo {
-        height: 100px;
+        height: 80px;
+        
+        @media @tablet-min {
+            height: 45px;
+        }
+    
+        @media @desktop-min {
+            height: 100px;
+        }
     }
 }
 
