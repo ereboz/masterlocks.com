@@ -1,0 +1,76 @@
+* Brian's Grid Variables to make life easier
+========================================================================== */
+
+//<editor-fold desc="Grid / General Variables">
+// min-widths
+@phone-xxxs-min: ~"(min-width: 320px)";
+@phone-xxs-min: ~"(min-width: 375px)";
+@phone-min: ~"(min-width: 480px)";
+@tablet-min: ~"(min-width: 768px)";
+@desktop-min: ~"(min-width: 992px)";
+@desktop-large-min: ~"(min-width: 1200px)";
+
+// max-widths
+@phone-xxxs-max: ~"(max-width: 320px)";
+@phone-xxs-max: ~"(max-width: 375px)";
+@phone-max: ~"(max-width: 480px)";
+@tablet-max: ~"(max-width: 768px)";
+@desktop-max: ~"(max-width: 992px)";
+@desktop-large-max: ~"(max-width: 1200px)";
+
+// fonts
+@font-roboto: "Roboto", sans-serif;
+@font-opensans: "Open Sans",sans-serif;
+@font-title: 'Mukta Malar', sans-serif;
+@font-sans-encoded: 'Encode Sans Expanded', sans-serif;
+
+// color variables
+@gray-background: #f5f7f9;
+@black: #000;
+@blue: #48c;
+@gray-dark: #3b4348;
+@gray-light: #e0e0e0;
+@gray-medium: #7e7e7e;
+@green-light: #bde6c6;
+@orange: #fa0;
+@white: #fff;
+//</editor-fold>
+
+/* MIXIN'S
+========================================================================== */
+
+//<editor-fold desc="Mixins">
+
+.border-radius (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+    
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+.rounded-corners (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+
+
+.box-shadow (@arguments) {
+    -moz-box-shadow: @arguments;
+    -ms-box-shadow: @arguments;
+    -o-box-shadow: @arguments;
+    box-shadow: @arguments;
+}
+
+.size(@width, @height) {
+    width: @width;
+    height: @height;
+}
+
+//</editor-fold>
+.test {
+    display: none;
+}
