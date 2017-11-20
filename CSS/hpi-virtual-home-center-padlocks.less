@@ -19,19 +19,20 @@
 @desktop-large-max: ~"(max-width: 1200px)";
 
 
-// color variables
-@black: #000;
+// font variables
 @font-roboto: "Roboto", sans-serif;
 @font-opensans: "Open Sans",sans-serif;
 @font-title: 'Mukta Malar', sans-serif;
 @gray-background: #f5f7f9;
 
+// color variables
 @black: #000;
 @blue: #48c;
 @gray-light: #e0e0e0;
 @gray-medium: #929292;
 @green-light: #bde6c6;
 @orange: #fa0;
+@red: #ca0f0f;
 @white: #fff;
 //</editor-fold>
 
@@ -261,6 +262,10 @@
                 min-height: 40px;
             }
         }
+        
+        .replacement-num {
+            color: @red;
+        }
     }
     
     .item-desc-wrapper {
@@ -302,15 +307,21 @@
             }
         }
         
+        .wrapper-btn-view-details {
+            margin: 0 auto;
+        }
+        
         .btn-view-details {
+            float: left;
             margin-bottom: 10px;
+            width: 50%;
             
             .view-details {
                 .btn-transparent();
                 display: block;
                 margin: 0 auto;
                 text-align: center;
-                width: 125px;
+                width: 100px;
             }
         }
         
