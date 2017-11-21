@@ -44,6 +44,7 @@
 .btn-transparent() {                // Popular Models
     display: inline-block;
     border: 1px solid @gray-medium;
+    .rounded-corners();
     padding: 9px 15px 7px 10px;
     height: 36px;
     background: white;
@@ -274,9 +275,24 @@
         background-color: lighten(@gray-medium,37%);
         height: 60px;
         padding-top: 12px;
+    
+        .wrapper-btn-view-details {
+            margin: 0 auto;
+        }
         
         .btn-view-details {
             display: none;
+            float: left;
+            margin-bottom: 10px;
+            width: 50%;
+        
+            .view-details {
+                .btn-transparent();
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+                width: 90%;
+            }
         }
         
         &:hover {
@@ -307,24 +323,7 @@
             }
         }
         
-        .wrapper-btn-view-details {
-            margin: 0 auto;
-        }
-        
-        .btn-view-details {
-            float: left;
-            margin-bottom: 10px;
-            width: 50%;
-            
-            .view-details {
-                .btn-transparent();
-                display: block;
-                margin: 0 auto;
-                text-align: center;
-                width: 100px;
-            }
-        }
-        
+
     }
 }
 
