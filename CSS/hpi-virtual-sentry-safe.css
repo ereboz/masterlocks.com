@@ -1,0 +1,127 @@
+/* Brian's (javaBoxer) Grid Variables to make life easier
+========================================================================== */
+/* TOPIC SECTION
+========================================================================== */
+.wrapper-sentry-safe {
+  font-family: 'Mukta Malar', sans-serif;
+}
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 26px;
+}
+h3 {
+  font-size: 16px;
+}
+/* MIXIN'S
+========================================================================== */
+/* MAIN PAGE
+========================================================================== */
+.wrapper-sentry-safe {
+  margin: 25px auto 0 auto;
+}
+.product-details,
+.specifications {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+.product-details .features {
+  background-color: #f8f8f8;
+  padding: 50px 0 0;
+  text-align: center;
+}
+.product-details .features .feature {
+  flex-basis: 100%;
+  margin-bottom: 50px;
+}
+@media (min-width: 768px) {
+  .product-details .features .feature {
+    flex-basis: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .product-details .features .feature {
+    flex-basis: 25%;
+  }
+}
+.product-details .features .feature img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  width: 120px;
+  height: 120px;
+}
+.product-details .features .feature p {
+  font-size: .75em;
+  letter-spacing: 1px;
+  padding: 0 1%;
+  max-width: 76%;
+  margin: 0 auto;
+}
+.product-details .features .callouts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+}
+.product-details .specifications {
+  background-color: #e0e1e2;
+  float: left;
+  width: 100%;
+}
+.product-details .specifications .title {
+  text-align: center;
+}
+.product-details .specifications .wrapper-specs {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+.product-details .specifications .wrapper-specs .nav {
+  float: left;
+  width: 25%;
+  padding: 3% 0 0 5%;
+}
+.product-details .specifications .wrapper-specs .nav ul {
+  display: inline-block;
+}
+.product-details .specifications .wrapper-specs .image {
+  float: left;
+  width: 65%;
+}
+.product-details .specifications .additional-info {
+  clear: both;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+.product-details .specifications .additional-info ul {
+  list-style: none;
+}
+.product-details .specifications .additional-info ul li {
+  display: inline-block;
+  margin: 0 2% 5%;
+  vertical-align: top;
+  width: 175px;
+}
+.product-details .specifications .additional-info ul li h3 {
+  letter-spacing: 1px;
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+.product-details .specifications .additional-info ul li p {
+  margin: 0 auto;
+  min-height: 75px;
+  width: 75%;
+}
+.product-details .specifications .footnote {
+  float: left;
+  width: 100%;
+  text-align: center;
+}

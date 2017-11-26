@@ -1,0 +1,268 @@
+/* Brian's (javaBoxer) Grid Variables to make life easier
+========================================================================== */
+
+//<editor-fold desc="Grid / General Variables">
+// min-widths
+@phone-xxxs-min: ~"(min-width: 320px)";
+@phone-xxs-min: ~"(min-width: 375px)";
+@phone-min: ~"(min-width: 480px)";
+@tablet-min: ~"(min-width: 768px)";
+@desktop-min: ~"(min-width: 992px)";
+@desktop-large-min: ~"(min-width: 1200px)";
+
+// max-widths
+@phone-xxxs-max: ~"(max-width: 320px)";
+@phone-xxs-max: ~"(max-width: 375px)";
+@phone-max: ~"(max-width: 480px)";
+@tablet-max: ~"(max-width: 768px)";
+@desktop-max: ~"(max-width: 992px)";
+@desktop-large-max: ~"(max-width: 1200px)";
+
+
+// font variables
+@font-roboto: "Roboto", sans-serif;
+@font-opensans: "Open Sans",sans-serif;
+@font-mukta: 'Mukta Malar', sans-serif;
+
+// color variables
+@black: #000;
+@blue: #48c;
+@gray-light: #f8f8f8;
+@gray-medium: #e0e1e2;
+@gray-dark: #2b2b2b;
+@green-light: #bde6c6;
+@orange: #fa0;
+@red: #ca0f0f;
+@white: #fff;
+
+//</editor-fold>
+
+
+/* TOPIC SECTION
+========================================================================== */
+
+//<editor-fold desc="Fluid Typography Mixin's">
+
+
+//</editor-fold>
+
+
+.wrapper-sentry-safe {
+    font-family: @font-mukta;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+
+/* MIXIN'S
+========================================================================== */
+
+//<editor-fold desc="Mixins">
+
+.border-radius (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+    
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+.rounded-corners (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+
+
+.box-shadow (@arguments) {
+    -moz-box-shadow: @arguments;
+    -ms-box-shadow: @arguments;
+    -o-box-shadow: @arguments;
+    box-shadow: @arguments;
+}
+
+.size(@width, @height) {
+    width: @width;
+    height: @height;
+}
+
+//</editor-fold>
+
+
+/* MAIN PAGE
+========================================================================== */
+
+//<editor-fold desc="Page">
+
+.wrapper-sentry-safe {
+    margin: 25px auto 0 auto;
+}
+
+.product-details, .specifications {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.product-details {
+    
+    .features {
+        background-color: @gray-light;
+        padding: 50px 0 0;
+        text-align: center;
+        
+        
+        .feature {
+            flex-basis: 100%;
+            margin-bottom: 50px;
+            
+            @media @tablet-min {
+                flex-basis: 50%;
+            }
+            
+            @media @desktop-min {
+                flex-basis: 25%;
+            }
+            
+            img {
+                .border-radius(50%);
+                .size(120px, 120px);
+            }
+            
+            p {
+                font-size: .75em;
+                letter-spacing: 1px;
+                padding: 0 1%;
+                max-width: 76%;
+                margin: 0 auto;
+            }
+        }
+        
+        .callouts {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 1000px;
+        }
+    }
+    
+    .specifications {
+        background-color: @gray-medium;
+        float: left;
+        width: 100%;
+        
+        .title {
+            text-align: center;
+        }
+        
+        .wrapper-specs {
+            position: relative;
+            float: left;
+            width: 100%;
+    
+            .nav {
+                float: left;
+                width: 25%;
+                padding: 3% 0 0 5%;
+                
+                ul {
+                    display: inline-block;
+                }
+                
+            }
+    
+            .image {
+                float: left;
+                width: 65%;
+            }
+        }
+        
+        
+        .additional-info {
+            clear: both;
+            width: 70%;
+            margin: 0 auto;
+            text-align: center;
+            
+            ul {
+                list-style: none;
+                
+                li {
+                    display: inline-block;
+                    margin: 0 2% 5%;
+                    vertical-align: top;
+                    width: 175px;
+                    
+                    h3 {
+                        letter-spacing: 1px;
+                        margin: 10px 0;
+                        text-transform: uppercase;
+                    }
+                    
+                    p {
+                        margin: 0 auto;
+                        min-height: 75px;
+                        width: 75%;
+                    }
+                }
+            }
+        }
+        
+        .footnote {
+            float: left;
+            width: 100%;
+            text-align: center;
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//</editor-fold>
