@@ -5,14 +5,26 @@
 .wrapper-sentry-safe {
   font-family: 'Mukta Malar', sans-serif;
 }
-h1 {
+.wrapper-sentry-safe h1 {
   font-size: 30px;
+  font-weight: 700;
+  margin: 15px 0;
+  padding-bottom: 20px;
+  text-transform: uppercase;
 }
-h2 {
+.wrapper-sentry-safe h2 {
   font-size: 26px;
+  font-weight: 700;
+  margin: 10px 0;
+  padding-bottom: 20px;
+  text-transform: uppercase;
 }
-h3 {
+.wrapper-sentry-safe h3 {
   font-size: 16px;
+  font-weight: 700;
+  margin: 10px 0;
+  padding-bottom: 10px;
+  text-transform: uppercase;
 }
 /* MIXIN'S
 ========================================================================== */
@@ -53,7 +65,7 @@ h3 {
 }
 @media (min-width: 992px) {
   .product-details .features .feature {
-    flex-basis: 25%;
+    flex-basis: 33%;
   }
 }
 .product-details .features .feature img {
@@ -67,7 +79,7 @@ h3 {
   height: 120px;
 }
 .product-details .features .feature p {
-  font-size: .75em;
+  font-size: 1em;
   letter-spacing: 1px;
   padding: 0 1%;
   max-width: 76%;
@@ -94,12 +106,14 @@ h3 {
 .product-details .specifications .wrapper-specs .nav ul {
   display: inline-block;
 }
-.product-details .specifications .wrapper-specs .image {
+.product-details .specifications .wrapper-specs .wrapper-safe-image {
   float: left;
   width: 65%;
 }
-.product-details .specifications .wrapper-specs .image img {
-  width: 100%;
+.product-details .specifications .wrapper-specs .wrapper-safe-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .product-details .specifications .additional-info {
   clear: both;
@@ -140,8 +154,10 @@ h3 {
   width: 100%;
   text-align: center;
   float: left;
-  background-color: #f8f8f8;
-  padding-top: 30px;
+  background-color: #fff;
+}
+.product-details .protection-type .classification {
+  margin: 0 0 50px 0;
 }
 .product-details .protection-type .wrapper-callout {
   width: 100%;
@@ -156,10 +172,12 @@ h3 {
   width: 70%;
   margin: 0 2%;
   vertical-align: top;
+  margin-bottom: 30px;
 }
 @media (min-width: 768px) {
   .product-details .protection-type .wrapper-callout ul li {
     width: 25%;
+    margin-bottom: 0;
   }
 }
 .product-details .protection-type .wrapper-callout ul li img {
@@ -171,7 +189,9 @@ h3 {
   float: left;
 }
 .product-details .accent-image img {
-  width: 100%;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .product-details .section-support-callouts {
   width: 100%;
@@ -179,6 +199,7 @@ h3 {
   float: left;
   background-color: #2b2b2b;
   color: white;
+  padding: 0 0 70px 0;
 }
 .product-details .section-support-callouts .wrapper-callout {
   max-width: 980px;
@@ -191,16 +212,36 @@ h3 {
 .product-details .section-support-callouts ul li {
   display: inline-block;
   width: 100%;
+  margin-bottom: 30px;
 }
 @media (min-width: 768px) {
   .product-details .section-support-callouts ul li {
     width: 33%;
+    margin-bottom: 0;
   }
 }
 .product-details .section-support-callouts ul li p {
   width: 70%;
-  margin: 0 auto;
+  margin: 20px auto;
 }
-.product-details .section-support-callouts a {
-  color: red;
+.product-details .arrow-link {
+  position: relative;
+  display: block;
+  color: #e1261c !important;
+  font-weight: 500;
+  font-size: .875rem;
+  letter-spacing: .03571em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.product-details .arrow-link:after {
+  content: "\F105";
+  display: inline-block;
+  font-family: FontAwesome;
+  font-size: 1.2em;
+  margin-left: .5em;
+}
+.product-details .arrow-link:hover {
+  color: #e1261c !important;
 }
