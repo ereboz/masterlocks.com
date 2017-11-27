@@ -1,0 +1,414 @@
+/* Brian's (javaBoxer) Grid Variables to make life easier
+========================================================================== */
+
+//<editor-fold desc="Grid / General Variables">
+// min-widths
+@phone-xxxs-min: ~"(min-width: 320px)";
+@phone-xxs-min: ~"(min-width: 375px)";
+@phone-min: ~"(min-width: 480px)";
+@tablet-min: ~"(min-width: 768px)";
+@desktop-min: ~"(min-width: 992px)";
+@desktop-large-min: ~"(min-width: 1200px)";
+
+// max-widths
+@phone-xxxs-max: ~"(max-width: 320px)";
+@phone-xxs-max: ~"(max-width: 375px)";
+@phone-max: ~"(max-width: 480px)";
+@tablet-max: ~"(max-width: 768px)";
+@desktop-max: ~"(max-width: 992px)";
+@desktop-large-max: ~"(max-width: 1200px)";
+
+
+// font variables
+@font-roboto: "Roboto", sans-serif;
+@font-opensans: "Open Sans",sans-serif;
+@font-mukta: 'Mukta Malar', sans-serif;
+
+// color variables
+@black: #000;
+@blue: #48c;
+@gray-light: #f8f8f8;
+@gray-medium: #e0e1e2;
+@gray-dark: #2b2b2b;
+@green-light: #bde6c6;
+@orange: #fa0;
+@red: #e1261c;
+@white: #fff;
+
+//</editor-fold>
+
+
+/* TOPIC SECTION
+========================================================================== */
+
+//<editor-fold desc="Fluid Typography Mixin's">
+
+
+//</editor-fold>
+
+
+.wrapper-sentry-safe {
+    font-family: @font-mukta;
+    
+    h1 {
+        font-size: 30px;
+        font-weight: 700;
+        margin: 15px 0;
+        padding-bottom: 20px;
+        text-transform: uppercase;
+    }
+    
+    h2 {
+        font-size: 26px;
+        font-weight: 700;
+        margin: 10px 0;
+        padding-bottom: 20px;
+        text-transform: uppercase;
+    }
+    
+    h3 {
+        font-size: 16px;
+        font-weight: 700;
+        margin: 10px 0;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+    }
+}
+
+
+
+
+/* MIXIN'S
+========================================================================== */
+
+//<editor-fold desc="Mixins">
+
+.border-radius (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+    
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+.rounded-corners (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+
+
+.box-shadow (@arguments) {
+    -moz-box-shadow: @arguments;
+    -ms-box-shadow: @arguments;
+    -o-box-shadow: @arguments;
+    box-shadow: @arguments;
+}
+
+.size(@width, @height) {
+    width: @width;
+    height: @height;
+}
+
+//</editor-fold>
+
+
+/* MAIN PAGE
+========================================================================== */
+
+//<editor-fold desc="Page">
+
+.wrapper-sentry-safe {
+    margin: 25px auto 0 auto;
+    color: black;
+}
+
+.product-details, .specifications, .protection-type, .section-support-callouts {
+    max-width: 1366px;
+    margin: 0 auto 50px auto;
+}
+
+.product-details {
+    
+    .features {
+        background-color: @gray-light;
+        padding: 50px 0 0;
+        text-align: center;
+    
+        .callouts {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 1000px;
+        }
+        
+        .feature {
+            flex-basis: 100%;
+            margin-bottom: 50px;
+            
+            @media @tablet-min {
+                flex-basis: 50%;
+            }
+            
+            @media @desktop-min {
+                flex-basis: 33%;
+            }
+            
+            img {
+                .border-radius(50%);
+                .size(120px, 120px);
+            }
+            
+            p {
+                font-size: 1em;
+                letter-spacing: 1px;
+                padding: 0 1%;
+                max-width: 76%;
+                margin: 0 auto;
+            }
+        }
+        
+
+    }
+    
+    .specifications {
+        background-color: @gray-medium;
+        float: left;
+        width: 100%;
+        
+        .title {
+            text-align: center;
+        }
+        
+        .wrapper-specs {
+            position: relative;
+            float: left;
+            width: 100%;
+    
+            .nav {
+                display: none;
+                
+                @media @tablet-min {
+                    display: block;
+                    float: left;
+                    width: 25%;
+                    padding: 3% 0 0 5%;
+                }
+                
+                ul {
+                    display: inline-block;
+                }
+                
+            }
+    
+            .wrapper-safe-image {
+                float: left;
+                width: 65%;
+                
+                img {
+                    display: block;
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        
+        
+        .additional-info {
+            clear: both;
+            width: 70%;
+            margin: 0 auto;
+            text-align: center;
+            
+            ul {
+                list-style: none;
+                
+                li {
+                    display: inline-block;
+                    margin: 0 2% 5%;
+                    vertical-align: top;
+                    width: 33%;
+                    
+                    @media @tablet-min {
+                        width: 20%;
+                    }
+                    
+                    h3 {
+                        letter-spacing: 1px;
+                        margin: 10px 0;
+                        text-transform: uppercase;
+                    }
+                    
+                    p {
+                        margin: 0 auto;
+                        min-height: 75px;
+                        width: 75%;
+                    }
+                }
+            }
+        }
+        
+        .footnote {
+            float: left;
+            width: 100%;
+            text-align: center;
+        }
+    }
+    
+    
+    .protection-type {
+        width: 100%;
+        text-align: center;
+        float: left;
+        background-color: @white;
+        
+        .classification {
+            margin: 0 0 50px 0;
+        }
+        
+        .wrapper-callout {
+            width: 100%;
+    
+            ul {
+                list-style: none;
+                float: left;
+                min-height: 210px;
+        
+                li {
+                    display: inline-block;
+                    width: 70%;
+                    margin: 0 2%;
+                    vertical-align: top;
+                    margin-bottom: 30px;
+                    
+                    @media @tablet-min {
+                        width: 25%;
+                        margin-bottom: 0;
+                    }
+                    
+                    img {
+                        display: block;
+                        margin: 20px auto;
+                    }
+                }
+            }
+        }
+        
+
+    }
+    
+    .accent-image {
+        background-color: @gray-dark;
+        float: left;
+        
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    
+    .section-support-callouts {
+        width: 100%;
+        text-align: center;
+        float: left;
+        background-color: @gray-dark;
+        color: white;
+        padding: 0 0 70px 0;
+        
+        .wrapper-callout {
+            max-width: 980px;
+            margin: 0 auto;
+        }
+        
+        ul {
+            list-style: none;
+            float: left;
+            
+            
+            li {
+                display: inline-block;
+                width: 100%;
+                margin-bottom: 30px;
+                
+                @media @tablet-min {
+                    width: 33%;
+                    margin-bottom: 0;
+                }
+                
+                p {
+                    width: 70%;
+                    margin: 20px auto;
+                }
+            }
+        }
+        
+
+    }
+    
+    .arrow-link {
+        position: relative;
+        display: block;
+        color: @red !important;
+        font-weight: 500;
+        font-size: .875rem;
+        letter-spacing: .03571em;
+        line-height: 1.2;
+        text-transform: uppercase;
+        cursor: pointer;
+        
+        &:after {
+            content: "\F105";
+            display: inline-block;
+            font-family: FontAwesome;
+            font-size: 1.2em;
+            margin-left: .5em;
+        }
+        
+        &:hover {
+            color: @red !important;
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//</editor-fold>
