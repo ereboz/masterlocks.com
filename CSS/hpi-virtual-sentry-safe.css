@@ -20,16 +20,27 @@ h3 {
 ========================================================================== */
 .wrapper-sentry-safe {
   margin: 25px auto 0 auto;
+  color: black;
 }
 .product-details,
-.specifications {
+.specifications,
+.protection-type,
+.section-support-callouts {
   max-width: 1366px;
-  margin: 0 auto;
+  margin: 0 auto 50px auto;
 }
 .product-details .features {
   background-color: #f8f8f8;
   padding: 50px 0 0;
   text-align: center;
+}
+.product-details .features .callouts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
 }
 .product-details .features .feature {
   flex-basis: 100%;
@@ -62,14 +73,6 @@ h3 {
   max-width: 76%;
   margin: 0 auto;
 }
-.product-details .features .callouts {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1000px;
-}
 .product-details .specifications {
   background-color: #e0e1e2;
   float: left;
@@ -95,6 +98,9 @@ h3 {
   float: left;
   width: 65%;
 }
+.product-details .specifications .wrapper-specs .image img {
+  width: 100%;
+}
 .product-details .specifications .additional-info {
   clear: both;
   width: 70%;
@@ -108,7 +114,12 @@ h3 {
   display: inline-block;
   margin: 0 2% 5%;
   vertical-align: top;
-  width: 175px;
+  width: 33%;
+}
+@media (min-width: 768px) {
+  .product-details .specifications .additional-info ul li {
+    width: 20%;
+  }
 }
 .product-details .specifications .additional-info ul li h3 {
   letter-spacing: 1px;
@@ -124,4 +135,72 @@ h3 {
   float: left;
   width: 100%;
   text-align: center;
+}
+.product-details .protection-type {
+  width: 100%;
+  text-align: center;
+  float: left;
+  background-color: #f8f8f8;
+  padding-top: 30px;
+}
+.product-details .protection-type .wrapper-callout {
+  width: 100%;
+}
+.product-details .protection-type .wrapper-callout ul {
+  list-style: none;
+  float: left;
+  min-height: 210px;
+}
+.product-details .protection-type .wrapper-callout ul li {
+  display: inline-block;
+  width: 70%;
+  margin: 0 2%;
+  vertical-align: top;
+}
+@media (min-width: 768px) {
+  .product-details .protection-type .wrapper-callout ul li {
+    width: 25%;
+  }
+}
+.product-details .protection-type .wrapper-callout ul li img {
+  display: block;
+  margin: 20px auto;
+}
+.product-details .accent-image {
+  background-color: #2b2b2b;
+  float: left;
+}
+.product-details .accent-image img {
+  width: 100%;
+}
+.product-details .section-support-callouts {
+  width: 100%;
+  text-align: center;
+  float: left;
+  background-color: #2b2b2b;
+  color: white;
+}
+.product-details .section-support-callouts .wrapper-callout {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.product-details .section-support-callouts ul {
+  list-style: none;
+  float: left;
+}
+.product-details .section-support-callouts ul li {
+  display: inline-block;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .product-details .section-support-callouts ul li {
+    width: 33%;
+  }
+}
+.product-details .section-support-callouts ul li p {
+  width: 70%;
+  margin: 0 auto;
+}
+.product-details .section-support-callouts a {
+  color: red;
 }
