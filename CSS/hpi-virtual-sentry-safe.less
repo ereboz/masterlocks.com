@@ -190,9 +190,14 @@
             width: 100%;
     
             .nav {
-                float: left;
-                width: 25%;
-                padding: 3% 0 0 5%;
+                display: none;
+                
+                @media @tablet-min {
+                    display: block;
+                    float: left;
+                    width: 25%;
+                    padding: 3% 0 0 5%;
+                }
                 
                 ul {
                     display: inline-block;

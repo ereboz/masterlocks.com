@@ -99,9 +99,15 @@
   width: 100%;
 }
 .product-details .specifications .wrapper-specs .nav {
-  float: left;
-  width: 25%;
-  padding: 3% 0 0 5%;
+  display: none;
+}
+@media (min-width: 768px) {
+  .product-details .specifications .wrapper-specs .nav {
+    display: block;
+    float: left;
+    width: 25%;
+    padding: 3% 0 0 5%;
+  }
 }
 .product-details .specifications .wrapper-specs .nav ul {
   display: inline-block;
