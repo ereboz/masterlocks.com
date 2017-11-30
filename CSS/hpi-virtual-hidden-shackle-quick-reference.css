@@ -1,0 +1,237 @@
+/* Brian's Grid Variables to make life easier
+========================================================================== */
+/* MIXIN'S
+========================================================================== */
+.button-order {
+  width: 180px;
+  min-width: 180px;
+  border: 1px solid #019C92;
+  -webkit-box-shadow: #FFF563 0px 1px 0px inset;
+  -moz-box-shadow: #FFF563 0px 1px 0px inset;
+  box-shadow: #FFF563 0px 1px 0px inset;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  font-family: arial, helvetica, sans-serif;
+  padding: 7px 14px 7px 14px;
+  text-decoration: none;
+  display: inline-block;
+  text-shadow: 0px 1px 0 rgba(238, 238, 238, 0.44);
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #92cfde;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#92cfde), to(#76bdd1));
+  background-image: -webkit-linear-gradient(top, #92cfde, #76bdd1);
+  background-image: -moz-linear-gradient(top, #92cfde, #76bdd1);
+  background-image: -ms-linear-gradient(top, #92cfde, #76bdd1);
+  background-image: -o-linear-gradient(top, #92cfde, #76bdd1);
+  background-image: linear-gradient(to bottom, #92cfde, #76bdd1);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#92cfde, endColorstr=#76bdd1);
+}
+.button-order:hover {
+  border: 1px solid #019C92;
+  background-color: #6bbed2;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#6bbed2), to(#50abc4));
+  background-image: -webkit-linear-gradient(top, #6bbed2, #50abc4);
+  background-image: -moz-linear-gradient(top, #6bbed2, #50abc4);
+  background-image: -ms-linear-gradient(top, #6bbed2, #50abc4);
+  background-image: -o-linear-gradient(top, #6bbed2, #50abc4);
+  background-image: linear-gradient(to bottom, #6bbed2, #50abc4);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#6bbed2, endColorstr=#50abc4);
+}
+/* VIRTUAL PAGES (SCHOOLS)
+========================================================================== */
+/* 2 Rows of Product
+========================================================================== */
+.wrapper-hidden-shackle-reference {
+  margin: 25px auto 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+.wrapper-hidden-shackle-reference .wrapper-items {
+  margin: 50px 0;
+}
+.wrapper-hidden-shackle-reference .page-header span {
+  display: block;
+  margin: 20px auto;
+}
+.wrapper-hidden-shackle-reference .page-header .title {
+  font-size: 24px;
+  font-family: 'Mukta Malar', sans-serif;
+}
+.wrapper-hidden-shackle-reference .page-header .sub-title {
+  font-size: 16px;
+  font-family: 'Mukta Malar', sans-serif;
+}
+.item-wrapper {
+  float: left;
+  padding: 0 15px;
+  margin: 0 0 20px 0;
+  width: 100%;
+}
+@media (min-width: 375px) {
+  .item-wrapper {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .item-wrapper {
+    width: 33%;
+  }
+}
+@media (min-width: 992px) {
+  .item-wrapper {
+    width: 33%;
+  }
+}
+.item {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -moz-box-shadow: 1px 1px 5px #e0e0e0;
+  -ms-box-shadow: 1px 1px 5px #e0e0e0;
+  -o-box-shadow: 1px 1px 5px #e0e0e0;
+  box-shadow: 1px 1px 5px #e0e0e0;
+  border: 1px solid #e0e0e0;
+  float: left;
+  width: 100%;
+  min-height: 220px;
+}
+.item:hover {
+  -moz-box-shadow: 3px 3px 5px #d3d3d3;
+  -ms-box-shadow: 3px 3px 5px #d3d3d3;
+  -o-box-shadow: 3px 3px 5px #d3d3d3;
+  box-shadow: 3px 3px 5px #d3d3d3;
+  border: 1px solid #cecece;
+}
+.item .item-original-wrapper {
+  text-align: center;
+  width: 100%;
+  float: left;
+  border-right: 1px dotted #e0e0e0;
+}
+.item .item-original-wrapper .item-title {
+  width: 100%;
+}
+.item .item-original-wrapper .item-title .keyway {
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  color: #ca0f0f;
+  margin-top: 12px;
+}
+.item .item-original-wrapper .item-image {
+  width: 100%;
+  margin-bottom: 2%;
+}
+.item .item-original-wrapper .item-image img {
+  display: inline-block;
+  max-width: 90px;
+  width: 100%;
+}
+.item .item-original-wrapper .replacement-divider {
+  width: 100%;
+  float: left;
+  background-color: #bde6c6;
+  height: 40px;
+}
+.item .item-original-wrapper .replacement-divider .replacement-title {
+  width: 100%;
+  float: left;
+}
+.item .item-original-wrapper .replacement-divider .replacement-title div {
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: lowercase;
+  letter-spacing: 4px;
+}
+.item .item-replacement-wrapper {
+  text-align: center;
+  width: 100%;
+  float: left;
+  min-height: 281px;
+  border-right: 1px dotted #e0e0e0;
+}
+.item .item-replacement-wrapper .item-title {
+  margin-bottom: 12%;
+}
+.item .item-replacement-wrapper .item-title .keyway {
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  color: #ca0f0f;
+  margin-top: 12px;
+}
+.item .item-replacement-wrapper .item-image img {
+  display: inline-block;
+}
+.item .item-desc-wrapper {
+  display: block;
+  text-align: left;
+  height: 60px;
+  padding-top: 7px;
+  width: 60%;
+  float: left;
+  min-height: 281px;
+  background-color: #f7f7f7;
+}
+.item .item-desc-wrapper .item-desc {
+  color: #5f5f5f;
+  float: left;
+}
+@media (min-width: 768px) {
+  .item .item-desc-wrapper .item-desc {
+    margin: 4px;
+  }
+}
+.item .item-desc-wrapper .item-desc .wrapper-buy-items {
+  font-size: 14px;
+  font-weight: 700;
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+.item .item-desc-wrapper .item-desc .wrapper-buy-items div[class^="wrapper-buy"] {
+  margin-bottom: 10px;
+  border-bottom: 1px dotted #e0e0e0;
+  float: left;
+}
+.item .item-desc-wrapper .item-desc .wrapper-buy-items div[class^="wrapper-buy"] span {
+  margin-top: 8px;
+}
+.btn-view-details {
+  display: block;
+  float: left;
+  width: 100%;
+}
+.btn-view-details .view-details {
+  display: inline-block;
+  border: 1px solid #e0e0e0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 11%;
+  height: 35px;
+  background: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: 0.05em;
+  color: #000;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.btn-view-details .view-details:hover {
+  background: #d7f0dc;
+  color: #222;
+}
