@@ -225,9 +225,6 @@
 .btn-view-details .view-details {
   display: inline-block;
   border: 1px solid #e0e0e0;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
   padding: 11%;
   height: 35px;
   background: white;
@@ -242,6 +239,9 @@
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   display: block;
   margin: 0 auto;
   text-align: center;
