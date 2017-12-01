@@ -1,0 +1,142 @@
+/* Brian's Grid Variables to make life easier
+========================================================================== */
+
+//<editor-fold desc="Grid / General Variables">
+// min-widths
+@phone-xxxs-min: ~"(min-width: 320px)";
+@phone-xxs-min: ~"(min-width: 375px)";
+@phone-min: ~"(min-width: 480px)";
+@tablet-min: ~"(min-width: 768px)";
+@desktop-min: ~"(min-width: 992px)";
+@desktop-large-min: ~"(min-width: 1200px)";
+
+// max-widths
+@phone-xxxs-max: ~"(max-width: 320px)";
+@phone-xxs-max: ~"(max-width: 375px)";
+@phone-max: ~"(max-width: 480px)";
+@tablet-max: ~"(max-width: 768px)";
+@desktop-max: ~"(max-width: 992px)";
+@desktop-large-max: ~"(max-width: 1200px)";
+
+
+// font variables
+@font-roboto: "Roboto", sans-serif;
+@font-opensans: "Open Sans",sans-serif;
+@font-mukta: 'Mukta Malar', sans-serif;
+
+// color variables
+@black: #000;
+@blue: #48c;
+@gray-light: #e0e0e0;
+@gray-medium: #929292;
+@green-light: #bde6c6;
+@orange: #fa0;
+@red: #ca0f0f;
+@white: #fff;
+
+//</editor-fold>
+
+/* MIXIN'S
+========================================================================== */
+
+//<editor-fold desc="Mixins">
+
+.border-radius (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+    
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+.rounded-corners (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+
+
+.box-shadow (@arguments) {
+    -moz-box-shadow: @arguments;
+    -ms-box-shadow: @arguments;
+    -o-box-shadow: @arguments;
+    box-shadow: @arguments;
+}
+
+.size(@width, @height) {
+    width: @width;
+    height: @height;
+}
+
+//</editor-fold>
+
+.wrapper-privacy-policy {
+    width: 100%;
+    margin: 0 auto 50px auto;
+    
+    font-family: @font-mukta;
+    
+    h1 {
+        font-size: 30px;
+        font-weight: 700;
+        margin: 15px 0;
+        padding-bottom: 20px;
+        text-transform: uppercase;
+    }
+    
+    h2 {
+        font-size: 26px;
+        font-weight: 700;
+        margin: 10px 0;
+        padding-bottom: 20px;
+        text-transform: uppercase;
+    }
+    
+    h3 {
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    
+    .wrapper-content {
+        width: 100%;
+        margin: 20px 0 0 0;
+    }
+
+
+.item-wrapper {                     // column
+    float: left;
+    padding: 0 15px;
+    margin: 0 0 20px 0;
+    width: 100%;
+    //.make-sm-column(3);     // 768px (min)
+}
+
+.item {
+    
+    .highlight {
+        font-size: 16px;
+        font-weight: 700;
+        color: @red;
+    }
+    
+    ul {
+        
+        
+        li {
+            list-style-type: decimal;
+            margin: 10px 30px;
+        }
+    }
+    
+    div {
+        margin-bottom: 30px;
+    }
+    
+}
+
+
+
+}

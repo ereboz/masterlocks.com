@@ -1,0 +1,50 @@
+/* Brian's Grid Variables to make life easier
+========================================================================== */
+/* MIXIN'S
+========================================================================== */
+.wrapper-privacy-policy {
+  width: 100%;
+  margin: 0 auto 50px auto;
+  font-family: 'Mukta Malar', sans-serif;
+}
+.wrapper-privacy-policy h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 15px 0;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+.wrapper-privacy-policy h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 10px 0;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+.wrapper-privacy-policy h3 {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.wrapper-privacy-policy .wrapper-content {
+  width: 100%;
+  margin: 20px 0 0 0;
+}
+.wrapper-privacy-policy .item-wrapper {
+  float: left;
+  padding: 0 15px;
+  margin: 0 0 20px 0;
+  width: 100%;
+}
+.wrapper-privacy-policy .item .highlight {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ca0f0f;
+}
+.wrapper-privacy-policy .item ul li {
+  list-style-type: decimal;
+  margin: 10px 30px;
+}
+.wrapper-privacy-policy .item div {
+  margin-bottom: 30px;
+}
