@@ -1,0 +1,30 @@
+/* Brian's Grid Variables to make life easier
+========================================================================== */
+/* MIXIN'S
+========================================================================== */
+.wrapper-engraving {
+  margin: 0 auto 50px auto;
+  font-family: 'Mukta Malar', sans-serif;
+}
+.items-wrapper {
+  float: left;
+  padding: 0 15px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .items-wrapper {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .items-wrapper {
+    width: 50%;
+  }
+}
+.items {
+  float: left;
+  width: 100%;
+}
+.item {
+  width: 100%;
+}
