@@ -74,10 +74,6 @@
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
-.ui-state-default {
-  border: none !important;
-  background: none !important;
-}
 .ui-state-hover {
   background: none !important;
 }
