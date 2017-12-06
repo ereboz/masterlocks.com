@@ -72,18 +72,27 @@
 
 //</editor-fold>
 
+// font awesome pdf, download, video, power point, file, zip icon
+.fa.fa-file-pdf-o, .fa.fa-download, .fa.fa-file-video-o, .fa.fa-file-powerpoint-o, .fa.fa-file-text-o, .fa.fa-file-zip-o, .fa.fa-file-word-o, .fa-vcard-o {
+    font-size: 16px !important;
+    margin: 0 0 0 5px;
+}
+
+.fa-file-pdf-o {
+    color: @red;
+}
+
 .wrapper-engraving {
     margin: 0 auto 50px auto;
     font-family: @font-mukta;
     
 }
 
-
 .items-wrapper {                     // column
     float: left;
-    padding: 0 15px;
+    padding: 0 5px;
     width: 100%;
-    //border: 1px dotted @gray-light;
+    border: 1px dotted @gray-light;
     //.make-sm-column(3);     // 768px (min)
     
     @media @tablet-min {
@@ -98,8 +107,38 @@
 .items {
     float: left;
     width: 100%;
+    margin: 0 0 30px 0;
 }
 
 .item {
-    width: 100%;
+    float: left;
+    width: 50%;
+    //background-color: @gray-light;
+    //border: 1px dotted @gray-medium;
+    text-align: center;
+    min-height: 233px;
+    
+    @media @tablet-min {
+        width: 20%;
+        min-height: 222px;
+    }
+    
+    .title {
+        font-size: 16px;
+        background-color: lighten(@green-light,15%);
+    }
+    
+    .image {
+        margin: 0 0 10% 0;
+    }
+    
+    .engraving-form {
+        background-color: lighten(@gray-light,9%);
+        
+        .download {
+            span {
+                display: block;
+            }
+        }
+    }
 }

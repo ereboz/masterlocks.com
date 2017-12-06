@@ -2,14 +2,29 @@
 ========================================================================== */
 /* MIXIN'S
 ========================================================================== */
+.fa.fa-file-pdf-o,
+.fa.fa-download,
+.fa.fa-file-video-o,
+.fa.fa-file-powerpoint-o,
+.fa.fa-file-text-o,
+.fa.fa-file-zip-o,
+.fa.fa-file-word-o,
+.fa-vcard-o {
+  font-size: 16px !important;
+  margin: 0 0 0 5px;
+}
+.fa-file-pdf-o {
+  color: #ca0f0f;
+}
 .wrapper-engraving {
   margin: 0 auto 50px auto;
   font-family: 'Mukta Malar', sans-serif;
 }
 .items-wrapper {
   float: left;
-  padding: 0 15px;
+  padding: 0 5px;
   width: 100%;
+  border: 1px dotted #e0e0e0;
 }
 @media (min-width: 768px) {
   .items-wrapper {
@@ -24,7 +39,30 @@
 .items {
   float: left;
   width: 100%;
+  margin: 0 0 30px 0;
 }
 .item {
-  width: 100%;
+  float: left;
+  width: 50%;
+  text-align: center;
+  min-height: 233px;
+}
+@media (min-width: 768px) {
+  .item {
+    width: 20%;
+    min-height: 222px;
+  }
+}
+.item .title {
+  font-size: 16px;
+  background-color: #f4fbf6;
+}
+.item .image {
+  margin: 0 0 10% 0;
+}
+.item .engraving-form {
+  background-color: #f7f7f7;
+}
+.item .engraving-form .download span {
+  display: block;
 }
