@@ -74,8 +74,8 @@
 
 // font awesome pdf, download, video, power point, file, zip icon
 .fa.fa-file-pdf-o, .fa.fa-download, .fa.fa-file-video-o, .fa.fa-file-powerpoint-o, .fa.fa-file-text-o, .fa.fa-file-zip-o, .fa.fa-file-word-o, .fa-vcard-o {
-    font-size: 16px !important;
-    margin: 0 0 0 5px;
+    font-size: 16px;
+    margin: 0 3px 0 5px;
 }
 
 .fa-file-pdf-o {
@@ -84,8 +84,17 @@
 
 .wrapper-engraving {
     margin: 0 auto 50px auto;
-    font-family: @font-mukta;
+    font-family: @font-roboto;
     
+}
+
+.engraving-area {
+    width: 50%;
+    margin: 20px auto;
+    
+    .title {
+        text-align: center;
+    }
 }
 
 .items-wrapper {                     // column
@@ -102,6 +111,10 @@
     @media @desktop-min {
         width: 50%;
     }
+    
+    h3 {
+        text-align: center;
+    }
 }
 
 .items {
@@ -112,20 +125,22 @@
 
 .item {
     float: left;
-    width: 50%;
-    //background-color: @gray-light;
-    //border: 1px dotted @gray-medium;
+    width: 49%;
+    margin: 1px;
+    background-color: lighten(@gray-light,7%);
+    border: 1px dotted @gray-medium;
     text-align: center;
-    min-height: 233px;
+    min-height: 180px;
     
     @media @tablet-min {
-        width: 20%;
-        min-height: 222px;
+        width: 19%;
     }
     
     .title {
         font-size: 16px;
-        background-color: lighten(@green-light,15%);
+        background-color: lighten(@green-light,10%);
+        border-bottom: 1px dotted @gray-medium;
+        margin-bottom: 3px;
     }
     
     .image {
@@ -133,11 +148,17 @@
     }
     
     .engraving-form {
-        background-color: lighten(@gray-light,9%);
+        background-color: @black;
+        padding: 3% 0;
         
         .download {
+            a {
+                color: white;
+            }
             span {
                 display: block;
+                text-transform: lowercase;
+                font-size: 12px;
             }
         }
     }
