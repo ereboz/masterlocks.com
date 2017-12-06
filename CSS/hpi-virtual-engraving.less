@@ -86,6 +86,16 @@
     margin: 0 auto 50px auto;
     font-family: @font-roboto;
     
+    .intro-title {
+        font-size: 20px;
+        margin: 10px 0 20px 0;
+        width: 100%;
+        
+        div {
+            width: 50%;
+            margin: 0 auto;
+        }
+    }
 }
 
 .engraving-area {
@@ -112,8 +122,32 @@
         width: 50%;
     }
     
-    h3 {
-        text-align: center;
+    &.american-lock {
+        .wrapper-vendor{
+            width: 100%;
+            background-color: @white;
+            padding: 10px 0;
+            margin: 0 0 10px 0;
+        }
+        
+        .wrapper-image {
+            width: 50%;
+            margin: 0 auto;
+        }
+    }
+    
+    &.masterlock {
+        .wrapper-vendor {
+            width: 100%;
+            background-color: @black;
+            padding: 10px 0;
+            margin: 0 0 10px 0;
+        }
+        
+        .wrapper-image {
+            width: 50%;
+            margin: 0 auto;
+        }
     }
 }
 
@@ -130,10 +164,10 @@
     background-color: lighten(@gray-light,7%);
     border: 1px dotted @gray-medium;
     text-align: center;
-    min-height: 180px;
+    min-height: 250px;
     
     @media @tablet-min {
-        width: 19%;
+        width: 19.6%;
     }
     
     .title {
@@ -149,7 +183,8 @@
     
     .engraving-form {
         background-color: @black;
-        padding: 3% 0;
+        padding: 10% 0 0 0;
+        min-height: 62px;
         
         .download {
             a {
