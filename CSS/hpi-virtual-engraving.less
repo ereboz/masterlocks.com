@@ -1,0 +1,200 @@
+/* Brian's Grid Variables to make life easier
+========================================================================== */
+
+//<editor-fold desc="Grid / General Variables">
+// min-widths
+@phone-xxxs-min: ~"(min-width: 320px)";
+@phone-xxs-min: ~"(min-width: 375px)";
+@phone-min: ~"(min-width: 480px)";
+@tablet-min: ~"(min-width: 768px)";
+@desktop-min: ~"(min-width: 992px)";
+@desktop-large-min: ~"(min-width: 1200px)";
+
+// max-widths
+@phone-xxxs-max: ~"(max-width: 320px)";
+@phone-xxs-max: ~"(max-width: 375px)";
+@phone-max: ~"(max-width: 480px)";
+@tablet-max: ~"(max-width: 768px)";
+@desktop-max: ~"(max-width: 992px)";
+@desktop-large-max: ~"(max-width: 1200px)";
+
+
+// font variables
+@font-roboto: "Roboto", sans-serif;
+@font-opensans: "Open Sans",sans-serif;
+@font-mukta: 'Mukta Malar', sans-serif;
+
+// color variables
+@black: #000;
+@blue: #48c;
+@gray-light: #e0e0e0;
+@gray-medium: #929292;
+@green-light: #bde6c6;
+@orange: #fa0;
+@red: #ca0f0f;
+@white: #fff;
+
+//</editor-fold>
+
+/* MIXIN'S
+========================================================================== */
+
+//<editor-fold desc="Mixins">
+
+.border-radius (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+    
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+.rounded-corners (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+
+
+.box-shadow (@arguments) {
+    -moz-box-shadow: @arguments;
+    -ms-box-shadow: @arguments;
+    -o-box-shadow: @arguments;
+    box-shadow: @arguments;
+}
+
+.size(@width, @height) {
+    width: @width;
+    height: @height;
+}
+
+//</editor-fold>
+
+// font awesome pdf, download, video, power point, file, zip icon
+.fa.fa-file-pdf-o, .fa.fa-download, .fa.fa-file-video-o, .fa.fa-file-powerpoint-o, .fa.fa-file-text-o, .fa.fa-file-zip-o, .fa.fa-file-word-o, .fa-vcard-o {
+    font-size: 16px;
+    margin: 0 3px 0 5px;
+}
+
+.fa-file-pdf-o {
+    color: @red;
+}
+
+.wrapper-engraving {
+    margin: 0 auto 50px auto;
+    font-family: @font-roboto;
+    
+    .intro-title {
+        font-size: 20px;
+        margin: 10px 0 20px 0;
+        width: 100%;
+        
+        div {
+            width: 50%;
+            margin: 0 auto;
+        }
+    }
+}
+
+.engraving-area {
+    width: 50%;
+    margin: 20px auto;
+    
+    .title {
+        text-align: center;
+    }
+}
+
+.items-wrapper {                     // column
+    float: left;
+    padding: 0 5px;
+    width: 100%;
+    border: 1px dotted @gray-light;
+    //.make-sm-column(3);     // 768px (min)
+    
+    @media @tablet-min {
+        width: 50%;
+    }
+    
+    @media @desktop-min {
+        width: 50%;
+    }
+    
+    &.american-lock {
+        .wrapper-vendor{
+            width: 100%;
+            background-color: @white;
+            padding: 10px 0;
+            margin: 0 0 10px 0;
+        }
+        
+        .wrapper-image {
+            width: 50%;
+            margin: 0 auto;
+        }
+    }
+    
+    &.masterlock {
+        .wrapper-vendor {
+            width: 100%;
+            background-color: @black;
+            padding: 10px 0;
+            margin: 0 0 10px 0;
+        }
+        
+        .wrapper-image {
+            width: 50%;
+            margin: 0 auto;
+        }
+    }
+}
+
+.items {
+    float: left;
+    width: 100%;
+    margin: 0 0 30px 0;
+}
+
+.item {
+    float: left;
+    width: 49%;
+    margin: 1px;
+    background-color: lighten(@gray-light,7%);
+    border: 1px dotted @gray-medium;
+    text-align: center;
+    min-height: 250px;
+    
+    @media @tablet-min {
+        width: 19.6%;
+    }
+    
+    .title {
+        font-size: 16px;
+        background-color: lighten(@green-light,10%);
+        border-bottom: 1px dotted @gray-medium;
+        margin-bottom: 3px;
+    }
+    
+    .image {
+        margin: 0 0 10% 0;
+    }
+    
+    .engraving-form {
+        background-color: @black;
+        padding: 10% 0 0 0;
+        min-height: 62px;
+        
+        .download {
+            a {
+                color: white;
+            }
+            span {
+                display: block;
+                text-transform: lowercase;
+                font-size: 12px;
+            }
+        }
+    }
+}
