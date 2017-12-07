@@ -38,7 +38,7 @@
 }
 .items-wrapper {
   float: left;
-  padding: 0 5px;
+  padding: 5px 0 5px 5px;
   width: 100%;
   border: 1px dotted #e0e0e0;
 }
@@ -88,7 +88,7 @@
 }
 @media (min-width: 768px) {
   .item {
-    width: 19.6%;
+    width: 24.4%;
   }
 }
 .item .title {
