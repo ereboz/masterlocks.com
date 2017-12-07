@@ -29,6 +29,7 @@
 @blue: #48c;
 @gray-light: #e0e0e0;
 @gray-medium: #929292;
+@green-black: #c0dac6;
 @green-light: #bde6c6;
 @orange: #fa0;
 @red: #ca0f0f;
@@ -174,7 +175,7 @@
     background-color: lighten(@gray-light,7%);
     border: 1px dotted @gray-medium;
     text-align: center;
-    min-height: 250px;
+    min-height: 220px;
     
     @media @tablet-min {
         width: 24.4%;
@@ -182,15 +183,16 @@
     }
     
     @media @desktop-min {
-        min-height: 250px;
+        min-height: 220px;
     }
     
     .title {
         font-size: 16px;
-        background-color: lighten(@green-light,10%);
+        background-color: @gray-medium;
         border-bottom: 1px dotted @gray-medium;
         margin-bottom: 3px;
-        color: darken(@gray-medium,40%) !important;
+        //color: darken(@gray-medium,40%) !important;
+        color: @white;
         height: 23px;
         
         @media @tablet-min {
@@ -208,11 +210,11 @@
     
     .engraving-form {
         background-color: @black;
-        padding: 6% 0 0 0;
-        min-height: 62px;
+        padding: 3% 0 0 0;
+        min-height: 30px;
         
         @media @tablet-min {
-            padding: 10% 0 0 0;
+            padding: 5% 0 0 0;
         }
         
         .download {
