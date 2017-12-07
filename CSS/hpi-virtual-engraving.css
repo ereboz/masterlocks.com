@@ -27,14 +27,22 @@
 }
 .wrapper-engraving .intro-title div {
   width: 50%;
-  margin: 0 auto;
 }
 .engraving-area {
   width: 50%;
-  margin: 20px auto;
+  margin: 40px auto;
 }
 .engraving-area .title {
   text-align: center;
+}
+.engraving-area .title h3 {
+  font-size: 40px;
+}
+.engraving-area img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
 }
 .items-wrapper {
   float: left;
@@ -89,6 +97,12 @@
 @media (min-width: 768px) {
   .item {
     width: 24.4%;
+    min-height: 265px;
+  }
+}
+@media (min-width: 992px) {
+  .item {
+    min-height: 250px;
   }
 }
 .item .title {
@@ -96,17 +110,34 @@
   background-color: #e2f4e6;
   border-bottom: 1px dotted #929292;
   margin-bottom: 3px;
+  color: #2c2c2c !important;
+  height: 23px;
+}
+@media (min-width: 768px) {
+  .item .title {
+    min-height: 45px;
+  }
+}
+@media (min-width: 992px) {
+  .item .title {
+    min-height: 23px;
+  }
 }
 .item .image {
   margin: 0 0 10% 0;
 }
 .item .engraving-form {
   background-color: #000;
-  padding: 10% 0 0 0;
+  padding: 6% 0 0 0;
   min-height: 62px;
 }
+@media (min-width: 768px) {
+  .item .engraving-form {
+    padding: 10% 0 0 0;
+  }
+}
 .item .engraving-form .download a {
-  color: white;
+  color: white !important;
 }
 .item .engraving-form .download span {
   display: block;

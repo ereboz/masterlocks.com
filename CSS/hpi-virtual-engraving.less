@@ -93,17 +93,27 @@
         
         div {
             width: 50%;
-            margin: 0 auto;
+            //margin: 0 auto;
         }
     }
 }
 
 .engraving-area {
     width: 50%;
-    margin: 20px auto;
+    margin: 40px auto;
     
     .title {
         text-align: center;
+        h3 {
+            font-size: 40px;
+        }
+    }
+    
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 20px auto;
     }
 }
 
@@ -168,6 +178,11 @@
     
     @media @tablet-min {
         width: 24.4%;
+        min-height: 265px;
+    }
+    
+    @media @desktop-min {
+        min-height: 250px;
     }
     
     .title {
@@ -175,6 +190,16 @@
         background-color: lighten(@green-light,10%);
         border-bottom: 1px dotted @gray-medium;
         margin-bottom: 3px;
+        color: darken(@gray-medium,40%) !important;
+        height: 23px;
+        
+        @media @tablet-min {
+            min-height: 45px;
+        }
+        
+        @media @desktop-min {
+            min-height: 23px;
+        }
     }
     
     .image {
@@ -183,12 +208,16 @@
     
     .engraving-form {
         background-color: @black;
-        padding: 10% 0 0 0;
+        padding: 6% 0 0 0;
         min-height: 62px;
+        
+        @media @tablet-min {
+            padding: 10% 0 0 0;
+        }
         
         .download {
             a {
-                color: white;
+                color: white !important;
             }
             span {
                 display: block;
