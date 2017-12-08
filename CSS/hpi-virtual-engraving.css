@@ -89,10 +89,19 @@
   float: left;
   width: 49%;
   margin: 1px;
-  background-color: #f2f2f2;
   border: 1px dotted #929292;
   text-align: center;
-  min-height: 220px;
+  min-height: 210px;
+  background: #ffffff;
+  /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #ffffff 48%, #e5e5e5 100%);
+  /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, #ffffff 48%, #e5e5e5 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, #ffffff 48%, #e5e5e5 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e5e5e5', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
 }
 @media (min-width: 768px) {
   .item {
@@ -102,7 +111,7 @@
 }
 @media (min-width: 992px) {
   .item {
-    min-height: 220px;
+    min-height: 210px;
   }
 }
 .item .title {
@@ -112,6 +121,7 @@
   margin-bottom: 3px;
   color: #fff;
   height: 23px;
+  display: none;
 }
 @media (min-width: 768px) {
   .item .title {
@@ -124,10 +134,11 @@
   }
 }
 .item .image {
-  margin: 0 0 10% 0;
+  margin: 11% 0 10% 0;
 }
 .item .engraving-form {
-  background-color: #000;
+  border-top: 1px dotted #797979;
+  background-color: #fff;
   padding: 3% 0 0 0;
   min-height: 30px;
 }
@@ -136,8 +147,9 @@
     padding: 5% 0 0 0;
   }
 }
-.item .engraving-form .download a {
-  color: white !important;
+.item .engraving-form .download {
+  color: #000 !important;
+  font-weight: 700;
 }
 .item .engraving-form .download span {
   display: block;

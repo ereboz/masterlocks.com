@@ -172,10 +172,16 @@
     float: left;
     width: 49%;
     margin: 1px;
-    background-color: lighten(@gray-light,7%);
+    //background-color: lighten(@gray-light,7%);
     border: 1px dotted @gray-medium;
     text-align: center;
-    min-height: 220px;
+    min-height: 210px;
+    
+    background: rgb(255,255,255); /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 48%, rgba(229,229,229,1) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 48%,rgba(229,229,229,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(255,255,255,1) 48%,rgba(229,229,229,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     
     @media @tablet-min {
         width: 24.4%;
@@ -183,7 +189,7 @@
     }
     
     @media @desktop-min {
-        min-height: 220px;
+        min-height: 210px;
     }
     
     .title {
@@ -194,6 +200,7 @@
         //color: darken(@gray-medium,40%) !important;
         color: @white;
         height: 23px;
+        display: none;
         
         @media @tablet-min {
             min-height: 45px;
@@ -205,11 +212,13 @@
     }
     
     .image {
-        margin: 0 0 10% 0;
+        margin: 11% 0 10% 0;
     }
     
     .engraving-form {
-        background-color: @black;
+        //background-color: darken(@gray-medium,30%);
+        border-top: 1px dotted darken(@gray-medium,10%);
+        background-color: @white;
         padding: 3% 0 0 0;
         min-height: 30px;
         
@@ -218,9 +227,9 @@
         }
         
         .download {
-            a {
-                color: white !important;
-            }
+            color: @black !important;
+            font-weight: 700;
+            
             span {
                 display: block;
                 text-transform: lowercase;
