@@ -46,6 +46,7 @@
 }
 .items-wrapper {
   float: left;
+  margin-bottom: 50px;
   padding: 5px 0 5px 5px;
   width: 100%;
   border: 1px dotted #e0e0e0;
@@ -94,11 +95,11 @@
   min-height: 210px;
   background: #ffffff;
   /* Old browsers */
-  background: -moz-radial-gradient(center, ellipse cover, #ffffff 48%, #e5e5e5 100%);
+  background: -moz-linear-gradient(45deg, #ffffff 0%, #e5e5e5 100%);
   /* FF3.6-15 */
-  background: -webkit-radial-gradient(center, ellipse cover, #ffffff 48%, #e5e5e5 100%);
+  background: -webkit-linear-gradient(45deg, #ffffff 0%, #e5e5e5 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: radial-gradient(ellipse at center, #ffffff 48%, #e5e5e5 100%);
+  background: linear-gradient(45deg, #ffffff 0%, #e5e5e5 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e5e5e5', GradientType=1);
   /* IE6-9 fallback on horizontal gradient */
@@ -139,20 +140,24 @@
 .item .engraving-form {
   border-top: 1px dotted #797979;
   background-color: #fff;
-  padding: 3% 0 0 0;
-  min-height: 30px;
+  padding: 8% 0 0 0;
+  min-height: 45px;
 }
 @media (min-width: 768px) {
   .item .engraving-form {
-    padding: 5% 0 0 0;
+    padding: 10% 0 0 0;
   }
 }
 .item .engraving-form .download {
   color: #000 !important;
   font-weight: 700;
+  text-transform: uppercase;
 }
 .item .engraving-form .download span {
   display: block;
   text-transform: lowercase;
   font-size: 12px;
+}
+.item .engraving-form.multi-line {
+  padding: 5% 0 5% 0;
 }

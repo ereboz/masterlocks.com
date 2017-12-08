@@ -120,6 +120,7 @@
 
 .items-wrapper {                     // column
     float: left;
+    margin-bottom: 50px;
     padding: 5px 0 5px 5px;
     width: 100%;
     border: 1px dotted @gray-light;
@@ -178,9 +179,9 @@
     min-height: 210px;
     
     background: rgb(255,255,255); /* Old browsers */
-    background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 48%, rgba(229,229,229,1) 100%); /* FF3.6-15 */
-    background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 48%,rgba(229,229,229,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: radial-gradient(ellipse at center, rgba(255,255,255,1) 48%,rgba(229,229,229,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -moz-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     
     @media @tablet-min {
@@ -219,22 +220,27 @@
         //background-color: darken(@gray-medium,30%);
         border-top: 1px dotted darken(@gray-medium,10%);
         background-color: @white;
-        padding: 3% 0 0 0;
-        min-height: 30px;
+        padding: 8% 0 0 0;
+        min-height: 45px;
         
         @media @tablet-min {
-            padding: 5% 0 0 0;
+            padding: 10% 0 0 0;
         }
         
         .download {
             color: @black !important;
             font-weight: 700;
+            text-transform: uppercase;
             
             span {
                 display: block;
                 text-transform: lowercase;
                 font-size: 12px;
             }
+        }
+        
+        &.multi-line {
+            padding: 5% 0 5% 0;
         }
     }
 }
