@@ -29,6 +29,7 @@
 @blue: #48c;
 @gray-light: #e0e0e0;
 @gray-medium: #929292;
+@green-black: #c0dac6;
 @green-light: #bde6c6;
 @orange: #fa0;
 @red: #ca0f0f;
@@ -93,23 +94,34 @@
         
         div {
             width: 50%;
-            margin: 0 auto;
+            //margin: 0 auto;
         }
     }
 }
 
 .engraving-area {
     width: 50%;
-    margin: 20px auto;
+    margin: 40px auto;
     
     .title {
         text-align: center;
+        h3 {
+            font-size: 40px;
+        }
+    }
+    
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 20px auto;
     }
 }
 
 .items-wrapper {                     // column
     float: left;
-    padding: 0 5px;
+    margin-bottom: 50px;
+    padding: 5px 0 5px 5px;
     width: 100%;
     border: 1px dotted @gray-light;
     //.make-sm-column(3);     // 768px (min)
@@ -139,7 +151,7 @@
     &.masterlock {
         .wrapper-vendor {
             width: 100%;
-            background-color: @black;
+            background-color: @white;
             padding: 10px 0;
             margin: 0 0 10px 0;
         }
@@ -161,40 +173,74 @@
     float: left;
     width: 49%;
     margin: 1px;
-    background-color: lighten(@gray-light,7%);
+    //background-color: lighten(@gray-light,7%);
     border: 1px dotted @gray-medium;
     text-align: center;
-    min-height: 250px;
+    min-height: 210px;
+    
+    background: rgb(255,255,255); /* Old browsers */
+    background: -moz-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     
     @media @tablet-min {
-        width: 19.6%;
+        width: 24.4%;
+        min-height: 265px;
+    }
+    
+    @media @desktop-min {
+        min-height: 210px;
     }
     
     .title {
         font-size: 16px;
-        background-color: lighten(@green-light,10%);
+        background-color: @gray-medium;
         border-bottom: 1px dotted @gray-medium;
         margin-bottom: 3px;
+        //color: darken(@gray-medium,40%) !important;
+        color: @white;
+        height: 23px;
+        display: none;
+        
+        @media @tablet-min {
+            min-height: 45px;
+        }
+        
+        @media @desktop-min {
+            min-height: 23px;
+        }
     }
     
     .image {
-        margin: 0 0 10% 0;
+        margin: 11% 0 10% 0;
     }
     
     .engraving-form {
-        background-color: @black;
-        padding: 10% 0 0 0;
-        min-height: 62px;
+        //background-color: darken(@gray-medium,30%);
+        border-top: 1px dotted darken(@gray-medium,10%);
+        background-color: @white;
+        padding: 8% 0 0 0;
+        min-height: 45px;
+        
+        @media @tablet-min {
+            padding: 10% 0 0 0;
+        }
         
         .download {
-            a {
-                color: white;
-            }
+            color: @black !important;
+            font-weight: 700;
+            text-transform: uppercase;
+            
             span {
                 display: block;
                 text-transform: lowercase;
                 font-size: 12px;
             }
+        }
+        
+        &.multi-line {
+            padding: 5% 0 5% 0;
         }
     }
 }

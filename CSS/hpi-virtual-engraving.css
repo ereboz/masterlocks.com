@@ -27,18 +27,27 @@
 }
 .wrapper-engraving .intro-title div {
   width: 50%;
-  margin: 0 auto;
 }
 .engraving-area {
   width: 50%;
-  margin: 20px auto;
+  margin: 40px auto;
 }
 .engraving-area .title {
   text-align: center;
 }
+.engraving-area .title h3 {
+  font-size: 40px;
+}
+.engraving-area img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+}
 .items-wrapper {
   float: left;
-  padding: 0 5px;
+  margin-bottom: 50px;
+  padding: 5px 0 5px 5px;
   width: 100%;
   border: 1px dotted #e0e0e0;
 }
@@ -64,7 +73,7 @@
 }
 .items-wrapper.masterlock .wrapper-vendor {
   width: 100%;
-  background-color: #000;
+  background-color: #fff;
   padding: 10px 0;
   margin: 0 0 10px 0;
 }
@@ -81,35 +90,74 @@
   float: left;
   width: 49%;
   margin: 1px;
-  background-color: #f2f2f2;
   border: 1px dotted #929292;
   text-align: center;
-  min-height: 250px;
+  min-height: 210px;
+  background: #ffffff;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #ffffff 0%, #e5e5e5 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #ffffff 0%, #e5e5e5 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #ffffff 0%, #e5e5e5 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e5e5e5', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
 }
 @media (min-width: 768px) {
   .item {
-    width: 19.6%;
+    width: 24.4%;
+    min-height: 265px;
+  }
+}
+@media (min-width: 992px) {
+  .item {
+    min-height: 210px;
   }
 }
 .item .title {
   font-size: 16px;
-  background-color: #e2f4e6;
+  background-color: #929292;
   border-bottom: 1px dotted #929292;
   margin-bottom: 3px;
+  color: #fff;
+  height: 23px;
+  display: none;
+}
+@media (min-width: 768px) {
+  .item .title {
+    min-height: 45px;
+  }
+}
+@media (min-width: 992px) {
+  .item .title {
+    min-height: 23px;
+  }
 }
 .item .image {
-  margin: 0 0 10% 0;
+  margin: 11% 0 10% 0;
 }
 .item .engraving-form {
-  background-color: #000;
-  padding: 10% 0 0 0;
-  min-height: 62px;
+  border-top: 1px dotted #797979;
+  background-color: #fff;
+  padding: 8% 0 0 0;
+  min-height: 45px;
 }
-.item .engraving-form .download a {
-  color: white;
+@media (min-width: 768px) {
+  .item .engraving-form {
+    padding: 10% 0 0 0;
+  }
+}
+.item .engraving-form .download {
+  color: #000 !important;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 .item .engraving-form .download span {
   display: block;
   text-transform: lowercase;
   font-size: 12px;
+}
+.item .engraving-form.multi-line {
+  padding: 5% 0 5% 0;
 }
