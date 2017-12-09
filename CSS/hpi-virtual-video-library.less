@@ -1,0 +1,194 @@
+/* Brian's Grid Variables to make life easier
+========================================================================== */
+
+//<editor-fold desc="Grid / General Variables">
+// min-widths
+@phone-xxxs-min: ~"(min-width: 320px)";
+@phone-xxs-min: ~"(min-width: 375px)";
+@phone-min: ~"(min-width: 480px)";
+@tablet-min: ~"(min-width: 768px)";
+@desktop-min: ~"(min-width: 992px)";
+@desktop-large-min: ~"(min-width: 1200px)";
+
+// max-widths
+@phone-xxxs-max: ~"(max-width: 320px)";
+@phone-xxs-max: ~"(max-width: 375px)";
+@phone-max: ~"(max-width: 480px)";
+@tablet-max: ~"(max-width: 768px)";
+@desktop-max: ~"(max-width: 992px)";
+@desktop-large-max: ~"(max-width: 1200px)";
+
+
+// font variables
+@font-roboto: "Roboto", sans-serif;
+@font-opensans: "Open Sans",sans-serif;
+@font-title: 'Mukta Malar', sans-serif;
+@gray-background: #f5f7f9;
+
+// color variables
+@black: #000;
+@blue: #48c;
+@gray-dark-slate: #3a4247;
+@gray-light: #e0e0e0;
+@gray-medium: #929292;
+@green-light: #bde6c6;
+@orange: #fa0;
+@red: #ca0f0f;
+@white: #fff;
+//</editor-fold>
+
+/* MIXIN'S
+========================================================================== */
+
+//<editor-fold desc="Mixins">
+
+.border-radius (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+    
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+.rounded-corners (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+
+
+.box-shadow (@arguments) {
+    -moz-box-shadow: @arguments;
+    -ms-box-shadow: @arguments;
+    -o-box-shadow: @arguments;
+    box-shadow: @arguments;
+}
+
+.size(@width, @height) {
+    width: @width;
+    height: @height;
+}
+
+//</editor-fold>
+
+/* VIRTUAL PAGES (hidden shackle quick reference)
+========================================================================== */
+
+/* 2 Rows of Product
+========================================================================== */
+//<editor-fold desc="2 rows of product">
+
+
+
+.wrapper-video-library {
+    
+    margin: 25px auto 0 auto;
+    font-family: @font-roboto;
+    
+    .wrapper-items {
+        margin: 50px 0;
+    }
+    
+    .page-header {
+        span {
+            display: block;
+            margin: 20px auto;
+        }
+        
+        .title {
+            font-size: 24px;
+            font-family: @font-title;
+        }
+        
+        .sub-title {
+            font-size: 16px;
+            font-family: @font-title;
+        }
+    }
+    
+}
+
+
+.item-wrapper {                     // column
+    float: left;
+    padding: 0 15px;
+    margin: 0 0 20px 0;
+    width: 100%;
+    //.make-sm-column(3);     // 768px (min)
+    
+    @media @tablet-min {
+        width: 50%;
+    }
+    
+    @media @desktop-min {
+        width: 25%;
+    }
+}
+
+
+.item {
+    .border-radius();
+    .box-shadow(1px 1px 5px @gray-light);
+    border: 1px solid @gray-light;
+    float: left;
+    width: 100%;
+    min-height: 280px;
+    
+    &:hover {
+        .box-shadow(3px 3px 5px darken(@gray-light,5%));
+        border: 1px solid darken(@gray-light, 7%);
+    }
+    
+    .item-title {
+        background-color: @gray-dark-slate;
+        text-align: center;
+        min-height: 30px;
+        margin: 0 0 4% 0;
+        
+        .title {
+            padding: 2% 0 0 0;
+            color: @white;
+        }
+    }
+    
+    .item-image {
+        margin: 0 0 5% 0;
+        
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+            border: 1px solid @gray-light;
+            border-top-left-radius: 115px 40px;
+            border-top-right-radius: 115px 40px;
+            border-bottom-right-radius: 115px 40px;
+            border-bottom-left-radius: 115px 40px;
+        }
+    }
+    
+    .item-text {
+        width: 100%;
+        
+        .text {
+            width: 95%;
+            margin: 0 auto;
+            padding: 0 4;
+        }
+    }
+    
+}
+
+
+//</editor-fold>
+
+
+
+
+
+
+
+
+

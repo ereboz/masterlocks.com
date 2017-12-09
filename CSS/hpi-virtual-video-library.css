@@ -1,0 +1,98 @@
+/* Brian's Grid Variables to make life easier
+========================================================================== */
+/* MIXIN'S
+========================================================================== */
+/* VIRTUAL PAGES (hidden shackle quick reference)
+========================================================================== */
+/* 2 Rows of Product
+========================================================================== */
+.wrapper-video-library {
+  margin: 25px auto 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+.wrapper-video-library .wrapper-items {
+  margin: 50px 0;
+}
+.wrapper-video-library .page-header span {
+  display: block;
+  margin: 20px auto;
+}
+.wrapper-video-library .page-header .title {
+  font-size: 24px;
+  font-family: 'Mukta Malar', sans-serif;
+}
+.wrapper-video-library .page-header .sub-title {
+  font-size: 16px;
+  font-family: 'Mukta Malar', sans-serif;
+}
+.item-wrapper {
+  float: left;
+  padding: 0 15px;
+  margin: 0 0 20px 0;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .item-wrapper {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .item-wrapper {
+    width: 25%;
+  }
+}
+.item {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -moz-box-shadow: 1px 1px 5px #e0e0e0;
+  -ms-box-shadow: 1px 1px 5px #e0e0e0;
+  -o-box-shadow: 1px 1px 5px #e0e0e0;
+  box-shadow: 1px 1px 5px #e0e0e0;
+  border: 1px solid #e0e0e0;
+  float: left;
+  width: 100%;
+  min-height: 280px;
+}
+.item:hover {
+  -moz-box-shadow: 3px 3px 5px #d3d3d3;
+  -ms-box-shadow: 3px 3px 5px #d3d3d3;
+  -o-box-shadow: 3px 3px 5px #d3d3d3;
+  box-shadow: 3px 3px 5px #d3d3d3;
+  border: 1px solid #cecece;
+}
+.item .item-title {
+  background-color: #3a4247;
+  text-align: center;
+  min-height: 30px;
+  margin: 0 0 4% 0;
+}
+.item .item-title .title {
+  padding: 2% 0 0 0;
+  color: #fff;
+}
+.item .item-image {
+  margin: 0 0 5% 0;
+}
+.item .item-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid #e0e0e0;
+  border-top-left-radius: 115px 40px;
+  border-top-right-radius: 115px 40px;
+  border-bottom-right-radius: 115px 40px;
+  border-bottom-left-radius: 115px 40px;
+}
+.item .item-text {
+  width: 100%;
+}
+.item .item-text .text {
+  width: 95%;
+  margin: 0 auto;
+  padding: 0 4;
+}
