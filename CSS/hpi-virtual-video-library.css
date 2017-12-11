@@ -11,7 +11,7 @@
   font-family: "Roboto", sans-serif;
 }
 .wrapper-video-library .wrapper-items {
-  margin: 50px 0;
+  margin: 20px 0;
 }
 .wrapper-video-library .page-header span {
   display: block;
@@ -41,6 +41,10 @@
     width: 25%;
   }
 }
+.item-wrapper .sup {
+  vertical-align: super;
+  font-size: smaller;
+}
 .item {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -55,7 +59,7 @@
   border: 1px solid #e0e0e0;
   float: left;
   width: 100%;
-  min-height: 280px;
+  min-height: 260px;
 }
 .item:hover {
   -moz-box-shadow: 3px 3px 5px #d3d3d3;
@@ -69,6 +73,8 @@
   text-align: center;
   min-height: 30px;
   margin: 0 0 4% 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 .item .item-title .title {
   padding: 2% 0 0 0;
@@ -92,7 +98,7 @@
   width: 100%;
 }
 .item .item-text .text {
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 4;
+  padding: 0 12px;
 }

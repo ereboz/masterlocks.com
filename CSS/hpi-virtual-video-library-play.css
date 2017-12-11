@@ -1,0 +1,88 @@
+/* Brian's Grid Variables to make life easier
+========================================================================== */
+/* MIXIN'S
+========================================================================== */
+/* VIRTUAL PAGES (hidden shackle quick reference)
+========================================================================== */
+/* 2 Rows of Product
+========================================================================== */
+.wrapper-video-library-play {
+  margin: 25px auto 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+.video-wrapper {
+  float: left;
+  padding: 0 15px;
+  margin: 0 0 20px 0;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .video-wrapper {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .video-wrapper {
+    width: 50%;
+  }
+}
+.video-wrapper iframe {
+  width: 100%;
+  height: 324px;
+  border: solid 1px #000;
+}
+.video-list-wrapper {
+  float: left;
+  padding: 0 15px;
+  margin: 0 0 20px 0;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .video-list-wrapper {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .video-list-wrapper {
+    width: 50%;
+  }
+}
+.video-list-wrapper .video-list ul {
+  list-style: none;
+}
+.video-list-wrapper .video-list .video-item {
+  float: left;
+  width: 100%;
+  border: 1px dotted #ababab;
+  margin-bottom: 5px;
+}
+.video-list-wrapper .video-list .video-item .video-play {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  background-color: #f4f4f4;
+}
+.video-list-wrapper .video-list .video-item .video-play .thumb-wrapper {
+  float: left;
+  width: 25%;
+}
+.video-list-wrapper .video-list .video-item .video-play .video-meta-container {
+  float: left;
+  width: 75%;
+  padding: 0 0 0 10px;
+}
+.video-list-wrapper .video-list .video-item .video-play .video-meta-container .video-title {
+  font-size: 1.125em;
+  margin-bottom: 0.25em;
+}
+.video-list-wrapper .video-list .video-item .video-play .video-meta-container .video-description {
+  color: #000000;
+  margin-bottom: 0;
+  font-size: 0.875em;
+}
+.video-list-wrapper .video-list .video-item img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
