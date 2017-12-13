@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video Library - Door Hardware - NightWatch</title>
+    <!-- START LOCAL ONLY -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Encode+Sans+Expanded|Mukta+Malar|Open+Sans" rel="stylesheet">
+    <link href="CSS/hpi-virtual-video-library-play.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- END LOCAL ONLY -->
+
+    <!-- START Server Code (add to top of html in the CMS) -->
+    <link href="/Templates/Hodge/CSS/hpi-virtual-video-library-play.css" rel="stylesheet">
+    <!-- END Server Code (add to top of html in the CMS) -->
+</head>
+<body>
+
+<div class="wrapper-video-library-play container">
+    <h4>Videos: NightWatch</h4>
+
+    <!-- start masterlock -->
+    <div class="section-content row">
+        <div class="video-wrapper">
+            <iframe id="vid_frame" name="vid_frame" onload="onLoadHandler();" src="http://www.youtube.com/embed/m6NTEOr4vqI?rel=0&amp;showinfo=0&amp;autohide=1"></iframe>
+            <div class="current-video-meta-container">
+                <h2 id="current-video-title" class="video-title">NightWatch Deadbolt</h2>
+                <p id="current-video-description" class="video-description">NightWatch® feature keeps the deadbolt locked, even if the intruder has a copy of the key.</p>
+                <input type="hidden" id="featured-video-title" value="NightWatch Deadbolt">
+                <a href="http://www.youtube.com/watch?v=m6NTEOr4vqI" target="_blank" id="mobileVideoLink" style="display: none;">View video</a>
+            </div>
+            <div class="video-download-container">
+
+                <a href="http://f1.media.brightcove.com/8/1213897989/1213897989_1342495506001_NightwatchKeyedNoCrop.mp4?pubId=1213897989&amp;videoId=1254070656" target="_blank" id="downloadLink"><span class="fa fa-download"></span> Download Video</a>
+                <strong>Right-click</strong> on the “Download Video” link to save the video (MP4 format) to your computer.
+            </div>
+        </div>
+
+        <div class="video-list-wrapper">
+            <div class="video-list">
+                <ul class="reduced list-video-player clearfix">
+
+                    <!-- NightWatch Deadbolt -->
+                    <li class="video-item">
+                        <a class="video-play  current-video" data-download-link="http://f1.media.brightcove.com/8/1213897989/1213897989_1342495506001_NightwatchKeyedNoCrop.mp4?pubId=1213897989&amp;videoId=1254070656" href="http://www.youtube.com/embed/m6NTEOr4vqI?rel=0&amp;showinfo=0&amp;autohide=1" title="Click to play this video">
+                            <div class="thumb-wrapper">
+                                <img src="http://img.youtube.com/vi/m6NTEOr4vqI/0.jpg" class="video-item-thumb" alt="Screen capture of NightWatch Deadbolt">
+                            </div>
+                            <div class="video-meta-container">
+                                <input type="hidden" class="youtube-video-id" value="m6NTEOr4vqI">
+                                <h3 class="video-title">NightWatch Deadbolt</h3>
+                                <p class="video-description">NightWatch® feature keeps the deadbolt locked, even if the intruder has a copy of the key.</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- Extra Nightime Security - Master Lock NightWatch™ Deadbolts -->
+                    <li class="video-item">
+                        <a class="video-play" data-download-link="http://f1.media.brightcove.com/8/1213897989/1213897989_1342747699001_NightwatchCombo.mp4?pubId=1213897989&amp;videoId=1243561567" href="http://www.youtube.com/embed/5WN-bHmDmv8?rel=0&amp;showinfo=0&amp;autohide=1" title="Click to play this video">
+                                <div class="thumb-wrapper">
+                                <img src="http://img.youtube.com/vi/5WN-bHmDmv8/0.jpg" class="video-item-thumb" alt="Screen capture of Extra Nightime Security - Master Lock NightWatch™ Deadbolts">
+                            </div>
+                            <div class="video-meta-container">
+                                <input type="hidden" class="youtube-video-id" value="5WN-bHmDmv8">
+                                <h3 class="video-title">Extra Nightime Security - Master Lock NightWatch™ Deadbolts</h3>
+                                <p class="video-description">Master Lock's new deadbolt prevents intruders from entering your home… even if they have your key!</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- En Espanol: Extra Nightime Security - Master Lock NightWatch™ Deadbolts -->
+                    <li class="video-item">
+                        <a class="video-play" data-download-link="http://f1.media.brightcove.com/8/1213897989/1213897989_1342750702001_nightwatch-combo-span.mp4?pubId=1213897989&amp;videoId=1278020736" href="http://www.youtube.com/embed/dwTY8nbHpm4?rel=0&amp;showinfo=0&amp;autohide=1" title="Click to play this video">
+                            <div class="thumb-wrapper">
+                                <img src="http://img.youtube.com/vi/dwTY8nbHpm4/0.jpg" class="video-item-thumb" alt="Screen capture of En Espanol: Extra Nightime Security - Master Lock NightWatch™ Deadbolts ">
+                            </div>
+                            <div class="video-meta-container">
+                                <input type="hidden" class="youtube-video-id" value="dwTY8nbHpm4">
+                                <h3 class="video-title">En Espanol: Extra Nightime Security - Master Lock NightWatch™ Deadbolts </h3>
+                                <p class="video-description">Master Lock's new deadbolt prevents intruders from entering your home… even if they have your key!</p>
+                            </div>
+                        </a>
+
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- end masterlock -->
+
+</div>
+
+</body>
+</html>
