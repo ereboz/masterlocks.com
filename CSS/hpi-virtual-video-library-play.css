@@ -10,6 +10,10 @@
   margin: 25px auto 0 auto;
   font-family: "Roboto", sans-serif;
 }
+.wrapper-video-library-play .sup {
+  vertical-align: super;
+  font-size: smaller;
+}
 .video-wrapper {
   float: left;
   padding: 0 15px;
