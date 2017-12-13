@@ -78,6 +78,7 @@
 .video-list-wrapper .video-list .video-item .video-play .video-meta-container .video-title {
   font-size: 1.125em;
   margin-bottom: 0.25em;
+  margin-top: 0;
 }
 .video-list-wrapper .video-list .video-item .video-play .video-meta-container .video-description {
   color: #000000;
