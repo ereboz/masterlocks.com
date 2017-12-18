@@ -123,9 +123,10 @@
   margin-bottom: 2%;
 }
 .item .item-original-wrapper .item-image img {
-  display: inline-block;
-  max-width: 90px;
-  width: 100%;
+  display: inline-block !important;
+  max-width: 90px !important;
+  height: auto;
+  width: 100% !important;
 }
 .item .item-original-wrapper .replacement-divider {
   width: 100%;

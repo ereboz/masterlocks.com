@@ -6,7 +6,16 @@ div#catalog_content div#home table#Table1 ol li {list-style:decimal; margin-left
 div#catalog_content div#home div.policyquestion {padding:10px; background:#f7f7f7; border:1px solid #ccc; margin-bottom:10px}
 div#catalog_content div#home div.policyquestion ol li, div#catalog_content div#home a {color: #1D6F9E;}
 div#catalog_content div#home table#Table1 ul.heading{margin:10px 0; overflow:hidden; padding:0;width:100%;}
-/* div#catalog_content div#home img{max-width:inherit!important;} */
+
+/* kill this nonsense and do a standard responsive image */
+/*div#catalog_content div#home img{max-width:inherit!important;}*/
+
+div#catalog_content div#home img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 div#faqcontent ul.questionslist li{font-weight:700;padding:3px 0 0}
 div#faqcontent ul.questionans{margin:10px 0 10px 10px}
 div#faqcontent ul.questionans li{border-bottom:1px dotted #111;padding:10px 0}
@@ -23,11 +32,7 @@ div#contactconatainer ul.addresslist li ol li.location{width:180px}
 div#contactconatainer ul.addresslist li ol li.address{width:195px}
 div#contactconatainer ul.addresslist li ol li.mapicon{width:100px;text-align:center}
 
-.hd{ border-bottom: 4px solid #eee;  color: #444;  font-family: arial;  margin-bottom: 0; margin-top: 0px;}
+.hd{ border-bottom: 4px solid #eee;  color: #444;  font-family: montserratregular;  margin-bottom: 0; margin-top: 0px;}
 .hd h1 {background: #fff; bottom: -10px; display: inline-block; padding-right: 8px; position: relative;  font-size: 25px;}
 
-/*HPI ADDITIONS*/
-
-.center {
-    text-align:center;
-}
+.wrapper-main-content{margin-top:20px;}
