@@ -1,0 +1,291 @@
+/* Brian's Grid / General Variables to make life easier
+========================================================================== */
+
+//<editor-fold desc="Grid / General Variables">
+// min-widths
+@phone-xxxs-min: ~"(min-width: 320px)";
+@phone-xxs-min: ~"(min-width: 375px)";
+@phone-min: ~"(min-width: 480px)";
+@tablet-min: ~"(min-width: 768px)";
+@desktop-min: ~"(min-width: 992px)";
+@desktop-large-min: ~"(min-width: 1200px)";
+
+// max-widths
+@phone-xxxs-max: ~"(max-width: 320px)";
+@phone-xxs-max: ~"(max-width: 375px)";
+@phone-max: ~"(max-width: 480px)";
+@tablet-max: ~"(max-width: 768px)";
+@desktop-max: ~"(max-width: 992px)";
+@desktop-large-max: ~"(max-width: 1200px)";
+
+
+// color variables
+@black: #000;
+@font-roboto: "Roboto", sans-serif;
+@font-opensans: "Open Sans",sans-serif;
+@font-title: 'montserratregular', sans-serif;
+@gray-background: #f5f7f9;
+@highlight: #c00;
+@black: #000;
+@blue: #48c;
+@gray-light: #e0e0e0;
+@gray-medium: #5d5e5e;
+@gray-dark: #3f454a;
+@green-light: #bde6c6;
+@green-dark: #197b30;
+@orange: #fa0;
+@red: #d41;
+@white: #fff;
+//</editor-fold>
+
+//<editor-fold desc="Font Awesome icon styles - pdf, download, video, power point, file, zip icon">
+
+.fa.fa-file-pdf-o, .fa.fa-download, .fa.fa-file-video-o, .fa.fa-file-powerpoint-o, .fa.fa-file-text-o, .fa.fa-file-zip-o, .fa.fa-file-word-o, .fa-vcard-o {
+    font-size: 16px !important;
+    margin: 0 5px;
+}
+
+.fa-file-word-o {
+    color: @blue;
+}
+
+.fa-file-pdf-o {
+    color: @red;
+}
+
+.fa-file-powerpoint-o {
+    color: lighten(@red, 20%);
+}
+
+.fa-file-video-o {
+    color: darken(@blue, 20%);
+}
+
+.fa-download {
+    color: lighten(@blue, 10%);
+}
+
+.fa-file-zip-o {
+    color: darken(@blue, 30%);
+}
+//</editor-fold>
+
+/* Virtual Pages (faq lost keys/combo)
+========================================================================== */
+
+/* Page Header
+========================================================================== */
+
+
+//<editor-fold desc="Page Header">
+.virtualpage-lostkeys-wrapper {
+    
+    margin: 25px auto 0 auto;
+    
+    .wrapper-items {
+        margin: 50px 0 20px 0;
+    }
+    
+    .page-header {
+        span {
+            display: block;
+            margin: 20px auto;
+        }
+        
+        .title {
+            font-size: 24px;
+            font-family: @font-title;
+        }
+        
+        .sub-title {
+            font-size: 16px;
+            font-family: @font-title;
+        }
+    }
+    
+    .head-intro {
+        margin: 20px 0;
+    }
+    
+}
+//</editor-fold>
+
+/* Accordion for Lost Keys FAQs
+========================================================================== */
+
+//<editor-fold desc="Accordion for FAQs">
+
+#accordion {
+
+    margin: 0 0 150px 0;
+    
+    .ui-state-active {
+        background-color: @gray-dark;
+        border: 1px solid @gray-light;
+    }
+    
+    h3 {
+        font-size: 14px;
+    }
+    
+    .ui-widget-content {
+        border: none;
+    }
+    
+    div {
+        //border-bottom: 1px solid @gray-light !important;
+    }
+    
+}
+
+.ui-accordion .ui-accordion-header {
+    padding: 10px;
+    cursor: help;
+    text-transform: uppercase;
+    color: @black;
+    font-family: @font-roboto;
+    font-size: 16px;
+}
+
+.ui-state-default {
+    //border: none !important;
+    //background: none !important;
+}
+
+.ui-state-hover {
+    background: none !important;
+}
+
+
+//</editor-fold>
+
+/* FAQ General, FAQ Lost Keys, FAQ Lost Combo Page
+========================================================================== */
+
+//<editor-fold desc="FAQ General, FAQ Lost Keys, FAQ Lost Combo Page">
+
+// had to override much of their default hacks that don't cascade. /cry
+
+.virtualpage-lostkeys-wrapper {
+
+// body text
+
+.highlight {
+    color: @highlight;
+}
+    
+    p {
+            margin: 0 0 10px;
+    }
+    
+    div {
+        p {
+            font-size: 14px;
+            color: @gray-medium;
+    
+            &.store-combo {
+                text-transform: lowercase;
+                font-size: 12px;
+            }
+        }
+    }
+    
+    ol, li {
+        font-size: 14px;
+        color: @gray-medium;
+    }
+    
+    ul li {
+        list-style-type: upper-alpha !important;
+        margin: auto;
+    }
+    
+    ol li {
+        list-style-type: decimal !important;
+        margin: 10px 45px;
+    }
+    
+    ul.bullet {
+        li {
+            list-style-type: disc !important;
+        }
+    }
+    
+    ul.no-bullet {
+        li {
+            list-style-type: none !important;
+        }
+    }
+    
+    
+    // main ul and ol
+    div ul {
+        list-style-type: upper-alpha !important;
+        margin-bottom: 10px;
+     }
+    
+    div ul {
+        ol {
+            list-style-type: decimal !important;
+        }
+    }
+    
+    // headers
+    li,div {
+        .li-header {
+            font-weight: 700;
+            margin: 10px 0;
+            color: @gray-dark;
+        }
+    }
+    
+    // sub-headers
+    ol li {
+        .li-sub-header {
+            font-weight: 600;
+            margin: 0 0 10px 0;
+            color: @gray-medium;
+        }
+    }
+    
+    // display spans as block so no noobs put <br> in the DOM
+    li[class*="serial-number"], li[class*="activation-code-request"] {
+        span {
+            display: block;
+        }
+    }
+    
+    .activation-code-request {
+        span:last-of-type {
+            margin: 0 0 10px 0;
+        }
+    }
+    
+    // FAQ page
+    
+    ul li.hide-list-style-type {
+        list-style-type: none !important;
+    }
+
+    span {
+        a {
+            color: @highlight;
+        }
+    }
+
+}
+
+//</editor-fold>
+
+
+
+
+
+
+
+
+
+
+
+
+
