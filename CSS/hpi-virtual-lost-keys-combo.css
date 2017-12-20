@@ -33,29 +33,31 @@
 ========================================================================== */
 /* Page Header
 ========================================================================== */
-.virtualpage-faq-wrapper {
+.virtualpage-lostkeys-wrapper {
   margin: 25px auto 0 auto;
 }
-.virtualpage-faq-wrapper .page-header span {
+.virtualpage-lostkeys-wrapper .wrapper-items {
+  margin: 50px 0 20px 0;
+}
+.virtualpage-lostkeys-wrapper .page-header span {
   display: block;
   margin: 20px auto;
 }
-.virtualpage-faq-wrapper .page-header .title {
+.virtualpage-lostkeys-wrapper .page-header .title {
   font-size: 24px;
   font-family: 'montserratregular', sans-serif;
 }
-.virtualpage-faq-wrapper .page-header .sub-title {
+.virtualpage-lostkeys-wrapper .page-header .sub-title {
   font-size: 16px;
   font-family: 'montserratregular', sans-serif;
 }
-.virtualpage-faq-wrapper .head-intro {
+.virtualpage-lostkeys-wrapper .head-intro {
   margin: 20px 0;
 }
-/* Accordion for FAQs
+/* Accordion for Lost Keys FAQs
 ========================================================================== */
 #accordion {
   margin: 0 0 150px 0;
-  font-family: "Roboto", sans-serif;
 }
 #accordion .ui-state-active {
   background-color: #3f454a;
@@ -78,84 +80,69 @@
 .ui-state-hover {
   background: none !important;
 }
-.virtualpage-faq-wrapper .sup {
-  vertical-align: super;
-  font-size: smaller;
+/* FAQ General, FAQ Lost Keys, FAQ Lost Combo Page
+========================================================================== */
+.virtualpage-lostkeys-wrapper .highlight {
+  color: #c00;
 }
-.virtualpage-faq-wrapper .highlight {
-  color: #c00 !important;
-}
-.virtualpage-faq-wrapper p {
+.virtualpage-lostkeys-wrapper p {
   margin: 0 0 10px;
 }
-.virtualpage-faq-wrapper div p {
+.virtualpage-lostkeys-wrapper div p {
   font-size: 14px;
   color: #5d5e5e;
 }
-.virtualpage-faq-wrapper div p.foot-note {
+.virtualpage-lostkeys-wrapper div p.store-combo {
   text-transform: lowercase;
   font-size: 12px;
 }
-.virtualpage-faq-wrapper div p.foot-note span {
-  display: block;
-  margin-bottom: 5px;
-}
-.virtualpage-faq-wrapper div p.foot-note span.bold {
-  display: inline;
-  font-weight: 700;
-}
-.virtualpage-faq-wrapper div p.foot-note span.link-to-vault {
-  color: #48c;
-}
-.virtualpage-faq-wrapper ol,
-.virtualpage-faq-wrapper li {
+.virtualpage-lostkeys-wrapper ol,
+.virtualpage-lostkeys-wrapper li {
   font-size: 14px;
   color: #5d5e5e;
 }
-.virtualpage-faq-wrapper ul li {
+.virtualpage-lostkeys-wrapper ul li {
   list-style-type: upper-alpha !important;
   margin: auto;
 }
-.virtualpage-faq-wrapper ol li {
+.virtualpage-lostkeys-wrapper ol li {
   list-style-type: decimal !important;
   margin: 10px 45px;
 }
-.virtualpage-faq-wrapper ul.bullet li {
+.virtualpage-lostkeys-wrapper ul.bullet li {
   list-style-type: disc !important;
 }
-.virtualpage-faq-wrapper ul.no-bullet li,
-.virtualpage-faq-wrapper ol.no-bullet li {
+.virtualpage-lostkeys-wrapper ul.no-bullet li {
   list-style-type: none !important;
-  margin-bottom: 10px;
 }
-.virtualpage-faq-wrapper div ul {
+.virtualpage-lostkeys-wrapper div ul {
   list-style-type: upper-alpha !important;
   margin-bottom: 10px;
 }
-.virtualpage-faq-wrapper div ul ol {
+.virtualpage-lostkeys-wrapper div ul ol {
   list-style-type: decimal !important;
 }
-.virtualpage-faq-wrapper li .li-header,
-.virtualpage-faq-wrapper div .li-header {
+.virtualpage-lostkeys-wrapper li .li-header,
+.virtualpage-lostkeys-wrapper div .li-header {
   font-weight: 700;
   margin: 10px 0;
   color: #3f454a;
 }
-.virtualpage-faq-wrapper ol li .li-sub-header {
+.virtualpage-lostkeys-wrapper ol li .li-sub-header {
   font-weight: 600;
   margin: 0 0 10px 0;
   color: #5d5e5e;
 }
-.virtualpage-faq-wrapper li[class*="serial-number"] span,
-.virtualpage-faq-wrapper li[class*="activation-code-request"] span {
+.virtualpage-lostkeys-wrapper li[class*="serial-number"] span,
+.virtualpage-lostkeys-wrapper li[class*="activation-code-request"] span {
   display: block;
 }
-.virtualpage-faq-wrapper .activation-code-request span:last-of-type {
+.virtualpage-lostkeys-wrapper .activation-code-request span:last-of-type {
   margin: 0 0 10px 0;
 }
-.virtualpage-faq-wrapper ul li.hide-list-style-type {
+.virtualpage-lostkeys-wrapper ul li.hide-list-style-type {
   list-style-type: none !important;
 }
-.virtualpage-faq-wrapper span a {
+.virtualpage-lostkeys-wrapper span a {
   color: #c00;
 }

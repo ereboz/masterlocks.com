@@ -25,6 +25,7 @@
 @font-opensans: "Open Sans",sans-serif;
 @font-title: 'montserratregular', sans-serif;
 @gray-background: #f5f7f9;
+@highlight: #c00;
 @black: #000;
 @blue: #48c;
 @gray-light: #e0e0e0;
@@ -75,14 +76,11 @@
 /* Page Header
 ========================================================================== */
 
+
 //<editor-fold desc="Page Header">
-.virtualpage-lostkeys-wrapper {
+.virtualpage-faq-wrapper {
     
     margin: 25px auto 0 auto;
-    
-    .wrapper-items {
-        margin: 50px 0 20px 0;
-    }
     
     .page-header {
         span {
@@ -108,7 +106,7 @@
 }
 //</editor-fold>
 
-/* Accordion for Lost Keys FAQs
+/* Accordion for FAQs
 ========================================================================== */
 
 //<editor-fold desc="Accordion for FAQs">
@@ -116,6 +114,7 @@
 #accordion {
 
     margin: 0 0 150px 0;
+    font-family: @font-roboto;
     
     .ui-state-active {
         background-color: @gray-dark;
@@ -123,9 +122,7 @@
     }
     
     h3 {
-        //text-transform: uppercase;
-        //color: @black;
-        //font-family: @font-roboto;
+        font-size: 14px;
     }
     
     .ui-widget-content {
@@ -159,93 +156,134 @@
 
 //</editor-fold>
 
-/* FAQ General, FAQ Lost Keys, FAQ Lost Combo Page
-========================================================================== */
 
-//<editor-fold desc="FAQ General, FAQ Lost Keys, FAQ Lost Combo Page">
-
-// had to override much of their default hacks that don't cascade. /cry
-
-.virtualpage-lostkeys-wrapper {
-
+.virtualpage-faq-wrapper {
+    
+    .sup {
+        vertical-align: super;
+        font-size: smaller;
+    }
 // body text
 
-p {
-        margin: 0 0 10px;
+.highlight {
+    color: @highlight !important;
 }
     
-div {
     p {
+            margin: 0 0 10px;
+    }
+    
+    div {
+        p {
+            font-size: 14px;
+            color: @gray-medium;
+        }
+        
+        p {
+            &.foot-note {
+                text-transform: lowercase;
+                font-size: 12px;
+    
+                span {
+                    display: block;
+                    margin-bottom: 5px;
+                    
+                    &.bold {
+                        display: inline;
+                        font-weight: 700;
+                    }
+                }
+                
+                span.link-to-vault {
+                    color: @blue;
+                }
+            }
+        }
+    }
+    
+    ol, li {
         font-size: 14px;
         color: @gray-medium;
     }
-}
-
-ol, li {
-    font-size: 14px;
-    color: @gray-medium;
-}
     
-ul li {
-    list-style-type: upper-alpha !important;
-    margin: auto;
-}
-
-ol li {
-    list-style-type: decimal !important;
-    margin: 10px 45px;
-}
-
-
-
-// main ul and ol
-div ul {
-     list-style-type: upper-alpha !important;
- }
-
-div ul {
-    ol {
+    ul li {
+        list-style-type: upper-alpha !important;
+        margin: auto;
+    }
+    
+    ol li {
         list-style-type: decimal !important;
+        margin: 10px 45px;
     }
-}
-
-// headers
-li,div {
-    .li-header {
-        font-weight: 700;
-        margin: 10px 0;
-        color: @gray-dark;
+    
+    ul.bullet {
+        li {
+            list-style-type: disc !important;
+        }
     }
-}
-
-// sub-headers
-ol li {
-    .li-sub-header {
-        font-weight: 600;
-        margin: 0 0 10px 0;
-        color: @gray-medium;
+    
+    ul.no-bullet, ol.no-bullet {
+        li {
+            list-style-type: none !important;
+            margin-bottom: 10px;
+        }
     }
-}
+    
+    
+    // main ul and ol
+    div ul {
+        list-style-type: upper-alpha !important;
+        margin-bottom: 10px;
+     }
+    
+    div ul {
+        ol {
+            list-style-type: decimal !important;
+        }
+    }
+    
+    // headers
+    li,div {
+        .li-header {
+            font-weight: 700;
+            margin: 10px 0;
+            color: @gray-dark;
+        }
+    }
+    
+    // sub-headers
+    ol li {
+        .li-sub-header {
+            font-weight: 600;
+            margin: 0 0 10px 0;
+            color: @gray-medium;
+        }
+    }
+    
+    // display spans as block so no noobs put <br> in the DOM
+    li[class*="serial-number"], li[class*="activation-code-request"] {
+        span {
+            display: block;
+        }
+    }
+    
+    .activation-code-request {
+        span:last-of-type {
+            margin: 0 0 10px 0;
+        }
+    }
+    
+    // FAQ page
+    
+    ul li.hide-list-style-type {
+        list-style-type: none !important;
+    }
 
-// display spans as block so no one had to put <br> in the DOM
-li[class*="serial-number"], li[class*="activation-code-request"] {
     span {
-        display: block;
+        a {
+            color: @highlight;
+        }
     }
-}
-
-.activation-code-request {
-    span:last-of-type {
-        margin: 0 0 10px 0;
-    }
-}
-
-// FAQ page
-
-ul li.hide-list-style-type {
-    list-style-type: none !important;
-}
-
 
 }
 
