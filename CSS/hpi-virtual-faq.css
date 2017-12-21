@@ -110,7 +110,7 @@
 .virtualpage-faq-wrapper div p.foot-note span.link-to-vault {
   color: #48c;
 }
-.virtualpage-faq-wrapper div p .note .bold {
+.virtualpage-faq-wrapper div p span.note span.bold {
   display: inline;
   font-weight: 700;
 }
