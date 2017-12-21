@@ -114,6 +114,17 @@
   display: inline;
   font-weight: 700;
 }
+.virtualpage-faq-wrapper div span.note {
+  text-transform: lowercase;
+  font-size: 12px;
+}
+.virtualpage-faq-wrapper div span.note span.bold {
+  display: inline;
+  font-weight: 700;
+}
+.virtualpage-faq-wrapper div.note span.bold {
+  font-weight: 700;
+}
 .virtualpage-faq-wrapper ol,
 .virtualpage-faq-wrapper li {
   font-size: 14px;
