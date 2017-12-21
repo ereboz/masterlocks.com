@@ -68,6 +68,8 @@
 .fa-file-zip-o {
     color: darken(@blue, 30%);
 }
+
+
 //</editor-fold>
 
 /* Virtual Pages (faq lost keys/combo)
@@ -164,19 +166,23 @@
         font-size: smaller;
     }
 // body text
-
+    
 .highlight {
     color: @highlight !important;
 }
     
     p {
-            margin: 0 0 10px;
+        margin: 0 0 10px;
     }
     
     div {
         p {
             font-size: 14px;
             color: @gray-medium;
+            
+            &.indent {
+                margin-left: 10%;
+            }
         }
         
         p {
@@ -196,6 +202,13 @@
                 
                 span.link-to-vault {
                     color: @blue;
+                }
+            }
+            
+            .note {
+                .bold {
+                    display: inline;
+                    font-weight: 700;
                 }
             }
         }
@@ -219,6 +232,10 @@
     ul.bullet {
         li {
             list-style-type: disc !important;
+        }
+        
+        span.emphasize {
+            font-style: italic;
         }
     }
     
@@ -284,8 +301,16 @@
             color: @highlight;
         }
     }
-
+    
+    span {
+        &.fa-file-pdf-o {
+            display: inline !important;
+        }
+    }
+    
 }
+
+
 
 //</editor-fold>
 

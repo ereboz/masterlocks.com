@@ -92,6 +92,9 @@
   font-size: 14px;
   color: #5d5e5e;
 }
+.virtualpage-faq-wrapper div p.indent {
+  margin-left: 10%;
+}
 .virtualpage-faq-wrapper div p.foot-note {
   text-transform: lowercase;
   font-size: 12px;
@@ -106,6 +109,10 @@
 }
 .virtualpage-faq-wrapper div p.foot-note span.link-to-vault {
   color: #48c;
+}
+.virtualpage-faq-wrapper div p .note .bold {
+  display: inline;
+  font-weight: 700;
 }
 .virtualpage-faq-wrapper ol,
 .virtualpage-faq-wrapper li {
@@ -122,6 +129,9 @@
 }
 .virtualpage-faq-wrapper ul.bullet li {
   list-style-type: disc !important;
+}
+.virtualpage-faq-wrapper ul.bullet span.emphasize {
+  font-style: italic;
 }
 .virtualpage-faq-wrapper ul.no-bullet li,
 .virtualpage-faq-wrapper ol.no-bullet li {
@@ -158,4 +168,7 @@
 }
 .virtualpage-faq-wrapper span a {
   color: #c00;
+}
+.virtualpage-faq-wrapper span.fa-file-pdf-o {
+  display: inline !important;
 }
