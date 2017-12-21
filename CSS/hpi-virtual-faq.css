@@ -51,6 +51,11 @@
 .virtualpage-faq-wrapper .head-intro {
   margin: 20px 0;
 }
+.virtualpage-faq-wrapper .head-intro-large {
+  margin: 20px 0;
+  font-size: 30px;
+  font-weight: 700;
+}
 /* Accordion for FAQs
 ========================================================================== */
 #accordion {
@@ -84,6 +89,12 @@
 }
 .virtualpage-faq-wrapper .highlight {
   color: #c00 !important;
+}
+.virtualpage-faq-wrapper p.bold {
+  font-weight: 600;
+}
+.virtualpage-faq-wrapper span.bold {
+  font-weight: 600;
 }
 .virtualpage-faq-wrapper p {
   margin: 0 0 10px;
