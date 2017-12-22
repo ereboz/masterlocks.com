@@ -197,3 +197,6 @@
 .virtualpage-faq-wrapper span.fa-file-pdf-o {
   display: inline !important;
 }
+.virtualpage-faq-wrapper span.emphasize {
+  font-style: italic;
+}
