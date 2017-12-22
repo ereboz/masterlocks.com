@@ -106,6 +106,9 @@
 .virtualpage-faq-wrapper div p.indent {
   margin-left: 10%;
 }
+.virtualpage-faq-wrapper div p.indent span {
+  display: block;
+}
 .virtualpage-faq-wrapper div p.foot-note {
   text-transform: lowercase;
   font-size: 12px;
