@@ -34,7 +34,7 @@
 /* Page Header
 ========================================================================== */
 .virtualpage-faq-wrapper {
-  margin: 25px auto 0 auto;
+  margin: 25px auto 50px auto;
 }
 .virtualpage-faq-wrapper .page-header span {
   display: block;
@@ -199,4 +199,33 @@
 }
 .virtualpage-faq-wrapper span.emphasize {
   font-style: italic;
+}
+.virtualpage-faq-wrapper .faq-footer-wrapper {
+  float: left;
+  width: 100%;
+  margin: 0 0 50px 0;
+}
+.virtualpage-faq-wrapper .faq-footer-wrapper .title {
+  font-size: 24px;
+  font-family: 'montserratregular', sans-serif;
+  margin: 0 0 30px 0;
+}
+.virtualpage-faq-wrapper .faq-categories {
+  float: left;
+  width: 100%;
+}
+.virtualpage-faq-wrapper .faq-categories .faqs {
+  width: 70%;
+  margin: 0 auto;
+}
+.virtualpage-faq-wrapper .faq-categories .faqs div {
+  float: left;
+  width: 100%;
+  height: 30px;
+  margin: 5px;
+}
+@media (min-width: 768px) {
+  .virtualpage-faq-wrapper .faq-categories .faqs div {
+    width: 45%;
+  }
 }

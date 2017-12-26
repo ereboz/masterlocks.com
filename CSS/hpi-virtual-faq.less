@@ -82,7 +82,7 @@
 //<editor-fold desc="Page Header">
 .virtualpage-faq-wrapper {
     
-    margin: 25px auto 0 auto;
+    margin: 25px auto 50px auto;
     
     .page-header {
         span {
@@ -344,6 +344,49 @@
     span.emphasize {
         font-style: italic;
     }
+    
+    // faq-footer-wrapper
+    
+    .faq-footer-wrapper {
+        float: left;
+        width: 100%;
+        margin: 0 0 50px 0;
+    
+        .title {
+            
+            font-size: 24px;
+            font-family: @font-title;
+            margin: 0 0 30px 0;
+        }
+    }
+        .faq-categories {
+            float: left;
+            width: 100%;
+            
+            .faqs {
+                //float: left;
+                width: 70%;
+                margin: 0 auto;
+                
+                div {
+                    float: left;
+                    width: 100%;
+                    height: 30px;
+                    //border: 1px  dotted @gray-medium;
+                    margin: 5px;
+                    
+                    @media @tablet-min {
+                        width: 45%;
+                    }
+                }
+                
+            
+            }
+        
+        }
+    
+
+    
 }
 
 
