@@ -1,0 +1,37 @@
+/* Brian's Grid / General Variables to make life easier
+
+append this to the 1.3core.css file to owerwride defaults
+========================================================================== */
+/* Contect Us (http://masterlocks.com/custom/contactus)
+========================================================================== */
+#contactuscontent ul {
+  background-color: #f4f4f4;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  padding: 15px;
+}
+#contactuscontent li input[type=text],
+#contactuscontent li input[type=tel],
+#contactuscontent li textarea {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px dotted #5d5e5e;
+}
+#contactuscontent li input[type=text]:focus,
+#contactuscontent li input[type=tel]:focus,
+#contactuscontent li textarea:focus {
+  border: 1px solid #5d5e5e;
+  background-color: #e2f4e6;
+}
+#contactuscontent li span.contactus_lbl {
+  color: #000;
+  font-weight: 600;
+}

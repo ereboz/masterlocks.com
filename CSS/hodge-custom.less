@@ -1,0 +1,87 @@
+/* Brian's Grid / General Variables to make life easier
+
+append this to the 1.3core.css file to owerwride defaults
+========================================================================== */
+
+//<editor-fold desc="Grid / General Variables">
+// min-widths
+@phone-xxxs-min: ~"(min-width: 320px)";
+@phone-xxs-min: ~"(min-width: 375px)";
+@phone-min: ~"(min-width: 480px)";
+@tablet-min: ~"(min-width: 768px)";
+@desktop-min: ~"(min-width: 992px)";
+@desktop-large-min: ~"(min-width: 1200px)";
+
+// max-widths
+@phone-xxxs-max: ~"(max-width: 320px)";
+@phone-xxs-max: ~"(max-width: 375px)";
+@phone-max: ~"(max-width: 480px)";
+@tablet-max: ~"(max-width: 768px)";
+@desktop-max: ~"(max-width: 992px)";
+@desktop-large-max: ~"(max-width: 1200px)";
+
+
+// color variables
+@black: #000;
+@font-roboto: "Roboto", sans-serif;
+@font-opensans: "Open Sans",sans-serif;
+@font-title: 'montserratregular', sans-serif;
+@gray-background: #f5f7f9;
+@highlight: #c00;
+@black: #000;
+@blue: #48c;
+@gray-superlight: #f4f4f4;
+@gray-light: #e0e0e0;
+@gray-medium: #5d5e5e;
+@gray-dark: #3f454a;
+@green-light: #bde6c6;
+@green-dark: #197b30;
+@orange: #fa0;
+@red: #d41;
+@white: #fff;
+
+// mixins
+
+.border-radius (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+    
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+//</editor-fold>
+
+
+/* Contect Us (http://masterlocks.com/custom/contactus)
+========================================================================== */
+
+#contactuscontent {
+    
+    ul {
+        background-color: @gray-superlight;
+        .border-radius();
+        padding: 15px;
+    }
+    
+    li {
+        input[type=text], input[type=tel], textarea {
+            .border-radius();
+            border: 1px dotted @gray-medium;
+            
+            &:focus {
+                border: 1px solid @gray-medium;
+                background-color: lighten(@green-light,10%);
+            }
+        }
+        
+        span.contactus_lbl {
+            color: @black;
+            font-weight: 600;
+            
+        }
+    }
+    
+}
