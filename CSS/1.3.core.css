@@ -3278,6 +3278,8 @@ padding:0;
 }
 
 
+
+
 /* Brian's Grid / General Variables to make life easier
 
 append this to the 1.3core.css file to owerwride defaults
@@ -3315,3 +3317,53 @@ append this to the 1.3core.css file to owerwride defaults
     color: #000;
     font-weight: 600;
 }
+/* Shipping Quote (http://masterlocks.com/custom/shippingquote/)
+========================================================================== */
+.shippingquoteContent ul,
+#authresellcontent ul {
+    background-color: #f4f4f4;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    padding: 15px;
+    margin: 0 0 20px 0;
+}
+.shippingquoteContent li label,
+#authresellcontent li label {
+    color: #000;
+    font-weight: 600;
+}
+.shippingquoteContent li input[type=text],
+#authresellcontent li input[type=text],
+.shippingquoteContent li input[type=tel],
+#authresellcontent li input[type=tel],
+.shippingquoteContent li textarea,
+#authresellcontent li textarea {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px dotted #5d5e5e !important;
+}
+.shippingquoteContent li input[type=text]:focus,
+#authresellcontent li input[type=text]:focus,
+.shippingquoteContent li input[type=tel]:focus,
+#authresellcontent li input[type=tel]:focus,
+.shippingquoteContent li textarea:focus,
+#authresellcontent li textarea:focus {
+    border: 1px solid #5d5e5e !important;
+    background-color: #e2f4e6;
+}
+#authresellcontent {
+    float: left;
+}
+#authresellcontent ul {
+    float: left;
+    margin: 0 0 20px 0;
+}
+

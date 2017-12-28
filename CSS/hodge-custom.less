@@ -85,3 +85,49 @@ append this to the 1.3core.css file to owerwride defaults
     }
     
 }
+
+/* Shipping Quote (http://masterlocks.com/custom/shippingquote/)
+========================================================================== */
+
+
+
+.shippingquoteContent, #authresellcontent {
+    
+    ul {
+        background-color: @gray-superlight;
+        .border-radius();
+        padding: 15px;
+        margin: 0 0 20px 0;
+    }
+    
+    li {
+        
+        label {
+            color: @black;
+            font-weight: 600;
+        }
+        
+        input[type=text], input[type=tel], textarea {
+            .border-radius();
+            border: 1px dotted @gray-medium !important;
+            
+            &:focus {
+                border: 1px solid @gray-medium !important;
+                background-color: lighten(@green-light,10%);
+            }
+        }
+        
+    }
+    
+}
+
+// Authorized Reseller Specific (http://masterlocks.com/authorizedreseller/application)
+#authresellcontent {
+    float: left;
+    
+    ul {
+        float: left;
+        margin: 0 0 20px 0;
+    }
+
+}
