@@ -220,3 +220,6 @@ li.actionslink a.prodlink{background-position:39px -957px}
     div#apparel1productlist ul.productitem li.actionslink ol.qualifiers{padding-left:0;}
     div#apparel1productlist ul.productitem li.prodprice{text-indent:0;}
 }
+
+/* master-270 added red globally. was currently only applied to media <= tablet */
+div#apparel1productlist li.prodprice span.yourprice, span.price{font-size:16px; font-weight:bold; color:#cf3341;}
