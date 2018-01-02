@@ -465,9 +465,9 @@ div.owl-carousel.brandscarousel .nextitem {
   top: -30px;
 }
 .resource_center .resource_center_content span.icon i.fa {
-  font-size: 14px;
+  font-size: 30px;
   color: #fff;
-  margin-top: 23px;
+  margin-top: 16px;
 }
 .resource_center .resource_center_content:hover {
   cursor: pointer;
