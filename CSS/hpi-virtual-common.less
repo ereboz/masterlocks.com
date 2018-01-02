@@ -1,0 +1,170 @@
+/* Brian's (javaBoxer) Grid Variables to make life easier
+========================================================================== */
+
+//<editor-fold desc="Grid / General Variables">
+// min-widths
+@phone-xxxs-min: ~"(min-width: 320px)";
+@phone-xxs-min: ~"(min-width: 375px)";
+@phone-min: ~"(min-width: 480px)";
+@tablet-min: ~"(min-width: 768px)";
+@desktop-min: ~"(min-width: 992px)";
+@desktop-large-min: ~"(min-width: 1200px)";
+
+// max-widths
+@phone-xxxs-max: ~"(max-width: 320px)";
+@phone-xxs-max: ~"(max-width: 375px)";
+@phone-max: ~"(max-width: 480px)";
+@tablet-max: ~"(max-width: 768px)";
+@desktop-max: ~"(max-width: 992px)";
+@desktop-large-max: ~"(max-width: 1200px)";
+
+
+// font variables
+@font-roboto: "Roboto", sans-serif;
+@font-opensans: "Open Sans",sans-serif;
+@font-mukta: 'Mukta Malar', sans-serif;
+@font-verdana: 'Verdana', sans-serif;
+
+// color variables
+@black: #000;
+@blue: #48c;
+@gray-light: #f8f8f8;
+@gray-medium: #e0e1e2;
+@gray-dark: #2b2b2b;
+@green-light: #bde6c6;
+@orange: #fa0;
+@red: #e1261c;
+@white: #fff;
+
+//</editor-fold>
+
+
+.shipping-policy, .return-policy {
+    font-family: @font-verdana;
+    
+    p {
+        color: @gray-dark;
+        width: 95%;
+    }
+    
+    .container {
+        border: 1px dotted @gray-medium;
+        float: left;
+        margin-bottom: 50px;
+    }
+    
+    .content-wrapper {
+        padding: 10px 20px;
+        
+        h3, h4, h5 {
+            margin: 40px 0 10px 0;
+        }
+        
+        ol {
+            > li {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    
+    .main-content {
+        //.make-md-column(9);
+        width: 100%;
+        float: left;
+        margin-bottom: 50px;
+        
+        @media @tablet-min {
+            width: 75%;
+        }
+        
+        .title {
+            font-size: 20px;
+            margin: 40px 0 10px 0;
+        }
+        
+        .page-separator {
+            border-bottom: 1px solid @gray-light;
+            width: 70%;
+            margin: 30px auto;
+        }
+        
+        ul.bullet {
+            li {
+                list-style-type: disc !important;
+                margin-left: 40px;
+                color: @gray-dark;
+            }
+        }
+        
+
+    }
+    
+    .helper-content {
+        //.make-md-column(3);
+        width: 100%;
+        float: none;
+        clear: left;
+        border-top: 1px solid @gray-light;
+        padding-top: 30px;
+        
+        @media @tablet-min {
+            width: 25%;
+            float: left;
+            clear: none;
+            border-left: 1px dotted @gray-medium;
+            border-top: none;
+            margin-top: 20px;
+        }
+        
+        
+        .call-us-wrapper {
+            margin-bottom: 50px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed @gray-medium;
+            text-align: center;
+            
+            .fa-phone {
+                font-size: 30px;
+                margin-bottom: 15px;
+            }
+            
+            .phone-text {
+                font-weight: normal;
+                
+                p {
+                    color: @black;
+                }
+            }
+            
+            .phone-phone-number {
+                font-size: 20px;
+                font-weight: bold;
+            }
+            
+        }
+        
+        .chat-wrapper {
+            text-align: center;
+            
+            .glyphicon-user {
+                font-size: 30px;
+                margin-bottom: 15px;
+            }
+            
+            .chat-text {
+                font-weight: normal;
+                margin-bottom: 10px;
+            }
+            
+            .chat-link {
+            
+            }
+        }
+        
+    }
+    
+    .sub {
+        //vertical-align: super;
+        font-size: 10px;
+    }
+}

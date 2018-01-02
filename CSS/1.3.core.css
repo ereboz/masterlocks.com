@@ -490,7 +490,7 @@ span.aslowastext {
 span.yourprice, span.price {
     font-size: 17px;
     display: inline;
-    color: #43b1ec;
+    color: #cf3341 !important;
 }
 
 .addtocart_errormsg {
