@@ -44,7 +44,7 @@
 /* 2 Rows of Product
 ========================================================================== */
 div#catalog_content div#home img {
-  max-width: none;
+  max-width: 90px !important;
 }
 .wrapper-hidden-shackle-reference {
   margin: 25px auto 0 auto;
