@@ -1,67 +1,88 @@
 /* Brian's (javaBoxer) Grid Variables to make life easier
 ========================================================================== */
 .shipping-policy,
-.return-policy {
+.return-policy,
+.privacy-policy {
   font-family: 'Verdana', sans-serif;
 }
 .shipping-policy p,
-.return-policy p {
+.return-policy p,
+.privacy-policy p {
   color: #2b2b2b;
   width: 95%;
 }
+.shipping-policy .highlight,
+.return-policy .highlight,
+.privacy-policy .highlight {
+  font-size: 12px;
+  font-weight: 700;
+  color: #e1261c;
+}
 .shipping-policy .container,
-.return-policy .container {
+.return-policy .container,
+.privacy-policy .container {
   border: 1px dotted #e0e1e2;
   float: left;
   margin-bottom: 50px;
 }
 .shipping-policy .content-wrapper,
-.return-policy .content-wrapper {
+.return-policy .content-wrapper,
+.privacy-policy .content-wrapper {
   padding: 10px 20px;
 }
 .shipping-policy .content-wrapper h3,
 .return-policy .content-wrapper h3,
+.privacy-policy .content-wrapper h3,
 .shipping-policy .content-wrapper h4,
 .return-policy .content-wrapper h4,
+.privacy-policy .content-wrapper h4,
 .shipping-policy .content-wrapper h5,
-.return-policy .content-wrapper h5 {
+.return-policy .content-wrapper h5,
+.privacy-policy .content-wrapper h5 {
   margin: 40px 0 10px 0;
 }
 .shipping-policy .content-wrapper ol > li,
-.return-policy .content-wrapper ol > li {
+.return-policy .content-wrapper ol > li,
+.privacy-policy .content-wrapper ol > li {
   margin-bottom: 10px;
 }
 .shipping-policy .main-content,
-.return-policy .main-content {
+.return-policy .main-content,
+.privacy-policy .main-content {
   width: 100%;
   float: left;
   margin-bottom: 50px;
 }
 @media (min-width: 768px) {
   .shipping-policy .main-content,
-  .return-policy .main-content {
+  .return-policy .main-content,
+  .privacy-policy .main-content {
     width: 75%;
   }
 }
 .shipping-policy .main-content .title,
-.return-policy .main-content .title {
+.return-policy .main-content .title,
+.privacy-policy .main-content .title {
   font-size: 20px;
   margin: 40px 0 10px 0;
 }
 .shipping-policy .main-content .page-separator,
-.return-policy .main-content .page-separator {
+.return-policy .main-content .page-separator,
+.privacy-policy .main-content .page-separator {
   border-bottom: 1px solid #f8f8f8;
   width: 70%;
   margin: 30px auto;
 }
 .shipping-policy .main-content ul.bullet li,
-.return-policy .main-content ul.bullet li {
+.return-policy .main-content ul.bullet li,
+.privacy-policy .main-content ul.bullet li {
   list-style-type: disc !important;
   margin-left: 40px;
   color: #2b2b2b;
 }
 .shipping-policy .helper-content,
-.return-policy .helper-content {
+.return-policy .helper-content,
+.privacy-policy .helper-content {
   width: 100%;
   float: none;
   clear: left;
@@ -70,7 +91,8 @@
 }
 @media (min-width: 768px) {
   .shipping-policy .helper-content,
-  .return-policy .helper-content {
+  .return-policy .helper-content,
+  .privacy-policy .helper-content {
     width: 25%;
     float: left;
     clear: none;
@@ -80,45 +102,54 @@
   }
 }
 .shipping-policy .helper-content .call-us-wrapper,
-.return-policy .helper-content .call-us-wrapper {
+.return-policy .helper-content .call-us-wrapper,
+.privacy-policy .helper-content .call-us-wrapper {
   margin-bottom: 50px;
   padding-bottom: 20px;
   border-bottom: 2px dashed #e0e1e2;
   text-align: center;
 }
 .shipping-policy .helper-content .call-us-wrapper .fa-phone,
-.return-policy .helper-content .call-us-wrapper .fa-phone {
+.return-policy .helper-content .call-us-wrapper .fa-phone,
+.privacy-policy .helper-content .call-us-wrapper .fa-phone {
   font-size: 30px;
   margin-bottom: 15px;
 }
 .shipping-policy .helper-content .call-us-wrapper .phone-text,
-.return-policy .helper-content .call-us-wrapper .phone-text {
+.return-policy .helper-content .call-us-wrapper .phone-text,
+.privacy-policy .helper-content .call-us-wrapper .phone-text {
   font-weight: normal;
 }
 .shipping-policy .helper-content .call-us-wrapper .phone-text p,
-.return-policy .helper-content .call-us-wrapper .phone-text p {
+.return-policy .helper-content .call-us-wrapper .phone-text p,
+.privacy-policy .helper-content .call-us-wrapper .phone-text p {
   color: #000;
 }
 .shipping-policy .helper-content .call-us-wrapper .phone-phone-number,
-.return-policy .helper-content .call-us-wrapper .phone-phone-number {
+.return-policy .helper-content .call-us-wrapper .phone-phone-number,
+.privacy-policy .helper-content .call-us-wrapper .phone-phone-number {
   font-size: 20px;
   font-weight: bold;
 }
 .shipping-policy .helper-content .chat-wrapper,
-.return-policy .helper-content .chat-wrapper {
+.return-policy .helper-content .chat-wrapper,
+.privacy-policy .helper-content .chat-wrapper {
   text-align: center;
 }
 .shipping-policy .helper-content .chat-wrapper .glyphicon-user,
-.return-policy .helper-content .chat-wrapper .glyphicon-user {
+.return-policy .helper-content .chat-wrapper .glyphicon-user,
+.privacy-policy .helper-content .chat-wrapper .glyphicon-user {
   font-size: 30px;
   margin-bottom: 15px;
 }
 .shipping-policy .helper-content .chat-wrapper .chat-text,
-.return-policy .helper-content .chat-wrapper .chat-text {
+.return-policy .helper-content .chat-wrapper .chat-text,
+.privacy-policy .helper-content .chat-wrapper .chat-text {
   font-weight: normal;
   margin-bottom: 10px;
 }
 .shipping-policy .sub,
-.return-policy .sub {
+.return-policy .sub,
+.privacy-policy .sub {
   font-size: 10px;
 }
