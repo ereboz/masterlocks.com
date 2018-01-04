@@ -222,4 +222,18 @@ li.actionslink a.prodlink{background-position:39px -957px}
 }
 
 /* master-270 added red globally. was currently only applied to media <= tablet */
-div#apparel1productlist li.prodprice span.yourprice, span.price{font-size:16px; font-weight:bold; color:#cf3341;}
+.plpmsrpprice span.price {
+    color: #cf3341 !important;
+}
+
+.prodprice .price {
+    color: #43b1ec !important;
+}
+
+.aslowasprice .priceaslowas {
+    color: #43b1ec !important;
+}
+
+span.aslowasprice {
+    color: #43b1ec !important;
+}
