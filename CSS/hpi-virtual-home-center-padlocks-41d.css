@@ -74,7 +74,7 @@
 }
 @media (min-width: 768px) {
   .item-wrapper {
-    width: 33%;
+    width: 50%;
   }
 }
 @media (min-width: 992px) {
@@ -109,11 +109,12 @@
   text-align: center;
   width: 50%;
   float: left;
-  min-height: 281px;
+  min-height: 300px;
   border-right: 1px dotted #929292;
 }
 .item .item-image-wrapper .item-title {
-  margin-bottom: 12%;
+  margin-bottom: 10%;
+  min-height: 60px;
 }
 .item .item-image-wrapper .item-title .keyway {
   text-align: center;
@@ -127,6 +128,9 @@
 }
 .item .item-image-wrapper .item-title .keyway.replacement {
   color: #ca0f0f;
+}
+.item .item-image-wrapper .item-title .keyway span {
+  display: block;
 }
 .item .item-image-wrapper .item-image.retail img {
   display: inline-block;
