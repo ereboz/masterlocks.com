@@ -45,11 +45,11 @@
     display: inline-block;
     border: 1px solid @gray-light;
     .rounded-corners();
-    padding: 8%;
-    height: 35px;
+    padding: 4%;
+    height: 25px;
     background: white;
     font-family: @font-roboto;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 700;
     text-decoration: none;
     text-transform: none;
@@ -72,7 +72,6 @@
     padding: 14px 5px 5px 10px;
     overflow: hidden;
     font-family: "Roboto Condensed",sans-serif;
-    font-size: 12px;
     color: @black;
     text-decoration: none;
     text-transform: uppercase;
@@ -219,9 +218,13 @@
         text-align: center;
         width: 50%;
         float: left;
-        min-height: 300px;
+        min-height: 315px;
         border-right: 1px dotted @gray-medium;
-    
+        
+        @media @tablet-min {
+            min-height: 300px;
+        }
+        
         .item-title {
             margin-bottom: 10%;
             min-height: 60px;
@@ -231,7 +234,7 @@
             .keyway {
                 text-align: center;
                 font-weight: 700;
-                font-size: 15px;
+                font-size: 13px;
                 color: @red;
                 margin-top: 12px;
                 
@@ -302,7 +305,7 @@
         padding-top: 7px;
         width: 100%;
         float: left;
-        min-height: 125px;
+        min-height: 80px;
         background-color: lighten(@gray-light, 9%);
         border-top: 1px dotted @gray-medium;
         
@@ -317,9 +320,8 @@
             }
     
             .wrapper-title {
-                font-size: 18px;
+                font-size: 15px;
                 font-weight: 700;
-                margin: 0 0 5% 0;
                 text-align: center;
                 
                 .details {
