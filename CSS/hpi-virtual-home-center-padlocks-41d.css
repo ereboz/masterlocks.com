@@ -153,13 +153,13 @@
   display: inline-block;
 }
 .item .item-image-wrapper.retail {
-  background-color: #f8fcf9;
+  background-color: #fafafa;
 }
 .item .item-image-wrapper.retail .retail-message {
   font-size: 11px;
 }
 .item .item-image-wrapper.replacement {
-  background-color: #fffaf0;
+  background-color: #f2f2f2;
 }
 .item .item-image-wrapper.replacement .replacement-message {
   font-size: 11px;
