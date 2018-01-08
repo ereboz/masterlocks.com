@@ -1,0 +1,711 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<combres xmlns='urn:combres'>
+  <filters>
+    <filter type="Combres.Filters.FixUrlsInCssFilter, Combres" />
+    <filter type="Combres.Filters.DotLessCssFilter, Combres"	acceptedResourceSets="dotLessCss" />
+  </filters>
+  <cssMinifiers>
+    <minifier name="yui" type="Combres.Minifiers.YuiCssMinifier, Combres">
+      <param name="CssCompressionType" type="string" value="StockYuiCompressor" />
+      <param name="ColumnWidth" type="int" value="-1" />
+    </minifier>
+  </cssMinifiers>
+  <jsMinifiers>
+    <minifier name="msajax" type="Combres.Minifiers.MSAjaxJSMinifier, Combres" binderType="Combres.Binders.SimpleObjectBinder, Combres">
+      <param name="CollapseToLiteral" type="bool" value="true" />
+      <param name="EvalsAreSafe" type="bool" value="true" />
+      <param name="MacSafariQuirks" type="bool" value="true" />
+      <param name="CatchAsLocal" type="bool" value="true" />
+      <param name="LocalRenaming" type="string" value="CrunchAll" />
+      <param name="OutputMode" type="string" value="SingleLine" />
+      <param name="RemoveUnneededCode" type="bool" value="true" />
+      <param name="StripDebugStatements" type="bool" value="true" />
+    </minifier>
+  </jsMinifiers>
+
+  <resourceSets url="~/combres.axd" defaultDuration="100" localChangeMonitorInterval="10"   remoteChangeMonitorInterval="15" defaultVersion="auto"  defaultDebugEnabled="false" defaultVersionGenerator="Combres.VersionGenerators.HashCodeVersionGenerator" >
+    <!--Duration : in days that the browser and server should cache the computed result of a resource set.
+version: Any number or string. The version, if changed, will invalidate the browser's cache and the server's cache. 
+So, if one or more files in the resource set is updated and ready to be tested or pushed into production,  
+you would want to change the resource set's version so that the new content can be used
+-->
+
+    <!--Global Apparel  -->
+    <!-- This resource set is used in common CSS across all the master templates of a store.  -->
+    <resourceSet name="GlobalApparelCoreCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/GlobalApparel/CSS/1.1.bootstrap.min.css" />
+      <resource path="~/Templates/GlobalApparel/CSS/1.3.core.css" />      
+    </resourceSet>
+    <!-- This resource set is used only in home page - page_c_home.aspx under Category view.-->
+    <resourceSet name="GlobalApparelHomeCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/GlobalApparel/CSS/2.home.css" />
+    </resourceSet>
+    <!-- This resource set is used on catalog pages-->
+    <resourceSet name="GlobalApparelCatalogCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource reference="GlobalApparelCoreCSS" />
+      <resource path="~/Templates/GlobalApparel/CSS/1.2.widgets.css" />
+    </resourceSet>
+    <!--This resource set is used in Category home page & Product listing page - page_c_category.aspx under Category view. -->
+    <resourceSet name="GlobalApparelCategoryCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/GlobalApparel/CSS/3.1.categoryhome1.css" />
+      <resource path="~/Templates/GlobalApparel/CSS/3.2.categoryhome6.css" />
+      <resource path="~/Templates/GlobalApparel/CSS/4.8.article1.css" />
+    </resourceSet>
+    <!-- This resource set is used for all Product Details page & Mini Template - page_c_product.aspx under Product view. -->
+    <resourceSet name="GlobalApparelProductCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/GlobalApparel/CSS/4.1.apparel1.css" />
+      <resource path="~/Templates/GlobalApparel/CSS/4.2.apparel2.css" />
+      <resource path="~/Templates/GlobalApparel/CSS/4.3.apparel3.css" />
+      <resource path="~/Templates/GlobalApparel/CSS/4.4.apparelgroup1.css" />
+      <resource path="~/Templates/GlobalApparel/CSS/4.5.apparelgroup2.css" />
+      <resource path="~/Templates/GlobalApparel/CSS/4.6.general-sporting-equipment1.css" />
+      <resource path="~/Templates/GlobalApparel/CSS/4.7.giftcertificate1.css" />
+      <resource path="~/Templates/GlobalApparel/CSS/4.8.article1.css" />
+
+    </resourceSet>
+    <!-- This resource set is used in Checkout page & Myaccount page and called in checkout master & myaccount master page. -->
+    <resourceSet name="GlobalApparelCheckoutCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/GlobalApparel/CSS/5.1.checkout.css" />
+      <resource path="~/Templates/GlobalApparel/CSS/5.2.orderentry.css" />
+      <resource path="~/Templates/GlobalApparel/CSS/1.2.widgets.css" />
+    </resourceSet>
+    <!-- This resource set is used in My account page and called in my account master page.-->
+    <resourceSet name="GlobalApparelMyaccountCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/GlobalApparel/CSS/6.myaccount.css" />
+    </resourceSet>
+
+
+    <!--Serenity -->
+    <!-- This resource set is used in common CSS across all the master templates of a store.  -->
+    <resourceSet name="SerenityCoreCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/Serenity/CSS/1.1.bootstrap.min.css" />
+      <resource path="~/Templates/Serenity/CSS/1.3.core.css" />
+    </resourceSet>
+    <!-- This resource set is used only in home page - page_c_home.aspx under Category view. -->
+    <resourceSet name="SerenityHomeCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/Serenity/CSS/2.home.css" />
+    </resourceSet>
+    <!-- This resource set is used in Category home page & Product listing page - page_c_category.aspx under Category view. -->
+    <resourceSet name="SerenityCategoryCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/Serenity/CSS/3.categoryhome4.css" />
+    </resourceSet>
+    <!-- This resource set is used in common CSS across all the master templates of a store.  -->
+    <resourceSet name="SerenityQuickViewBootstrapCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/Serenity/CSS/1.1.bootstrap.min.css" />
+      <resource path="~/Templates/Serenity/CSS/1.2.widgets.css" />
+    </resourceSet>
+    <!-- This resource set is used in Catalog master templates of a store. -->
+    <resourceSet name="SerenityCatalogCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource reference="SerenityCoreCSS" />
+      <resource path="~/Templates/Serenity/CSS/1.2.widgets.css" />
+    </resourceSet>
+    <!-- This resource set is used for all Product Details page & Mini Template - page_c_product.aspx under Product view. -->
+    <resourceSet name="SerenityProductCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/Serenity/CSS/4.1.cosmetics1.css" />
+      <!--<resource path="~/Templates/Serenity/CSS/4.5.cosmetics1_quickview1.css" />-->
+    </resourceSet>
+    <!-- This resource set is used in Checkout page & My account page and called in checkout master & my account master page. -->
+    <resourceSet name="SerenityCheckoutCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/Serenity/CSS/5.1.checkout.css" />
+      <resource path="~/Templates/Serenity/CSS/5.2.orderentry.css" />
+      <resource path="~/Templates/Serenity/CSS/1.2.widgets.css" />
+    </resourceSet>
+    <!-- This resource set is used in My account page and called in my account master page. -->
+    <resourceSet name="SerenityMyaccountCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/Serenity/CSS/6.myaccount.css" />
+    </resourceSet>
+
+    <!--ToolsStore -->
+    <!-- This resource set is used in common CSS across all the master templates of a store.  -->
+    <resourceSet name="ToolsStoreCoreCSS" type="css" compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/ToolsStore/CSS/1.1.bootstrap.min.css" />
+      <resource path="~/Templates/ToolsStore/CSS/1.3.core.css" />
+    </resourceSet>
+    <!-- This resource set is used only in home page - page_c_home.aspx under Category view. -->
+    <resourceSet name="ToolsStoreHomeCSS" type="css" compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/ToolsStore/CSS/2.home.css" />
+    </resourceSet>
+    <!-- This resource set is used in Catalog master templates of a store. -->
+    <resourceSet name="ToolsStoreCatalogCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/ToolsStore/CSS/1.1.bootstrap.min.css" />
+      <resource path="~/Templates/ToolsStore/CSS/1.2.widgets.css" />
+      <resource path="~/Templates/ToolsStore/CSS/1.3.core.css" />
+    </resourceSet>
+    <!-- This resource set is used in Category home page & Product listing page - page_c_category.aspx under Category view. -->
+    <resourceSet name="ToolsStoreCategoryCSS" type="css" compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/ToolsStore/CSS/1.1.bootstrap.min.css" />
+      <resource path="~/Templates/ToolsStore/CSS/3.1.productlist.css" />
+      <resource path="~/Templates/ToolsStore/CSS/3.2.productlist2.css" />
+    </resourceSet>
+    <!-- This resource set is used for all Product Details page & Mini Template - page_c_product.aspx under Product view. -->
+    <resourceSet name="ToolsStoreProductCSS" type="css" compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/ToolsStore/CSS/4.1.tools1.css" />
+      <resource path="~/Templates/ToolsStore/CSS/4.2.article1.css" />
+      <resource path="~/Templates/ToolsStore/CSS/4.3.tools2.css" />
+      <!--<resource path="~/Templates/ToolsStore/CSS/4.4.tools1quickview.css" />-->
+    </resourceSet>
+    <!-- This resource set is used in Checkout page & Myaccount page and called in checkout master & myaccount master page. -->
+    <resourceSet name="ToolsStoreCheckoutCSS" type="css" compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/ToolsStore/CSS/5.1.checkout.css" />
+      <resource path="~/Templates/ToolsStore/CSS/5.2.orderentry.css" />
+      <resource path="~/Templates/ToolsStore/CSS/1.2.widgets.css" />
+    </resourceSet>
+    <!-- This resource set is used in Myaccount page and called in myaccount master page. -->
+    <resourceSet name="ToolsStoreMyaccountCSS" type="css" compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/ToolsStore/CSS/6.myaccount.css" />
+    </resourceSet>
+
+    <!--B2B Global Apparel -->
+    <!-- This resource set is used in common CSS across all the master templates of a store.  -->
+    <resourceSet name="B2BGlobalApparelCoreCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/B2BGlobalApparel/CSS/1.1.bootstrap.min.css" />
+      <resource path="~/Templates/B2BGlobalApparel/CSS/1.3.core.css" />
+    </resourceSet>
+    <resourceSet name="B2BGlobalApparelLoginCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/B2BGlobalApparel/CSS/1.1.bootstrap.min.css" />
+      <resource path="~/Templates/B2BGlobalApparel/CSS/1.3.core.css" />
+    </resourceSet>
+    <!-- This resource set is used only in home page - page_c_home.aspx under Category view. -->
+    <resourceSet name="B2BGlobalApparelHomeCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/B2BGlobalApparel/CSS/2.home.css" />
+    </resourceSet>
+    <!-- This resource set is used on catalog pages-->
+    <resourceSet name="B2BGlobalApparelCatalogCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource reference="B2BGlobalApparelCoreCSS" />
+      <resource path="~/Templates/B2BGlobalApparel/CSS/1.2.widgets.css" />
+    </resourceSet>
+    <!-- This resource set is used in Category home page & Product listing page - page_c_category.aspx under Category view. -->
+    <resourceSet name="B2BGlobalApparelCategoryCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/B2BGlobalApparel/CSS/3.1.categoryhome1.css" />
+      <resource path="~/Templates/B2BGlobalApparel/CSS/3.2.categoryhome6.css" />
+    </resourceSet>
+    <!-- This resource set is used for all Product Details page & Mini Template - page_c_product.aspx under Product view. -->
+    <resourceSet name="B2BGlobalApparelProductCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/B2BGlobalApparel/CSS/4.1.apparel1.css" />
+      <resource path="~/Templates/B2BGlobalApparel/CSS/4.2.apparel2.css" />
+      <resource path="~/Templates/B2BGlobalApparel/CSS/4.3.apparel3.css" />
+      <resource path="~/Templates/B2BGlobalApparel/CSS/4.4.general-sporting-equipment1.css" />
+    </resourceSet>
+    <!-- This resource set is used in Checkout page & Myaccount page and called in checkout master & myaccount master page. -->
+    <resourceSet name="B2BGlobalApparelCheckoutCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/B2BGlobalApparel/CSS/5.1.checkout.css" />
+      <resource path="~/Templates/B2BGlobalApparel/CSS/5.2.orderentry.css" />
+      <resource path="~/Templates/B2BGlobalApparel/CSS/1.2.widgets.css" />
+    </resourceSet>
+    <!-- This resource set is used in Myaccount page and called in myaccount master page. -->
+    <resourceSet name="B2BGlobalApparelMyaccountCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/B2BGlobalApparel/CSS/6.myaccount.css" />
+    </resourceSet>
+
+    <!--BasketBallLight -->
+    <!-- Used for common css for across the store called in all master template  -->
+    <resourceSet name="BasketballLightCoreCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/BasketballLight/CSS/1.1.bootstrap.min.css" />
+      <resource path="~/Templates/BasketballLight/CSS/1.3.core.css" />
+    </resourceSet>
+    <!-- This resource set is used only in home page - page_c_home.aspx under Category view. -->
+    <resourceSet name="BasketballLightHomeCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/BasketballLight/CSS/2.home.css" />
+    </resourceSet>
+    <!-- This resource set is used in Category home page & Product listing page - page_c_category.aspx under Category view. -->
+    <resourceSet name="BasketballLightCategoryCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/BasketballLight/CSS/3.1.categoryhome1.css" />
+    </resourceSet>
+    <!-- This resource set is used in Catalog master templates of a store. -->
+    <resourceSet name="BasketballLightCatalogCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource reference="BasketballLightCoreCSS" />
+      <resource path="~/Templates/BasketballLight/CSS/1.2.widgets.css" />
+    </resourceSet>
+    <!-- This resource set is used for all Product Details page & Mini Template - page_c_product.aspx under Product view. -->
+    <resourceSet name="BasketballLightProductCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/BasketballLight/CSS/4.1.apparel1.css" />
+      <resource path="~/Templates/BasketballLight/CSS/4.2.apparel2.css" />
+      <resource path="~/Templates/BasketballLight/CSS/4.3.apparel3.css" />
+      <resource path="~/Templates/BasketballLight/CSS/4.4.general-sporting-equipment1.css" />
+    </resourceSet>
+    <!--This resource set is used in Checkout page & Myaccount page and called in checkout master & myaccount master page. -->
+    <resourceSet name="BasketballLightCheckoutCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/BasketballLight/CSS/5.1.checkout.css" />
+      <resource path="~/Templates/BasketballLight/CSS/5.2.orderentry.css" />
+      <resource path="~/Templates/BasketballLight/CSS/1.2.widgets.css" />
+    </resourceSet>
+    <!-- This resource set is used in Myaccount page and called in myaccount master page. -->
+    <resourceSet name="BasketballLightMyaccountCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/BasketballLight/CSS/6.myaccount.css" />
+    </resourceSet>
+
+    <!--Serenity Mobile -->
+    <!-- This resource set is used in common CSS across all the master templates of a store.  -->
+    <resourceSet name="MobileSerenityCoreCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/MobileSerenity/CSS/1.mobile.core.css" />
+    </resourceSet>
+    <resourceSet name="MobileSerenityCheckoutCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/MobileSerenity/CSS/1.mobile.core.css" />
+      <resource path="~/Templates/MobileSerenity/CSS/5.checkout.css" />
+    </resourceSet>
+    <resourceSet name="MobileSerenityLoginCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/MobileSerenity/CSS/1.mobile.core.css" />
+      <resource path="~/Templates/MobileSerenity/CSS/6.login.css" />
+    </resourceSet>
+    <!-- This resource set is used in Category home page & Product listing page - page_c_category.aspx under Category view. -->
+    <resourceSet name="MobileSerenityCategoryCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/MobileSerenity/CSS/3.mobile.categoryhome1.css" />
+    </resourceSet>
+    <!-- This resource set is used for all Product Details page & Mini Template - page_c_product.aspx under Product view. -->
+    <resourceSet name="MobileSerenityProductCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/MobileSerenity/CSS/4.mobile.cosmetics1.css" />
+    </resourceSet>
+
+    <!--Gadgets Online CSS Starts Here-->
+    <!-- This resource set is used in common CSS across all the master templates of a store. -->
+    <resourceSet name="GadgetsOnlineCoreCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/GadgetsOnline/CSS/1.1.bootstrap.min.css" />
+      <resource path="~/Templates/GadgetsOnline/CSS/1.3.core.css" />
+    </resourceSet>
+    <!-- This resource set is used only in home page - page_c_home.aspx under Category view. -->
+    <resourceSet name="GadgetsOnlineHomeCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/GadgetsOnline/CSS/2.home.css" />
+    </resourceSet>
+    <!-- This resource set is used in Catalog master templates of a store. -->
+    <resourceSet name="GadgetsOnlineCatalogCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/GadgetsOnline/CSS/1.1.bootstrap.min.css" />
+      <resource path="~/Templates/GadgetsOnline/CSS/1.2.widgets.css" />
+      <resource path="~/Templates/GadgetsOnline/CSS/1.3.core.css" />
+    </resourceSet>
+    <!--This resource set is used in Category home page & Product listing page - page_c_category.aspx under Category view. -->
+    <resourceSet name="GadgetsOnlineCategoryCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/GadgetsOnline/CSS/3.categoryhome3.css" />
+    </resourceSet>
+    <!-- This resource set is used for all Product Details page & Mini Template - page_c_product.aspx under Product view. -->
+    <resourceSet name="GadgetsOnlineProductCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/GadgetsOnline/CSS/4.1.digitalsoftware_electronics1.css" />
+      <resource path="~/Templates/GadgetsOnline/CSS/4.2.computer_configurable_group.css" />
+    </resourceSet>
+    <!-- This resource set is used in Checkout page & Myaccount page and called in checkout master & myaccount master page. -->
+    <resourceSet name="GadgetsOnlineCheckoutCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/GadgetsOnline/CSS/1.2.widgets.css" />
+      <resource path="~/Templates/GadgetsOnline/CSS/5.1.checkout.css" />
+      <resource path="~/Templates/GadgetsOnline/CSS/5.2.orderentry.css" />
+    </resourceSet>
+    <!-- This resource set is used in Myaccount page and called in myaccount master page. -->
+    <resourceSet name="GadgetsOnlineMyaccountCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/GadgetsOnline/CSS/6.myaccount.css" />
+      <resource path="~/Templates/GadgetsOnline/CSS/1.5.abandonedcarts.css" />
+    </resourceSet>
+    <resourceSet name="GadgetsOnlineLoginCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/GadgetsOnline/CSS/7.login.css" />
+    </resourceSet>
+    <!--Hodge CSS Ends Here-->
+
+    <!--Gadgets Online CSS Starts Here-->
+    <!-- This resource set is used in common CSS across all the master templates of a store. -->
+    <resourceSet name="HodgeCoreCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/Hodge/CSS/1.1.bootstrap.min.css" />
+      <resource path="~/Templates/Hodge/CSS/1.3.core.css" />
+      <resource path="~/Templates/Hodge/CSS/1.4.font-awesome.css" />
+    </resourceSet>
+    <!-- This resource set is used only in home page - page_c_home.aspx under Category view. -->
+    <resourceSet name="HodgeHomeCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/Hodge/CSS/2.home.css" />
+    </resourceSet>
+    <!-- This resource set is used in Catalog master templates of a store. -->
+    <resourceSet name="HodgeCatalogCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/Hodge/CSS/1.1.bootstrap.min.css" />
+      <resource path="~/Templates/Hodge/CSS/1.2.widgets.css" />
+      <resource path="~/Templates/Hodge/CSS/1.3.core.css" />
+      <resource path="~/Templates/Hodge/CSS/1.4.font-awesome.css" />
+    </resourceSet>
+    <!--This resource set is used in Category home page & Product listing page - page_c_category.aspx under Category view. -->
+    <resourceSet name="HodgeCategoryCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/Hodge/CSS/3.categoryhome3.css" />
+    </resourceSet>
+    <!-- This resource set is used for all Product Details page & Mini Template - page_c_product.aspx under Product view. -->
+    <resourceSet name="HodgeProductCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/Hodge/CSS/4.1.digitalsoftware_electronics1.css" />
+      <resource path="~/Templates/Hodge/CSS/4.2.computer_configurable_group.css" />
+    </resourceSet>
+    <!-- This resource set is used in Checkout page & Myaccount page and called in checkout master & myaccount master page. -->
+    <resourceSet name="HodgeCheckoutCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/Hodge/CSS/1.2.widgets.css" />
+      <resource path="~/Templates/Hodge/CSS/5.1.checkout.css" />
+      <resource path="~/Templates/Hodge/CSS/5.2.orderentry.css" />
+    </resourceSet>
+    <!-- This resource set is used in Myaccount page and called in myaccount master page. -->
+    <resourceSet name="HodgeMyaccountCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/Hodge/CSS/6.myaccount.css" />
+      <resource path="~/Templates/Hodge/CSS/1.5.abandonedcarts.css" />
+    </resourceSet>
+    <resourceSet name="HodgeLoginCSS" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/Hodge/CSS/7.login.css" />
+    </resourceSet>
+    <!--Gadgets Online CSS Ends Here-->
+
+    <!-- Responsive Web Design Related resource sets Starts Here-->
+    <resourceSet name="frameworkJS" type="js" minifierRef="msajax" compressionEnabled="true">
+      <resource path="~/Scripts/JQuery/jquery-migrate-1.2.1.js"></resource>
+      <resource path="~/Scripts/JQuery/modernizr.custom.js"></resource>
+      <resource path="~/Scripts/ignify.responsiveui.js"></resource>
+      <resource path="~/Scripts/JSResource.en.js"></resource>
+      <resource path="~/Scripts/JQuery/ui/jquery.hoverIntent.minified.js" />
+      <resource path="~/Scripts/ignify.ajaxframework.js" />
+      <resource path="~/Scripts/Events/IgnEventBase.js" />
+      <resource path="~/Scripts/JQuery/ui/jquery.watermark.js" />
+      <resource path="~/Scripts/Events/IgnAddToComparisonEvent.js" />
+      <resource path="~/Scripts/Events/IgnViewComparisonEvent.js" />
+      <resource path="~/Scripts/JQuery/ui/jquery.overlay.min.js" />
+      <resource path="~/Scripts/ignify.utility.js" />
+      <resource path="~/Scripts/Events/IgnItemAddedToCartEvent.js" />
+      <resource path="~/Scripts/ignify.cart.ops.js"></resource>
+      <resource path="~/Scripts/ignify.cart.view.js" />
+      <resource path="~/Scripts/jquery/ui/jquery.autocomplete.js" />
+      <resource path="~/Scripts/Events/IgnAttributeChangedEvent.js" />
+      <resource path="~/Scripts/Events/IgnSkuLoadedEvent.js" />
+      <resource path="~/Scripts/ignify.product.nav.js" />
+      <resource path="~/Scripts/ignify.order.utility.js" />
+      <resource path="~/Scripts/ignify.order.requestprocessor.js"/>
+      <resource path="~/Scripts/ignify.order.checkout.js"/>
+      <resource path="~/Scripts/ignify.order.init.js" />
+      <resource path="~/Scripts/ignify.store.analytics.js" />
+      <resource path="~/Scripts/ignify.product.ops.js" />
+      <resource path="~/Scripts/JQuery/ui/jquery.mobile-events.js" />
+    </resourceSet>
+    <resourceSet name="frameworkJSMB" type="js" minifierRef="msajax" compressionEnabled="true">
+      <resource path="~/Scripts/JQuery/jquery-migrate-1.2.1.js"></resource>
+      <resource path="~/Scripts/JSResource.en.js"></resource>
+      <resource path="~/Scripts/JQuery/ui/jquery.hoverIntent.minified.js" />
+      <resource path="~/Scripts/ignify.ajaxframework.js" />
+      <resource path="~/Scripts/JQuery/ui/jquery.watermark.js" />
+      <resource path="~/Scripts/Events/IgnEventBase.js" />
+      <resource path="~/Scripts/Events/IgnAddToComparisonEvent.js" />
+      <resource path="~/Scripts/Events/IgnViewComparisonEvent.js" />
+      <resource path="~/Scripts/JQuery/ui/jquery.easing.1.3.js"></resource>
+      <resource path="~/Scripts/JQuery/ui/jquery.overlay.min.js" />
+      <resource path="~/Scripts/ignify.utility.js" />
+      <resource path="~/Scripts/JQuery/ui/jquery.ui.widget.js" />
+      <resource path="~/Scripts/Events/IgnItemAddedToCartEvent.js" />
+      <resource path="~/Scripts/ignify.cart.ops.js"></resource>
+      <resource path="~/Scripts/ignify.cart.view.js" />
+      <resource path="~/Scripts/jquery/ui/ui.selectmenu.js" />
+      <resource path="~/Scripts/jquery/ui/jquery.ui.autocomplete.js" />
+      <resource path="~/Scripts/ignify.category.productlist.js" />
+      <resource path="~/Scripts/Events/IgnAttributeChangedEvent.js" />
+      <resource path="~/Scripts/Events/IgnSkuLoadedEvent.js" />
+      <resource path="~/Scripts/ignify.product.productdetails.js" />
+      <resource path="~/Scripts/ignify.product.nav.js" />
+      <resource path="~/Scripts/ignify.order.utility.js" />
+      <resource path="~/Scripts/ignify.order.requestprocessor.js"/>
+      <resource path="~/Scripts/ignify.order.checkout.js"/>
+      <resource path="~/Scripts/ignify.order.init.js" />
+      <resource path="~/Scripts/JQuery/history.js" />
+    </resourceSet>
+    <resourceSet name="AjaxUiJS" type="js" minifierRef="msajax" compressionEnabled="true">
+      <resource path="~/Scripts/JQuery/owl.carousel.js" />
+      <resource path="~/Scripts/JQuery/ui/jquery.responsiveTabs.min.js" />
+      <resource path="~/Scripts/ignify.product.quickview.js" />
+      <resource path="~/Scripts/Jquery/jquery.form.js"/>
+      <resource path="~/Scripts/jquery/ui/jquery.tinyscrollbar.min.js" />
+    </resourceSet>
+    <resourceSet name="AjaxUiJSMB" type="js" minifierRef="msajax" compressionEnabled="true">
+      <resource path="~/Scripts/jquery/ui/jquery.jcarousellite.js" />
+      <resource path="~/Scripts/JQuery/ui/jquery.jcarousel.min.js" />
+      <resource path="~/Scripts/JQuery/owl.carousel.js" />
+      <resource path="~/Scripts/JQuery/ui/ui.core.js" />
+      <resource path="~/Scripts/JQuery/ui/jquery.ui.stars.js" />
+      <resource path="~/Scripts/JQuery/ui/ui.checkbox.js" />
+      <resource path="~/Scripts/JQuery/ui/jquery.tabs.min.js" />
+      <resource path="~/Scripts/ignify.product.quickview.js" />
+      <resource path="~/Scripts/Jquery/jquery.form.js"/>
+      <resource path="~/Scripts/ignify.store.tagcloud.js" />
+    </resourceSet>
+    <resourceSet name="OtherJs" type="js" minifierRef="msajax" compressionEnabled="true">
+      <resource path="~/Scripts/JQuery/jquery.validate.min.js"></resource>
+      <resource path="~/Scripts/JQuery/jquery.maskedinput-1.3.js" />
+      <resource path="~/Scripts/jquery/ui/jquery.blockUI.js" />
+      <resource path="~/Scripts/Microsoft/MicrosoftMvcJQueryValidation.v2.js" />
+    </resourceSet>
+    <resourceSet name="OtherJsMB" type="js" minifierRef="msajax" compressionEnabled="true">
+      <resource path="~/Scripts/JQuery/jquery.validate.min.js"></resource>
+      <resource path="~/Scripts/JQuery/ui/jquery.bgiframe.min.js" />
+      <resource path="~/Scripts/JQuery/ui/jqDnR.min.js" />
+      <resource path="~/Scripts/ignify.store.tagcloud.js" />
+      <resource path="~/Scripts/JQuery/jquery.maskedinput-1.3.js" />
+      <resource path="~/Scripts/jquery/ui/jquery.blockUI.js" />
+      <resource path="~/Scripts/Microsoft/MicrosoftMvcJQueryValidation.v2.js" />
+      <resource path="~/Scripts/ignify.captcha.js" />
+    </resourceSet>
+
+    <resourceSet  name="NarrowSearchJS" type="js" minifierRef="msajax" compressionEnabled="true">
+      <resource path="~/Scripts/JQuery/ui/bootstrap-slider.js" />
+      <resource path="~/Scripts/ignify.category.catalogfilters.js" />
+      <resource path="~/Scripts/ignify.category.catalogfiltersresponsive.js" />
+      <resource path="~/Scripts/Events/IgnSearchEvent.js" />
+      <resource path="~/Scripts/Events/IgnProductSortEvent.js" />
+      <resource path="~/Scripts/ignify.category.productlist.js" />
+      <resource path="~/Scripts/ignify.category.articles.js" />
+      <resource path="~/Scripts/JQuery/history.js" />
+    </resourceSet>
+    <resourceSet  name="ProductDetailJS" type="js" minifierRef="msajax" compressionEnabled="true">
+      <!-- This is the Magic Zoom component used for displaying zoomed images of products -->
+      <resource path="~/Scripts/mzp-packed.js" />
+      <resource path="~/Scripts/Events/IgnSelectionChangedEvent.js" />
+      <resource path="~/Scripts/ignify.product.grouped.js" />
+      <resource path="~/Scripts/ignify.product.productdetails.js" />
+      <resource path="~/Scripts/JQuery/ui/jquery.rateit.min.js" />
+    </resourceSet>
+
+    <resourceSet  name="formatCurrencyJS" type="js" minifierRef="msajax" compressionEnabled="true">
+      <resource path="~/Scripts/JQuery/jquery.formatCurrency.js" />
+      <resource path="~/Scripts/JQuery/jquery.formatCurrency.all.js" />
+    </resourceSet>
+
+    <resourceSet name="Checkout" type="js" minifierRef="msajax" compressionEnabled="true" >
+      <resource path="~/Scripts/ignify.customer.js" />
+      <resource path="~/Scripts/jquery/jquery.form.js" />
+      <resource path="~/Scripts/ignify.checkout.js" />
+      <resource path="~/Scripts/common.js" />
+      <resource path="~/Scripts/JQuery/history.js" />
+      <resource path="~/Scripts/events/IgnAddressChangedEvent.js" />
+      <resource path="~/Scripts/JQuery/owl.carousel.js" />
+      <resource path="~/Scripts/JQuery/ui/jquery.responsiveTabs.min.js" />
+    </resourceSet>
+    <resourceSet name="QuickOrderCheckoutJS" type="js" minifierRef="msajax" compressionEnabled="true" >
+      <resource path="~/Scripts/jquery/ui/jquery.taboverride-1.1.js" />
+      <resource path="~/Scripts/ignify.datagrid.js" />
+      <resource path="~/Scripts/jquery/ui/jquery.tinyscrollbar.min.js" />
+    </resourceSet>
+
+    <resourceSet name="iframeworkCheckoutJS_RWD" type="js" minifierRef="msajax" compressionEnabled="true">
+      <resource path="~/Scripts/JQuery/jquery-1.11.0.min.js" />
+      <resource path="~/Scripts/JQuery/jquery-migrate-1.2.1.js" />
+      <resource path="~/Scripts/bootstrap.min.js" />
+      <resource path="~/Scripts/JSResource.en.js"></resource>
+      <resource path="~/Scripts/Events/IgnEventBase.js" />
+      <resource path="~/Scripts/ignify.ajaxframework.js" />
+      <resource path="~/Scripts/Events/IgnAddToComparisonEvent.js" />
+      <resource path="~/Scripts/Events/IgnViewComparisonEvent.js" />
+      <resource path="~/Scripts/JQuery/ui/jquery.watermark.js" />
+      <resource path="~/Scripts/JSResource.en.js"></resource>
+      <resource path="~/Scripts/ignify.mobile.utility.js" />
+      <resource path="~/Scripts/JQuery/history.js" />
+      <resource path="~/Scripts/JQuery/ui/ui.core.js" />
+      <resource path="~/Scripts/ignify.customer.js" />
+      <resource path="~/Scripts/ignify.mobile.checkout.js" />
+      <resource path="~/Scripts/jquery/jquery.form.js" />
+      <resource path="~/Scripts/jquery/ui/jquery.tinyscrollbar.min.js" />
+      <resource path="~/Scripts/events/IgnAddressChangedEvent.js" />
+      <resource path="~/Scripts/JQuery/ui/jquery.overlay.min.js" />
+      <resource path="~/Scripts/ignify.cart.ops.js" />
+      <resource path="~/Scripts/ignify.cart.view.js" />
+      <resource path="~/Scripts/ignify.store.analytics.js" />
+      <resource path="~/Scripts/jquery/ui/jquery.blockUI.js" />
+      <resource path="~/Scripts/JQuery/owl.carousel.js" />
+    </resourceSet>
+
+    <!-- Responsive Web Design Related resource sets End Here-->
+
+    <resourceSet name="VideoJS" type="js" minifierRef="msajax" compressionEnabled="true">
+      <resource path="~/Scripts/JQuery/flowplayer-3.2.11.min.js" />
+      <resource path="~/Scripts/JQuery/flowplayer.playlist-3.2.8.min.js" />
+      <resource path="~/Scripts/JQuery/flowplayer.ipad-3.2.12.min.js" />
+    </resourceSet>
+
+    <resourceSet name="iframeworkJS" type="js" minifierRef="msajax" compressionEnabled="true">
+      <resource path="~/Scripts/JSResource.en.js"></resource>
+      <resource path="~/Scripts/Events/IgnEventBase.js" />
+      <resource path="~/Scripts/ignify.ajaxframework.js" />
+      <resource path="~/Scripts/JQuery/ui/jquery.watermark.js" />
+      <resource path="~/Scripts/ignify.utility.js" />
+      <resource path="~/Scripts/JQuery/history.js" />
+    </resourceSet>
+    <resourceSet name="iframeworkAjaxJS" type="js" minifierRef="msajax" compressionEnabled="true">
+      <resource path="~/Scripts/JSResource.en.js"></resource>
+      <resource path="~/Scripts/JQuery/jquery-1.11.0.min.js" />
+      <resource path="~/Scripts/JQuery/jquery-migrate-1.2.1.js" />
+      <resource path="~/Scripts/Events/IgnEventBase.js" />
+      <resource path="~/Scripts/ignify.ajaxframework.js" />
+      <resource path="~/Scripts/JQuery/ui/jquery.watermark.js" />
+      <resource path="~/Scripts/ignify.mobile.utility.js" />
+      <resource path="~/Scripts/JQuery/ui/jquery.ui.widget.js" />
+      <resource path="~/Scripts/JQuery/ui/ui.core.js" />
+      <resource path="~/Scripts/JQuery/ui/jquery.ui.stars.js" />
+      <resource path="~/Scripts/Jquery/jquery.form.js"/>
+      <resource path="~/Scripts/jquery/ui/jquery.blockUI.js" />
+    </resourceSet>
+    <resourceSet name="iframeworkCheckoutJS" type="js" minifierRef="msajax" compressionEnabled="true">
+      <resource path="~/Scripts/JQuery/jquery-1.11.0.min.js" />
+      <resource path="~/Scripts/JQuery/jquery-migrate-1.2.1.js" />
+      <resource path="~/Scripts/JSResource.en.js"></resource>
+      <resource path="~/Scripts/Events/IgnEventBase.js" />
+      <resource path="~/Scripts/ignify.ajaxframework.js" />
+      <resource path="~/Scripts/JQuery/ui/jquery.watermark.js" />
+      <resource path="~/Scripts/JSResource.en.js"></resource>
+      <resource path="~/Scripts/ignify.mobile.utility.js" />
+      <resource path="~/Scripts/JQuery/history.js" />
+      <resource path="~/Scripts/JQuery/ui/ui.core.js" />
+      <resource path="~/Scripts/ignify.customer.js" />
+      <resource path="~/Scripts/ignify.mobile.checkout.js" />
+      <resource path="~/Scripts/jquery/jquery.form.js" />
+      <resource path="~/Scripts/jquery/ui/jquery.tinyscrollbar.min.js" />
+      <resource path="~/Scripts/events/IgnAddressChangedEvent.js" />
+      <resource path="~/Scripts/JQuery/ui/jquery.overlay.min.js" />
+    </resourceSet>
+    <resourceSet  name="iNarrowSearchJS" type="js" minifierRef="msajax" compressionEnabled="true">
+      <resource path="~/Scripts/Events/IgnSearchEvent.js" />
+      <resource path="~/Scripts/ignify.mobile.category.catalogfilters.js" />
+      <resource path="~/Scripts/Events/IgnProductSortEvent.js" />
+      <resource path="~/Scripts/ignify.product.nav.js" />
+      <resource path="~/Scripts/ignify.mobile.js" />
+    </resourceSet>
+    <resourceSet name="iLoginJs" type="js" minifierRef="msajax" compressionEnabled="true">
+      <resource path="~/Scripts/JQuery/jquery-1.11.0.min.js" />
+      <resource path="~/Scripts/JQuery/jquery-migrate-1.2.1.js" />
+      <resource path="~/Scripts/Events/IgnEventBase.js" />
+      <resource path="~/Scripts/JQuery/jquery.validate.min.js"></resource>
+      <resource path="~/Scripts/jquery/ui/jquery.blockUI.js" />
+      <resource path="~/Scripts/JQuery/ui/jquery.watermark.js" />
+      <resource path="~/Scripts/Microsoft/MicrosoftMvcJQueryValidation.v2.js" />
+    </resourceSet>
+    <resourceSet  name="iProductDetailJS" type="js" minifierRef="msajax" compressionEnabled="true">
+      <resource path="~/Scripts/JSResource.en.js"></resource>
+      <resource path="~/Scripts/JQuery/ui/jquery.tabs.min.js" />
+      <resource path="~/Scripts/Events/IgnSkuLoadedEvent.js" />
+      <resource path="~/Scripts/ignify.product.productdetails.js" />
+      <resource path="~/Scripts/Events/IgnAttributeChangedEvent.js" />
+      <resource path="~/Scripts/ignify.cart.ops.js"></resource>
+      <resource path="~/Scripts/ignify.cart.view.js"></resource>
+      <resource path="~/Scripts/ignify.order.utility.js" />
+      <resource path="~/Scripts/Events/IgnItemAddedToCartEvent.js" />
+      <resource path="~/Scripts/Events/IgnSelectionChangedEvent.js" />
+      <resource path="~/Scripts/ignify.order.requestprocessor.js"/>
+      <resource path="~/Scripts/jquery/ui/jquery.blockUI.js" />
+      <resource path="~/Scripts/ignify.order.checkout.js"/>
+      <resource path="~/Scripts/ignify.order.init.js" />
+      <resource path="~/Scripts/JQuery/jquery.formatCurrency.js" />
+      <resource path="~/Scripts/JQuery/ui/jquery.overlay.min.js" />
+    </resourceSet>
+
+    <resourceSet name="LoginRegistrationJs" type="js" minifierRef="msajax" compressionEnabled="true">
+      <resource path="~/Scripts/JQuery/jquery-migrate-1.2.1.js" />
+      <resource path="~/Scripts/JSResource.en.js"></resource>
+      <resource path="~/Scripts/JQuery/jquery.validate.min.js"></resource>
+      <resource path="~/Scripts/jquery/ui/jquery.blockUI.js" />
+      <resource path="~/Scripts/JQuery/ui/jquery.watermark.js" />
+      <resource path="~/Scripts/Microsoft/MicrosoftMvcJQueryValidation.v2.js" />
+      <resource path="~/Scripts/JQuery/ui/jquery.overlay.min.js" />
+      <resource path="~/Scripts/ignify.utility.js" />
+      <resource path="~/Scripts/JQuery/jquery.maskedinput-1.3.js" />
+      <resource path="~/Scripts/jquery/jquery.form.js" />
+      <resource path="~/Scripts/ignify.customer.js" />
+      <resource path="~/Scripts/JQuery/ui/jquery.hoverIntent.minified.js" />
+      <resource path="~/Scripts/ignify.store.analytics.js" />
+    </resourceSet>
+
+    <resourceSet name="locatorJs" type="js" minifierRef="msajax" compressionEnabled="true">
+      <resource path="~/Scripts/ignify.store.googlemap.js" />
+      <resource path="//maps.google.com/maps/api/js?sensor=false" mode="dynamic" />
+    </resourceSet>
+    <resourceSet name="frameworkJS_doc" type="js" minifierRef="msajax" compressionEnabled="true">
+      <!-- Core jQuery Library -->
+      <resource path="~/Scripts/JQuery/jquery-1.11.0.min.js" />
+      <!-- Hover intent is used for opening floating cart after a specified duration, when a user hovers the mouse on the link. -->
+      <resource path="~/Scripts/JQuery/ui/jquery.hoverIntent.minified.js" />
+      <!-- This is a dropdown menu used on some themes which allows one to display more than just traditional menu links -->
+      <resource path="~/Scripts/JQuery/ui/jquery.dcmegamenu.1.3.2.js" />
+      <!-- Core jQuery UI Library -->
+      <resource path="~/Scripts/JQuery/ui/ui.core.js" />
+      <!--<resource path="~/Scripts/ajax/MicrosoftAjax.js"></resource>
+      <resource path="~/Scripts/ajax/MicrosoftAjaxTemplates.js"></resource>
+      <resource path="~/Scripts/JQuery/jquery.declarative.js" />-->
+      <!-- Core Ignify AJAX jQuery Library -->
+      <resource path="~/Scripts/ignify.ajaxframework.js" />
+      <!-- Used to lazy load images. But is not currently being used -->
+      <resource path="~/Scripts/JQuery/jquery.lazyload.mini.js" />
+      <!-- Used to for watermarking quatity and search textboxes with some help text -->
+      <resource path="~/Scripts/JQuery/ui/jquery.watermark.js" />
+      <!-- Used to display a reflection for images. However, it is not in use currently -->
+      <resource path="~/Scripts/JQuery/ui/reflection.js" />
+      <!-- Custom event to handle item being added for comparison -->
+      <resource path="~/Scripts/Events/IgnAddToComparisonEvent.js" />
+      <!-- Custom event to handle opening of comparison UI element -->
+      <resource path="~/Scripts/Events/IgnViewComparisonEvent.js" />
+      <!-- used to show most popular products on basketball theme -->
+      <resource path="~/Scripts/jquery/ui/jquery.jcarousellite.js" />
+      <!-- used to show featured products, bestsellers etc in a carousel-->
+      <resource path="~/Scripts/JQuery/ui/jquery.jcarousel.min.js"></resource>
+      <!-- UI Widget core library -->
+      <resource path="~/Scripts/JQuery/ui/jquery.ui.widget.js" />
+      <!-- used for rendering ratings for products -->
+      <resource path="~/Scripts/JQuery/ui/jquery.ui.stars.js" />
+      <!-- used to change the appearance of checkboxes and radio buttons -->
+      <resource path="~/Scripts/JQuery/ui/ui.checkbox.js" />
+      <resource path="~/Scripts/JSResource.en.js"></resource>
+      <!-- used for easing effects on various widgets -->
+      <resource path="~/Scripts/JQuery/ui/jquery.easing.1.3.js"></resource>
+      <!-- Used on home page of certain themes for slide show/banner -->
+      <resource path="~/Scripts/JQuery/ui/jquery.coda-slider-2.0.js"></resource>
+      <!-- Used for showing timer for expiring deals -->
+      <resource path="~/Scripts/JQuery/ui/jquery.countdown.min.js" />
+      <!-- Used for quick view popup -->
+      <resource path="~/Scripts/ignify.product.quickview.js" />
+      <!-- Used for making soft popups like comparison list, shiiping calculator, quickview etc -->
+      <resource path="~/Scripts/JQuery/ui/jquery.overlay.min.js" />
+      <resource path="~/Scripts/JQuery/jquery.formatCurrency.js" />
+      <resource path="~/Scripts/JQuery/jquery.formatCurrency.all.js" />
+      <!-- Contains miscellaneous utility functions  -->
+      <resource path="~/Scripts/ignify.utility.js" />
+      <!-- Used for displaying videos -->
+      <resource path="~/Scripts/JQuery/flowplayer-3.2.11.min.js" />
+      <!-- Used for displaying playlist on videos -->
+      <resource path="~/Scripts/JQuery/flowplayer.playlist-3.2.8.min.js" />
+      <!-- Used for making videos iPad compatible -->
+      <resource path="~/Scripts/JQuery/flowplayer.ipad-3.2.12.min.js" />
+    </resourceSet>
+    <resourceSet name="OtherJs_doc" type="js" minifierRef="msajax" compressionEnabled="true">
+      <resource path="~/Scripts/Events/IgnItemAddedToCartEvent.js" />
+      <resource path="~/Scripts/JQuery/jquery.validate.min.js"></resource>
+      <!-- Used for performing operations related to shopping and floating cart -->
+      <resource path="~/Scripts/ignify.cart.ops.js"></resource>
+      <!-- Acts as a proxy for making Ajax calls  and also responible for UI rendering of floating cart-->
+      <resource path="~/Scripts/ignify.cart.view.js" />
+      <!-- used to create an iframe behind popups so that flash movies and textboxes do not punch through floating divs -->
+      <resource path="~/Scripts/JQuery/ui/jquery.bgiframe.min.js" />
+      <resource path="~/Scripts/JQuery/ui/jqDnR.min.js" />
+      <!-- Used for floating cart -->
+      <resource path="~/Scripts/JQuery/ui/jquery.jqpopup.min.js" />
+      <resource path="~/Scripts/JQuery/ui/hoverIntent.js" />
+      <resource path="~/Scripts/ignify.store.tagcloud.js" />
+      <resource path="~/Scripts/JQuery/ui/jquery.quickview.js" />
+      <!-- Used for submitting forms via ajax  -->
+      <resource path="~/Scripts/Jquery/jquery.form.js"/>
+      <!-- Used for creating UI tabs -->
+      <resource path="~/Scripts/JQuery/ui/jquery.tabs.min.js" />
+      <resource path="~/Scripts/ignify.category.productlist.js" />
+      <resource path="~/Scripts/ignify.product.productdetails.js" />
+      <!-- Custom event to handle product attribute (like color, size etc) selection by user. -->
+      <resource path="~/Scripts/Events/IgnAttributeChangedEvent.js" />
+      <!-- Custom event to denote that the SKU has loaded via ajax and post processing can take place by the event listeners -->
+      <resource path="~/Scripts/Events/IgnSkuLoadedEvent.js" />
+      <resource path="~/Scripts/jquery/ui/ui.selectmenu.js" />
+      <resource path="~/Scripts/ignify.store.googlemap.js" />
+      <!-- Used for banners. Has a lot of other cool features and can be completely customized by parameters for different effects -->
+      <resource path="~/Scripts/jquery/jquery.cycle.all.min.js" />
+      <!-- Used for autosuggestions in search box -->
+      <resource path="~/Scripts/jquery/ui/jquery.ui.autocomplete.js" />
+    </resourceSet>
+    <resourceSet name="uieditor" type="js" compressionEnabled="false" >
+      <resource path="~/Scripts/JQuery/ui/jquery.tabs.min.js" />
+      <resource path="~/Scripts/JQuery/ui/ui.draggable.js" />
+      <resource path="~/Scripts/JQuery/ui/mColorPicker.js" />
+      <resource path="~/Scripts/JQuery/ui/jquery.corner.js" />
+      <resource path="~/Scripts/JQuery/ui/jquery.contextmenu.js" />
+      <resource path="~/Scripts/JQuery/ui/jquery.fisheye.js" />
+      <resource path="~/Scripts/ignify.editor.css.js" />
+    </resourceSet>
+    <resourceSet name="editorcss" type="css"  compressionEnabled="true" minifierRef="yui">
+      <resource path="~/Templates/Shared/CSS/editor.css" />
+    </resourceSet>
+    <resourceSet name="GoogleAnalyticsJS" type="js" compressionEnabled="true" minifierRef="msajax">
+      <resource path="~/Scripts/ignify.store.analytics.js" />
+    </resourceSet>
+  </resourceSets>
+</combres>

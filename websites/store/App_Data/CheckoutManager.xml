@@ -1,0 +1,922 @@
+<!--
+Last modified 15-Sep-2011.
+purpose
+==========
+Changed the pattern value for "BillingAddressName" and "ShippingAddressName" to allow "-" and "_".Reg WI 7349.
+Last modified 11-Oct-2011.
+purpose
+==========
+Changed the pattern value for "BillingAddressName" and "ShippingAddressName" to allow space for WI 7349.
+-->
+<checkoutmanager>
+	<ordersections>
+		<ordersection sectionname="LoginSection">
+			<ordersectionentity entityname="Login"/>
+		</ordersection>
+		<ordersection sectionname="AddressSection">
+			<ordersectionentity entityname="BasicOrderInfo"/>
+			<ordersectionentity entityname="ShippingAddress"/>
+			<ordersectionentity entityname="BillingAddress"/>
+		</ordersection>
+	
+		<ordersection sectionname="ShippingMethodSection">
+      <ordersectionentity entityname="BasicOrderInfo"/>
+			<ordersectionentity entityname="ShippingMethod"/>
+		</ordersection>
+		<ordersection sectionname="ShippingMethodListSection">
+			<ordersectionentity entityname="ShippingMethodList"/>
+		</ordersection>
+		<ordersection sectionname="OrderSummarySection">
+			<ordersectionentity entityname="OrderTaxAndTotals"/>
+			<ordersectionentity entityname="OrderSummary"/>
+		</ordersection>
+		<ordersection sectionname="PaymentSection">
+			<ordersectionentity entityname="Payment"/>
+		</ordersection>
+		<ordersection sectionname="FastCheckoutSection">
+			<ordersectionentity entityname="OrderTaxAndTotals"/>
+			<ordersectionentity entityname="OrderSummary"/>
+			<ordersectionentity entityname="ShippingMethod"/>
+		</ordersection>
+		<ordersection sectionname="OrderTaxAndTotals">
+			<ordersectionentity entityname="OrderTaxAndTotals"/>
+			<ordersectionentity entityname="MiniOrderSummary"/>
+		</ordersection>
+		<ordersection sectionname="OrderDiscountAndTotals">
+			<ordersectionentity entityname="OrderDiscountAndTotals"/>
+		</ordersection>
+		<ordersection sectionname="MultiAddress">
+			<ordersectionentity entityname="ShippingAddress"/>
+		</ordersection>
+
+		<ordersection sectionname="ShipAddressSection">
+			<ordersectionentity entityname="BasicOrderInfo"/>
+			<ordersectionentity entityname="ShippingAddress"/>
+		</ordersection>
+    <ordersection sectionname="BillingAddressSection">
+      <ordersectionentity entityname="BillingAddress"/>
+    </ordersection>
+		<ordersection sectionname="PaymentOptions">
+			<ordersectionentity entityname="BillingAddress"/>
+			<ordersectionentity entityname="MultiPayment"/>
+		</ordersection>
+		<ordersection sectionname="CartSummary">
+			<ordersectionentity entityname="CartTotals"/>
+			<ordersectionentity entityname="MiniOrderSummary"/>
+		</ordersection>
+
+	</ordersections>
+
+	<orderentity class="Ignify.eComComponents.CheckoutManager.OrderEntityLogin" assembly="Ignify.eComComponents.CheckoutManager"
+				 entityname="Login">
+		<field class="Ignify.eComComponents.CheckoutManager.FieldText" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="UserName" section="" fieldkey="" required="Y" clientid="UserName" maxlength="100">
+			<caption><![CDATA[User Name]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldText" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="Password" section="" fieldkey="" required="Y" clientid="Password" maxlength="100">
+			<caption><![CDATA[Password]]></caption>
+		</field>
+	</orderentity>
+	<orderentity class="Ignify.eComComponents.CheckoutManager.OrderEntity" assembly="Ignify.eComComponents.CheckoutManager"
+				 entityname="BasicOrderInfo">
+		<field class="Ignify.eComComponents.CheckoutManager.FieldOrderGroupID" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="OrderDetailsOrderGroupID" section="orderdetails" fieldkey="ordergroup_id">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldUserID" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="OrderDetailsUserID" section="orderdetails" fieldkey="user_id">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldUserID" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="OrderDetailsUserIDChangedBy" section="orderdetails" fieldkey="g_UserIDChangedBy">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldCurrentTime" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="OrderDetailsDateCreated" section="orderdetails" fieldkey="d_DateCreated">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldCurrentTime" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="OrderDetailsCreateDate" section="orderdetails" fieldkey="order_create_date">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldCurrentTime" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="OrderFormDate" section="orderdetails" fieldkey="orderform_date">
+		</field>
+	</orderentity>
+	<orderentity class="Ignify.eComComponents.CheckoutManager.OrderEntityBillingAddress" assembly="Ignify.eComComponents.CheckoutManager" 
+			   entityname="BillingAddress" fieldprefix="Billing" section="billingaddress">
+		<processes>
+			<process Name= "LoadAddress">
+			</process>
+		</processes>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldOrderGroupID" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingOrderGroupID" section="billingaddress" fieldkey="ordergroup_id">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldUserID" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingUserID" section="billingaddress" fieldkey="user_id">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldCheckSameAddress" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingSameAsShip" section="billingaddress" fieldkey="SameAsShip">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldSelectAddress" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingAddressList" section="billingaddress" fieldkey="address_id" required="N" clientid="BillingAddressList" prompt="Add New Address">
+			<caption><![CDATA[Billing Address Book]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldStatic" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingAddressType" section="billingaddress" fieldkey="address_type">
+			<defaultvalue><![CDATA[0]]></defaultvalue>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldText" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingAddressName" section="billingaddress" fieldkey="address_name" required="Y" clientid="BillingAddressName" maxlength="255" pattern="^[-_a-zA-Z0-9]+([\s-_a-zA-Z0-9]+)*[-_a-zA-Z0-9]+$">
+			<caption><![CDATA[Billing Address Name]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldText" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingFirstName" section="billingaddress" fieldkey="first_name" required="Y" clientid="BillingFirstName" maxlength="60">
+			<caption><![CDATA[Billing Address First Name]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldText" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingLastName" section="billingaddress" fieldkey="last_name" required="Y" clientid="BillingLastName" maxlength="60">
+			<caption><![CDATA[Billing Address Last Name]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldText" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingCompany" section="billingaddress" fieldkey="company_name" required="N" clientid="BillingCompany" maxlength="255">
+			<caption><![CDATA[Billing Address Company]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldText" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingAddressLine1" section="billingaddress" fieldkey="address_line1" required="Y" clientid="BillingAddressLine1">
+			<caption><![CDATA[Billing Address 1]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldText" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingAddressLine2" section="billingaddress" fieldkey="address_line2" required="N" clientid="BillingAddressLine2">
+			<caption><![CDATA[Billing Address 2]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldText" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingAddressLine3" section="billingaddress" fieldkey="address_line3" required="N" clientid="BillingAddressLine3">
+			<caption><![CDATA[Billing Address 3]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldText" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingAddressCity" section="billingaddress" fieldkey="city" required="Y" clientid="BillingAddressCity" maxlength="255">
+			<caption><![CDATA[Billing Address City]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldSelectCountry" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingAddressCountryCode" section="billingaddress" fieldkey="country_code" required="Y" clientid="BillingAddressCountryCode" prompt="Select a Country">
+			<caption><![CDATA[Billing Address Country]]></caption>
+			<defaultvalue><![CDATA[US]]></defaultvalue>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldSelectState" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingAddressState" section="billingaddress" fieldkey="region_code" required="Y" clientid="BillingAddressState" prompt="Select a State">
+			<caption><![CDATA[Billing Address State]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldSelectCounty" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingAddressCountyCode" section="billingaddress" fieldkey="county_code" required="Y" clientid="BillingAddressCountyCode" >
+			<caption><![CDATA[Billing Address County]]></caption>
+			<defaultvalue><![CDATA[Billing Address County]]></defaultvalue>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldDummy" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingAddressCountyName" section="billingaddress" fieldkey="county_name" required="N" clientid="" >
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldPostalCode" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingAddressPostalCode" section="billingaddress" fieldkey="postal_code" required="Y" clientid="BillingAddressPostalCode" maxlength="10" UnitedStates="^\d{5}([\-]\d{4})?$" India="[0-9]{6}" Canada="[a-zA-Z][0-9][a-zA-Z][ ][0-9][a-zA-Z][0-9]">
+			<caption><![CDATA[Billing Address Zip]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldTelephoneNumber" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingTelephoneNumber" section="billingaddress" fieldkey="tel_number" required="Y" clientid="BillingTelephoneNumber" maxlength="20">
+			<caption><![CDATA[Billing Address Telephone]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldTelephoneNumber" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingTelephoneExtension" section="billingaddress" fieldkey="tel_extension" required="N" clientid="BillingTelephoneExtension" maxlength="4">
+			<caption><![CDATA[Billing Address Telephone Extension]]></caption>
+		</field>
+
+		<field class="Ignify.eComComponents.CheckoutManager.FieldTelephoneNumber" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingTelephoneNumber2" section="billingaddress" fieldkey="tel_number2" required="N" clientid="BillingTelephoneNumber2" maxlength="15">
+			<caption><![CDATA[Billing Address Telephone 2]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldTelephoneNumber" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingTelephoneExtension2" section="billingaddress" fieldkey="tel_extension2" required="N" clientid="BillingTelephoneExtension2" maxlength="4">
+			<caption><![CDATA[Billing Address Telephone Extension 2]]></caption>
+		</field>
+
+		<field class="Ignify.eComComponents.CheckoutManager.FieldTelephoneNumber" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingTelephoneNumber3" section="billingaddress" fieldkey="tel_number3" required="N" clientid="BillingTelephoneNumber3" maxlength="15">
+			<caption><![CDATA[Billing Address Telephone 3]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldTelephoneNumber" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingTelephoneExtension3" section="billingaddress" fieldkey="tel_extension3" required="N" clientid="BillingTelephoneExtension3" maxlength="4">
+			<caption><![CDATA[Billing Address Telephone Extension 3]]></caption>
+		</field>
+
+		<field class="Ignify.eComComponents.CheckoutManager.FieldTelephoneNumber" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingFaxNumber" section="billingaddress" fieldkey="fax_number" required="N" clientid="BillingFaxNumber" maxlength="15">
+			<caption><![CDATA[Billing Address Fax Number]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldTelephoneNumber" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingFaxExtension" section="billingaddress" fieldkey="fax_extension" required="N" clientid="BillingFaxExtension" maxlength="4">
+			<caption><![CDATA[Billing Address Telephone Extension 3]]></caption>
+		</field>
+
+		<field class="Ignify.eComComponents.CheckoutManager.FieldUserID" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingUserIDChangedBy" section="billingaddress" fieldkey="g_UserIDChangedBy">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldCurrentTime" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingDateCreated" section="billingaddress" fieldkey="d_DateCreated">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldCurrentTime" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingDateLastChanged" section="billingaddress" fieldkey="d_DateLastChanged">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldHidden" assembly="Ignify.eComComponents.CheckoutManager" 
+	   fieldname="BillingAddressUserID" section="billingaddress"  required="N" clientid="BillingAddressUserID" fieldkey="AddressUserID" >
+			<caption><![CDATA[Shipping Address User ID]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldHidden" assembly="Ignify.eComComponents.CheckoutManager"
+	   fieldname="BillingSelectedAddressType" section="billingaddress"  required="N" clientid="BillingSelectedAddressType" fieldkey="i_address_type" >
+		</field>
+	</orderentity>
+	<orderentity class="Ignify.eComComponents.CheckoutManager.OrderEntityShippingAddress" assembly="Ignify.eComComponents.CheckoutManager" 
+				 entityname="ShippingAddress" fieldprefix="Shipping" shipmethodentityname="" section="shippingaddress">
+		<processes>
+			<process Name= "LoadAddress">
+			</process>
+		</processes>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldOrderGroupID" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingOrderGroupID" section="shippingaddress" fieldkey="ordergroup_id">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldUserID" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingUserID" section="shippingaddress" fieldkey="user_id">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldSelectAddress" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingAddressList" section="shippingaddress" fieldkey="address_id" required="N" clientid="ShippingAddressList" prompt="Add New Address"  >
+			<caption><![CDATA[Shipping Address Book]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldStatic" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingAddressType" section="shippingaddress" fieldkey="address_type">
+			<defaultvalue><![CDATA[1]]></defaultvalue>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldText" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingAddressName" section="shippingaddress" fieldkey="address_name" required="Y"  clientid="ShippingAddressName" maxlength="255" pattern="^[-_a-zA-Z0-9]+([\s-_a-zA-Z0-9]+)*[-_a-zA-Z0-9]+$" >
+			<caption><![CDATA[Shipping Address Name]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldText" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingFirstName" section="shippingaddress" fieldkey="first_name" required="Y" clientid="ShippingFirstName" maxlength="60">
+			<caption><![CDATA[Shipping Address First Name]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldText" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingLastName" section="shippingaddress" fieldkey="last_name" required="Y" clientid="ShippingLastName" maxlength="60">
+			<caption><![CDATA[Shipping Address Last Name]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldText" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingCompany" section="shippingaddress" fieldkey="company_name" required="N" clientid="ShippingCompany" maxlength="255">
+			<caption><![CDATA[Shipping Address Company]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldText" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingAddressLine1" section="shippingaddress" fieldkey="address_line1" required="Y" clientid="ShippingAddressLine1">
+			<caption><![CDATA[Shipping Address 1]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldText" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingAddressLine2" section="shippingaddress" fieldkey="address_line2" required="N" clientid="ShippingAddressLine2">
+			<caption><![CDATA[Shipping Address 2]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldText" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingAddressLine3" section="shippingaddress" fieldkey="address_line3" required="N" clientid="ShippingAddressLine3">
+			<caption><![CDATA[Shipping Address 3]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldText" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingAddressCity" section="shippingaddress" fieldkey="city" required="Y" clientid="ShippingAddressCity" maxlength="255">
+			<caption><![CDATA[Shipping Address City]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldSelectCountry" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingAddressCountryCode" section="shippingaddress" fieldkey="country_code" required="Y" clientid="ShippingAddressCountryCode" prompt="Select a Country">
+			<caption><![CDATA[Shipping Address Country]]></caption>
+			<defaultvalue><![CDATA[US]]></defaultvalue>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldSelectState" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingAddressState" section="shippingaddress" fieldkey="region_code" required="Y" clientid="ShippingAddressState" prompt="Select a State">
+			<caption><![CDATA[Shipping Address State]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldSelectCounty" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingAddressCountyCode" section="shippingaddress" fieldkey="county_code" required="Y" clientid="ShippingAddressCountyCode" >
+			<caption><![CDATA[Shipping Address County]]></caption>
+			<defaultvalue><![CDATA[Shipping Address County]]></defaultvalue>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldDummy" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingAddressCountyName" section="shippingaddress" fieldkey="county_name" required="N" clientid="" >
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldPostalCode" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingAddressPostalCode" section="shippingaddress" fieldkey="postal_code" required="Y" clientid="ShippingAddressPostalCode" maxlength="10" UnitedStates="^\d{5}([\-]\d{4})?$" India="[0-9]{6}" Canada="[a-zA-Z][0-9][a-zA-Z][ ][0-9][a-zA-Z][0-9]">
+			<caption><![CDATA[Shipping Address Zip]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldTelephoneNumber" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingTelephoneNumber" section="shippingaddress" fieldkey="tel_number" required="Y" clientid="ShippingTelephoneNumber" maxlength="15">
+			<caption><![CDATA[Shipping Address Telephone]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldTelephoneNumber" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingTelephoneExtension" section="shippingaddress" fieldkey="tel_extension" required="N" clientid="ShippingTelephoneExtension" maxlength="4">
+			<caption><![CDATA[Shipping Address Telephone Extension]]></caption>
+		</field>
+
+		<field class="Ignify.eComComponents.CheckoutManager.FieldTelephoneNumber" assembly="Ignify.eComComponents.CheckoutManager" 
+		   fieldname="ShippingTelephoneNumber2" section="shippingaddress" fieldkey="tel_number2" required="N" clientid="ShippingTelephoneNumber2" maxlength="15">
+			<caption><![CDATA[Shipping Address Telephone]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldTelephoneNumber" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingTelephoneExtension2" section="shippingaddress" fieldkey="tel_extension2" required="N" clientid="ShippingTelephoneExtension2" maxlength="4">
+			<caption><![CDATA[Shipping Address Telephone Extension]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldTelephoneNumber" assembly="Ignify.eComComponents.CheckoutManager" 
+		   fieldname="ShippingTelephoneNumber3" section="shippingaddress" fieldkey="tel_number3" required="N" clientid="ShippingTelephoneNumber3" maxlength="15">
+			<caption><![CDATA[Shipping Address Telephone]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldTelephoneNumber" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingTelephoneExtension3" section="shippingaddress" fieldkey="tel_extension3" required="N" clientid="ShippingTelephoneExtension3" maxlength="4">
+			<caption><![CDATA[Shipping Address Telephone Extension]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldTelephoneNumber" assembly="Ignify.eComComponents.CheckoutManager" 
+				   fieldname="ShippingFaxNumber" section="shippingaddress" fieldkey="fax_number" required="N" clientid="ShippingFaxNumber" maxlength="15">
+			<caption><![CDATA[Billing Address Fax Number]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldTelephoneNumber" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingFaxExtension" section="shippingaddress" fieldkey="fax_extension" required="N" clientid="ShippingFaxExtension" maxlength="4">
+			<caption><![CDATA[Billing Address Telephone Extension 3]]></caption>
+		</field>
+
+		<field class="Ignify.eComComponents.CheckoutManager.FieldUserID" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingUserIDChangedBy" section="shippingaddress" fieldkey="g_UserIDChangedBy">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldCurrentTime" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingDateCreated" section="shippingaddress" fieldkey="d_DateCreated">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldCurrentTime" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingDateLastChanged" section="shippingaddress" fieldkey="d_DateLastChanged">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldHidden" assembly="Ignify.eComComponents.CheckoutManager" 
+	   fieldname="ShippingAddressUserID" section="shippingaddress"  required="N" clientid="ShippingAddressUserID" fieldkey="AddressUserID" >
+			<caption><![CDATA[Shipping Address User ID]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldHidden" assembly="Ignify.eComComponents.CheckoutManager"
+	   fieldname="ShippingSelectedAddressType" section="shippingaddress"  required="N" clientid="ShippingSelectedAddressType" fieldkey="i_address_type" >
+		</field>
+
+	</orderentity>
+	<orderentity class="Ignify.eComComponents.CheckoutManager.OrderEntity" assembly="Ignify.eComComponents.CheckoutManager"
+				 entityname="ShippingMethodList">
+		<processes>
+			<process Name= "GCRates">
+			</process>
+		</processes>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldShippingMethodList" assembly="Ignify.eComComponents.CheckoutManager" 
+		   fieldname="ShippingMethodList" clientid="ShippingMethodList" section="orderdetails" fieldkey="ShippingFullValue">
+			<caption><![CDATA[Shipping Method]]></caption>
+		</field>
+	</orderentity>
+	<orderentity class="Ignify.eComComponents.CheckoutManager.OrderEntity" assembly="Ignify.eComComponents.CheckoutManager"
+				 entityname="ShippingMethod">
+		<processes>
+			<process Name= "GCRates">
+			</process>
+		</processes>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldShippingMethod" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingMethodList" clientid="ShippingMethodList">
+			<caption><![CDATA[Shipping Method]]></caption>
+		</field>
+	</orderentity>
+	<orderentity class="Ignify.eComComponents.CheckoutManager.OrderEntity" assembly="Ignify.eComComponents.CheckoutManager"
+				 entityname="OrderTaxAndTotals">
+		<field class="Ignify.eComComponents.CheckoutManager.FieldDiscount" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="Discounts">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldTax" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="OrderTax">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldOrderTotals" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="OrderTotals">
+		</field>
+	</orderentity>
+
+
+	<orderentity class="Ignify.eComComponents.CheckoutManager.OrderEntity" assembly="Ignify.eComComponents.CheckoutManager"
+				 entityname="OrderDiscountAndTotals">
+		<field class="Ignify.eComComponents.CheckoutManager.FieldDiscount" assembly="Ignify.eComComponents.CheckoutManager"
+			   fieldname="Discounts">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldOrderTotals" assembly="Ignify.eComComponents.CheckoutManager"
+			   fieldname="OrderTotals">
+		</field>
+	</orderentity>
+	<orderentity class="Ignify.eComComponents.CheckoutManager.OrderEntity" assembly="Ignify.eComComponents.CheckoutManager"
+				 entityname="CartTotals">
+
+		<field class="Ignify.eComComponents.CheckoutManager.FieldOrderTotals" assembly="Ignify.eComComponents.CheckoutManager"
+			   fieldname="OrderTotals">
+		</field>
+	</orderentity>
+	
+	<orderentity class="Ignify.eComComponents.CheckoutManager.OrderEntity" assembly="Ignify.eComComponents.CheckoutManager"
+				 entityname="MiniOrderSummary">
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ItemSubtotal" section="orderdetails" fieldkey="saved_cy_oadjust_subtotal" clientid="ItemSubtotal" format="{0:C}" datatype="decimal">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingTotal" section="orderdetails" fieldkey="shipping_rate" clientid="ShippingTotal" format="{0:C}" datatype="decimal">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			 fieldname="ShippingDiscount" section="orderdetails" fieldkey="shipping_discount_total" clientid="ShippingDiscount" format="{0:C}" datatype="decimal">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="TaxTotal" section="orderdetails" fieldkey="saved_cy_tax_total" clientid="TaxTotal" format="{0:C}" datatype="decimal">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="OrderTotal" section="orderdetails" fieldkey="saved_cy_total_total" clientid="OrderTotal" format="{0:C}" datatype="decimal">
+		</field>
+    <field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager"
+     fieldname="RedemptionAmount" section="orderdetails" fieldkey="redemption_amount" clientid="RedemptionAmount" format="{0:C}" datatype="decimal">
+    </field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			  fieldname="OrderDiscount" section="orderdetails" fieldkey="order_discount" clientid="OrderDiscount" format="{0:C}" datatype="decimal">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldCurrentTime" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="OrderDetailsDateLastChanged" section="orderdetails" fieldkey="d_DateLastChanged">
+		</field>
+	</orderentity>
+	<orderentity class="Ignify.eComComponents.CheckoutManager.OrderEntity" assembly="Ignify.eComComponents.CheckoutManager"
+				 entityname="OrderSummary">
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingAddressName" section="shippingaddress" fieldkey="address_name" clientid="ShippingAddressName">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingFirstName" section="shippingaddress" fieldkey="first_name" clientid="ShippingFirstName">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingLastName" section="shippingaddress" fieldkey="last_name" clientid="ShippingLastName">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingCompany" section="shippingaddress" fieldkey="company_name" clientid="ShippingCompany">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingAddressLine1" section="shippingaddress" fieldkey="address_line1" clientid="ShippingAddressLine1">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingAddressLine2" section="shippingaddress" fieldkey="address_line2" clientid="ShippingAddressLine2">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingAddressLine3" section="shippingaddress" fieldkey="address_line3" clientid="ShippingAddressLine3">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingAddressCity" section="shippingaddress" fieldkey="city" clientid="ShippingAddressCity">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingAddressState" section="shippingaddress" fieldkey="region_code" clientid="ShippingAddressState">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingAddressCountry" section="shippingaddress" fieldkey="country_code" clientid="ShippingAddressCountry">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingAddressCounty" section="shippingaddress" fieldkey="county_name" clientid="ShippingAddressCounty">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingAddressPostalCode" section="shippingaddress" fieldkey="postal_code" clientid="ShippingAddressPostalCode">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingAddressTelephoneNumber" section="shippingaddress" fieldkey="tel_number" clientid="ShippingAddressTelephoneNumber">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			  fieldname="ShippingAddressExtensionNumber" section="shippingaddress" fieldkey="tel_extension" clientid="ShippingAddressExtensionNumber">
+		</field>
+
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			  fieldname="ShippingAddressTelephoneNumber1" section="shippingaddress" fieldkey="tel_number2" clientid="ShippingAddressTelephoneNumber1">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			 fieldname="ShippingAddressExtensionNumber1" section="shippingaddress" fieldkey="tel_extension2" clientid="ShippingAddressExtensionNumber1">
+		</field>
+
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+				  fieldname="ShippingAddressTelephoneNumber2" section="shippingaddress" fieldkey="tel_number3" clientid="ShippingAddressTelephoneNumber2">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			  fieldname="ShippingAddressExtensionNumber2" section="shippingaddress" fieldkey="tel_extension3" clientid="ShippingAddressExtensionNumber2">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+				   fieldname="ShippingAddressFaxNumber" section="shippingaddress" fieldkey="fax_number" clientid="ShippingAddressFaxNumber">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			  fieldname="ShippingAddressFaxExtension" section="shippingaddress" fieldkey="fax_extension" clientid="ShippingAddressFaxExtension">
+		</field>
+
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingMethodName" section="orderdetails" fieldkey="shipping_method_name" clientid="ShippingMethodName">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingAddressName" section="billingaddress" fieldkey="address_name" clientid="BillingAddressName">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingFirstName" section="billingaddress" fieldkey="first_name" clientid="BillingFirstName">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingLastName" section="billingaddress" fieldkey="last_name" clientid="BillingLastName">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingCompany" section="billingaddress" fieldkey="company_name" clientid="BillingCompany">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingAddressLine1" section="billingaddress" fieldkey="address_line1" clientid="BillingAddressLine1">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingAddressLine2" section="billingaddress" fieldkey="address_line2" clientid="BillingAddressLine2">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingAddressLine3" section="billingaddress" fieldkey="address_line3" clientid="BillingAddressLine3">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingAddressCity" section="billingaddress" fieldkey="city" clientid="BillingAddressCity">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingAddressState" section="billingaddress" fieldkey="region_code" clientid="BillingAddressState">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingAddressCountry" section="billingaddress" fieldkey="country_code" clientid="BillingAddressCountry">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingAddressCounty" section="billingaddress" fieldkey="county_name" clientid="BillingAddressCounty">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingAddressPostalCode" section="billingaddress" fieldkey="postal_code" clientid="BillingAddressPostalCode">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingAddressTelephoneNumber" section="billingaddress" fieldkey="tel_number" clientid="BillingAddressTelephoneNumber">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			 fieldname="BillingAddressExtensionNumber" section="billingaddress" fieldkey="tel_extension" clientid="BillingAddressExtensionNumber">
+		</field>
+
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			fieldname="BillingAddressTelephoneNumber1" section="billingaddress" fieldkey="tel_number2" clientid="BillingAddressTelephoneNumber1">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			fieldname="BillingAddressExtensionNumber1" section="billingaddress" fieldkey="tel_extension2" clientid="BillingAddressExtensionNumber1">
+		</field>
+
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingAddressTelephoneNumber2" section="billingaddress" fieldkey="tel_number3" clientid="BillingAddressTelephoneNumber2">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			  fieldname="BillingAddressExtensionNumber2" section="billingaddress" fieldkey="tel_extension3" clientid="BillingAddressExtensionNumber2">
+		</field>
+
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="BillingAddressFaxNumber" section="billingaddress" fieldkey="fax_number" clientid="BillingAddressFaxNumber">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			  fieldname="BillingAddressFaxExtension" section="billingaddress" fieldkey="fax_extension" clientid="BillingAddressFaxExtension">
+		</field>
+
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ItemSubtotal" section="orderdetails" fieldkey="saved_cy_oadjust_subtotal" clientid="ItemSubtotal" format="{0:C}" datatype="decimal">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ShippingTotal" section="orderdetails" fieldkey="shipping_rate" clientid="ShippingTotal" format="{0:C}" datatype="decimal">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			 fieldname="ShippingDiscount" section="orderdetails" fieldkey="shipping_discount_total" clientid="ShippingDiscount" format="{0:C}" datatype="decimal">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="TaxTotal" section="orderdetails" fieldkey="saved_cy_tax_total" clientid="TaxTotal" format="{0:C}" datatype="decimal">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="OrderTotal" section="orderdetails" fieldkey="saved_cy_total_total" clientid="OrderTotal" format="{0:C}" datatype="decimal">
+		</field>
+    <field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager"
+     fieldname="RedemptionAmount" section="orderdetails" fieldkey="redemption_amount" clientid="RedemptionAmount" format="{0:C}" datatype="decimal">
+    </field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			  fieldname="OrderDiscount" section="orderdetails" fieldkey="order_discount" clientid="OrderDiscount" format="{0:C}" datatype="decimal">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldCurrentTime" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="OrderDetailsDateLastChanged" section="orderdetails" fieldkey="d_DateLastChanged">
+		</field>
+	</orderentity>
+	<orderentity class="Ignify.eComComponents.CheckoutManager.OrderEntityPayment" assembly="Ignify.eComComponents.CheckoutManager"
+				 entityname="Payment" paymentoptionsid="PaymentOptions">
+		<!--<field class="Ignify.eComComponents.CheckoutManager.FieldSelectPaymentMethods" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="PaymentOptions" section="orderdetails" fieldkey="saved_payment_type"  required="Y" clientid="PaymentOptions">
+		</field>-->
+
+		<processes>
+			<process Name= "SaveCreditCard">
+			</process>
+		</processes>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldHidden" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="ControllerAction" section="orderdetails"  required="N" clientid="ControllerAction" >
+			<caption><![CDATA[Enc Credit Card Number]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldSelectPaymentMethods" assembly="Ignify.eComComponents.CheckoutManager" 
+	   fieldname="PaymentOptions" section="orderdetails" fieldkey="saved_payment_type" required="Y" clientid="PaymentOptions">
+			<caption><![CDATA[Payment Options]]></caption>
+			<option value="Credit Card"><![CDATA[Credit Card]]></option>
+			<option value="Wire Transfer"><![CDATA[Wire Transfer]]></option>
+			<option value="Check"><![CDATA[Check]]></option>
+			<option value="Terms (PO)"><![CDATA[Terms (PO)]]></option>
+			<option value="Cash"><![CDATA[Cash]]></option>
+			<option value="EFT"><![CDATA[EFT]]></option>
+			<option value="ACH"><![CDATA[ACH]]></option>
+			<option value="PayPal"><![CDATA[PayPal]]></option>
+		</field>
+		
+		
+		
+		<field class="Ignify.eComComponents.CheckoutManager.FieldSelectCreditCard" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="MyCreditCardList" section="orderdetails" fieldkey="credit_card_id"  required="N" clientid="MyCreditCardList" prompt="Add New Credit Card">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldCheckbox" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="chkSave" section="orderdetails" fieldkey="save_credit_card"  required="N" clientid="chkSave">
+		</field>
+		
+		<field class="Ignify.eComComponents.CheckoutManager.FieldCheckPaymentReferenceNumber" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="CheckPaymentReferenceNumber" section="orderdetails" fieldkey="saved_payment_reference"  required="Y" clientid="PaymentReferenceNumber" maxlength="15">
+			<caption><![CDATA[Payment Reference Number]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldCreditCardType" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="CreditCardTypes" section="orderdetails" fieldkey="saved_cc_type" required="Y" clientid="CreditCardTypes" prompt="Select One">
+			<caption><![CDATA[Credit Card Type]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldCreditCardUserFriendlyName" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="FriendlyNameOnCard" section="orderdetails" fieldkey="user_friendly_name" required="N" clientid="FriendlyNameOnCard" maxlength="30">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldCreditCardHolderName" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="CreditCardHolderName" section="orderdetails" fieldkey="saved_cc_name" required="Y" clientid="CreditCardHolderName" maxlength="255">
+			<caption><![CDATA[Name on Card]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldCreditCardNumber" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="CreditCardNumber" section="orderdetails" fieldkey="saved_cc_number" required="Y" clientid="CreditCardNumber" maxlength="16">
+			<caption><![CDATA[Credit Card Number]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldHidden" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="EncCreditCardNumber" section="orderdetails"  required="N" clientid="EncCreditCardNumber" maxlength="16">
+			<caption><![CDATA[Enc Credit Card Number]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldHidden" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="hdnCreditCardSaveStatus" section="orderdetails"  required="N" clientid="hdnCreditCardSaveStatus" maxlength="16">
+			<caption><![CDATA[hdn Credit Card Save Status]]></caption>
+		</field>
+    
+		
+		<field class="Ignify.eComComponents.CheckoutManager.FieldSelectMonth" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="CreditCardExpiryMonth" section="orderdetails" fieldkey="cc_expiry_month" required="N" clientid="CreditCardExpiryMonth">
+			<caption><![CDATA[Credit Card Expiry Month]]></caption>
+			<option value="1"><![CDATA[Jan]]></option>
+			<option value="2"><![CDATA[Feb]]></option>
+			<option value="3"><![CDATA[Mar]]></option>
+			<option value="4"><![CDATA[Apr]]></option>
+			<option value="5"><![CDATA[May]]></option>
+			<option value="6"><![CDATA[Jun]]></option>
+			<option value="7"><![CDATA[Jul]]></option>
+			<option value="8"><![CDATA[Aug]]></option>
+			<option value="9"><![CDATA[Sep]]></option>
+			<option value="10"><![CDATA[Oct]]></option>
+			<option value="11"><![CDATA[Nov]]></option>
+			<option value="12"><![CDATA[Dec]]></option>
+		</field>
+
+		<field class="Ignify.eComComponents.CheckoutManager.FieldSelectYear" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="CreditCardExpiryYear" section="orderdetails" fieldkey="cc_expiry_year" required="N" clientid="CreditCardExpiryYear" prompt="" 
+			   startyear="" numyears="10">
+			<caption><![CDATA[Credit Card Expiry Year]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldCreditCardExpiryDate" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="CreditCardExpiryDate" section="orderdetails" fieldkey="saved_cc_expiration" required="Y" expirymonthid="CreditCardExpiryMonth" expiryyearid="CreditCardExpiryYear">
+			<caption><![CDATA[Credit Card Expiry Date]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldCreditCardSecurityCode" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="CreditCardSecurityCode" section="orderdetails" fieldkey="saved_cc_securitycode" required="Y" clientid="CreditCardSecurityCode" maxlength="4">
+			<caption><![CDATA[Card Security Code]]></caption>
+		</field>
+    <field class="Ignify.eComComponents.CheckoutManager.FieldHidden" assembly="Ignify.eComComponents.CheckoutManager"
+       fieldname="hdnCCPaymentProfileID" section="orderdetails"  required="N" clientid="hdnCCPaymentProfileID" maxlength="250">
+      <caption><![CDATA[hdn Credit Card Payment Profile ID]]></caption>
+    </field>    
+		<field class="Ignify.eComComponents.CheckoutManager.FieldCurrentTime" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="OrderDetailsDateLastChanged" section="orderdetails" fieldkey="d_DateLastChanged">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager" 
+			  fieldname="OrderTotal" section="orderdetails" fieldkey="saved_cy_total_total" clientid="OrderTotal" format="{0:C}" datatype="decimal">
+		</field>
+    <field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager"
+     fieldname="RedemptionAmount" section="orderdetails" fieldkey="redemption_amount" clientid="RedemptionAmount" format="{0:C}" datatype="decimal">
+    </field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldText" assembly="Ignify.eComComponents.CheckoutManager" fieldkey="order_comment_1" fieldname="OrderComment" section="orderdetails" required="N" clientid="OrderComment" maxlength="250">
+			<caption><![CDATA[Special Instructions]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldAccHolderName" assembly="Ignify.eComComponents.CheckoutManager" 
+			 fieldname="AccHolderName" section="orderdetails" fieldkey="saved_cc_name" required="Y" clientid="txtAccHolderName" maxlength="255">
+			<caption><![CDATA[Account Holder Name]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldBankName" assembly="Ignify.eComComponents.CheckoutManager"
+			fieldname="BankName" section="orderdetails" fieldkey="license_state" required="Y" clientid="txtBankName" maxlength="255">
+			<caption><![CDATA[Bank Name]]></caption>
+		</field>
+		<!--<field class="Ignify.eComComponents.CheckoutManager.FieldCustomerLicenseState" assembly="Ignify.eComComponents.CheckoutManager"
+			fieldname="CustomerLicenseState" section="orderdetails" fieldkey="license_state" required="Y" clientid="txtLicenseState" maxlength="255">
+			<caption><![CDATA[Customer License State]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldCustomerLicenseDOB" assembly="Ignify.eComComponents.CheckoutManager"
+			fieldname="CustomerLicenseDOB" section="orderdetails" fieldkey="license_DOB" required="Y" clientid="txtLicenseDOB" maxlength="255">
+			<caption><![CDATA[Customer License Date Of Birth]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldCustomerLicenseNumber" assembly="Ignify.eComComponents.CheckoutManager"
+		fieldname="CustomerLicenseNumber" section="orderdetails" fieldkey="license_number" required="Y" clientid="txtLicenseNumber" maxlength="255">
+			<caption><![CDATA[Customer License Number]]></caption>
+		</field>-->
+		<field class="Ignify.eComComponents.CheckoutManager.FieldAccountType" assembly="Ignify.eComComponents.CheckoutManager" 
+		   fieldname="AccountTypeList" section="orderdetails" fieldkey="saved_cc_type" required="Y" clientid="AccountTypeList">
+			<caption><![CDATA[Account Type]]></caption>
+			<option value="S"><![CDATA[Saving]]></option>
+			<option value="C"><![CDATA[Checking]]></option>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldRouterNumber" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="RouterNumber" section="orderdetails" fieldkey="saved_cc_number" required="Y" clientid="txtRouterNo" maxlength="255">
+			<caption><![CDATA[ABA Routing Number]]></caption>
+			
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldAccountNumber" assembly="Ignify.eComComponents.CheckoutManager"
+	   fieldname="AccountNumber" section="orderdetails" fieldkey="account_no" required="Y" clientid="txtAccountNo" maxlength="255">
+			<caption><![CDATA[Account Number]]></caption>
+
+		</field>
+		
+		<field class="Ignify.eComComponents.CheckoutManager.FieldText" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="CreditLimit" section="orderdetails" fieldkey="credit_limit" required="N" clientid="txtCreditLimit" maxlength="255">
+			<caption><![CDATA[Credit Limit]]></caption>
+
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldCheckbox" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="chkPreferredCard" section="orderdetails" fieldkey="preferred_credit_card"  required="N" clientid="chkPreferred">
+		</field>
+		
+		<field class="Ignify.eComComponents.CheckoutManager.FieldPassword" assembly="Ignify.eComComponents.CheckoutManager"
+	   fieldname="Password" section="orderdetails" fieldkey="password"  required="Y" clientid="txtPassword" maxlength="255">
+			<caption><![CDATA[Password]]></caption>
+		</field>
+
+
+	</orderentity>
+
+	<orderentity class="Ignify.eComComponents.CheckoutManager.OrderEntityPayment" assembly="Ignify.eComComponents.CheckoutManager"
+				 entityname="MultiPayment" paymentoptionsid="PaymentOptions">
+		<!--<field class="Ignify.eComComponents.CheckoutManager.FieldSelectPaymentMethods" assembly="Ignify.eComComponents.CheckoutManager" 
+			   fieldname="PaymentOptions" section="orderdetails" fieldkey="saved_payment_type"  required="Y" clientid="PaymentOptions">
+		</field>-->
+
+		<processes>
+			<process Name= "SaveCreditCard">
+			</process>
+		</processes>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldHidden" assembly="Ignify.eComComponents.CheckoutManager"
+			   fieldname="ControllerAction" section="orderdetails"  required="N" clientid="ControllerAction" >
+			<caption><![CDATA[Enc Credit Card Number]]></caption>
+		</field>
+
+		<field class="Ignify.eComComponents.CheckoutManager.FieldSelectCreditCard" assembly="Ignify.eComComponents.CheckoutManager"
+			   fieldname="MyCreditCardList" section="orderdetails" fieldkey="credit_card_id"  required="N" clientid="MyCreditCardList" prompt="Add New Credit Card">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldCheckbox" assembly="Ignify.eComComponents.CheckoutManager"
+			   fieldname="chkSave" section="orderdetails" fieldkey="save_credit_card"  required="N" clientid="chkSave">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldPaymentOptions" assembly="Ignify.eComComponents.CheckoutManager"
+           fieldname="PaymentOptions" section="orderdetails" fieldkey="saved_payment_type" required="Y">
+			<caption><![CDATA[Payment Options]]></caption>
+			<defaultvalue><![CDATA[Credit Card]]></defaultvalue>
+			<option clientid="PaymentOptionCheque"  value="Check"><![CDATA[Check/Draft]]></option>
+			<option clientid="PaymentOptionCC"  value="Credit Card"><![CDATA[Credit Card]]></option>
+			<option clientid="PaymentOptionWireTransfer"  value="Wire Transfer"><![CDATA[Wire Transfer]]></option>
+			<option clientid="PaymentOptionTerms" value="Terms (PO)"><![CDATA[Terms (PO)]]></option>
+			<option clientid="PaymentOptionCash" value="Cash"><![CDATA[Cash]]></option>
+			<option clientid="PaymentOptionEFT"  value="EFT"><![CDATA[EFT]]></option>
+			<option clientid="PaymentOptionACH" value="ACH"><![CDATA[ACH]]></option>
+			<option clientid="PaymentOptionPayPal" value="PayPal"><![CDATA[PayPal]]></option>
+      <option clientid="PaymentOptionAmazon" value="Amazon"><![CDATA[Amazon]]></option>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldCheckPaymentReferenceNumber" assembly="Ignify.eComComponents.CheckoutManager"
+			   fieldname="CheckPaymentReferenceNumber" section="orderdetails" fieldkey="saved_payment_reference"  required="Y" clientid="PaymentReferenceNumber" maxlength="15">
+			<caption><![CDATA[Payment Reference Number]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldCreditCardType" assembly="Ignify.eComComponents.CheckoutManager"
+			   fieldname="CreditCardTypes" section="orderdetails" fieldkey="saved_cc_type" required="Y" clientid="CreditCardTypes" prompt="Select One">
+			<caption><![CDATA[Credit Card Type]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldCreditCardUserFriendlyName" assembly="Ignify.eComComponents.CheckoutManager"
+			   fieldname="FriendlyNameOnCard" section="orderdetails" fieldkey="user_friendly_name" required="N" clientid="FriendlyNameOnCard" maxlength="30">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldCreditCardHolderName" assembly="Ignify.eComComponents.CheckoutManager"
+			   fieldname="CreditCardHolderName" section="orderdetails" fieldkey="saved_cc_name" required="Y" clientid="CreditCardHolderName" maxlength="255">
+			<caption><![CDATA[Name on Card]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldCreditCardNumber" assembly="Ignify.eComComponents.CheckoutManager"
+			   fieldname="CreditCardNumber" section="orderdetails" fieldkey="saved_cc_number" required="Y" clientid="CreditCardNumber" maxlength="16">
+			<caption><![CDATA[Credit Card Number]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldHidden" assembly="Ignify.eComComponents.CheckoutManager"
+			   fieldname="EncCreditCardNumber" section="orderdetails"  required="N" clientid="EncCreditCardNumber" maxlength="16">
+			<caption><![CDATA[Enc Credit Card Number]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldHidden" assembly="Ignify.eComComponents.CheckoutManager"
+			   fieldname="hdnCreditCardSaveStatus" section="orderdetails"  required="N" clientid="hdnCreditCardSaveStatus" maxlength="16">
+			<caption><![CDATA[hdn Credit Card Save Status]]></caption>
+		</field>
+
+
+		<field class="Ignify.eComComponents.CheckoutManager.FieldSelectMonth" assembly="Ignify.eComComponents.CheckoutManager"
+			   fieldname="CreditCardExpiryMonth" section="orderdetails" fieldkey="cc_expiry_month" required="N" clientid="CreditCardExpiryMonth">
+			<caption><![CDATA[Credit Card Expiry Month]]></caption>
+      <option value="1"><![CDATA[Jan]]></option>
+      <option value="2"><![CDATA[Feb]]></option>
+      <option value="3"><![CDATA[Mar]]></option>
+      <option value="4"><![CDATA[Apr]]></option>
+      <option value="5"><![CDATA[May]]></option>
+      <option value="6"><![CDATA[Jun]]></option>
+      <option value="7"><![CDATA[Jul]]></option>
+      <option value="8"><![CDATA[Aug]]></option>
+      <option value="9"><![CDATA[Sep]]></option>
+      <option value="10"><![CDATA[Oct]]></option>
+      <option value="11"><![CDATA[Nov]]></option>
+      <option value="12"><![CDATA[Dec]]></option>
+		</field>
+
+		<field class="Ignify.eComComponents.CheckoutManager.FieldSelectYear" assembly="Ignify.eComComponents.CheckoutManager"
+			   fieldname="CreditCardExpiryYear" section="orderdetails" fieldkey="cc_expiry_year" required="N" clientid="CreditCardExpiryYear" prompt=""
+			   startyear="" numyears="10">
+			<caption><![CDATA[Credit Card Expiry Year]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldCreditCardExpiryDate" assembly="Ignify.eComComponents.CheckoutManager"
+			   fieldname="CreditCardExpiryDate" section="orderdetails" fieldkey="saved_cc_expiration" required="Y" expirymonthid="CreditCardExpiryMonth" expiryyearid="CreditCardExpiryYear">
+			<caption><![CDATA[Credit Card Expiry Date]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldCreditCardSecurityCode" assembly="Ignify.eComComponents.CheckoutManager"
+			   fieldname="CreditCardSecurityCode" section="orderdetails" fieldkey="saved_cc_securitycode" required="Y" clientid="CreditCardSecurityCode" maxlength="4">
+			<caption><![CDATA[Card Security Code]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldHidden" assembly="Ignify.eComComponents.CheckoutManager"
+		   fieldname="hdnCCPaymentProfileID" section="orderdetails"  required="N" clientid="hdnCCPaymentProfileID" maxlength="250">
+			<caption><![CDATA[hdn Credit Card Payment Profile ID]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldCurrentTime" assembly="Ignify.eComComponents.CheckoutManager"
+			   fieldname="OrderDetailsDateLastChanged" section="orderdetails" fieldkey="d_DateLastChanged">
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager"
+			  fieldname="OrderTotal" section="orderdetails" fieldkey="saved_cy_total_total" clientid="OrderTotal" format="{0:C}" datatype="decimal">
+		</field>
+    <field class="Ignify.eComComponents.CheckoutManager.FieldLabel" assembly="Ignify.eComComponents.CheckoutManager"
+     fieldname="RedemptionAmount" section="orderdetails" fieldkey="redemption_amount" clientid="RedemptionAmount" format="{0:C}" datatype="decimal">
+    </field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldText" assembly="Ignify.eComComponents.CheckoutManager" fieldkey="order_comment_1" fieldname="OrderComment" section="orderdetails" required="N" clientid="OrderComment" maxlength="250">
+			<caption><![CDATA[Special Instructions]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldAccHolderName" assembly="Ignify.eComComponents.CheckoutManager"
+			 fieldname="AccHolderName" section="orderdetails" fieldkey="saved_cc_name" required="Y" clientid="txtAccHolderName" maxlength="255">
+			<caption><![CDATA[Account Holder Name]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldBankName" assembly="Ignify.eComComponents.CheckoutManager"
+			fieldname="BankName" section="orderdetails" fieldkey="license_state" required="Y" clientid="txtBankName" maxlength="255">
+			<caption><![CDATA[Bank Name]]></caption>
+		</field>
+		<!--<field class="Ignify.eComComponents.CheckoutManager.FieldCustomerLicenseState" assembly="Ignify.eComComponents.CheckoutManager"
+			fieldname="CustomerLicenseState" section="orderdetails" fieldkey="license_state" required="Y" clientid="txtLicenseState" maxlength="255">
+			<caption><![CDATA[Customer License State]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldCustomerLicenseDOB" assembly="Ignify.eComComponents.CheckoutManager"
+			fieldname="CustomerLicenseDOB" section="orderdetails" fieldkey="license_DOB" required="Y" clientid="txtLicenseDOB" maxlength="255">
+			<caption><![CDATA[Customer License Date Of Birth]]></caption>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldCustomerLicenseNumber" assembly="Ignify.eComComponents.CheckoutManager"
+		fieldname="CustomerLicenseNumber" section="orderdetails" fieldkey="license_number" required="Y" clientid="txtLicenseNumber" maxlength="255">
+			<caption><![CDATA[Customer License Number]]></caption>
+		</field>-->
+		<field class="Ignify.eComComponents.CheckoutManager.FieldAccountType" assembly="Ignify.eComComponents.CheckoutManager"
+		   fieldname="AccountTypeList" section="orderdetails" fieldkey="saved_cc_type" required="Y" clientid="AccountTypeList">
+			<caption><![CDATA[Account Type]]></caption>
+			<option value="S"><![CDATA[Saving]]></option>
+			<option value="C"><![CDATA[Checking]]></option>
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldRouterNumber" assembly="Ignify.eComComponents.CheckoutManager"
+			   fieldname="RouterNumber" section="orderdetails" fieldkey="saved_cc_number" required="Y" clientid="txtRouterNo" maxlength="255">
+			<caption><![CDATA[ABA Routing Number]]></caption>
+
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldAccountNumber" assembly="Ignify.eComComponents.CheckoutManager"
+	   fieldname="AccountNumber" section="orderdetails" fieldkey="account_no" required="Y" clientid="txtAccountNo" maxlength="255">
+			<caption><![CDATA[Account Number]]></caption>
+
+		</field>
+
+		<field class="Ignify.eComComponents.CheckoutManager.FieldText" assembly="Ignify.eComComponents.CheckoutManager"
+			   fieldname="CreditLimit" section="orderdetails" fieldkey="credit_limit" required="N" clientid="txtCreditLimit" maxlength="255">
+			<caption><![CDATA[Credit Limit]]></caption>
+
+		</field>
+		<field class="Ignify.eComComponents.CheckoutManager.FieldCheckbox" assembly="Ignify.eComComponents.CheckoutManager"
+			   fieldname="chkPreferredCard" section="orderdetails" fieldkey="preferred_credit_card"  required="N" clientid="chkPreferred">
+		</field>
+
+		<field class="Ignify.eComComponents.CheckoutManager.FieldPassword" assembly="Ignify.eComComponents.CheckoutManager"
+	   fieldname="Password" section="orderdetails" fieldkey="password"  required="N" clientid="txtPassword" maxlength="255">
+			<caption><![CDATA[Password]]></caption>
+		</field>
+
+
+	</orderentity>
+	
+</checkoutmanager>

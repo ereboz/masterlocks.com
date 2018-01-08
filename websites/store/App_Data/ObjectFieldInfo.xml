@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <fields>
+    <field name="UserName" FriendlyName="User Name"  MaxLength="50" DBLength="510" type="pattern" Mandatory="1" MinLength="0"/>
+    <field name="EmailAddress" FriendlyName="Email Address" MaxLength="50" DBLength="510" type="emailaddress" Mandatory="1" MinLength="0"/>
+	<field name="GuestEmailAddress" FriendlyName="Guest Email Address" MaxLength="50" DBLength="510" type="emailaddress" Mandatory="1" MinLength="0"/>
+	  
+    <!--PasswordStrength : 1=Weak,   2=Medium,    3=Great,   NotSpecified=0(will not be checked) -->
+    <field name="Password" FriendlyName="Password" MaxLength="20" DBLength="510" Mandatory="1" type="password" MinLength="6" />
+	  <!--Gowri added these lines-->
+	  <field name="CurrentPassword" FriendlyName="Current Password" MaxLength="20" DBLength="510" Mandatory="0" type="password"  />
+	  
+	  <!--Invoices Error Messages added by Gowri-->
+	  <field name="InvoiceOrOrderNumber" FriendlyName="Invoice Order Number" MaxLength="20" DBLength="510" Mandatory="0" type="pattern" MinLength="0" />
+	  <field name="CreateDateFrom" FriendlyName="From Date" MaxLength="10" DBLength="510" DependentField="CreateDateTo" type="pattern"   Mandatory="0"  MinLength="8" />
+	  <field name="CreateDateTo" FriendlyName="To Date" MaxLength="10" DBLength="510" type="pattern"   Mandatory="0"  MinLength="8" />
+	  <field name="DueDateFrom" FriendlyName="From Due Date" MaxLength="10" DBLength="510" DependentField="DueDateTo" type="pattern"   Mandatory="0"  MinLength="8" />
+	  <field name="DueDateTo" FriendlyName="To Due Date" MaxLength="10" DBLength="510" type="pattern"   Mandatory="0"  MinLength="8" />
+	  <field name="PaymentReference" FriendlyName="Payment Reference" MaxLength="20" DBLength="510" Mandatory="0" type="pattern" MinLength="0" />
+
+	  <!--Lines added (Error Messages) for validation in SearchOrder page ********* Sandesh R. ********-->
+	  <field name="OrderNumber" FriendlyName="Order Number" MaxLength="20" DBLength="510" Mandatory="0" type="pattern" MinLength="0" />
+	  <field name="OrderDateFrom" FriendlyName="From Date" MaxLength="10" DBLength="510" DependentField="OrderDateTo" type="pattern"   Mandatory="0"  MinLength="8" />
+	  <field name="OrderDateTo" FriendlyName="To Date" MaxLength="10" DBLength="510" type="pattern"   Mandatory="0"  MinLength="8" />
+	  <!--<field name="InvoiceDueDateFrom" FriendlyName="From Due Date" MaxLength="10" DBLength="510" DependentField="InvoiceDueDateTo" type="pattern"   Mandatory="0"  MinLength="8" />
+	  <field name="InvoiceDueDateTo" FriendlyName="To Due Date" MaxLength="10" DBLength="510" type="pattern"   Mandatory="0"  MinLength="8" />-->
+	  <field name="OrderPaymentReference" FriendlyName="Payment Reference" MaxLength="20" DBLength="510" Mandatory="0" type="pattern" MinLength="0" />
+
+
+	  <field name="ConfirmPassword" FriendlyName="Confirm Password" MaxLength="20" DBLength="510" Mandatory="1"  MinLength="6" />
+	  <field name="AddressName" FriendlyName="Address Name" MaxLength="50" DBLength="510" Mandatory="1" MinLength="0" />
+	  <field name="FirstName" FriendlyName="First Name" MaxLength="60" DBLength="510" pattern="[_a-zA-Z0-9.' ]+" Mandatory="1" MinLength="0"/>
+	  <field name="LastName" FriendlyName="Last Name" MaxLength="60" DBLength="510" pattern="[_a-zA-Z0-9.' ]+" Mandatory="1" MinLength="0"/>
+	  <field name="Company" FriendlyName="Company" MaxLength="40" DBLength="510" Mandatory="0" MinLength="0"/>
+	  <field name="City" FriendlyName="City" MaxLength="20" DBLength="510" pattern="[a-zA-Z' ]+" Mandatory="1" MinLength="0"/>
+	  <field name="Country" FriendlyName="Country" MaxLength="20" DBLength="510" pattern="[a-zA-Z' ]+" Mandatory="1" Input="DropDownList"/>
+	  <field name="State" FriendlyName="State" MaxLength="20" DBLength="510" pattern="[a-zA-Z' ]+" Mandatory="1" Input="DropDownList" AlternateInput="TextBox" MinLength="0"/>
+	  <field name="County" FriendlyName="County" MaxLength="20" DBLength="510" pattern="[a-zA-Z0-9' ]+" Mandatory="1" Input="DropDownList" AlternateInput="TextBox" MinLength="0"/>
+	  <field name="Zip" FriendlyName="Zip" MaxLength="10" DBLength="510" Mandatory="1" DependentField="Country" type="pattern" MinLength="0">
+		  <condition FieldValue="United States" Pattern="^\d{5}([\-]\d{4})?$" />
+		  <condition FieldValue="India" Pattern="[0-9]{6}" />
+		  <condition FieldValue="Canada" Pattern="[a-zA-Z][0-9][a-zA-Z][ ][0-9][a-zA-Z][0-9]" />
+	  </field>
+	  <field name="TelephoneNumber"  FriendlyName="Phone" MaxLength="10" DBLength="510" Mandatory="1" MinLength="0" Pattern="[0-9-() ]" />
+	  <field name="TelephoneNumber2" FriendlyName="Phone.2" MaxLength="10" Input="TextBox" DBLength="510" Mandatory="0" MinLength="0" Pattern="[0-9-() ]" />
+	  <field name="TelephoneNumber3" FriendlyName="Phone.3" MaxLength="10" Input="TextBox" DBLength="510" Mandatory="0" MinLength="0" Pattern="[0-9-() ]" />
+	  <field name="TelExtension2"  FriendlyName="Ext2" MaxLength="4" Input="TextBox" DBLength="510" Mandatory="0" DependentField="TelephoneNumber2"  Pattern="[0-9-() ]" />
+	  <field name="TelExtension1"  FriendlyName="Ext1" MaxLength="4" Input="TextBox" DBLength="510" Mandatory="0" DependentField="TelephoneNumber"  Pattern="[0-9-() ]" />
+	  <field name="TelExtension3"  FriendlyName="Ext3" MaxLength="4" DBLength="510" Mandatory="0" DependentField="TelephoneNumber3"  Pattern="[0-9-() ]" />
+	  <field name="FaxExtension"  FriendlyName="FaxExt" MaxLength="4" Input="TextBox" DBLength="510" Mandatory="0" DependentField="FaxNumber"  Pattern="[0-9-() ]" />
+
+	  <field name="FaxNumber" FriendlyName="Fax Number" MaxLength="15" Input="TextBox" Mandatory="0" DBLength="510" MinLength="0" Pattern="[0-9-() ]"/>	  
+	  <field name="AddressLine1" FriendlyName="Address 1" MaxLength="50" DBLength="510" Mandatory="1" MinLength="0" pattern="[-_a-zA-Z0-9',;:#()'/. ]+"/>
+	  <field name="AddressLine2" FriendlyName="Address 2" MaxLength="50" DBLength="510" MinLength="0" pattern="[-_a-zA-Z0-9',;:#()'/. ]+"/>
+	  <field name="AddressLine3" FriendlyName="Address 3" MaxLength="50" DBLength="510" MinLength="0" pattern="[-_a-zA-Z0-9',;:#()'/. ]+"/>
+	  <field name="UserFriendlyName" FriendlyName="User Friendly Name" MaxLength="20" DBLength="510" Mandatory="1"/>
+    <field name="SaveAs" FriendlyName="Save As" MaxLength="20" DBLength="510" Mandatory="1"/>
+	  <field name="NameOnCard" FriendlyName="Name On Card" MaxLength="20" DBLength="510" Mandatory="1" pattern="[_a-zA-Z.' ]+"/>
+	  <field name="CardNumber" FriendlyName="Card Number" MaxLength="16" DBLength="510" Mandatory="1" pattern="[1-90']+"/>
+	  <field name="CardSecurityCode" FriendlyName="Card Security Code" MaxLength="4" DBLength="510" Mandatory="1" pattern="[1-90']+"/>
+	  <field name="SecurityAnswer" FriendlyName="Security Answer" MaxLength="50" DBLength="510" Mandatory="1" pattern="[a-zA-Z0-9.'/\-@$#*!~%`^_=|:;,?(){} ]" />
+	  <field name="CreditLimit" FriendlyName="Credit Limit" Maxlength="9" DBLength="510" Pattern="[0-9]+" />
+  </fields>
+
+  <ErrorMessages>
+	  <Error ErrorType="Mandatory" ErrorMessage="Please enter value for {0}."/>
+	  <Error ErrorType="Minlength" ErrorMessage="{0} must be at least {1} characters long."/>
+	  <Error ErrorType="Pattern" ErrorMessage="{0} contains some invalid characters."/>
+	  <!--Gowri commented this line-->
+	  <!--<Error ErrorType="EmailType" ErrorMessage="{0} is not valid."/>-->
+	  <Error ErrorType="EmailType" ErrorMessage="Please enter a valid {0}."/>
+	  <Error ErrorType="PasswordType" ErrorMessage="Your password is not secure enough. Use a combination of letters (upper and lower case), numbers and/or special characters."/>
+	  <Error ErrorType="FieldDependent" ErrorMessage="{0} is not valid for the {1} {2}."/>
+	  <Error ErrorType="ValueDependent" ErrorMessage="{0} and {1} do not match."/>
+	  <Error ErrorType="TelDependent" ErrorMessage="Please enter value for {1} as you entered {0}."/>
+	  <!--Gowri added Date Validation Tage for Checking the Dates-->
+	  <Error ErrorType="DateValidation" ErrorMessage="{0} Should be less than {1}." />
+	  <Error ErrorType="FieldErrorMessage" ErrorMessage="No results found for {0}" />
+  </ErrorMessages>
+
+  <GuestUserOrderSearchOptions>
+	  <GuestUserOrderSearchOption Name="OrderNumber" FriendlyName="Order Number" Visibility="1" Mandatory="1" AllowPartialMatch="1" />
+	  <GuestUserOrderSearchOption Name="OrderDateRange" FriendlyName="Order Date Range" Visibility="0" Mandatory="0" />
+	  <GuestUserOrderSearchOption Name="ShipZipCode" FriendlyName="Shipping Zip Code" Visibility="1" Mandatory="1" AllowPartialMatch="1" />
+	  <GuestUserOrderSearchOption Name="EmailAddress" FriendlyName="Email Address" Visibility="1" Mandatory="0" AllowPartialMatch="1" />
+	  <GuestUserOrderSearchOption Name="SKUCode" FriendlyName="Product Code" Visibility="1" Mandatory="1" AllowPartialMatch="1" />
+	  <GuestUserOrderSearchOption Name="ProductDescription" FriendlyName="Product Description" Visibility="0" Mandatory="1" AllowPartialMatch="1" />
+  </GuestUserOrderSearchOptions>
+
+  <PageExceptions>
+	  <Page name="NewCustomerRegistration" >
+		  <Pagefields>
+			  <Pagefield name="Password" FriendlyName="Password" MaxLength="20" DBLength="510" Mandatory="1" DependentField="ConfirmPassword" type="password" Strength="0" MinLength="6"/>
+			  <Pagefield name="ConfirmPassword" FriendlyName="Confirm Password" MaxLength="20" DBLength="510" Mandatory="1"  />
+		  </Pagefields>
+	  </Page>
+	  <Page name="ChangeLoginDetails" >
+		  <Pagefields>
+			  <Pagefield name="NewUserName" FriendlyName="New User Name" MaxLength="50" DBLength="510" type="pattern" DependentField="ConfirmNewUserName" MinLength="0"/>
+			  <Pagefield name="ConfirmNewUserName" FriendlyName="Confirm New UserName" MaxLength="50" DBLength="510"  type="pattern" />
+        <Pagefield name="NewEMailAddress" FriendlyName="New Email Address" MaxLength="50" DBLength="510" type="emailaddress" DependentField="ConfirmNewEmailAddress" MinLength="0"/>
+        <Pagefield name="ConfirmNewEmailAddress" FriendlyName="Confirm Email Address" MaxLength="50" DBLength="510" type="emailaddress" />
+			  <Pagefield name="NewPassword" FriendlyName="New Password" MaxLength="20" DBLength="510" DependentField="ConfirmNewPassword" type="password" Strength="0"  MinLength="6"/>
+			  <Pagefield name="ConfirmNewPassword" FriendlyName="Confirm New Password" MaxLength="20" DBLength="510" />
+			  <Pagefield name="FirstName" FriendlyName="First Name" MaxLength="60" DBLength="510" pattern="[_a-zA-Z0-9.' ]+" Mandatory="0" MinLength="0" />
+			  <Pagefield  name="LastName" FriendlyName="Last Name" MaxLength="60" DBLength="510" pattern="[_a-zA-Z0-9.' ]+" Mandatory="0" MinLength="0"/>
+		  </Pagefields>
+	  </Page>
+	  <Page name="EditContact" >
+		  <Pagefields>
+			  <Pagefield name="UserName" FriendlyName="User Name" MaxLength="50" DBLength="510" Mandatory="1" MinLength="0"/>
+        <Pagefield name="EmailAddress" FriendlyName="Email Address" MaxLength="50" DBLength="510" type="emailaddress" Mandatory="1" MinLength="0"/>
+			  <Pagefield name="Password" FriendlyName="Password" MaxLength="20" DBLength="510" type="password" DependentField="ConfirmPassword"  />
+			  <Pagefield name="ConfirmPassword" FriendlyName="Confirm Password" MaxLength="20" DBLength="510"  />
+			  <Pagefield name="ContactName" FriendlyName="First Name" MaxLength="120" DBLength="510" pattern="[_a-zA-Z0-9' ]+" Mandatory="1" MinLength="0"/>
+		  </Pagefields>
+	  </Page>
+    <Page name="EditPrimaryContact" >
+      <Pagefields>
+        <Pagefield name="UserName" FriendlyName="User Name" MaxLength="50" DBLength="510" Mandatory="1" MinLength="0"/>
+        <Pagefield name="EmailAddress" FriendlyName="Email Address" MaxLength="50" DBLength="510" type="emailaddress" Mandatory="1" MinLength="0"/>
+        <Pagefield name="ContactName" FriendlyName="First Name" MaxLength="120" DBLength="510" pattern="[_a-zA-Z0-9' ]+" Mandatory="1" MinLength="0"/>
+      </Pagefields>
+    </Page>
+	  <Page name="AddContact" >
+		  <Pagefields>
+			  <Pagefield name="UserName" FriendlyName="User Name" MaxLength="50" DBLength="510" Mandatory="1" MinLength="0"/>
+			  <Pagefield name="Password" FriendlyName="Password" MaxLength="20" DBLength="510" Mandatory="1" type="password" DependentField="ConfirmPassword" MinLength="6" />
+			  <Pagefield name="ConfirmPassword" FriendlyName="Confirm Password" MaxLength="20" DBLength="510" Mandatory="1"  MinLength="6" />
+			  <Pagefield name="ContactName" FriendlyName="Name" MaxLength="120" DBLength="510" pattern="[_a-zA-Z0-9' ]+" Mandatory="1" MinLength="0"/>
+        <Pagefield name="EmailAddress" FriendlyName="Email Address" MaxLength="50" DBLength="510" type="emailaddress" Mandatory="1" MinLength="0"/>
+      </Pagefields>
+	  </Page>
+
+	  <Page name="SendEMail" >
+		  <Pagefields>
+			  <Pagefield name="Name"  FriendlyName="Name" DBLength="510" pattern="[_a-zA-Z0-9' ]+" MinLength="0" Mandatory="1" MaxLength="20"/>
+			  <Pagefield name="EmailFrom"  FriendlyName="Email From" DBLength="510" type="emailaddress" Mandatory="1" MaxLength="50" MinLength="0"/>
+        <Pagefield name="EmailTo" FriendlyName="Email To" DBLength="510" pattern="[_a-zA-Z0-9;.@ ]+" Mandatory="1" MaxLength="100" MinLength="0"/>
+		  </Pagefields>
+	  </Page>
+	  <!--Gowri Created MyInvoice Page here for exception handling-->
+	  <page name="MyInvoices">
+		  <Pagefields>
+			  <Pagefield name="InvoiceOrOrderNumber"  FriendlyName="Invoice Number" pattern="[_a-zA-Z0-9' ]+" DBLength="510"  MinLength="0" Mandatory="0" MaxLength="20"/>
+			  <Pagefield name="CreateDateFrom"  FriendlyName="From Date" DBLength="510" DependentField="CreateDateTo" type="DateValidation"  pattern="[0-9;/-]+"  MinLength="8" Mandatory="0" MaxLength="10"/>
+			  <Pagefield name="CreateDateTo"  FriendlyName="To Date" DBLength="510"  pattern="[_0-9;/-]" MinLength="8" Mandatory="0" MaxLength="10"/>
+			  <Pagefield name="DueDateFrom"  FriendlyName="From Due Date" DBLength="510" DependentField="DueDateTo" type="DateValidation"  pattern="[0-9;/-]+"  MinLength="8" Mandatory="0" MaxLength="10"/>
+			  <Pagefield name="DueDateTo"  FriendlyName="To Due Date" DBLength="510"  pattern="[0-9;/-]+" MinLength="8" Mandatory="0" MaxLength="10"/>
+			  <Pagefield name="PaymentReference"  FriendlyName="Payment Reference" DBLength="510" pattern="[_a-zA-Z0-9' ]+" MinLength="0" Mandatory="0" MaxLength="20"/>
+		   </Pagefields> 
+	  </page>
+
+	  <!--Lines added for validation in SearchOrder page ********* Sandesh R. ********-->
+	  <page name="SearchOrders">
+		  <Pagefields>
+			  <Pagefield name="OrderNumber"  FriendlyName="Order Number" pattern="[_a-zA-Z0-9' ]+" DBLength="510"  MinLength="0" Mandatory="0" MaxLength="20"/>
+			  <Pagefield name="OrderDateFrom"  FriendlyName="From Date" DBLength="510" DependentField="OrderDateTo" type="DateValidation"  pattern="[0-9;/-]+"  MinLength="8" Mandatory="0" MaxLength="10"/>
+			  <Pagefield name="OrderDateTo"  FriendlyName="To Date" DBLength="510"  pattern="[_0-9;/-]" MinLength="8" Mandatory="0" MaxLength="10"/>
+			  <!--<Pagefield name="InvoiceDueDateFrom"  FriendlyName="From Due Date" DBLength="510" DependentField="InvoiceDueDateTo" type="DateValidation"  pattern="[0-9;/-]+"  MinLength="8" Mandatory="0" MaxLength="10"/>
+			  <Pagefield name="InvoiceDueDateTo"  FriendlyName="To Due Date" DBLength="510"  pattern="[0-9;/-]+" MinLength="8" Mandatory="0" MaxLength="10"/>-->
+			  <Pagefield name="OrderPaymentReference"  FriendlyName="Payment Reference" DBLength="510" pattern="[_a-zA-Z0-9' ]+" MinLength="0" Mandatory="0" MaxLength="20"/>
+		  </Pagefields>
+	  </page>
+    <Page name="forgotpassword">
+      <Pagefields>
+        <Pagefield name="EmailAddress" FriendlyName="Email Address" MaxLength="50" DBLength="510" type="emailaddress" Mandatory="1" MinLength="0"/>
+      </Pagefields>
+    </Page>
+   </PageExceptions>
+
+</root>
