@@ -84,3 +84,6 @@ append this to the 1.3core.css file to owerwride defaults
   float: left;
   margin: 0 0 20px 0;
 }
+img {
+  display: none !important;
+}
