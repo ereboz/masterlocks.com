@@ -1,4 +1,5 @@
-/* Brian's Grid Variables to make life easier
+/* This page to override 1.3.core.css when put after 1.3.core.css in E:\Ignify\Websites\Store\App_Data\combres.xml
+resource set.
 ========================================================================== */
 #authorizedresellercontainer .hd {
   border-bottom: none;
@@ -11,4 +12,7 @@
   margin-left: -8px;
   color: #fff;
   background-color: #0972a4;
+}
+.footer .footer_links .social_icons a {
+  color: #dcdcdc;
 }
