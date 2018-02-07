@@ -96,6 +96,7 @@ div#narrowsearchfilter span.filter_line{ border-bottom:1px solid #cf3341; width:
 div#narrowsearchfilter dl.selectedfilter + dl dt.listname{cursor:default;}
 div#narrowsearchfilter dt.listname span.listnamespan{display:inline-block; width:82%; }
 div#narrowsearchfilter dt.listname span.listnamespan.Price{cursor: default;  }
+div#narrowsearchfilter dt.listname .fa{font-size:20px; margin:10px 5px 0 0;}
 div#narrowsearchfilter dl.narrowselectdetails dt.listname{ }
 div#narrowsearchfilter dd.listdefined,
 div#narrowsearchfilter dd.listdefined ul,
