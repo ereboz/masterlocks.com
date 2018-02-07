@@ -45,7 +45,7 @@
     display: inline-block;
     border: 1px solid @gray-light;
     .rounded-corners();
-    padding: 8%;
+    padding: 11%;
     height: 35px;
     background: white;
     font-family: @font-roboto;
@@ -193,11 +193,11 @@
     }
     
     @media @tablet-min {
-        width: 33%;
+        width: 100%;
     }
     
     @media @desktop-min {
-        width: 33%;
+        width: 50%;
     }
 }
 
@@ -217,10 +217,10 @@
     
     .item-image-wrapper {
         text-align: center;
-        width: 50%;
+        width: 40%;
         float: left;
         min-height: 281px;
-        border-right: 1px dotted @gray-medium;
+        border-right: 1px dotted @gray-light;
     
         .item-title {
             margin-bottom: 12%;
@@ -230,25 +230,14 @@
             .keyway {
                 text-align: center;
                 font-weight: 700;
-                font-size: 15px;
+                font-size: 18px;
                 color: @red;
                 margin-top: 12px;
-                
-                &.retail {
-                    color: @black;
-                }
-                
-                &.replacement {
-                    color: @red;
-                }
-    
-
-
             }
         
         }
         
-        .item-image.retail {
+        .item-image {
             
             img {
                 display: inline-block;
@@ -267,28 +256,6 @@
                 }
             }
         }
-        
-        .item-image {
-            img {
-                display: inline-block;
-            }
-        }
-        
-        &.retail {
-            background-color: lighten(@green-light,16%);
-            .retail-message {
-                font-size: 11px;
-            }
-        }
-        
-        &.replacement {
-            background-color: lighten(@orange,47%);
-    
-            .replacement-message {
-                font-size: 11px;
-            }
-        }
-
     }
     
     
@@ -297,17 +264,15 @@
         text-align: left;
         height: 60px;
         padding-top: 7px;
-        width: 100%;
+        width: 60%;
         float: left;
-        min-height: 125px;
+        min-height: 281px;
         background-color: lighten(@gray-light, 9%);
-        border-top: 1px dotted @gray-medium;
         
         
         .item-desc {
             color: darken(@gray-medium,20%);
             float: left;
-            width: 100%;
             
             @media @tablet-min {
                 margin: 4px;
@@ -316,7 +281,7 @@
             .wrapper-title {
                 font-size: 18px;
                 font-weight: 700;
-                margin: 0 0 5% 0;
+                margin: 0 0 15% 0;
                 text-align: center;
                 
                 .details {
@@ -325,7 +290,10 @@
                         min-height: 40px;
                     }
                 }
-                
+    
+                .replacement-num {
+                    color: @red;
+                }
             }
 
             .wrapper-buy-items {
@@ -335,34 +303,43 @@
                 width: 100%;
                 padding: 10px;
                 
-                //div[class^="wrapper-buy"] {
-                //    margin-bottom: 10px;
-                //    border-bottom: 1px dotted @gray-light;
-                //
-                //    span {
-                //        margin-top: 8px;
-                //    }
-                //}
+                div[class^="wrapper-buy"] {
+                    margin-bottom: 10px;
+                    border-bottom: 1px dotted @gray-light;
+                    
+                    span {
+                        margin-top: 8px;
+                    }
+                }
                 
                 .wrapper-buy-keys {
-                    width: 33%;
+                    width: 100%;
                     float: left;
                     
-
+                    .keys {
+                        float: left;
+                        width: 80%;
+                    }
                 }
                 
                 .wrapper-buy-locks {
-                    width: 33%;
+                    width: 100%;
                     float: left;
                     
-
+                    .locks {
+                        float: left;
+                        width: 80%;
+                    }
                 }
                 
                .wrapper-buy-similar-items {
-                   width: 33%;
+                   width: 100%;
                    float: left;
                    
-
+                   .similar-items {
+                       float: left;
+                       width: 80%;
+                   }
                }
                
             }
@@ -378,8 +355,7 @@
 .btn-view-details {
     display: block;
     float: left;
-    width: 100%;
-    padding-right: 3%;
+    width: 20%;
     
     .view-details {
         .btn-transparent();

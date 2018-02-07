@@ -51,7 +51,7 @@ div#consumer-electronics1 #productreviews #addcustomerreviewfeedback{width:100%;
 div#consumer-electronics1 div#skudetails ul.skuprice{float:left;line-height:40px}
 div#consumer-electronics1 #proddetails #productshortdescriptions_placeholder{margin-top:90px}
 div#consumer-electronics1 #productdescriptions_tabplaceholder{width:100%;margin-top:10px}
-.r-tabs .r-tabs-panel .productoverview{float:left; width:85%;}
+.r-tabs .r-tabs-panel .productoverview{float:left; width:100%;color:#000;}
 .r-tabs .r-tabs-panel .customerreview{vertical-align:top; float:left; width:15%;}
 .r-tabs .r-tabs-panel .customerreview ol li:nth-child(3){position:relative;}
 .r-tabs .r-tabs-panel .customerreview .socialbox{position:relative;}
@@ -72,7 +72,7 @@ div#consumer-electronics1 div#productdescriptions_tabplaceholder dd.panes ol li{
 /*div#consumer-electronics1 ul.actionlinks li#movetowishlist a.movetowishlist{border:medium none;cursor:pointer;display:inline-block;height:18px!important;overflow:hidden;text-indent:0px!important;float:none;position:relative;padding:0 0 0 22px !important; line-height:23px}*/
 div#consumer-electronics1 ul.topratingholder li a span.reviewscount{padding-top:3px}
 div#consumer-electronics1 div#socialbookmarking{position:absolute; left:0; top:41px;}
-.r-tabs .r-tabs-panel .productlist ul.skulist li.cartline{border-bottom:solid 1px #cfcfcf;margin-bottom:5px;float:left;width:100%; padding-bottom:5px;}
+.r-tabs .r-tabs-panel .productlist ul.skulist li.cartline{border-bottom:solid 1px #cfcfcf;margin-bottom:5px;float:left;width:100%; padding-bottom:5px;padding-top:10px;}
 .r-tabs .r-tabs-panel .productlist ul.skulist li.cartline.accessories{border-bottom:none!important;}
 .r-tabs .r-tabs-panel .productlist ul.skulist li.cartline ol li{display:inline-block}
 .r-tabs .r-tabs-panel .productlist ul.skulist li.cartline ol li.producthumb{width:100px}
@@ -127,10 +127,10 @@ div#proddetails ul.actionlinks li#addtocart,div#proddetails ul.actionlinks li.ac
 table.quantitypricing tr td{color:#555;font-size:12px;text-align:left;border:none;}
 table.quantitypricing tr td table#qtypricingview tr td{padding:3px;}
 table.quantitypricing tr td table#qtypricingview tr.listmultiprice td table tr td{ padding:0}
-table.quantitypricing tr td table#qtypricingview tr.listmultiprice td table{width:75px ; border-collapse:collapse;}
-table.quantitypricing tr td table#qtypricingview{   border-collapse: collapse;left: 0; position: absolute; top: -3px; width: 79px; z-index:10!important}
+table.quantitypricing tr td table#qtypricingview tr.listmultiprice td table{border-collapse:collapse;}
+table.quantitypricing tr td table#qtypricingview{}
 table.quantitypricing tr td table#qtypricingview tr.listmultiprice{border:#ccc solid;border-width:1px 0 0 0; float:left; width:75px}
-table.quantitypricing tr td span.arrowbutton, span.arrowbutton:hover {	background:url(../images/icons_24bit.png) no-repeat 0 -517px; height:44px;margin: 0;border-bottom: none;cursor: pointer;width:20px;display:block;position:absolute;top:-4px; left:84px;}
+table.quantitypricing tr td span.arrowbutton, span.arrowbutton:hover {}
 table.quantitypricing tr td span.arrowbutton.active {background-position:-21px -517px;}
 table.quantitypricing{border:0;border-collapse:collapse}
 
@@ -418,12 +418,16 @@ div#singlesku span#sucseescartmessage {color: #72E22E;display: inline;right: 0;p
 .Keyingoptions .keyhead{background:#eeeeee; padding:10px; color:#3B4348; text-align:center}
 .Keyingoptions .keyhead h3{font-size:16px; text-align:center; font-weight:bold}
 .aslowasprice.price{font-size:20px; font-weight:bold;}
-.customcombo{background:#eaeaea; padding:10px; margin-top:20px}
+.customcombo{background:#eaeaea; padding:10px; margin-top:20px; border:1px solid red;}
 .customcombo strong{color:#5A8205; width:100%; display:block}
-.customcombo input{margin-top:8px; width:100%}
+    .customcombo input {
+        margin-top: 8px;
+        border: 1px solid #197b30;
+    }
 .customcombo span{color:#000!important}
-.customcombo .pleaseread{width: 100%;text-align: right;display: block;margin: 8px 0px 0px;}
+.customcombo .pleaseread{width: 100%;text-align: center;display: block;margin: 8px 0px 0px;}
 .customcombo .pleaseread a{text-decoration:underline}
+.customcombotext {width:200px; margin-left:15px;}
 .crosswrap span.aslowasprice{font-size:14px;}
 .skudropdown{background:#eeeeee; padding:10px; color:#3B4348; font-weight:bold;} 
 .skudropdown select{width:100%; border: 1px solid #999;padding: 4px;border-radius: 4px;}
@@ -446,14 +450,28 @@ div#proddetails ul.actionlinks a.sendtofriend:before{content: "\f0e0";  color:#1
 h3.crossellinghead{ border-bottom:4px solid #eeeeee; font-family: montserratregular!important; font-size:14px; color:#3B4348;  margin-bottom:16px; text-transform:uppercase }
 h3.crossellinghead span{ background:#fff;font-family: montserratregular!important; display:inline-block; padding-right:8px;  position:relative; bottom:-4px; }
 .crosswrap .prodlink{text-transform:uppercase; margin-bottom:4px;min-height:65px;display: block;font-family: montserratregular!important;}
-.crossselling.owl-carousel .owl-buttons {border-bottom: 4px solid #197b30;  height: 28px; position: absolute; right: 0; top: -44px; width: 42px; text-align:right}
-.crossselling.owl-carousel .owl-prev, div.owl-carousel .owl-next {display: inline-block!important; margin-right: 1px;}
+/*.crossselling.owl-carousel .owl-buttons {border-bottom: 4px solid #197b30;  height: 28px; position: absolute; right: 0; top: -44px; width: 42px; text-align:right}*/
+.crossselling.owl-carousel .owl-prev, div.owl-carousel .owl-next { margin-right: 1px;}
 .crossselling.owl-carousel div.nextitem,
-.crossselling.owl-carousel div.previousitem{background: #197b30;cursor: pointer; height:20px; width:20px; color:#fff; text-align:center; line-height:20px;  display:block;}
+.crossselling.owl-carousel div.previousitem {
+    line-height:50px;
+    background: #000;
+    border-radius: 4px;
+    width: 50px;
+    font-size: 20px;
+    height: 50px;
+    color: #fff;
+    filter: alpha(opacity=50);
+    opacity: .5;
+    z-index: 88;
+    margin-top: -25px;
+    text-align: center;
+}
 .crossselling.owl-carousel div.previousitem:after{ content:"<"}
 .crossselling.owl-carousel div.nextitem:after{ content:">"}
-.crossselling.owl-carousel div.previousitem {left:0;top:0;}
-.crossselling.owl-carousel div.nextitem {right:0;top:0;}
+
+/*.crossselling.owl-carousel div.previousitem {left:0;top:0;}
+.crossselling.owl-carousel div.nextitem {right:0;top:0;} */
 
 /*#alternateimages_carousel.owl-carousel .owl-buttons {border-bottom: 4px solid #197b30;  height: 28px; position: absolute; right: 0; top: -44px; width: 42px; text-align:right}*/
 #alternateimages_carousel.owl-carousel .owl-prev, div.owl-carousel .owl-next {display: inline-block!important; margin-right: 1px;}
@@ -757,7 +775,7 @@ div#consumer-electronics1 h1.productname span.manufacturer{font-family:montserra
     color: #000;
 }
 
-#notIgnify h2 {
+#not-ignify h2 {
     font-size: 30px;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -767,12 +785,12 @@ div#consumer-electronics1 h1.productname span.manufacturer{font-family:montserra
     color: #000;
 }
 
-#notIgnify ul {
+#not-ignify ul {
     margin-top: 0;
     margin-bottom: 10px;
 }
 
-#notIgnify p {
+#not-ignify p {
     margin: 0 0 10px;
     color: #000;
 }
