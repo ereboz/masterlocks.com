@@ -1,18 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald");
 /*HODGE ADDITIONS */
-.wrapper-extras .school-banner {
-  float: left;
-  width: 60%;
-}
-.wrapper-extras .language {
-  float: left;
-  width: 40%;
-  padding: 25px 0 0 5px;
-}
-.wrapper-extras .language span {
-  font-size: 16px;
-  font-weight: 700;
-}
 #banners {
   position: static !important;
 }
@@ -59,120 +46,19 @@
 #homepagebanners > .container {
   position: relative;
 }
-#contentId_Hodge_homebanner2 .carousel-caption {
-  display: block;
-  position: absolute;
-  width: 100%;
-  top: 42%;
-  left: 10%;
-  text-align: left;
+.banner #contentId_Hodge_homebanner1 img {
+  width: 76% !important;
 }
-#contentId_Hodge_homebanner2 .carousel-caption h1,
-#contentId_Hodge_homebanner2 .carousel-caption h2,
-#contentId_Hodge_homebanner2 .carousel-caption h3 {
-  color: #fff;
+.banner #contentId_Hodge_homebanner2 img {
+  width: 19% !important;
 }
-#contentId_Hodge_homebanner2 .carousel-caption h1 {
-  text-transform: uppercase;
+.banner #contentId_Hodge_homebanner3 img {
+  width: 25.4% !important;
 }
-@media (min-width: 768px) {
-  #contentId_Hodge_homebanner2 .carousel-caption {
-    display: block;
-    position: absolute;
-    width: 100%;
-    top: 42%;
-    left: 10%;
-    text-align: left;
-  }
-  #contentId_Hodge_homebanner2 .carousel-caption h1 {
-    font-size: 30px;
-  }
-  #contentId_Hodge_homebanner2 .carousel-caption h2 {
-    color: #fff;
-    font-size: 25px;
-  }
-  #contentId_Hodge_homebanner2 .carousel-caption h3 {
-    color: #fff;
-    font-size: 15px;
-  }
+.banner #contentId_Hodge_homebanner4 img {
+  width: 76% !important;
 }
-@media (min-width: 992px) {
-  #contentId_Hodge_homebanner2 .carousel-caption {
-    display: block;
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 23%;
-    text-align: left;
-  }
-  #contentId_Hodge_homebanner2 .carousel-caption h1 {
-    font-size: 40px;
-  }
-  #contentId_Hodge_homebanner2 .carousel-caption h2 {
-    font-size: 35px;
-  }
-  #contentId_Hodge_homebanner2 .carousel-caption h3 {
-    font-size: 25px;
-  }
-}
-#contentId_Hodge_homebanner3 .carousel-caption {
-  display: block;
-  position: absolute;
-  width: 100%;
-  top: 33%;
-  left: 6%;
-  text-align: left;
-}
-#contentId_Hodge_homebanner3 .carousel-caption h1,
-#contentId_Hodge_homebanner3 .carousel-caption h2,
-#contentId_Hodge_homebanner3 .carousel-caption h3 {
-  color: #fff;
-}
-#contentId_Hodge_homebanner3 .carousel-caption h1 {
-  text-transform: uppercase;
-}
-#contentId_Hodge_homebanner3 .carousel-caption h3 {
-  width: 45%;
-}
-@media (min-width: 768px) {
-  #contentId_Hodge_homebanner3 .carousel-caption {
-    display: block;
-    position: absolute;
-    width: 100%;
-    top: 42%;
-    left: 10%;
-    text-align: left;
-  }
-  #contentId_Hodge_homebanner3 .carousel-caption h1 {
-    font-size: 30px;
-  }
-  #contentId_Hodge_homebanner3 .carousel-caption h2 {
-    font-size: 25px;
-  }
-  #contentId_Hodge_homebanner3 .carousel-caption h3 {
-    font-size: 15px;
-  }
-}
-@media (min-width: 992px) {
-  #contentId_Hodge_homebanner3 .carousel-caption {
-    display: block;
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 20%;
-    text-align: left;
-  }
-  #contentId_Hodge_homebanner3 .carousel-caption h1 {
-    font-size: 40px;
-  }
-  #contentId_Hodge_homebanner3 .carousel-caption h2 {
-    font-size: 35px;
-  }
-  #contentId_Hodge_homebanner3 .carousel-caption h3 {
-    font-size: 25px;
-  }
-}
-#contentId_Hodge_homebanner4 .carousel-caption {
+.banner #contentId_Hodge_homebanner4 .carousel-caption {
   display: block;
   position: absolute;
   width: 100%;
@@ -180,19 +66,19 @@
   left: 5%;
   text-align: left;
 }
-#contentId_Hodge_homebanner4 .carousel-caption h1,
-#contentId_Hodge_homebanner4 .carousel-caption h2,
-#contentId_Hodge_homebanner4 .carousel-caption h3 {
+.banner #contentId_Hodge_homebanner4 .carousel-caption h1,
+.banner #contentId_Hodge_homebanner4 .carousel-caption h2,
+.banner #contentId_Hodge_homebanner4 .carousel-caption h3 {
   color: #fff;
 }
-#contentId_Hodge_homebanner4 .carousel-caption h1 {
+.banner #contentId_Hodge_homebanner4 .carousel-caption h1 {
   text-transform: uppercase;
 }
-#contentId_Hodge_homebanner4 .carousel-caption h3 {
+.banner #contentId_Hodge_homebanner4 .carousel-caption h3 {
   width: 70%;
 }
 @media (min-width: 768px) {
-  #contentId_Hodge_homebanner4 .carousel-caption {
+  .banner #contentId_Hodge_homebanner4 .carousel-caption {
     display: block;
     position: absolute;
     width: 100%;
@@ -200,19 +86,19 @@
     left: 8%;
     text-align: left;
   }
-  #contentId_Hodge_homebanner4 .carousel-caption h1 {
+  .banner #contentId_Hodge_homebanner4 .carousel-caption h1 {
     font-size: 30px;
   }
-  #contentId_Hodge_homebanner4 .carousel-caption h2 {
+  .banner #contentId_Hodge_homebanner4 .carousel-caption h2 {
     font-size: 25px;
   }
-  #contentId_Hodge_homebanner4 .carousel-caption h3 {
+  .banner #contentId_Hodge_homebanner4 .carousel-caption h3 {
     font-size: 15px;
     width: 50%;
   }
 }
 @media (min-width: 992px) {
-  #contentId_Hodge_homebanner4 .carousel-caption {
+  .banner #contentId_Hodge_homebanner4 .carousel-caption {
     display: block;
     position: absolute;
     width: 100%;
@@ -220,13 +106,13 @@
     left: 21%;
     text-align: left;
   }
-  #contentId_Hodge_homebanner4 .carousel-caption h1 {
+  .banner #contentId_Hodge_homebanner4 .carousel-caption h1 {
     font-size: 40px;
   }
-  #contentId_Hodge_homebanner4 .carousel-caption h2 {
+  .banner #contentId_Hodge_homebanner4 .carousel-caption h2 {
     font-size: 35px;
   }
-  #contentId_Hodge_homebanner4 .carousel-caption h3 {
+  .banner #contentId_Hodge_homebanner4 .carousel-caption h3 {
     font-size: 25px;
     width: 50%;
   }
