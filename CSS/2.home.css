@@ -1,5 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald");
 /*HODGE ADDITIONS */
+.wrapper-extras .school-banner {
+  float: left;
+  width: 60%;
+}
+.wrapper-extras .language {
+  float: left;
+  width: 40%;
+  padding: 25px 0 0 5px;
+}
+.wrapper-extras .language span {
+  font-size: 16px;
+  font-weight: 700;
+}
 #banners {
   position: static !important;
 }
