@@ -67,7 +67,7 @@ div#homepagebanners {
   position: absolute;
   width: 100%;
   top: 34%;
-  left: 5%;
+  left: 15%;
   text-align: left;
 }
 .banner #contentId_Hodge_homebanner4 .carousel-caption h1,
@@ -83,11 +83,8 @@ div#homepagebanners {
 }
 @media (min-width: 768px) {
   .banner #contentId_Hodge_homebanner4 .carousel-caption {
-    display: block;
-    position: absolute;
-    width: 100%;
-    top: 42%;
-    left: 8%;
+    top: 40%;
+    left: 15%;
     text-align: left;
   }
   .banner #contentId_Hodge_homebanner4 .carousel-caption h1 {
@@ -103,9 +100,6 @@ div#homepagebanners {
 }
 @media (min-width: 992px) {
   .banner #contentId_Hodge_homebanner4 .carousel-caption {
-    display: block;
-    position: absolute;
-    width: 100%;
     top: 50%;
     left: 21%;
     text-align: left;
@@ -494,6 +488,12 @@ div.owl-carousel.brandscarousel .nextitem {
   }
   div.owl-carousel div.previousitem {
     left: -50px;
+  }
+  .carousel-control.right {
+    right: -40px;
+  }
+  .carousel-control.left {
+    left: -40px;
   }
   div.owl-carousel.brandscarousel .previousitem {
     left: -65px;

@@ -268,8 +268,15 @@ div#homepagebanners {
         img {
         width: 76% !important;
     }
+
     .carousel-caption {
-        
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 34%;
+        left: 15%;
+        text-align: left;
+
         h1, h2, h3 {
             color: @white;
         }
@@ -281,20 +288,12 @@ div#homepagebanners {
             width: 70%;
         }
     
-        display: block;
-        position: absolute;
-        width: 100%;
-        top: 34%;
-        left: 5%;
-        text-align: left;
+
         
         @media @tablet-min {
-            
-            display: block;
-            position: absolute;
-            width: 100%;
-            top: 42%;
-            left: 8%;
+
+            top: 40%;
+            left: 15%;
             text-align: left;
             
             h1 {
@@ -312,10 +311,7 @@ div#homepagebanners {
         }
         
         @media @desktop-min {
-            
-            display: block;
-            position: absolute;
-            width: 100%;
+
             top: 50%;
             left: 21%;
             text-align: left;
@@ -764,10 +760,10 @@ div.owl-carousel.brandscarousel {
         }
     }
     .carousel-control.right {
-        // right: -50px;
+        right: -40px;
     }
     .carousel-control.left {
-        // left: -50px;
+        left: -40px;
     }
     div.owl-carousel.brandscarousel {
         .previousitem {
@@ -793,6 +789,7 @@ div.owl-carousel.brandscarousel {
         right: 10px;
     }
 }
+
 @media screen and (max-width:1024px) {
     .carousel-control {
         margin-top: -20px;
