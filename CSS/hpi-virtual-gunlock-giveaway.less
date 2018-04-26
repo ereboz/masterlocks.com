@@ -1,0 +1,116 @@
+/* Brian's Grid Variables to make life easier
+========================================================================== */
+// min-widths
+@phone-xxxs-min: ~"(min-width: 320px)";
+@phone-xxs-min: ~"(min-width: 375px)";
+@phone-min: ~"(min-width: 480px)";
+@tablet-min: ~"(min-width: 768px)";
+@desktop-min: ~"(min-width: 992px)";
+@desktop-large-min: ~"(min-width: 1200px)";
+
+// max-widths
+@phone-xxxs-max: ~"(max-width: 320px)";
+@phone-xxs-max: ~"(max-width: 375px)";
+@phone-max: ~"(max-width: 480px)";
+@tablet-max: ~"(max-width: 768px)";
+@desktop-max: ~"(max-width: 992px)";
+@desktop-large-max: ~"(max-width: 1200px)";
+
+
+// fonts
+@font-opensans: 'Open Sans', sans-serif;
+
+
+// color variables
+@black: #000;
+@gray-background: #f5f7f9;
+
+@black: #000;
+@brown: #ab935b;
+@white: #fff;
+
+/* MIXIN'S
+========================================================================== */
+
+
+/* VIRTUAL PAGES (SCHOOLS)
+========================================================================== */
+
+// global override for img
+
+div#catalog_content div#home img {
+    width: 100% !important;
+}
+
+.virtualpage-gunlock-wrapper {
+    .wrapper-main {
+        // margin: 50px 0;
+    }
+}
+
+
+.wrapper-inner {
+
+    width: 100%;
+
+    .left {
+        float: left;
+        width: 54%;
+    }
+
+    .right {
+        float: left;
+        width: 38%;
+    }
+
+    .single {
+        float: left;
+        width: 92%;
+    }
+
+    img {
+        max-width: 100% !important;
+        vertical-align: top;
+    }
+
+    // .title-wrapper {
+    //     min-height: 408px;
+    //     max-height: 408px;
+    // }
+
+    .title {
+        
+        span {
+            display: block;
+        }
+
+        .box {
+            background-color: @brown;
+            font-size: 75px;
+            text-transform: uppercase;
+            font-family: @font-opensans;
+            font-weight: 700;
+            color: @white;
+            text-align: center;
+            margin-bottom: 20px;
+            letter-spacing: 5px;
+        }
+
+        .text {
+            margin-left: 20px;
+            font-size: 65px;
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: 62px;
+
+            &.black {
+                color: @black;
+            }
+
+            &.brown {
+                color: @brown;
+            }
+        }
+    }
+
+}
