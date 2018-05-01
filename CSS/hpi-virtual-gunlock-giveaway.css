@@ -1,0 +1,55 @@
+/* Brian's Grid Variables to make life easier
+========================================================================== */
+/* MIXIN'S
+========================================================================== */
+/* VIRTUAL PAGES (SCHOOLS)
+========================================================================== */
+div#catalog_content div#home img {
+  width: 100% !important;
+}
+.wrapper-inner {
+  width: 100%;
+}
+.wrapper-inner .left {
+  float: left;
+  width: 54%;
+}
+.wrapper-inner .right {
+  float: left;
+  width: 38%;
+}
+.wrapper-inner .single {
+  float: left;
+  width: 92%;
+}
+.wrapper-inner img {
+  max-width: 100% !important;
+  vertical-align: top;
+}
+.wrapper-inner .title span {
+  display: block;
+}
+.wrapper-inner .title .box {
+  background-color: #ab935b;
+  font-size: 75px;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+}
+.wrapper-inner .title .text {
+  margin-left: 20px;
+  font-size: 65px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 62px;
+}
+.wrapper-inner .title .text.black {
+  color: #000;
+}
+.wrapper-inner .title .text.brown {
+  color: #ab935b;
+}
