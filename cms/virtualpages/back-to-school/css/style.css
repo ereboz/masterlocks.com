@@ -190,6 +190,15 @@ input:focus, .btn:focus, a:focus, button:focus{
     color: #000 !important;
 }
 
+.wrapper-product {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.wrapper-product a {
+    text-decoration: none;
+}
+
 /* -------MEDIA QUERY
 ================================================  ----*/
 
