@@ -1,0 +1,265 @@
+
+/*-- RESET CSS
+--------------------------------------------------*/
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Source Sans Pro', sans-serif; /* 400,600,700*/
+	margin: 0;
+	padding: 0;
+}
+ol,ul{
+	list-style-type: none;
+}
+img{
+	border: none;
+    width: 100%;
+}
+a{
+	text-decoration: none;
+    
+}
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	font-weight: 600;
+	color: #333333;
+}
+input:focus, .btn:focus, a:focus, button:focus{
+	outline: 0;
+}
+
+
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+
+
+/* ------- BANNER SECTION CSS ------- */
+#banner{
+    width: 100%;
+    height: 100vh;
+    // background-image: url('../images/banner.jpg');
+    background-image: url('/Templates/Hodge/images/back-to-school/images/banner.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.banner-overlay{
+    width: 100%;
+    height: 100vh;
+    background: #000000ba;
+}
+
+#banner h1{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 80px;
+    letter-spacing: 3px;
+    
+}
+
+#banner p{
+    font-family: 'Montserrat', sans-serif;
+    color: #ffc107;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+}
+
+#banner .drop-button{
+    background: #ffffff00;
+    color: #fff !important;
+    padding: 10px 30px;
+    border: 2px solid #fff;
+    font-size: 18px;
+    transition: 0.3s;
+    
+}
+#banner .drop-button:hover{
+    background: orange;
+    color: #fff;
+    padding: 10px 30px;
+    border: 2px solid #fff;
+    font-size: 18px;
+    
+}
+#banner a{
+    text-decoration: none;
+}
+
+.banner-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+/* ------- PRODUCT SECTION CSS ------- */
+
+#products{
+    width: 100%;
+    height: auto;
+    background: #fff;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#products h1{
+    font-family: 'Montserrat', sans-serif;
+    color: orange;
+    font-size: 40px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin: 20px 0 70px 0;
+    
+}
+
+.buy-button{
+    padding: 10px 30px;
+    display: block;
+    width: 50%;
+    margin: 0 auto 30px auto;
+    text-align: center;
+    background: orange;
+    color: #fff !important;
+    transition: 0.2s;
+    border: 1px solid #fff;
+}
+.buy-button:hover{
+    background: #fff;
+    color: orange !important;
+    border: 1px solid orange;
+}
+
+.content a{
+    text-decoration: none;
+}
+
+.content img {
+    margin-bottom: 15px;
+}
+
+#products .price{
+    font-weight: bold;
+    color: #000 !important;
+}
+
+
+#products .empty{
+    width: 20%;
+}
+
+#products .content{
+    width: 30%;
+}
+
+#products .content h2{
+    font-size: 30px;
+}
+
+#products .wrapper-price {
+    margin: 0 0 15px 0;
+}
+
+.wrapper-price span {
+    font-size: 14px;
+}
+
+#products p {
+    margin: 0 0 10px;
+    font-size: 14px;
+    color: #000;
+}
+
+#products span {
+    color: #000 !important;
+}
+
+.wrapper-product {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.wrapper-product a {
+    text-decoration: none;
+}
+
+/* -------MEDIA QUERY
+================================================  ----*/
+
+
+/*--- For Screen less that 992px width ---*/
+@media (max-width: 991px){
+#products .empty{
+    width: 10%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+#products .content{
+    width: 40%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+    #products .content h2{
+        
+    }
+}
+
+
+/*--- For Screen less that 768px width ---*/
+@media (max-width: 767px){
+    
+#products .empty{
+    width: 100%;
+}
+
+#products .content{
+    width: 100%;
+}
+
+  
+}
+
+
+/*--- For Screen less that 468px width ---*/
+@media (max-width: 467px){
+    #products .empty{
+        width: 100%;
+    }
+
+    #products .content{
+        width: 100%;
+    } 
+    #banner h1{
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    #banner p{
+      font-size: 13px;
+    }
+
+    #banner .drop-button{
+        background: green;
+        padding: 10px 30px;
+
+    }
+
+}
