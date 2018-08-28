@@ -93,6 +93,10 @@ div#catalog_content div#home a.buy-button {
     color: #fff;
 }
 
+div#catalog_content div#home a.buy-button:hover {
+    color: #C53737;
+}
+
 input:focus, .btn:focus, a:focus, button:focus{
 	outline: 0;
 }
